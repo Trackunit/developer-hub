@@ -2,9 +2,12 @@
 title: Introduction
 category: 6295ae369ba4b1001464c9e5
 ---
-> 📘 Public Beta of new Trackunit API Documentation  
-> The new Trackunit Developer Hub for REST APIs are available in a public beta!  
-> Explore the next generation of RESTful APIs hosted on the Trackunit Iris Platform.  
+> 📘 Public Beta of new Trackunit API Documentation
+> 
+> The new Trackunit Developer Hub for REST APIs are available in a public beta!
+> 
+> Explore the next generation of RESTful APIs hosted on the Trackunit Iris Platform.
+> 
 > Documentation for all our Classic and Iris System APIs can still be found on the old developer hub.  
 > [Trackunit Dev Hub](https://dev.trackunit.com/)
 
