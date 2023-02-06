@@ -1,14 +1,10 @@
 ---
-title: Introduction
+title: New Introduction
 ---
-> 📘 Public Beta of new Trackunit API Documentation
-> 
-> The new Trackunit Developer Hub for REST APIs are available in a public beta!
-> 
-> Explore the next generation of RESTful APIs hosted on the Trackunit Iris Platform.
-> 
-> Documentation for all our Classic and Iris System APIs can still be found on the old developer hub.
-> 
+> 📘 Public Beta of new Trackunit API Documentation  
+> The new Trackunit Developer Hub for REST APIs are available in a public beta!  
+> Explore the next generation of RESTful APIs hosted on the Trackunit Iris Platform.  
+> Documentation for all our Classic and Iris System APIs can still be found on the old developer hub.  
 > [Trackunit Dev Hub](https://dev.trackunit.com/)
 
 The Trackunit APIs are based and organised around the [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) paradigm.  
