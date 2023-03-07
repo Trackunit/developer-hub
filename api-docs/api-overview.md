@@ -3,6 +3,17 @@ title: API Overview
 category: 6295ae369ba4b1001464c9e5
 ---
 
-Testing github upload
 
-![API Overview](https://raw.githubusercontent.com/Trackunit/developer-hub/master/api-docs/images/api-overview.png?token=GHSAT0AAAAAABSGUULE32KOBCLOB4ED67OIZAASYFQ)
+![API Overview](https://files.readme.io/95bc492-api-overview.png)
+
+### Assets
+
+
+### Groups
+
+
+### Users
+
+
+### Service Management
+Our Service Management API provides a list of APIs enabling service providers and machine owners in maintaining the service cycle of assets.
