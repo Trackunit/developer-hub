@@ -2,8 +2,6 @@
 title: API Overview
 category: 6295ae369ba4b1001464c9e5
 ---
-
-
 ![API Overview](https://files.readme.io/95bc492-api-overview.png)
 
 ### Assets
