@@ -1,5 +1,5 @@
 ---
-title: Rate & Size Limiting
+title: Pagination
 category: 6295ae369ba4b1001464c9e5
 ---
 All endpoints that return lists of objects use pagination. Pagination allows consumers to request a part of the list using an offset-based pagination mechanism.
