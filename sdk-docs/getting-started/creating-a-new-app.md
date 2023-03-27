@@ -29,7 +29,7 @@ npm install @trackunit/iris-app
 3. Use the Trackunit Iris App SDK plugin to generate your first Iris App by entering this command (you can use your app name instead of my-first-app within the command line).
 
 ```
-nx generate @trackunit/iris-app:create my-first-app
+nx generate @trackunit/iris-app:create [name-of-your-app]
 ```
 
 

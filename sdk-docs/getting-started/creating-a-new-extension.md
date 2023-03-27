@@ -21,11 +21,11 @@ nx g @trackunit/iris-app:extend my-first-extension
 2. The following questions will appear when you run the command that will aid in app creation:
 
 - **What subdir would you like to use for this iris-app-extension?:** Trackunit recommends using the Feature (my-feature-1) directory to sort your extensions.
-- **What app should this iris-app-extension extend?:**Enter the app name used in step 3 in the **[Creating an Iris App SDK](#)** section (e.g., my-first-app).  
+- **What app should this iris-app-extension extend?:**Enter the app name used in step 3 in the **[Creating a new app](https://developers.trackunit.com/docs/creating-a-new-app)** section (e.g., my-first-app).  
 
 > 📌 The 'What app should the Iris-app extension extend?' question will not appear if you have a single app in your workspace.
 
-- **Which tile-extension should be generated?:**Select an Extension Point type.
+- **Which iris-app-extension should be generated?:**Select an Extension Point type.
   - **Asset Home** Allows you to add a new tab to the menu on the Asset Home screen in Trackunit Manager.
   - **Fleet** Allows you to add a new tab to the main menu in Trackunit Manager.
   - **Report** Allows you to add a new report to the Reports screen in Trackunit Manager.
@@ -33,7 +33,7 @@ nx g @trackunit/iris-app:extend my-first-extension
 
 ![](https://files.readme.io/dfc4901-aa9ca46-Screenshot_2021-11-30_at_07.30.00.png "aa9ca46-Screenshot_2021-11-30_at_07.30.00.png")
 
-3. After answering all the questions, a new extension will be created under the libs folder. 
+1. After answering all the questions, a new extension will be created under the libs folder. 
 
 ```text
 ⊢ libs
