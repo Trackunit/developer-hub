@@ -10,27 +10,6 @@ parentDocSlug: getting-started
 
 The workspace will contain all apps and extensions. To create a workspace, you can either base it on a workspace we have created or create a NX workspace from scratch.
 
-# Use pre-created workspace
-
-> 📌 Ensure you have Git installed before running the Git Clone command.
-
-1. Open a Terminal or Command Window.
-2. Use the Git Clone command (shown below) to clone a version of the Iris App SDK repository (files, branches, and commits) to your local PC.
-
-```Text shell
-git clone git@github.com:Trackunit/Tile-Hello-World.git
-```
-
-
-
-3. Verify that the Iris App SDK repository clone is successfully by running the npm install
-
-```
-npm install
-```
-
-
-
 # Create workspace from scratch
 
 We follow [the NX guide to create a workspace.](https://nx.dev/getting-started/react-tutorial#create-a-new-workspace)
