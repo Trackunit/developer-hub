@@ -14,10 +14,10 @@ Publishing an Iris App SDK will allow you to offer the app to customers to downl
 
 First, you will need to create an Iris App SDK and Extension.
 
-1. Open a Terminal or Command window and enter the build command (npx nx run my-first-app:build)  to build your Iris App SDK. Use your app name instead of my-first-app within the command line.
+1. Open a Terminal or Command window and enter the build command (nx run my-first-app:build)  to build your Iris App SDK. Use your app name instead of my-first-app within the command line.
 
 ```
-npx nx run my-first-app:build
+nx run my-first-app:build
 ```
 
 
@@ -31,10 +31,10 @@ npx nx run my-first-app:build
 
 
 
-3. Enter the Publish command (npx nx run my-first-app:publish) to publish your app. Use your app name instead of my-first-app within the command line.
+1. Enter the Publish command (nx run my-first-app:publish) to publish your app. Use your app name instead of my-first-app within the command line.
 
 ```
-npx nx run my-first-app:publishApp
+nx run my-first-app:publishApp
 ```
 
 

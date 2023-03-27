@@ -13,7 +13,7 @@ Once you have created the Iris App, you will need to create an extension and con
 1. Create your first extension (replace my-first-extension with your extension name).
 
 ```
-npx nx g @trackunit/iris-app:extend my-first-extension
+nx g @trackunit/iris-app:extend my-first-extension
 ```
 
 

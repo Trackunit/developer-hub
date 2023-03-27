@@ -8,10 +8,10 @@ parentDocSlug: iris-app-sdk-functions
 > 
 > This is a beta version and subject to change without notice.
 
-1. Use the npx nx run my-first-app:serve command to prepare the Iris App SDK for local testing.
+1. Use the `nx run my-first-app:serve` command to prepare the Iris App SDK for local testing.
 
 ```
-npx nx run my-first-app:serve
+nx run my-first-app:serve
 ```
 
 
