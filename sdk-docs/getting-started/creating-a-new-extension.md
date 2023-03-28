@@ -6,7 +6,7 @@ parentDocSlug: getting-started
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version. Pricing, terms, conditions and availability may change in the final version.
 
 Once you have created the Iris App, you will need to create an extension and connect it to the app. An extension is either a hook in to a certain place in the UI or a report.
 

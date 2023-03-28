@@ -6,7 +6,7 @@ parentDocSlug: guides-tutorials
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 To use Trackunit APIs and integrating with the manager to get information on current asset you need to install the Iris App Runtime. The Iris App Runtime is the interface to the manager from your app.
 
