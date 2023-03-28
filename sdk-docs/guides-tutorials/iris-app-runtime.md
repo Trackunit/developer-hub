@@ -1,6 +1,7 @@
 ---
 title: Installing Iris App Runtime in an Iris App Extension 
 category: 61fcd8e1a448f5004215317c
+parentDocSlug: guides-tutorials
 ---
 
 > 🚧 Beta
