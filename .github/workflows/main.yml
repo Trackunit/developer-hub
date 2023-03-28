@@ -28,3 +28,11 @@ jobs:
         uses: readmeio/rdme@v8
         with:
           rdme: docs ./sdk-docs --key=${{ secrets.README_API_KEY }} --version=1.0
+
+      # Run GitHub Action to sync docs in `documentation` directory
+      - name: Sync custom pages docs
+        # We recommend specifying a fixed version, i.e. @v8
+        # Docs: https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
+        uses: readmeio/rdme@v8
+        with:
+          rdme: custompages ./custompages --key=${{ secrets.README_API_KEY }}
