@@ -62,3 +62,5 @@ CREATE apps/[name-of-your-app]/webpack.config.ts
       ⊢ webpack.config.ts
    	⊢ .gitkeep
 ```
+
+Next you should create an extension to actually add some content to your app.
