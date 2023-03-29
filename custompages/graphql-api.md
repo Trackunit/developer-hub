@@ -4,7 +4,7 @@ title: GraphQL API Documentation
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version. Pricing, terms, conditions and availability may change in the final version.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 To create integrations and retrieve data use the GraphQL API. The GraphQL API offers more flexible queries than the TrackUnit REST API. And only retrieves the data needed.
 

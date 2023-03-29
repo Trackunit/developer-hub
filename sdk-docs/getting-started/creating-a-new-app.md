@@ -6,7 +6,7 @@ parentDocSlug: getting-started
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version. Pricing, terms, conditions and availability may change in the final version.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 In this step, we will create a new app in the workspace. An app is the deployable unit that will contain all the extensions and configurations.
 

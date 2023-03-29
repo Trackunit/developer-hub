@@ -6,7 +6,7 @@ parentDocSlug: iris-app-sdk-functions
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version. Pricing, terms, conditions and availability may change in the final version.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 1. Use the `nx run my-first-app:serve` command to prepare the Iris App SDK for local testing.
 
