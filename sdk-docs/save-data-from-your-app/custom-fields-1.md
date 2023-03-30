@@ -6,7 +6,7 @@ parentDocSlug: save-data-from-your-app
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 # General Rules
 

@@ -6,7 +6,7 @@ parentDocSlug: getting-started
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 The workspace will contain all apps and extensions. To create a workspace, you can either base it on a workspace we have created or create a NX workspace from scratch.
 

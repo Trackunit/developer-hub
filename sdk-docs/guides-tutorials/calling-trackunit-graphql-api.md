@@ -6,7 +6,7 @@ parentDocSlug: guides-tutorials
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 Trackunit exposes a GraphQL API see [The GraphQL Playground](https://developers.trackunit.com/page/graphql-api) to create you query and we also expose an NX executor to make it easy to query our GraphQL API inside your Iris App.
 

@@ -6,7 +6,7 @@ parentDocSlug: guides-tutorials
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 In an asset home extension there is a special asset runtime that allows you to query what asset is currently selected.
 

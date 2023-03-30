@@ -6,7 +6,7 @@ parentDocSlug: guides-tutorials
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 Trackunit exposes public APIs as NPM packages to make it easy to query our REST APIs inside an Iris App.
 

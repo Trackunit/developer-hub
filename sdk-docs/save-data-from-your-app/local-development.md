@@ -6,7 +6,7 @@ parentDocSlug: save-data-from-your-app
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 When running in [local dev mode](getting-started#5-run-the-tile), the app runtime will store all custom fields in local storage in the browser.
 

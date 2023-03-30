@@ -5,7 +5,7 @@ category: 61fcd8e1a448f5004215317c
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 To help Iris app developers easily store extra data we allow an app to define custom fields on an asset or an account. When a field has been defined, a value can be set for an asset using the Iris App runtime.
 

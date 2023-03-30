@@ -6,7 +6,7 @@ parentDocSlug: iris-app-sdk-reference
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice.
+> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 **Trackunit React Providers  
 :** The react component is exposed using @trackunit/react-core-contexts\` package.  

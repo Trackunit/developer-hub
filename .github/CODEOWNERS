@@ -1,0 +1,14 @@
+# GitHub CODEOWNERS file used for setting default reviewers
+
+# https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners
+
+# These global owners will be the default owners for everything in the repo. Unless a later match takes precedence,
+
+# these owners will be requested for review when someone opens a pull request.
+
+/.github/CODEOWNERS @sieker-trackunit
+
+/sdk-docs/ @Trackunit/team-iris-foundation
+/custompages/ @Trackunit/team-iris-foundation
+
+/custompages/iso-feeds.md @Trackunit/team-io
