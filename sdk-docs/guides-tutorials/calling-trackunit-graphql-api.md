@@ -53,12 +53,13 @@ query GetDemoAsset($assetId: String!) {
 ### 4. Generate React Hooks
 Call this command:
 ```ts
-nx run [name-of-your-extension]:graphql-hooks
+nx run demo-[name-of-your-extension]:graphql-hooks
 ```
 
 
 
-### 5. Now that it has generated a folder with generated files in your src folder you can use it in your React code. The syntax is like use\<YOUR_QUERY>Query in the above example GetDemoAsset will translate into useGetDemoAssetQuery
+### 5. Use it in your React code 
+Now that it has generated a folder with generated files in your src folder you can use it in your React code. The syntax is like use\<YOUR_QUERY>Query. In the above example GetDemoAsset will translate into useGetDemoAssetQuery
 
 ```ts
 import { useGetDemoAssetQuery } from './generated/graphql-api';
@@ -75,14 +76,12 @@ const { data, loading, error } = useGetDemoAssetQuery({
 
 
 
-### 6. You are now ready to call GraphQL using hooks, for more advanced info on the executor you can read up on how to generate code from [GraphQL codegen cli](https://the-guild.dev/graphql/codegen/docs/getting-started/installation)   
+### 6. You are now ready to call GraphQL using hooks 
+For more advanced info on the executor you can read up on how to generate code from [GraphQL codegen cli](https://the-guild.dev/graphql/codegen/docs/getting-started/installation)   
 
-### Example: Full React Component (App.tsx)
-
-Select the Open Recipe link below to see a Full React Component example.
+## Example: Full React Component (App.tsx)
 
 ```typescript
-import { useEffect, useState } from 'react';
 import {
   Card,
   Text,
@@ -92,25 +91,14 @@ import {
 import { useGetDemoAssetQuery } from './generated/graphql-api';
 import { useAssetRuntime } from '@trackunit/react-core-hooks';
 
+
 export const App = () => {
-
-  const assetRuntime = useAssetRuntime();
-  const [assetId, setAssetId] = useState<string | undefined>();
-
-  useEffect(() => {
-    const getAssetId = async () => {
-      const assetinfo = await assetRuntime.getAssetInfo();
-
-      setAssetId(assetinfo.assetId);
-    };
-    getAssetId();
-  }, [assetRuntime]);
- 
+  const { assetInfo } = useAssetRuntime();
   const { data, loading, error } = useGetDemoAssetQuery({
     variables: {
-      assetId: assetId!,
+      assetId: assetInfo?.assetId!,
     },
-    skip: !assetId,
+    skip: !assetInfo?.assetId,
   });
 
   return (
@@ -127,5 +115,4 @@ export const App = () => {
   </div>
   );
 };
-
 ```
