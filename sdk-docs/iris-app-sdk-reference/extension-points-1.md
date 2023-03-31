@@ -87,7 +87,7 @@ menuItem: {
 
 # Report Extension Point
 
-The Report Extension Point allows you to add a new Report Tile on the Reports screen within Trackunit Manager. The extension is controlled in the extension-manifest.ts file.
+The Report Extension Point allows you to add a new report to the Reports screen within Trackunit Manager. The extension is controlled in the extension-manifest.ts file.
 
 [block:image]
 {

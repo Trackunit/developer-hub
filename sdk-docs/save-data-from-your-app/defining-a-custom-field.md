@@ -33,11 +33,11 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
 
 4. `title` defines the UI visible name of the field.
 
-5. `uiEditable` / `uiVisible` controls how the field will be shown in the manager UI. This does not limit how the field is used inside the tile.
+5. `uiEditable` / `uiVisible` controls how the field will be shown in the Manager UI. This does not limit how the field is used inside the Iris App.
 
   Apart from the these standard properties, some field types have [extra properties defined below](#type-specific-properties).
 
-  **All custom fields defined by a tile will be owned by the tile, and the tile developer should consider existing data when changing field definitions.**
+  **All custom fields defined by an Iris App will be owned by the Iris App, and the Iris App developer should consider existing data when changing field definitions.**
 
 # Custom field types
 
