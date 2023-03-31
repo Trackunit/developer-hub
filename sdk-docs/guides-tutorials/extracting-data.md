@@ -12,10 +12,10 @@ Trackunit exposes public APIs as NPM packages to make it easy to query our REST 
 
 In this example, we will use the Rest Machine API.  
 
-1. Open a Terminal or Command Window and enter the npm i @trackunit/rest-machine command to Install the machine Rest API: 
+1. Open a Terminal or Command Window and enter the npm install @trackunit/rest-machine command to Install the machine Rest API: 
 
 ```
-npm i @trackunit/rest-machines
+npm install @trackunit/rest-machines
 ```
 
 

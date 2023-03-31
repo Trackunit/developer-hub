@@ -11,7 +11,7 @@ parentDocSlug: save-data-from-your-app
 1. Open a Terminal or Command window and install the Iris App Runtime.
 
 ```
-npm i @trackunit/iris-app-runtime-core
+npm install @trackunit/iris-app-runtime-core
 ```
 
 
@@ -58,7 +58,7 @@ customFieldRuntime.setCustomFieldsFor(
 Trackunit provides a React UI (User Interface) Component that renders a custom field input box according to a custom field definition.
 
 ```
-npm i @trackunit/custom-field-components
+npm install @trackunit/custom-field-components
 ```
 
 

@@ -1,5 +1,5 @@
 ---
-title: Storing Data from an Iris App SDK
+title: Storing Data from an Iris App
 category: 61fcd8e1a448f5004215317c
 ---
 

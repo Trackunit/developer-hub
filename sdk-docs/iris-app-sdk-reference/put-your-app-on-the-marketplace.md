@@ -1,7 +1,7 @@
 ---
 title: Put your app on the marketplace
 category: 61fcd8e1a448f5004215317c
-parentDocSlug: iris-app-sdk-functions
+parentDocSlug: iris-app-sdk-reference
 ---
 
 The app is presented in the Iris Marketplace – from where apps can be deployed as extensions to the Manager.
