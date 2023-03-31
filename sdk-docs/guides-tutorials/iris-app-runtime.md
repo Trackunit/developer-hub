@@ -8,26 +8,36 @@ parentDocSlug: guides-tutorials
 > 
 > This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
-To use Trackunit APIs and integrating with the manager to get information on current asset you need to install the Iris App Runtime. The Iris App Runtime is the interface to the manager from your app.
+To use Trackunit APIs and integrating with the manager to get information on current asset, site, custom fields or navigate - you need to install the Iris App core hooks. The Iris App core hooks is the interface to the manager from your react Iris App extension.
 
-- Open a Terminal or Command window and enter the Iris App Runtime command  to install Iris App Runtime.
+- Open a Terminal or Command window to install Iris App core hooks.
 
 ```
-npm i @trackunit/iris-app-runtime-core
+npm install @trackunit/react-core-hooks
 ```
 
 
 
-Then you can import the runtime in your `app.tsx`:
+Then you can import the core hooks in your extensions  `app.tsx`:
 
 ```typescript
-import * as runtime from '@trackunit/iris-app-runtime-core';
+import { useNavigationRuntime } from '@trackunit/react-core-hooks';
 ```
 
-
-
-And for example ask the manager who the current user is:
+In this example we can navigate to asset home if you have the assetID.
 
 ```typescript
-const userInfo = await runtime.CurrentUserRuntime.getCurrentUserContext();
+import { Button } from '@trackunit/react-components';
+import { useNavigationRuntime } from '@trackunit/react-core-hooks';
+
+export const App = () => {
+  const { gotoAssetHome }= useNavigationRuntime(); 
+  
+  return (
+    <div>
+      <Button onClick={ () =>gotoAssetHome("[NEED_AN_ASSET_ID]")}>MOVE TO ASSET</Button>
+    </div>
+  );
+};
+
 ```

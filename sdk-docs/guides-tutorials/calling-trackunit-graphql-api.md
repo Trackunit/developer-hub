@@ -8,19 +8,20 @@ parentDocSlug: guides-tutorials
 > 
 > This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
-Trackunit exposes a GraphQL API see [The GraphQL Playground](https://developers.trackunit.com/page/graphql-api) to create you query and we also expose an NX executor to make it easy to query our GraphQL API inside your Iris App.
+Trackunit exposes a GraphQL API see [The GraphQL Playground](/page/graphql-api) to create your query and we also expose an NX executor to make it easy to query our GraphQL API inside your Iris App extension.
 
 In this example, we will use a Query for asset information.  
 
-1. Open a Terminal or Command Window and enter command below to install the react hooks generator: 
+### 1. Open a Terminal or Command Window and enter: 
 
 ```
-npm i @trackunit/react-graphql-tools
+npm install @trackunit/react-graphql-tools
 ```
 
 
 
-2. Assuming you have already created an extension for asset home - go to the root of that project (like libs/demo/[name-of-your-extension]/ ) otherwise follow [this guide](https://developers.trackunit.com/docs/creating-an-iris-app-sdk-extension) and open the project.json file in there, and add "graphql-hooks" to targets like this:  
+### 2. Add "graphql-hooks" to targets
+Assuming you have already created an extension for asset home - go to the root of that project (like libs/demo/[name-of-your-extension]/ ) otherwise follow [this guide](creating-an-iris-app-sdk-extension) and open the `project.json` and add to the targets node:
 
 ```ts
     "graphql-hooks": {
@@ -30,7 +31,8 @@ npm i @trackunit/react-graphql-tools
 
 
 
-3. Now you are ready to create React hooks from your GraphQL queries, just copy you query or this to your src folder in the libs/demo/[name-of-your-extension]/src and name it demo.graphql
+### 3. Create Graphql Query 
+Now you are ready to create React hooks from your GraphQL queries, just copy your query or the below query to your src folder in the libs/demo/[name-of-your-extension]/src and name it demo.graphql
 
 ```Text Graphql
 query GetDemoAsset($assetId: String!) {
@@ -48,15 +50,15 @@ query GetDemoAsset($assetId: String!) {
 
 
 
-3. To generate the react hooks you can now call
-
+### 4. Generate React Hooks
+Call this command:
 ```ts
 nx run [name-of-your-extension]:graphql-hooks
 ```
 
 
 
-5. Now that it has generated a folder with generated files in your src folder you can use it in your React code. The syntax is like use\<YOUR_QUERY>Query in the above example GetDemoAsset will translate into useGetDemoAssetQuery
+### 5. Now that it has generated a folder with generated files in your src folder you can use it in your React code. The syntax is like use\<YOUR_QUERY>Query in the above example GetDemoAsset will translate into useGetDemoAssetQuery
 
 ```ts
 import { useGetDemoAssetQuery } from './generated/graphql-api';
@@ -73,7 +75,7 @@ const { data, loading, error } = useGetDemoAssetQuery({
 
 
 
-6. You are now ready to call GraphQL using hooks, for more advanced info on the executor you can read up on how to generate code from [GraphQL codegen cli](https://the-guild.dev/graphql/codegen/docs/getting-started/installation)   
+### 6. You are now ready to call GraphQL using hooks, for more advanced info on the executor you can read up on how to generate code from [GraphQL codegen cli](https://the-guild.dev/graphql/codegen/docs/getting-started/installation)   
 
 ### Example: Full React Component (App.tsx)
 
