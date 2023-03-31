@@ -39,7 +39,14 @@ nx g @trackunit/iris-app:extend [name-of-your-extension]
 ✔ Which Iris App extension should be generated? · FLEET_EXTENSION
 
 CREATE libs/[subdir-of-your-extension]/[name-of-your-extension]/extension-manifest.ts
+UPDATE package.json
+UPDATE nx.json
+CREATE jest.config.ts
+CREATE jest.preset.js
+UPDATE .vscode/extensions.json
+CREATE babel.config.json
 CREATE libs/[subdir-of-your-extension]/[name-of-your-extension]/project.json
+CREATE .eslintrc.json
 CREATE libs/[subdir-of-your-extension]/[name-of-your-extension]/.eslintrc.json
 CREATE libs/[subdir-of-your-extension]/[name-of-your-extension]/.babelrc
 CREATE libs/[subdir-of-your-extension]/[name-of-your-extension]/README.md
@@ -72,6 +79,7 @@ CREATE libs/[subdir-of-your-extension]/[name-of-your-extension]/src/index.tsx
       ⊢ tsconfig.json
       ⊢ tsconfig.lib.json
       ⊢ tsconfig.spec.json
+    ⊢ .gitkeep
 ```
 
 
