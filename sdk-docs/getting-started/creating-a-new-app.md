@@ -31,13 +31,15 @@ nx generate @trackunit/iris-app:create [name-of-your-app]
 
 ```
 UPDATE package.json
-UPDATE workspace.json
-CREATE apps/[name-of-your-app]/package.json
-CREATE apps/[name-of-your-app]/index.ts
-CREATE apps/[name-of-your-app]/iris-app-manifest.ts
-CREATE apps/[name-of-your-app]/tsconfig.app.json
-CREATE apps/[name-of-your-app]/tsconfig.json
-CREATE apps/[name-of-your-app]/webpack.config.ts
+CREATE apps/app/project.json
+CREATE apps/app/assets/description.md
+CREATE apps/app/iris-app-manifest.ts
+CREATE apps/app/package.json
+CREATE apps/app/src/index.ts
+CREATE apps/app/tailwind.config.js
+CREATE apps/app/tsconfig.app.json
+CREATE apps/app/tsconfig.json
+CREATE apps/app/webpack.config.ts
 ```
 
 
@@ -46,14 +48,17 @@ CREATE apps/[name-of-your-app]/webpack.config.ts
 
 ```
 ⊢ apps
-   ⊢ [name-of-your-app]
-      ⊢ src
-      ⊢ package.json
+   ⊢ [name-of-your-app]/
+      ⊢ assets/
+      ⊢ src/
       ⊢ iris-app-manifest.ts
+      ⊢ package.json
+      ⊢ project.json
+      ⊢ tailwind.config.js
       ⊢ tsconfig.app.json
       ⊢ tsconfig.json
       ⊢ webpack.config.ts
-      ⊢ .gitkeep
+   ⊢ .gitkeep
 ```
 
 Next you should extend your Iris App with an extension to actually add some content.
