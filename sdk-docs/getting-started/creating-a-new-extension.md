@@ -8,7 +8,7 @@ parentDocSlug: getting-started
 > 
 > This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
-Once you have created the Iris App, you will need to create an extension and connect it to the app. An extension is either a hook in to a certain place in the UI or a report.
+Once you have created the Iris App, you will need to create an extension and connect it to the app. An extension is either a hook in to a certain place in the Manager UI or a report.
 
 ### 1. Create your first extension
 
@@ -18,23 +18,22 @@ nx g @trackunit/iris-app:extend [name-of-your-extension]
 
 
 
-### 2. The following questions will appear when you run the command that will aid in app creation:
+### 2. Answer the following questions:
 
-- **What subdir would you like to use for this iris-app-extension?:** 
+- **What subdir would you like to use for this app-extension?:** 
   - Trackunit recommends using the Feature (my-feature-1) directory to sort your extensions.
-- **What app should this iris-app-extension extend?:**
+- **What app should this app-extension extend?:**
   - Enter the app name used in step 3 in the **[Creating a new app](https://developers.trackunit.com/docs/creating-a-new-app)** section (e.g., my-first-app).  
+    - 📌 This question will not appear if you only have a single app in your NX Workspace.
 
-> 📌 The 'What app should the Iris-app extension extend?' question will not appear if you have a single app in your workspace.
-
-- **Which iris-app-extension should be generated?:**Select an Extension Point type.
+- **Which Iris App extension should be generated?:** 
   - **Fleet** Allows you to add a new tab to the main menu in Trackunit Manager.
   - **Asset Home** Allows you to add a new tab to the menu on the Asset Home screen in Trackunit Manager.
   - **Site Home** Allows you to add a new tab to the menu on the Site Home screen in Trackunit Manager.
   - **Report** Allows you to add a new report to the Reports screen in Trackunit Manager.
   - **Admin** Allows you to add a new tab in the adminstration page in Trackunit Manager.
 
-```text
+```
 ✔ What name would you like to use for this app-extension? · [name-of-your-extension]
 ✔ What subdir would you like to use for this app-extension? · [subdir-of-your-extension]
 ✔ Which Iris App extension should be generated? · FLEET_EXTENSION
@@ -58,7 +57,7 @@ CREATE libs/[subdir-of-your-extension]/[name-of-your-extension]/src/index.tsx
 
 ### 3. After answering all the questions, a new extension will be created under the libs folder. 
 
-```text
+```
 ⊢ libs
 	⊢ [subdir-of-your-extension]/[name-of-your-extension]
       ⊢ src
@@ -86,7 +85,7 @@ CREATE libs/[subdir-of-your-extension]/[name-of-your-extension]/src/index.tsx
 
 
 ## Example of an Extension Manifest 
-(in this case a Report extension)
+(in this example a Report extension)
 
 ```ts
 import { ReportExtensionManifest } from '@trackunit/iris-app-api';
@@ -102,4 +101,5 @@ export default extensionManifest;
 
 ```
 
-Now that you have created an Iris App with a fleet extension then you are ready to run the Iris App
+Now that you have created an Iris App with 1 extension, you are ready to run the Iris App.
+( you can add more extensions or new Iris Apps later )

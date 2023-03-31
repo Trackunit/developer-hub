@@ -20,7 +20,7 @@ npm i @trackunit/react-graphql-tools
 
 
 
-2. Assuming you have already created an extension for asset home - go to the root of that project (like libs/demo/my-first-asset-home-extension/ ) otherwise follow [this guide](https://developers.trackunit.com/docs/creating-an-iris-app-sdk-extension) and open the project.json file in there, and add "graphql-hooks" to targets like this:  
+2. Assuming you have already created an extension for asset home - go to the root of that project (like libs/demo/[name-of-your-extension]/ ) otherwise follow [this guide](https://developers.trackunit.com/docs/creating-an-iris-app-sdk-extension) and open the project.json file in there, and add "graphql-hooks" to targets like this:  
 
 ```ts
     "graphql-hooks": {
@@ -30,7 +30,7 @@ npm i @trackunit/react-graphql-tools
 
 
 
-3. Now you are ready to create React hooks from your GraphQL queries, just copy you query or this to your src folder in the libs/demo/my-first-asset-home-extension/src and name it demo.graphql
+3. Now you are ready to create React hooks from your GraphQL queries, just copy you query or this to your src folder in the libs/demo/[name-of-your-extension]/src and name it demo.graphql
 
 ```Text Graphql
 query GetDemoAsset($assetId: String!) {
@@ -51,7 +51,7 @@ query GetDemoAsset($assetId: String!) {
 3. To generate the react hooks you can now call
 
 ```ts
-nx run demo-my-first-asset-home-extension:graphql-hooks
+nx run [name-of-your-extension]:graphql-hooks
 ```
 
 
