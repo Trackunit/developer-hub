@@ -66,13 +66,7 @@ npm install @trackunit/custom-field-components
 See this complete example for how to use the component:
 
 ```ts
-import React, { useEffect, useState } from 'react';
-import {
-  CustomFieldRuntime,
-  AssetRuntime,
-  AssetInfo,
-  ValueAndDefinition,
-} from '@trackunit/iris-app-runtime-core';
+import React from 'react';
 import {
   Button,
   Card,
@@ -82,31 +76,22 @@ import {
 } from '@trackunit/react-components';
 import { CustomField } from '@trackunit/custom-field-components';
 import { useForm } from 'react-hook-form';
+import { useAssetRuntime } from '@trackunit/react-core-hooks';
+import { useCustomFieldRuntimeForEntity } from './useCustomFieldRuntimeForEntity';
 
 export const App: React.FC = () => {
-  const [customFields, setCustomFields] = useState<ValueAndDefinition[]>();
-  const [asset, setAsset] = useState<AssetInfo>();
+  const { assetInfo } = useAssetRuntime();
+  const { customFields, setCustomFieldsFromFormDataForEntity } = useCustomFieldRuntimeForEntity( {
+    id: assetInfo?.assetId || '',
+    type: 'ASSET'
+  });
+
   const { register, handleSubmit, formState, setValue } = useForm({
     shouldUnregister: false,
   });
 
-  useEffect(() => {
-    (async () => {
-      const updatedAssetInfo = await AssetRuntime.getAssetInfo();
-
-      setAsset(updatedAssetInfo);
-      // Using the CustomFieldRuntime you will be able to obtain all custom fields values and
-      // definitions owned by the app.
-      const myCustomFields = await CustomFieldRuntime.getCustomFieldsFor({
-        id: updatedAssetInfo.assetId,
-        type: 'ASSET',
-      });
-      setCustomFields(myCustomFields);
-    })();
-  }, []);
-
   // With the component it is possible to render an input component for any custom field by
-  // providing a field retrieved from getCustomFieldsFor to the component.
+  // providing a field retrieved from useCustomFieldRuntimeForEntity to the component.
   return (
     <Card>
       <CardHeader
@@ -127,19 +112,7 @@ export const App: React.FC = () => {
         })}
       </CardBody>
       <CardFooter>
-        <Button
-          onClick={handleSubmit((data) => {
-            // To save custom field values you need to provide the the entity Id and the new value.
-            CustomFieldRuntime.setCustomFieldsFromFormData(
-              {
-                id: asset?.assetId || '',
-                type: 'ASSET',
-              },
-              data,
-              customFields || []
-            );
-          })}
-        >
+        <Button onClick={handleSubmit(setCustomFieldsFromFormDataForEntity)}>
           Save Changes
         </Button>
       </CardFooter>
