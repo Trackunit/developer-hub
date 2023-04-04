@@ -20,7 +20,7 @@ This extension point allows you to add a new tab to the Assets Home screen withi
 
 ![Asset home extension](https://cdn.statically.io/gh/trackunit/developer-hub/master/sdk-docs/extension_to_asset_home.png)
 
-- **Menu Item:**
+## Menu Item
 
 ```ts
 menuItem: {
@@ -28,10 +28,8 @@ menuItem: {
 }
 ```
 
-
-
-- **Visibility of Menu Item:**
-  - Visibility is controlled using conditions. The Asset's Brand and Model fields must match the Brand and Model entered within the code.
+### Visibility
+Visibility is controlled using conditions. The Asset's Brand and Model fields must match the Brand and Model entered within the code.
 
 ```ts
 conditions: {
