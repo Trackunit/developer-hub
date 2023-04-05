@@ -138,7 +138,7 @@ This extension point allows you to add a configuration user interface for your a
       "image": [
         "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_settings.png",
         null,
-        "App settings extension",
+        "App settings extension"
       ],
       "align": "center",
       "sizing": "50% "
@@ -159,7 +159,7 @@ This extension point allows you to add a new tab in the administration user inte
       "image": [
         "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_administration.png",
         null,
-        "Administration extension",
+        "Administration extension"
       ],
       "align": "center",
       "sizing": "50% "
