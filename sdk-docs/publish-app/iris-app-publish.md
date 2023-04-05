@@ -1,7 +1,7 @@
 ---
-title: Publish an Iris App SDK
+title: How to publish an Iris App SDK
 category: 61fcd8e1a448f5004215317c
-parentDocSlug: iris-app-sdk-functions
+parentDocSlug: publish-app
 ---
 
 > 🚧 Beta

@@ -1,14 +1,14 @@
 ---
 title: Calling Trackunit GraphQL API
 category: 61fcd8e1a448f5004215317c
-parentDocSlug: guides-tutorials
+parentDocSlug: public-apis
 ---
 
 > 🚧 Beta
 > 
 > This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
-Trackunit exposes a GraphQL API see [The GraphQL Playground](/page/graphql-api) to create your query and we also expose an NX executor to make it easy to query our GraphQL API inside your Iris App extension.
+Trackunit exposes a [GraphQL API](/page/graphql-api) to create your query and we also expose an NX executor to make it easy to query our GraphQL API inside your Iris App extension.
 
 In this example, we will use a Query for asset information.  
 
