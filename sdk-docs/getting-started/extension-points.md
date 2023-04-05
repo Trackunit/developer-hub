@@ -117,7 +117,7 @@ The Report Extension Point allows you to add a new report to the Reports screen 
       "image": [
         "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_reports.png",
         null,
-        "Report extension",
+        "Report extension"
       ],
       "align": "center",
       "sizing": "50% "
