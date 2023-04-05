@@ -51,7 +51,7 @@ For more information see: [UI Components](/page/ui-components)
 
 When your app is running inside the manager there is sometimes a need to integrate and interact with the manager to provide a good user experience. This could be getting the asset the app is currently running on or navigating to a specific asset in the manager.
 
-For more information see: [Manager integration](/page/runtime-libs)
+For more information see: [Manager integration](./runtime-libs)
 
 
 # Publish your Iris App to the marketplace
