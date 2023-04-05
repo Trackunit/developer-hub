@@ -1,7 +1,7 @@
 ---
 title: Loading Asset Information into an Asset Home Extension
 category: 61fcd8e1a448f5004215317c
-parentDocSlug: guides-tutorials
+parentDocSlug: runtime-libs
 ---
 
 > 🚧 Beta
