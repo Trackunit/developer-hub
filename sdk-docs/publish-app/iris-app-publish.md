@@ -48,7 +48,7 @@ nx run [name-of-your-app]:publishApp
 5. Once the publish is complete it will show
 
 ```
-🚀 Uploaded the app package version 0.0.397-alpha-3bde436ccf.
+🚀 Uploaded the app package version 1.0.0.
 ```
 
 > 📘 Nice to know
