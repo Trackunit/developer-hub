@@ -12,11 +12,11 @@ Publishing an Iris App SDK will allow you to offer the app to customers to downl
 
 > 📘 Nice to know
 > 
-> Before publishing an Iris App SDK, Trackunit must first approve the app.
+> After publishing an Iris App SDK, Trackunit must first approve the app before it will be visible in the marketplace.
 
-First, you will need to create an Iris App SDK and Extension.
+This guide assumes you've completed the [getting started](./getting-started) guide.
 
-1. Open a Terminal or Command window and enter the build command (nx run [name-of-your-app]:build) to build your Iris App SDK. Use your app name instead of [name-of-your-app] within the command line.
+1. Open a Terminal or Command window and enter the build command (`nx run [name-of-your-app]:build`) to build your Iris App SDK. Use your app name instead of [name-of-your-app] within the command line.
 
 ```
 nx run [name-of-your-app]:build
@@ -24,7 +24,7 @@ nx run [name-of-your-app]:build
 
 
 
-2. Verify the Name and Version number in the package.json in the `dist/apps/[name-of-your-app].`When the Iris App SDK is published, the Name and Version fields combine to create a unique identifier for the app.
+2. Verify the Name and Version number in the package.json in the `dist/apps/[name-of-your-app]`. When the Iris App SDK is published, the name and version fields combine to create a unique identifier for the app.
 
 ```
 "name": "[name-of-your-app]"
@@ -33,7 +33,7 @@ nx run [name-of-your-app]:build
 
 
 
-1. Enter the Publish command (nx run [name-of-your-app]:publish) to publish your app. Use your app name instead of [name-of-your-app] within the command line.
+3. Enter the Publish command (`nx run [name-of-your-app]:publish`) to publish your app. Use your app name instead of [name-of-your-app] within the command line.
 
 ```
 nx run [name-of-your-app]:publishApp
@@ -41,8 +41,18 @@ nx run [name-of-your-app]:publishApp
 
 
 
-4. A browser will open, asking you to authenticate your ID. Use your Trackunit user ID (email@trackunit.com) to authenticate your ID.
+4. A browser will open, asking you to authenticate your ID. Use your Trackunit manager credentials to authenticate your ID. It will inform you your device is activated.
+   
+   By device it refers to the command line interface.
+
+5. Once the publish is complete it will show
+
+```
+🚀 Uploaded the app package version 0.0.397-alpha-3bde436ccf.
+```
 
 > 📘 Nice to know
 > 
-> Currently, you can only publish an app using an internal Trackunit account (email@trackunit.com).
+> Once you've published your app it is a good idea to bump the version number inside `apps/[name-of-your-app]/package.json`.
+>
+> It is not possible to publish the same version multiple times.
