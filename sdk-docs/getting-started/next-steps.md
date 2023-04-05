@@ -28,7 +28,22 @@ For more information see: [Extending the data model](./save-data-from-your-app)
 
 Trackunit provides an extensive UI Component library. When using components from our library you ensure consistent look and feel with the rest of the manager.
 
-<!-- TODO Insert image -->
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/ui-components.png",
+        null,
+        "UI Components"
+      ],
+      "align": "center",
+      "sizing": "50% "
+    }
+  ]
+}
+[/block]
 
 For more information see: [UI Components](/page/ui-components)
 
