@@ -10,7 +10,9 @@ parentDocSlug: publish-app
 
 Publishing an Iris App SDK will allow you to offer the app to customers to download and use. 
 
-> 📌 Before publishing an Iris App SDK, Trackunit must first approve the app.
+> 📘 Nice to know
+> 
+> Before publishing an Iris App SDK, Trackunit must first approve the app.
 
 First, you will need to create an Iris App SDK and Extension.
 
@@ -41,4 +43,6 @@ nx run [name-of-your-app]:publishApp
 
 4. A browser will open, asking you to authenticate your ID. Use your Trackunit user ID (email@trackunit.com) to authenticate your ID.
 
-> 📌 Currently, you can only publish an app using an internal Trackunit account (email@trackunit.com).
+> 📘 Nice to know
+> 
+> Currently, you can only publish an app using an internal Trackunit account (email@trackunit.com).

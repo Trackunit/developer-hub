@@ -66,4 +66,6 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
 | `multiSelect`               | DROPDOWN   | No       | Allow multiple options to be selected. Default `false`                                                  |
 | `dropDownValueReplacements` | DROPDOWN   | No       | Map from old values no longer allowed to new values. Used for updating existing data                    |
 
-> 📌 All custom fields defined by an app will be owned by the app, and the app developer should consider existing data when changing field definitions.
+> 📘 Nice to know
+> 
+> All custom fields defined by an app will be owned by the app, and the app developer should consider existing data when changing field definitions.
