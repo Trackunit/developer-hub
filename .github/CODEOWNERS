@@ -8,7 +8,7 @@
 
 /.github/CODEOWNERS @sieker-trackunit
 
-/sdk-docs/ @Trackunit/team-iris-foundation
-/custompages/ @Trackunit/team-iris-foundation
+/sdk-docs/ @Trackunit/team-iris-foundation @osmantoplica-trackunit
+/custompages/ @Trackunit/team-iris-foundation @osmantoplica-trackunit
 
 /custompages/iso-feeds.md @Trackunit/team-io
