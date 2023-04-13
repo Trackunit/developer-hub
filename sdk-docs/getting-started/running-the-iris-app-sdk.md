@@ -31,5 +31,8 @@ Local dev mode enables the manager (which is remotely hosted) to load the apps d
 
 > **Troubleshooting Tips**
 >
-> - If the app is stuck loading, try a different browser (Safari is not currently supported).
-> - If the issue persists, ensure that you aren't running multiple instances by accident and if so, shutdown the duplicate process.
+> - If the app is stuck loading:
+>   - Look at the console and ensure that it is not still "bundling". Wait for its completion.
+>   - Try reloading the page.
+>   - Try a different browser (Safari is not currently supported).
+>   - Ensure that you aren't running multiple instances by accident and if so, shutdown the duplicate processes.
