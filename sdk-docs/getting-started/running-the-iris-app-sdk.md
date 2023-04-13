@@ -24,7 +24,8 @@ You might need to login before it hits that page, use your developer credentials
 ![](https://files.readme.io/98fffa5-DeveloperTiles.png)
 
 ### 4. From this screen, make sure to enable **Local dev mode**.
-Now it will load your iris apps from your local machine and it might take around 30 seconds to load the first time. 
+Local dev mode enables the manager (which is remotely hosted) to load the apps directly from your local development environment. It might take around 30 seconds to load the first time. 
+
 
 ---
 
