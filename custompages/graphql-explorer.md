@@ -18,9 +18,9 @@ title: GraphQL Explorer
 [block:embed]
 {
   "html": false,
-  "url": "https://apps.iris.trackunit.com/graphql-viewer/",
+  "url": "https://apps.iris.trackunit.com/graphql-public-viewer/",
   "provider": "apps.dev.iris.trackunit.com",
-  "href": "https://apps.iris.trackunit.com/graphql-viewer/",
+  "href": "https://apps.iris.trackunit.com/graphql-public-viewer/",
   "typeOfEmbed": "iframe",
   "height": "300px",
   "width": "100%",

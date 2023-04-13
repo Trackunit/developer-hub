@@ -11,4 +11,4 @@ To create integrations and retrieve data use the GraphQL API. The GraphQL API of
 - [Calling Trackunit GraphQL API from an Iris App](https://developers.trackunit.com/docs/calling-trackunit-graphql-api)
 - [Obtain a token outside an Iris App](https://developers.trackunit.com/reference/access-token)
 - [GraphQL Explorer and Query builder](./graphql-explorer)  
-- [Public schema](https://apps.iris.trackunit.com/graphql-viewer/schema.gql)
+- [Public schema](https://apps.iris.trackunit.com/graphql-public-viewer/schema.gql)
