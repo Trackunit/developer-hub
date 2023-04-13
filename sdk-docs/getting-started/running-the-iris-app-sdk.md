@@ -19,9 +19,20 @@ nx run [name-of-your-app]:serve
 ### 2. A browser window will open with this url <https://dev.manager.trackunit.com/iris-sdk-portal/main#runLocal>.
 You might need to login before it hits that page, use your developer credentials.
 
-### 3. The Trackunit Manager Developer Server _**Iris App Developer Portal**_ screen will appear.
+### 3. The screen for the developer-server called _**Iris App Developer Portal**_ will appear.
 
 ![](https://files.readme.io/98fffa5-DeveloperTiles.png)
 
-### 4. From this screen, ensure the Local dev mode toggle switch is on, enabling **Local dev mode**.
-Now it will load your iris apps from your local machine.
+### 4. From this screen, make sure to enable **Local dev mode**.
+Local dev mode enables the manager (which is remotely hosted) to load the apps directly from your local development environment. It might take around 30 seconds to load the first time. 
+
+
+---
+
+> **Troubleshooting Tips**
+>
+> - If the app is stuck loading:
+>   - Look at the console and ensure that it is not still "bundling". Wait for its completion.
+>   - Try reloading the page.
+>   - Try a different browser (Safari is not currently supported).
+>   - Ensure that you aren't running multiple instances by accident and if so, shutdown the duplicate processes.
