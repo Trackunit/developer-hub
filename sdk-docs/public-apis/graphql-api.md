@@ -21,7 +21,7 @@ npm install @trackunit/react-graphql-tools
 
 
 ### 2. Add "graphql-hooks" to targets
-Assuming you have already created an extension for asset home - go to the root of that project (like libs/demo/[name-of-your-extension]/ ) otherwise follow [this guide](creating-an-iris-app-sdk-extension) and open the `project.json` and add to the targets node:
+Assuming you have already created an extension - go to the root of that project (like libs/[feature-name]/[name-of-your-extension]/ ) otherwise follow [this guide](creating-a-new-extension) and open the `project.json` and add to the targets node:
 
 ```ts
     "graphql-hooks": {
@@ -32,18 +32,18 @@ Assuming you have already created an extension for asset home - go to the root o
 
 
 ### 3. Create Graphql Query 
-Now you are ready to create React hooks from your GraphQL queries, just copy your query or the below query to your src folder in the libs/demo/[name-of-your-extension]/src and name it demo.graphql
+Now you are ready to create React hooks from your GraphQL queries, just copy your query or the below query to your src folder in the libs/[feature-name]/[name-of-your-extension]/src and name it demo.graphql
 
 ```Text Graphql
-query GetDemoAsset($assetId: String!) {
-  asset(id: $assetId) {
-    id
-    assetType
-    name
-    model
-    type
-    brand
-    serialNumber
+query GetFirstAsset {
+  assets(first: 1) {
+    edges {
+      node {
+        id
+        model
+        brand
+      }
+    }
   }
 }
 ```
@@ -53,7 +53,7 @@ query GetDemoAsset($assetId: String!) {
 ### 4. Generate React Hooks
 Call this command:
 ```ts
-nx run demo-[name-of-your-extension]:graphql-hooks
+nx run [feature-name]-[name-of-your-extension]:graphql-hooks
 ```
 
 
@@ -88,17 +88,14 @@ import {
   Spinner,
   Heading,
 } from '@trackunit/react-components';
-import { useGetDemoAssetQuery } from './generated/graphql-api';
-import { useAssetRuntime } from '@trackunit/react-core-hooks';
+import { useGetFirstAssetQuery } from './generated/graphql-api';
 
 
 export const App = () => {
-  const { assetInfo } = useAssetRuntime();
-  const { data, loading, error } = useGetDemoAssetQuery({
+  const { data, loading, error } = useGetFirstAssetQuery({
     variables: {
-      assetId: assetInfo?.assetId!,
+      // Any variables your query requires
     },
-    skip: !assetInfo?.assetId,
   });
 
   return (
@@ -106,10 +103,10 @@ export const App = () => {
     <Card className="w-full">
       {loading && <Spinner centering="centered" />}
       {error && <div>CRASHED: {error.message}</div>}
-      {data && <Heading variant="primary">We can now use useGetDemoAssetQuery</Heading>}
+      {data && <Heading variant="primary">We can now use useGetFirstAssetQuery</Heading>}
       <Card>
-        <Text>Brand: {data?.asset?.brand}</Text>
-        <Text>Model: {data?.asset?.model}</Text>
+        <Text>Brand: {data?.assets.edges[0].node.brand}</Text>
+        <Text>Model: {data?.assets.edges[0].node.model}</Text>
       </Card>
     </Card>
   </div>
