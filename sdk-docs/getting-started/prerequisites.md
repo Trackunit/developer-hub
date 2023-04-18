@@ -13,7 +13,7 @@ Trackunit will then make sure to enable the developer console inside manager tha
 The Iris App SDK needs certain tools to be on your machine:
 
 - Node version 16.13
-- NX version 15.3.0
+- NX version 15.9.2
 - Git
 
 To manage versions we recommend using something like [Volta](http://volta.sh) or similar to install node and nx.
