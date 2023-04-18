@@ -59,18 +59,15 @@ nx run [feature-name]-[name-of-your-extension]:graphql-hooks
 
 
 ### 5. Use it in your React code 
-Now that it has generated a folder with generated files in your src folder you can use it in your React code. The syntax is like use\<YOUR_QUERY>Query. In the above example GetDemoAsset will translate into useGetDemoAssetQuery
+Now that it has generated a folder with generated files in your src folder you can use it in your React code. The syntax is like use\<YOUR_QUERY>Query. In the above example GetFirstAsset will translate into useGetFirstAssetQuery
 
 ```ts
-import { useGetDemoAssetQuery } from './generated/graphql-api';
+import { useGetFirstAssetQuery } from './generated/graphql-api';
 
-const assetId = "00000000-0000000-0000000-0000000"; // <<-- Use asset Runtime to get it
-
-const { data, loading, error } = useGetDemoAssetQuery({
+const { data, loading, error } = useGetFirstAssetQuery({
   variables: {
-    assetId: assetId!,
+    // Any variables your query requires
   },
-  skip: !assetId, // Allows you to skip if assetId is not defined yet
 });
 ```
 
