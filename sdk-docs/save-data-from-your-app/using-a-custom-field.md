@@ -16,7 +16,7 @@ npm install @trackunit/iris-app-runtime-core
 
 
 
-2. Use the `CustomFieldRuntime` command to retrieve custom fields definitions and values saved to the specified Asset ID. If there are no saved values of the Asset ID, only the definition will be retrieved.
+2. Use the `CustomFieldRuntime` command to retrieve custom fields definitions and values saved to the specified `Asset ID`. If there are no saved values of the Asset ID, only the definition will be retrieved.
 
 ```ts
 import { CustomFieldRuntime, CustomFieldType } from '@trackunit/iris-app-runtime-core';
@@ -30,7 +30,7 @@ const myCustomFieldsPromise = CustomFieldRuntime.getCustomFieldsFor({
 
 
 
-4. Save the custom field value by entering a definition key, entity ID, and a new value.
+3. Save the custom field value by entering a definition `key`, `entity ID`, and a new `value`.
 
 ```ts
 // Save a custom field value
@@ -55,7 +55,7 @@ customFieldRuntime.setCustomFieldsFor(
 
 ## React UI (User Interface) Components
 
-Trackunit provides a React UI (User Interface) Component that renders a custom field input box according to a custom field definition.
+Trackunit provides a React UI Component that renders a custom field input box according to a custom field definition.
 
 ```
 npm install @trackunit/custom-field-components
