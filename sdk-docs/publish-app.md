@@ -9,3 +9,8 @@ category: 61fcd8e1a448f5004215317c
 
 When you are done developing your app it is time to take the app to the Marketplace to expose it to users.
 
+![](../Publish%20your%20app%20here.png)
+
+> 📘 Nice to know
+> 
+> After publishing an Iris App SDK, Trackunit must first approve the app before it will be visible in the marketplace.

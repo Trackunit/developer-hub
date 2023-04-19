@@ -10,9 +10,7 @@ parentDocSlug: publish-app
 
 Publishing an Iris App SDK will allow you to offer the app to customers to download and use. 
 
-> 📘 Nice to know
-> 
-> After publishing an Iris App SDK, Trackunit must first approve the app before it will be visible in the marketplace.
+
 
 This guide assumes you've completed the [getting started](./getting-started) guide.
 

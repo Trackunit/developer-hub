@@ -10,7 +10,7 @@ parentDocSlug: getting-started
 
 An Iris App is a collection of a number of extensions. 
 
-![](https://files.readme.io/a4ab2cf-image.png)
+![](../../iris%20app.png)
 
 The Iris App SDK provides these extension points in the manager. 
 
