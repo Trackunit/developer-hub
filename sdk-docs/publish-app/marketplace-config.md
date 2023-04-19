@@ -12,7 +12,7 @@ The marketplace will be the gateway for new services to the industry provided by
 
 To control the behavior of your app inside the marketplace you can specify a so called activation mode inside the Iris App manifest using the `activationMode` attribute.
 
-There are four different activation modes:
+There are five different activation modes:
 
 ![](https://files.readme.io/e11630c-image.png)
 
