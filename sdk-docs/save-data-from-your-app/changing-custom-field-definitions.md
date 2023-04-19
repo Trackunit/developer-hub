@@ -43,4 +43,4 @@ Each field type has special rules:
 	    
 	-   The existing value will be saved for retrieval in the API.
 
-	- Regex patterns cannot be changed. 
+	- Regex patterns can be changed, but be warned that existing data can become uncompliant with the new pattern.
