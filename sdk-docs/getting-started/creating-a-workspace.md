@@ -13,7 +13,7 @@ To setup an empty NX workspace follow the steps below, if you do not already kno
 ### 1. Run the command below to create an nx workspace for all your Iris Apps:
 
 ```
-npx create-nx-workspace@15.3.0 --preset=empty
+npx create-nx-workspace@15.9.2 --preset=empty
 ```
 
 ### 2. It should guide you to enter:
