@@ -4,7 +4,7 @@ category: 624ebf4c9f55f70565968067
 ---
 Our Service Management API provides a list of APIs enabling service providers and machine owners in maintaining the service cycle of assets.
 
-![](https://cdn.statically.io/gh/Trackunit/developer-hub/tree/SM-1631/api-docs/service-management-intro-wheel-of-service.jpg "Wheel of service.jpg")
+![](https://cdn.statically.io/gh/Trackunit/developer-hub/master/api-docs/service-management-intro-wheel-of-service.jpg "Wheel of service.jpg")
 
 The document is intended for developers, who wants to integrate systems, write client libraries or other interactions on an API-level.
 
@@ -54,7 +54,7 @@ Constraints
 "images": [
 {
 "image": [
-"https://cdn.statically.io/gh/Trackunit/developer-hub/tree/SM-1631/api-docs/service-management-intro-service-mgmt-domain.png",
+"https://cdn.statically.io/gh/Trackunit/developer-hub/master/api-docs/service-management-intro-service-mgmt-domain.png",
 "service mgmt domain.png",
 1424
 ],
@@ -73,7 +73,7 @@ Try it out using the following basic steps
 
 Contact us to acquire a license for the Service Management capability. Your service network will be created during enablement. You can decide which of your accounts should be part of your network. The service network owner must be hierarchically above your service providing accounts as shown in the figure below. After enablement all service providers will have access to the Service Management app within Manager.
 
-![](https://cdn.statically.io/gh/Trackunit/developer-hub/tree/SM-1631/service-management-intro-service-provider-network-illustration.jpg "Service Provider Network Illustration.jpg")
+![](https://cdn.statically.io/gh/Trackunit/developer-hub/master/service-management-intro-service-provider-network-illustration.jpg "Service Provider Network Illustration.jpg")
 
 ## 2. Add a service plan
 
