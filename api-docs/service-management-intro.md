@@ -71,7 +71,7 @@ Try it out using the following basic steps
 
 ## 1. Enable Service Management
 
-Contact us to acquire a license for the Service Management capability. Your service network will be created during enablement. You can decide which of your accounts should be part of your network. The service network owner must be hierarchically above your service providing accounts as shown in the figure below. After enablement all service providers will have access to the Service Management app within Manager.
+Contact us to acquire a license for the Service Management capability. After acquiring the capability, start off by creating a Service Network. You can decide which of your accounts should be part of your network. The service network owner must be hierarchically above your service providing accounts as shown in the figure below. After enablement all service providers will have access to the Service Management app within Manager.
 
 ![](https://cdn.statically.io/gh/Trackunit/developer-hub/master/service-management-intro-service-provider-network-illustration.jpg "Service Provider Network Illustration.jpg")
 
