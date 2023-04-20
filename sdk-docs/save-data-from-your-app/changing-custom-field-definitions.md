@@ -13,7 +13,7 @@ When changing custom field definitions, you need to follow the following general
 
 ### General Rules
 -   You cannot change a Custom Field Definition `type` after creation (e.g., changing a string field to a number field).
--   The Definition `Key` must be unique.
+-   The Definition `Key` must be unique (within the app).
 -   The `Default Value` must be valid. <!--Elaboration needed-->
 
 ### Type Rules
