@@ -26,7 +26,7 @@ The most important datatypes are `assets` and `sites` as most other datatypes ar
 >
 > Some fields are in a preview state and may change without notice.<br>
 > To indicate you accept these terms pass the HTTP header `TU-PREVIEW: <codeword>` with your query requests.<br>
-> The codeword differs for each preview field and you can find it by ..
+> The codeword differs for each preview field and you can find it by looking in the GQL schema above.
 
 ### Assets
 An Asset represents the machines and equipment that have our sensors attached to them.
