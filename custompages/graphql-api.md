@@ -64,23 +64,23 @@ An Asset represents the machines and equipment that have our sensors attached to
 ### Sites
 | Field              | Type                                      | Description                                                                                               | Is Preview? |
 | ------------------ | ----------------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------- |
-| area               | Float                                     | Area in square meters                                                                                     |             |
-| assets             | Asset                                   | Get all assets for this site that are currently on site                                                   |             |
-| center             | Coordinates!                              | The center of the polygon for the site                                                                    |             |
-| city               | String                                    | The city that this site is currently located in                                                           |             |
-| contactInformation | SiteContact                               | Contact information for the person responsible for this site                                              |             |
-| country            | String                                    | The country that this site is currently located in                                                        |             |
-| customFields       | CustomFieldValueAndDefinition           | The custom fields for the site. ⚠️ This is a preview feature. This means it may change without notice. To indicate you accept these terms pass the HTTP header 'TU-PREVIEW: JUNGLE-DIGGER' with your query requests. ⚙️ Complexity cost: 1 | Yes         |
-| description        | String                                    | The site's description                                                                                    |             |
-| endDate            | DateTime                                  | The site's end date                                                                                       |             |
-| id                 | ID!                                       | Globally unique ID for Site                                                                               |             |
-| name               | String!                                   | Name of the site                                                                                          |             |
-| polygon            | Coordinates!!                           | The polygon for the site. List contains all the geo coordinates defining it                               |             |
-| siteId             | ID!                                       | Site Entity ID                                                                                            |             |
-| startDate          | DateTime!                                 | The site's start date                                                                                     |             |
-| status             | SiteStatus                                | The site's status                                                                                         |             |
-| streetAddress      | String                                    | The street address that this site is currently located in                                                 |             |
-| timeZoneId         | String                                    | The time zone that this site is currently located in. TZ format (ex: Europe/Copenhagen)                  |             |
-| type               | SiteType!                                 | The site's type                                                                                           |             |
-| users              | SiteUser                                | The users for a site                                                                                      |             |
-| zipCode            | String                                    | The zip code that this site is currently located in                                                       |             |
+| area               | Float                                     | Area in square meters                                                                                     | No          |
+| assets             | Asset                                     | Get all assets for this site that are currently on site                                                   | No          |
+| center             | Coordinates!                              | The center of the polygon for the site                                                                    | No          |
+| city               | String                                    | The city that this site is currently located in                                                           | No          |
+| contactInformation | SiteContact                               | Contact information for the person responsible for this site                                              | No          |
+| country            | String                                    | The country that this site is currently located in                                                        | No          |
+| customFields       | CustomFieldValueAndDefinition             | The [custom fields](https://developers.trackunit.com/docs/save-data-from-your-app) for the site.          | Yes          |
+| description        | String                                    | The site's description                                                                                    | No          |
+| endDate            | DateTime                                  | The site's end date                                                                                       | No          |
+| id                 | ID!                                       | Globally unique ID for Site                                                                               | No          |
+| name               | String!                                   | Name of the site                                                                                          | No          |
+| polygon            | Coordinates!!                             | The polygon for the site. List contains all the geo coordinates defining it                               | No          |
+| siteId             | ID!                                       | Site Entity ID                                                                                            | No          |
+| startDate          | DateTime!                                 | The site's start date                                                                                     | No          |
+| status             | SiteStatus                                | The site's status                                                                                         | No          |
+| streetAddress      | String                                    | The street address that this site is currently located in                                                 | No          |
+| timeZoneId         | String                                    | The time zone that this site is currently located in. TZ format (ex: Europe/Copenhagen)                   | No          |
+| type               | SiteType!                                 | The site's type                                                                                           | No          |
+| users              | SiteUser                                  | The users for a site                                                                                        | No          |
+| zipCode            | String                                    | The zip code that this site is currently located in                                                       | No          |
