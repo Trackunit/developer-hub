@@ -73,7 +73,7 @@ Try it out using the following basic steps
 
 Contact us to acquire a license for the Service Management capability. After acquiring the capability, start off by creating a Service Network. You can decide which of your accounts should be part of your network. The service network owner must be hierarchically above your service providing accounts as shown in the figure below. After enablement all service providers will have access to the Service Management app within Manager.
 
-![](https://cdn.statically.io/gh/Trackunit/developer-hub/master/service-management-intro-service-provider-network-illustration.jpg "Service Provider Network Illustration.jpg")
+![Service Provider Network Illustration](https://cdn.statically.io/gh/Trackunit/developer-hub/master/api-docs/service-management-intro-service-provider-network-illustration.jpg)
 
 ## 2. Add a service plan
 
