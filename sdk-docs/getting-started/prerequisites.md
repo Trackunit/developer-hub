@@ -19,5 +19,4 @@ The Iris App SDK needs certain tools to be on your machine:
 
 To manage versions we recommend using something like [Volta](http://volta.sh) or similar to install node and nx.
 
-
 We don't have any requirements on IDE but highly recommend [Visual Studio Code](https://code.visualstudio.com/).
