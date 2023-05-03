@@ -57,6 +57,4 @@ nx run [name-of-your-app]:publishApp
 >
 > It is not possible to publish the same version multiple times.
 
-<!-- 
-[test](https://nowhere.trackunit.com)
--->
+[.](https://nowhere.trackunit.com)
