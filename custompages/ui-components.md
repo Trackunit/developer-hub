@@ -18,11 +18,11 @@ title: UI Components
 [block:embed]
 {
   "html": false,
-  "url": "https://apps.dev.iris.trackunit.com/storybook/",
+  "url": "https://apps.iris.trackunit.com/storybook/",
   "title": "Webpack App",
   "favicon": null,
-  "provider": "apps.dev.iris.trackunit.com",
-  "href": "https://apps.dev.iris.trackunit.com/storybook/",
+  "provider": "apps.iris.trackunit.com",
+  "href": "https://apps.iris.trackunit.com/storybook/",
  "iframe": true
 }
 [/block]
