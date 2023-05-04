@@ -82,4 +82,4 @@ marketplace: {
 },
 ```
 
-We recommend studying the iris-app-manifest.ts file before building your app, as it will give you an intuition of the constraints that your app can be built under.
+We recommend studying the iris-app-manifest.ts file before building your app, as it will give you an understanding of the constraints within which your app can be built.
