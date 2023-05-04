@@ -12,11 +12,11 @@ The marketplace will be the gateway for new services to the industry provided by
 
 To control the behavior of your app inside the marketplace you can specify a so called activation mode inside the Iris App manifest using the `activationMode` attribute.
 
-There are four different activation modes:
+There are five different activation modes:
 
 ![](https://files.readme.io/e11630c-image.png)
 
-Most generally available apps should use the controlled installation. Trackunit sales ops will make sure the customer has the right agreement before making the app available to the customer. This support setting up rules for individually sold apps. Requirements around pricing schemes etc. should be agreed with Trackunit before submitting the app for review.
+Most generally available apps should use the controlled installation. Trackunit sales ops will make sure the customer has the right agreement before making the app available to the customer. This support setting up rules for individually sold apps. Requirements such as pricing schemes should be agreed on with Trackunit before submitting the app for review.
 
 Customer specific apps developed for one or a few customers should include a list of customer account IDs in the `validForAccountIds` attribute and use the default enabled activation mode.  
 These apps will automatically be visible to the customers in the list.
@@ -81,3 +81,5 @@ marketplace: {
     tags: [],
 },
 ```
+
+We recommend studying the iris-app-manifest.ts file before building your app, as it will give you an understanding of the constraints within which your app can be built.

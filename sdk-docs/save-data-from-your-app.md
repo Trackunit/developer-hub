@@ -11,7 +11,7 @@ To help Iris app developers easily store extra data we allow an app to define cu
 
 
 ### The benefits of using custom fields
-Before diving into how to use custom fields, it is helpful to understand what the benefits are and in which  scenarios to consider using the feature. Here are a few examples:
+Before diving into how to use custom fields, it is helpful to understand what the benefits are and in which scenarios to consider using the feature. Here are a few examples:
 
 
  1. **Fleet Management and Monitoring**: You might want to use custom fields to store additional information about vehicles in your fleet, such as fuel consumption, tire pressure, or custom vehicle attributes. This data can then be used to optimize routes, monitor vehicle health, and schedule preventative maintenance, ultimately reducing operating costs and improving fleet efficiency.

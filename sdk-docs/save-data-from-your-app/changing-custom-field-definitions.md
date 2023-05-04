@@ -13,7 +13,7 @@ When changing custom field definitions, you need to follow the following general
 
 ### General Rules
 -   You cannot change a Custom Field Definition `type` after creation (e.g., changing a string field to a number field).
--   The Definition `Key` must be unique.
+-   The Definition `Key` must be unique (within the app).
 -   The `Default Value` must be valid. <!--Elaboration needed-->
 
 ### Type Rules
@@ -43,4 +43,4 @@ Each field type has special rules:
 	    
 	-   The existing value will be saved for retrieval in the API.
 
-	- Regex patterns cannot be changed. 
+	- Regex patterns can be changed, but be warned that existing data can become uncompliant with the new pattern.

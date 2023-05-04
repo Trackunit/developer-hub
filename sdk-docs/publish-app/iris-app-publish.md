@@ -10,19 +10,15 @@ parentDocSlug: publish-app
 
 Publishing an Iris App SDK will allow you to offer the app to customers to download and use. 
 
-> 📘 Nice to know
-> 
-> After publishing an Iris App SDK, Trackunit must first approve the app before it will be visible in the marketplace.
+
 
 This guide assumes you've completed the [getting started](./getting-started) guide.
 
-1. Open a Terminal or Command window and enter the build command (`nx run [name-of-your-app]:build`) to build your Iris App SDK. Use your app name instead of [name-of-your-app] within the command line.
+1. Open a Terminal or Command window and enter the build command (`nx run [name-of-your-app]:build`) to build your Iris App SDK.
 
 ```
 nx run [name-of-your-app]:build
 ```
-
-
 
 2. Verify the Name and Version number in the package.json in the `dist/apps/[name-of-your-app]`. When the Iris App SDK is published, the name and version fields combine to create a unique identifier for the app.
 
@@ -33,7 +29,7 @@ nx run [name-of-your-app]:build
 
 
 
-3. Enter the Publish command (`nx run [name-of-your-app]:publish`) to publish your app. Use your app name instead of [name-of-your-app] within the command line.
+3. Enter the Publish command (`nx run [name-of-your-app]:publish`) to publish your app.
 
 ```
 nx run [name-of-your-app]:publishApp
@@ -53,6 +49,6 @@ nx run [name-of-your-app]:publishApp
 
 > 📘 Nice to know
 > 
-> Once you've published your app it is a good idea to bump the version number inside `apps/[name-of-your-app]/package.json`.
+> Remember to bump the version number inside `apps/[name-of-your-app]/package.json` before you build and publish!
 >
 > It is not possible to publish the same version multiple times.

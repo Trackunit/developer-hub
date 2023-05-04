@@ -33,6 +33,8 @@ nx g @trackunit/iris-app:extend [name-of-your-extension]
   - **Report** Allows you to add a new report to the Reports screen in Trackunit Manager.
   - **Admin** Allows you to add a new tab in the adminstration page in Trackunit Manager.
 
+    ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/which%20iris%20app%20extension%20should%20be%20generated_.png)
+
 ```
 ✔ What name would you like to use for this app-extension? · [name-of-your-extension]
 ✔ What subdir would you like to use for this app-extension? · [subdir-of-your-extension]
