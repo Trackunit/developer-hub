@@ -76,8 +76,7 @@ import {
 } from '@trackunit/react-components';
 import { CustomField } from '@trackunit/custom-field-components';
 import { useForm } from 'react-hook-form';
-import { useAssetRuntime } from '@trackunit/react-core-hooks';
-import { useCustomFieldRuntimeForEntity } from './useCustomFieldRuntimeForEntity';
+import { useAssetRuntime, useCustomFieldRuntimeForEntity } from '@trackunit/react-core-hooks';
 
 export const App: React.FC = () => {
   const { assetInfo } = useAssetRuntime();
