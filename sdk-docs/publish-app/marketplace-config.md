@@ -28,7 +28,7 @@ The image below demonstrates the installation flow for apps using each of the in
 
 ![](https://files.readme.io/e11630c-image.png)
 
-Most generally available apps should use the policies that require explicit approval. Trackunit sales ops will make sure the customer has the right agreement before making the app available to the customer. This supports setting up rules for individually sold apps. Requirements such as pricing schemes should be agreed on with Trackunit before submitting the app for review.
+Most generally available apps should use a policy that requires explicit approval. Trackunit sales ops will make sure the customer has the right agreement before making the app available to the customer. This supports setting up rules for individually sold apps. Requirements such as pricing schemes should be agreed on with Trackunit before submitting the app for review.
 
 Customer specific apps developed for one or few customers should include a list of customer account IDs in the `validForAccountIds` attribute and use the `PREINSTALLED` policy.  
 These apps will automatically be visible to the customers in the list.
