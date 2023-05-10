@@ -8,22 +8,34 @@ The app is presented in the Iris Marketplace – from where apps can be deployed
 
 The marketplace will be the gateway for new services to the industry provided by customers themselves, partners and 3rd party software developers – as well as Trackunit.
 
-# Activation modes
+# Installation policies
 
-To control the behavior of your app inside the marketplace you can specify a so called activation mode inside the Iris App manifest using the `activationMode` attribute.
+To control the behavior of your app inside the marketplace you have to specify an installation policy inside the Iris App manifest using the `installationPolicy` attribute.
 
-There are five different activation modes:
+There are five distinct installation policies, with their behaviour described in the table below:
+
+| InstallationPolicy             | Requires approval from CSM | Initially installed (once approved if applicable) | Uninstallable | Description <br/>                                                              |
+|--------------------------------|----------------------------|---------------------------------------------------|---------------|--------------------------------------------------------------------------------|
+| PERMANENT                      | no                         | yes                                               | no            | Apps developed by Trackunit, needed by all customers                           |
+| PREINSTALLED                   | no                         | yes                                               | yes           | Apps developed by Trackunit or Partners that are part of the base subscription |
+| ON_DEMAND                      | no                         | no                                                | yes           | Apps developed by Trackunit or Partners that are free to install               |
+| PREINSTALLED_REQUIRES_APPROVAL | yes                        | yes                                               | yes           | Apps developed by Trackunit that require extra pricing agreement               |
+| ON_DEMAND_REQUIRES_APPROVAL    | yes                        | no                                                | yes           | Apps developed by Partners that require extra pricing agreement                |
+
+[//]: # (new image should go here)
+
+The image below demonstrates the installation flow for apps using each of the installation policies:
 
 ![](https://files.readme.io/e11630c-image.png)
 
-Most generally available apps should use the controlled installation. Trackunit sales ops will make sure the customer has the right agreement before making the app available to the customer. This support setting up rules for individually sold apps. Requirements such as pricing schemes should be agreed on with Trackunit before submitting the app for review.
+Most generally available apps should use the policies that require explicit approval. Trackunit sales ops will make sure the customer has the right agreement before making the app available to the customer. This supports setting up rules for individually sold apps. Requirements such as pricing schemes should be agreed on with Trackunit before submitting the app for review.
 
-Customer specific apps developed for one or a few customers should include a list of customer account IDs in the `validForAccountIds` attribute and use the default enabled activation mode.  
+Customer specific apps developed for one or few customers should include a list of customer account IDs in the `validForAccountIds` attribute and use the `PREINSTALLED` policy.  
 These apps will automatically be visible to the customers in the list.
 
-Subscription package apps that are tied to a specific subscription package should set the `allowForPackage` attribute and can then choose to use either the always visible or default enabled activation mode. Everyone with this subscription package should get the app in the marketplace.
+Subscription package apps that are tied to a specific subscription package should set the `allowForPackage` attribute and can then choose to use either the `ON_DEMAND` or `PREINSTALLED` policies. Everyone with this subscription package should get the app in the marketplace.
 
-The force enabled activation mode should only be used with prior agreement with Trackunit. Apps with this activation mode will be enabled for all customers and customers cannot disable the app. The app will not be visible in the marketplace. The only way to limit which customers get the app is using the `validForAccountIds` and/or `allowForPackage` attributes. So there might be a forced app that's limited to a subscription package or a specific customer.
+The `PERMANENT` installation policy should only be used with prior agreement with Trackunit, since they will be enabled for all customers and customers cannot disable the app. The app will not be visible in the marketplace. The only way to limit which customers get the app is using the `validForAccountIds` and/or `allowForPackage` attributes.
 
 # Marketplace content
 
@@ -78,8 +90,8 @@ marketplace: {
       { type: "VIDEO", url: "https://www.youtube.com/watch?v=5rsJeFEr4IE" },
     ],
     allowForPackage: ["VIEW", "COLLECT", "INSIGHT"],
-    tags: [],
-},
+    tags: []
+}
 ```
 
 We recommend studying the iris-app-manifest.ts file before building your app, as it will give you an understanding of the constraints within which your app can be built.
