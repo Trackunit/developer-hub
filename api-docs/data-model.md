@@ -517,3 +517,53 @@ Unit of measurement: _volt-ampere reactive_.
 
  The temperature of the payload, e.g. in a cargo compartment.  
 Unit of measurement: _degrees Celcius_.
+
+### AcTotalRelativeActivePowerLoadPercentage
+
+ Total active power (W) consumption (of the connected load) as a percentage of the rated active power output capability.
+Unit of measurement: _percent_,
+
+### AcTotalRelativeApparentPowerLoadPercentage
+
+ Total apparent power (VA) consumption (of the connected load) as a percentage of the rated apparent output capability.
+Unit of measurement: _percent_.
+
+### AcTotalRelativeLoadPercentage
+
+ Total power load (taking both Actual (W) and Apparent (VA) consumption into consideration) as a percentage of the rated output capability.
+Unit of measurement: _percent_.
+
+### AcAveragePhaseToNeutralRmsVoltage
+
+ Average of the 3 phase-to-neutral voltages. This is an average of actual values and not an average over time.
+Unit of measurement: _volt_.
+
+### AcAveragePhaseToPhaseRmsVoltage
+
+ Average of the 3 phase-to-phase voltages. This is an average of actual values and not an average over time.
+Unit of measurement: _volt_.
+
+### AcAverageRmsCurrent
+
+ Average of the 3 individual phase (L1, L2, and L3) currents. This is an average of actual values and not an average over time.
+Unit of measurement: _ampere_.
+
+### Accelerometer_X_Axis
+
+ Acceleration (or g-force) measured on the x-axis of an accelerometer (typically placed inside a telematics device).
+Unit of measurement: _g-force_.
+
+### Accelerometer_Y_Axis
+
+ Acceleration (or g-force) measured on the y-axis of an accelerometer (typically placed inside a telematics device).
+Unit of measurement: _g-force_.
+
+### Accelerometer_Z_Axis
+
+ Acceleration (or g-force) measured on the z-axis of an accelerometer (typically placed inside a telematics device).
+Unit of measurement: _g-force_.
+
+### Impact
+
+ Impact (g-force) - could be calculated as the vector length of the three axis accelerometer values (always a positive number).
+Unit of measurement: _g-force_.
