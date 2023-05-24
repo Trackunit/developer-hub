@@ -520,50 +520,159 @@ Unit of measurement: _degrees Celcius_.
 
 ### AcTotalRelativeActivePowerLoadPercentage
 
- Total active power (W) consumption (of the connected load) as a percentage of the rated active power output capability.
+Total active power (W) consumption (of the connected load) as a percentage of the rated active power output capability.  
 Unit of measurement: _percent_,
 
 ### AcTotalRelativeApparentPowerLoadPercentage
 
- Total apparent power (VA) consumption (of the connected load) as a percentage of the rated apparent output capability.
+Total apparent power (VA) consumption (of the connected load) as a percentage of the rated apparent output capability.  
+E.g. a generator is rated to a max continuous power delivery of 120kVA and the actual load is 45kVA then this percentage is 37.5.  
 Unit of measurement: _percent_.
 
 ### AcTotalRelativeLoadPercentage
 
- Total power load (taking both Actual (W) and Apparent (VA) consumption into consideration) as a percentage of the rated output capability.
+Total power load (taking both Actual (W) and Apparent (VA) consumption into consideration) as a percentage of the rated output capability.  
+Maximum of `AcTotalRelativeApparentPowerLoadPercentage` and `AcTotalRelativeActivePowerLoadPercentage`, which might not be available when this parameter is available. E.g. a generator is rated to a max continuous power delivery of 100kW/120kVA and the actual load is 40kW/45VA then this percentage is 40.  
 Unit of measurement: _percent_.
 
 ### AcAveragePhaseToNeutralRmsVoltage
 
- Average of the 3 phase-to-neutral voltages. This is an average of actual values and not an average over time.
+Average of the 3 phase-to-neutral voltages. This is an average of actual values and not an average over time.  
 Unit of measurement: _volt_.
 
 ### AcAveragePhaseToPhaseRmsVoltage
 
- Average of the 3 phase-to-phase voltages. This is an average of actual values and not an average over time.
+Average of the 3 phase-to-phase voltages. This is an average of actual values and not an average over time.  
 Unit of measurement: _volt_.
 
 ### AcAverageRmsCurrent
 
- Average of the 3 individual phase (L1, L2, and L3) currents. This is an average of actual values and not an average over time.
+Average of the 3 individual phase (L1, L2, and L3) currents. This is an average of actual values and not an average over time.  
 Unit of measurement: _ampere_.
 
 ### Accelerometer_X_Axis
 
- Acceleration (or g-force) measured on the x-axis of an accelerometer (typically placed inside a telematics device).
+Acceleration (or g-force) measured on the x-axis of an accelerometer (typically placed inside a telematics device).  
+Notice: The direction/axis relates to the accelerometer and not the machine, that is, the x-axis of the machine could be something different.  
 Unit of measurement: _g-force_.
 
 ### Accelerometer_Y_Axis
 
- Acceleration (or g-force) measured on the y-axis of an accelerometer (typically placed inside a telematics device).
+Acceleration (or g-force) measured on the y-axis of an accelerometer (typically placed inside a telematics device).  
+Notice: The direction/axis relates to the accelerometer and not the machine, that is, the y-axis of the machine could be something different.  
 Unit of measurement: _g-force_.
 
 ### Accelerometer_Z_Axis
 
- Acceleration (or g-force) measured on the z-axis of an accelerometer (typically placed inside a telematics device).
+Acceleration (or g-force) measured on the z-axis of an accelerometer (typically placed inside a telematics device).  
+Notice: The direction/axis relates to the accelerometer and not the machine, that is, the z-axis of the machine could be something different.  
 Unit of measurement: _g-force_.
 
 ### Impact
 
- Impact (g-force) - could be calculated as the vector length of the three axis accelerometer values (always a positive number).
+Impact (g-force) - could be calculated as the vector length of the three axis accelerometer values (always a positive number), but might come from other sources.  
 Unit of measurement: _g-force_.
+
+### AftertreatmentDieselParticulateFilterTimeToNextActiveRegeneration
+
+Time until the next active regeneration of the machine's diesel particulate filter.  
+Unit of measurement: _seconds_,
+
+### AftertreatmentSCRTimeSinceLastCleaningEvent
+
+The time since the last cleaning of the machine's Selective Catalytic Reduction unit (SCR).  
+Unit of measurement: _seconds_.
+
+### EngineFuelFilterDifferentialPressure
+
+Pressure drop across the fuel filter, which affects the pressure with which fuel is being delivered to the engine.  
+Unit of measurement: _kilopascal_.
+
+### EngineOilFilterDifferentialPressure
+
+Pressure drop across the oil filter.  
+Unit of measurement: _kilopascal_.
+
+### AcAverageFrequency
+
+Average of the individual phase frequencies. This is an average of actual values and not an average over time.  
+Unit of measurement: _hertz_.
+
+### StabilizersDeployed
+
+Whether stabilizing equipment of the machine is deployed or not, examples could be all outrigger legs is lowered to the point where they stabilize/levels the machine, or a pothole protection system is in place.  
+Unit of measurement: _Boolean_.
+
+### PlatformStowed
+
+Whether the platform or implement of the machine is stowed, for example, an articulated boom lift has both booms lowered and detracted.  
+This is often seen as a safety feature, since some machines are only allowed to drive or transported when the platform is in a stowed position. Other machines has a "high speed" drive which is only enabled when the platform is stowed.  
+Unit of measurement: _Boolean_.
+
+### RescueModeActive
+
+Whether the machine is operated in rescue mode or not.  
+For instance, a boom lift is turned off but (in order to rescue an operator positioned on the platform) the platform is lowered using the ground control emergency rescue mode.  
+Unit of measurement: _Boolean_.
+
+### BatteryStateOfHealthPercent
+
+The relative state of health (SOH) of the battery.   
+Actual maximum capacity of the battery (when fully charged) as a percentage of the initial (nominal) capacity.  
+Unit of measurement: _percent_.
+
+### BatteryRemainingRunTime
+
+Estimated (actual) remaining run time on battery with respect to the actual charge level and load.  
+Also known as "residual time of battery usage"  
+Unit of measurement: _seconds_.
+
+### BatteryChargeCyclesCount
+
+The total number of charge cycles the battery has undergone.  
+Unit of measurement: _count_.
+
+### BatteryCumulativeDischargedEnergy
+
+Total amount of energy (as in kilo Watt hours) delivered by the battery.  
+Unit of measurement: _kWh_
+
+### BatteryRemainingChargeTime
+
+Estimate of how long it will take before the battery is fully charged.  
+Unit of measurement: _seconds_.
+
+### BatteryChargerInputVoltage
+
+The input voltage of the battery charger.  
+Unit of measurement: _volt_.
+
+### BatteryChargerInputCurrent
+
+The input current of the battery charger.  
+Unit of measurement: _ampere_.
+
+### BatteryChargerOutputCurrentLimit
+
+Maximum allowed battery charging current, based on actual operating condition.  
+Unit of measurement: _ampere_.
+
+### BatteryChargerInputCurrentLimit
+
+Maximum allowed battery charger input current draw, based on actual operating condition.  
+Unit of measurement: _ampere_.
+
+### CumulativeCO2Emissions
+
+The cumulative CO2 emissions (by weight in kg) generated by the asset, either directly emissions by burning fuel or indirectly by consuming electricity (causing emission when generated).  
+Unit of measurement: _kilogram_.
+
+### AfterTreatmentDieselParticulateFilterActiveRegenerationState
+
+Indicates the status of diesel particulate filter(s) active regeneration, is a system status and not individual bank status.  
+Unit of measurement: _not applicable_.
+
+### AfterTreatmentDieselParticulateFilterState
+
+Indicates the state of the diesel particulate filter(s) regeneration need and urgency, is a system status and not individual bank status.  
+Unit of measurement: _not applicable_.
