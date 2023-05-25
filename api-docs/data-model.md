@@ -26,7 +26,7 @@ Unit of measurement: _revolutions per minute._
 ### EngineOilPressure
 
  The pressure of the oil inside the engine.  
-Unit of measurement: _kilopascal._
+Unit of measurement: _kiloPascal._
 
 ### EngineOilTemperature
 
@@ -71,7 +71,7 @@ Unit of measurement: _percent._
 ### BatteryPotential
 
  The electric potential available in the machine's battery, typically the starter battery.  
-Unit of measurement: _volt._
+Unit of measurement: _Volt._
 
 ### SeatBeltSwitch
 
@@ -156,7 +156,7 @@ Unit of measurement: _percent._
 ### GeneratorTotalKwHoursExport
 
  Cumulative exported energy of a generator.  
-Unit of measurement: _kilowatt-hours._
+Unit of measurement: _kiloWatt-hours._
 
 ### HydraulicOilFilterRestrictionSwitch
 
@@ -166,7 +166,7 @@ Unit of measurement: _Boolean._
 ### TotalVehicleDistance
 
  The total distance travelled by the machine.  
-Unit of measurement: _Kilometre._
+Unit of measurement: _kilometre._
 
 ### TotalPowerTakeOffHours
 
@@ -181,12 +181,12 @@ Unit of measurement: _metres._
 ### EngineFuelDeliveryPressure
 
  The pressure with which fuel is being delivered to the engine.  
-Unit of measurement: _kilopascal._
+Unit of measurement: _kiloPascal._
 
 ### EngineCoolantPressure
 
  The pressure of coolant fluid inside the engine.  
-Unit of measurement: _kilopascal._
+Unit of measurement: _kiloPascal._
 
 ### WheelBasedVehicleSpeed
 
@@ -196,7 +196,7 @@ Unit of measurement: _kilometres per hour._
 ### BarometricPressure
 
  The pressure of the ambient atmosphere.  
-Unit of measurement: _kilopascal._
+Unit of measurement: _kiloPascal._
 
 ### AmbientAirTemperature
 
@@ -221,11 +221,11 @@ Unit of measurement: _degrees Celsius._
 ### EngineAirFilterDifferentialPressure
 
  The difference in air pressure as measured across the engine air filter.  
-Unit of measurement: _kilopascal._
+Unit of measurement: _kiloPascal._
 
 ### CumulativeIdleHours
 
- The cumulative hours hours the machine has been idle.  
+ The cumulative hours the machine has been idle.  
 Unit of measurement: _hours._
 
 ### BatteryChargerState
@@ -241,12 +241,12 @@ Unit of measurement: _Boolean._
 ### BatteryChargerOutputvoltage
 
  The output voltage of the battery charger.  
-Unit of measurement: _volt._
+Unit of measurement: _Volt._
 
 ### BatteryChargerOutputCurrent
 
  The output current of the battery charger.  
-Unit of measurement: _ampere._
+Unit of measurement: _Ampere._
 
 ### EngineTripFuel
 
@@ -256,7 +256,7 @@ Unit of measurement: _litres._
 ### AfterTreatmentDieselParticulateFilterDifferentialPressure
 
  The difference in air pressure as measured across the machine's diesel particulate filter.  
-Unit of measurement: _kilopascal._
+Unit of measurement: _kiloPascal._
 
 ### AfterTreatmentDieselParticulateFilterIntakeTemperature
 
@@ -276,12 +276,12 @@ Unit of measurement: _degrees Celsius._
 ### EngineIntakeAirPressure
 
  The pressure of the air as measured at the engine intake.  
-Unit of measurement: _kilopascal._
+Unit of measurement: _kiloPascal._
 
 ### EngineIntakeManifoldPressure
 
  The pressure of the air as measured at the engine intake manifold.  
-Unit of measurement: _kilopascal._
+Unit of measurement: _kiloPascal._
 
 ### EngineIntercoolerTemperature
 
@@ -306,7 +306,7 @@ Unit of measurement: _Boolean._
 ### HydraulicPressure
 
  The pressure delivered by the hydraulic system.  
-Unit of measurement: _kilopascal._
+Unit of measurement: _kiloPascal._
 
 ### TransmissionOilTemperature
 
@@ -365,7 +365,7 @@ Unit of measurement: _hours._
 
 ### CumulativeMovingHours
 
- Cumulative number of hours where the Equipment has been moving/driving, e.g. as registered by the Gps unit.  
+ Cumulative number of hours when the Equipment has been moving/driving, e.g. as registered by the GPS unit.  
 Unit of measurement: _hours._
 
 ### Speed
@@ -411,7 +411,7 @@ Unit of measurement: _percent_.
 ### BatteryCurrent
 
  The amount of charge going into (if positive) or out of (if negative) the battery.  
-Unit of measurement: _ampere_.
+Unit of measurement: _Ampere_.
 
 ### BatteryTemperature
 
@@ -421,87 +421,87 @@ Unit of measurement: _degrees Celcius_.
 ### AcPhaseL1NeturalRMSVoltage
 
  The root mean square (RMS) Voltage measured between phase L1 and neutral.  
-Unit of measurement: _volt_.
+Unit of measurement: _Volt_.
 
 ### AcPhaseL2NeturalRMSVoltage
 
  The root mean square (RMS) Voltage measured between phase L2 and neutral.  
-Unit of measurement: _volt_.
+Unit of measurement: _Volt_.
 
 ### AcPhaseL3NeturalRMSVoltage
 
  The root mean square (RMS) Voltage measured between phase L3 and neutral.  
-Unit of measurement: _volt_.
+Unit of measurement: _Volt_.
 
 ### AcPhaseL1Frequency
 
  The frequency of L1.  
-Unit of measurement: _hertz_.
+Unit of measurement: _Hertz_.
 
 ### AcPhaseL2Frequency
 
  The frequency of L2.  
-Unit of measurement: _hertz_.
+Unit of measurement: _Hertz_.
 
 ### AcPhaseL3Frequency
 
  The frequency of L3.  
-Unit of measurement: _hertz_.
+Unit of measurement: _Hertz_.
 
 ### AcPhaseL1RMSCurrent
 
  The root mean square (RMS) current of L1.  
-Unit of measurement: _ampere_.
+Unit of measurement: _Ampere_.
 
 ### AcPhaseL2RMSCurrent
 
  The root mean square (RMS) current of L2.  
-Unit of measurement: _ampere_.
+Unit of measurement: _Ampere_.
 
 ### AcPhaseL3RMSCurrent
 
  The root mean square (RMS) current of L3.  
-Unit of measurement: _ampere_.
+Unit of measurement: _Ampere_.
 
 ### AcPhaseL1L2RMSVoltage
 
  The root mean square (RMS) Voltage measured between phase L1 and L2.  
-Unit of measurement: _volt_.
+Unit of measurement: _Volt_.
 
 ### AcPhaseL2L3RMSVoltage
 
  The root mean square (RMS) Voltage measured between phase L2 and L3.  
-Unit of measurement: _volt_.
+Unit of measurement: _Volt_.
 
 ### AcPhaseL3L1RMSVoltage
 
  The root mean square (RMS) Voltage measured between phase L3 and L1.  
-Unit of measurement: _volt_.
+Unit of measurement: _Volt_.
 
 ### AcTotalActivePower
 
- The actual total Active Power (W) output on all 3 phases. Active Power (a.k.a. Real Power) is measured (not calculated) and reflects the actual energy consumption per time unit (1W = 1Joule/s), for a purely resistive load it is the same as Volt \* Amp, but for many AC systems it is NOT.  
-Unit of measurement: _watt_.
+ The actual total Active Power output on all 3 phases. Active Power (a.k.a. Real Power) is measured (not calculated) and reflects the actual energy consumption per time unit (1W = 1Joule/s), for a purely resistive load it is the same as Volt * Amp, but for many AC systems it is NOT.  
+Unit of measurement: _Watt_.
 
 ### AcPhaseL1ActivePower
 
- The Active Power (W) output on phase L1. Active Power (a.k.a. Real Power) is measured (not calculated) and reflects the actual energy consumption per time unit (1W = 1Joule/s), for a purely resistive load it is the same as Volt \* Amp, but for many AC systems it is NOT.  
-Unit of measurement: _watt_.
+ The Active Power output on phase L1. Active Power (a.k.a. Real Power) is measured (not calculated) and reflects the actual energy consumption per time unit (1W = 1Joule/s), for a purely resistive load it is the same as Volt * Amp, but for many AC systems it is NOT.  
+Unit of measurement: _Watt_.
 
 ### AcPhaseL2ActivePower
 
- The Active Power (W) output on phase L2. Active Power (a.k.a. Real Power) is measured (not calculated) and reflects the actual energy consumption per time unit (1W = 1Joule/s), for a purely resistive load it is the same as Volt \* Amp, but for many AC systems it is NOT.  
-Unit of measurement: _watt_.
+ The Active Power output on phase L2. Active Power (a.k.a. Real Power) is measured (not calculated) and reflects the actual energy consumption per time unit (1W = 1Joule/s), for a purely resistive load it is the same as Volt * Amp, but for many AC systems it is NOT.  
+Unit of measurement: _Watt_.
 
 ### AcPhaseL3ActivePower
 
- The Active Power (W) output on phase L3. Active Power (a.k.a. Real Power) is measured (not calculated) and reflects the actual energy consumption per time unit (1W = 1Joule/s), for a purely resistive load it is the same as Volt \* Amp, but for many AC systems it is NOT.  
-Unit of measurement: _watt_.
+ The Active Power output on phase L3. Active Power (a.k.a. Real Power) is measured (not calculated) and reflects the actual energy consumption per time unit (1W = 1Joule/s), for a purely resistive load it is the same as Volt * Amp, but for many AC systems it is NOT.  
+Unit of measurement: _Watt_.
 
 ### AcTotalApparentPower
 
- The actual total apparent power (VA) output on all 3 phases. Apparent Power is calculated by multiplying phase-to-neutral-Voltage by Current, and if the load is NOT purely resistive the result will be larger than the actual power (W)  
-Unit of measurement: _volt-ampere_.
+ The actual total apparent power output on all 3 phases. Apparent Power is calculated by multiplying phase-to-neutral-Voltage by Current, and if the load is NOT purely resistive the result will be larger than the actual power (W)  
+Unit of measurement: _Volt-Ampere_.
 
 ### AcTotalPowerFactor
 
@@ -510,8 +510,8 @@ Unit of measurement: _not applicable_.
 
 ### AcTotalReactivePower
 
- The actual total Reactive Power (VAr) output on all 3 phases. Is an imaginary number representing then part of Apparent power which does not do any work, or more precisely VAr = sqrt(sqr(VA) - sqr(W)).  
-Unit of measurement: _volt-ampere reactive_.
+ The actual total Reactive Power output on all 3 phases. Is an imaginary number representing then part of Apparent power which does not do any work, or more precisely VAr = sqrt(sqr(VA) - sqr(W)).  
+Unit of measurement: _Volt-Ampere reactive_.
 
 ### PayloadTemperature
 
@@ -538,17 +538,17 @@ Unit of measurement: _percent_.
 ### AcAveragePhaseToNeutralRmsVoltage
 
 Average of the 3 phase-to-neutral voltages. This is an average of actual values and not an average over time.  
-Unit of measurement: _volt_.
+Unit of measurement: _Volt_.
 
 ### AcAveragePhaseToPhaseRmsVoltage
 
 Average of the 3 phase-to-phase voltages. This is an average of actual values and not an average over time.  
-Unit of measurement: _volt_.
+Unit of measurement: _Volt_.
 
 ### AcAverageRmsCurrent
 
 Average of the 3 individual phase (L1, L2, and L3) currents. This is an average of actual values and not an average over time.  
-Unit of measurement: _ampere_.
+Unit of measurement: _Ampere_.
 
 ### Accelerometer_X_Axis
 
@@ -586,17 +586,17 @@ Unit of measurement: _seconds_.
 ### EngineFuelFilterDifferentialPressure
 
 Pressure drop across the fuel filter, which affects the pressure with which fuel is being delivered to the engine.  
-Unit of measurement: _kilopascal_.
+Unit of measurement: _kiloPascal_.
 
 ### EngineOilFilterDifferentialPressure
 
 Pressure drop across the oil filter.  
-Unit of measurement: _kilopascal_.
+Unit of measurement: _kiloPascal_.
 
 ### AcAverageFrequency
 
 Average of the individual phase frequencies. This is an average of actual values and not an average over time.  
-Unit of measurement: _hertz_.
+Unit of measurement: _Hertz_.
 
 ### StabilizersDeployed
 
@@ -635,7 +635,7 @@ Unit of measurement: _count_.
 ### BatteryCumulativeDischargedEnergy
 
 Total amount of energy delivered by the battery.  
-Unit of measurement: _kilowatt-hours_.
+Unit of measurement: _kiloWatt-hours_.
 
 ### BatteryRemainingChargeTime
 
@@ -645,26 +645,26 @@ Unit of measurement: _seconds_.
 ### BatteryChargerInputVoltage
 
 The input voltage of the battery charger.  
-Unit of measurement: _volt_.
+Unit of measurement: _Volt_.
 
 ### BatteryChargerInputCurrent
 
 The input current of the battery charger.  
-Unit of measurement: _ampere_.
+Unit of measurement: _Ampere_.
 
 ### BatteryChargerOutputCurrentLimit
 
 Maximum allowed battery charging current, based on actual operating condition.  
-Unit of measurement: _ampere_.
+Unit of measurement: _Ampere_.
 
 ### BatteryChargerInputCurrentLimit
 
 Maximum allowed battery charger input current draw, based on actual operating condition.  
-Unit of measurement: _ampere_.
+Unit of measurement: _Ampere_.
 
 ### CumulativeCO2Emissions
 
-The cumulative CO2 emissions (by weight in kg) generated by the asset, either directly emissions by burning fuel or indirectly by consuming electricity (causing emission when generated).  
+The cumulative CO2 emissions generated by the asset, either directly emissions by burning fuel or indirectly by consuming electricity (causing emission when generated).  
 Unit of measurement: _kilogram_.
 
 ### AfterTreatmentDieselParticulateFilterActiveRegenerationState
