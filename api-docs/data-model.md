@@ -634,8 +634,8 @@ Unit of measurement: _count_.
 
 ### BatteryCumulativeDischargedEnergy
 
-Total amount of energy (as in kilo Watt hours) delivered by the battery.  
-Unit of measurement: _kWh_
+Total amount of energy delivered by the battery.  
+Unit of measurement: _kilowatt-hours_.
 
 ### BatteryRemainingChargeTime
 
