@@ -26,7 +26,7 @@ Unit of measurement: _revolutions per minute._
 ### EngineOilPressure
 
  The pressure of the oil inside the engine.  
-Unit of measurement: _kiloPascal._
+Unit of measurement: _kilopascal._
 
 ### EngineOilTemperature
 
@@ -56,7 +56,7 @@ Unit of measurement: _percent._
 ### WaterInFuelIndicator
 
  Whether water is present in the fuel or not.  
-Unit of measurement: _Boolean._
+Unit of measurement: _boolean._
 
 ### HydraulicTemperature
 
@@ -71,12 +71,12 @@ Unit of measurement: _percent._
 ### BatteryPotential
 
  The electric potential available in the machine's battery, typically the starter battery.  
-Unit of measurement: _Volt._
+Unit of measurement: _volt._
 
 ### SeatBeltSwitch
 
  Whether the seat belt is buckled in or not.  
-Unit of measurement: _Boolean._
+Unit of measurement: _boolean._
 
 ### EnginepercentLoadAtCurrentSpeed
 
@@ -116,17 +116,17 @@ Unit of measurement: _seconds._
 ### AfterTreatmentDieselParticulateFilterPassiveRegenerationStatus
 
  Whether passive regeneration of the machine's diesel particulate filter is happening, or not.  
-Unit of measurement: _Boolean._
+Unit of measurement: _boolean._
 
 ### AfterTreatmentDieselParticulateFilterActiveRegenerationStatus
 
  Whether active regeneration of the machine's diesel particulate filter is happening (or possibly inhibited), or not.  
-Unit of measurement: _Boolean._
+Unit of measurement: _boolean._
 
 ### AfterTreatmentDieselParticulateFilterStatus
 
  Whether regeneration of the machine's diesel particulate filter is needed, or not.  
-Unit of measurement: _Boolean._
+Unit of measurement: _boolean._
 
 ### AfterTreatmentDieselExhaustFluidTankLevel
 
@@ -146,7 +146,7 @@ Unit of measurement: _percent._
 ### DieselParticulateFilterActiveRegenerationInhibitedDueToInhibitSwitch
 
  Whether regeneration of the machine's diesel particulate filter is being inhibited by an operator switch.  
-Unit of measurement: _Boolean._
+Unit of measurement: _boolean._
 
 ### Payloadpercentage
 
@@ -156,12 +156,12 @@ Unit of measurement: _percent._
 ### GeneratorTotalKwHoursExport
 
  Cumulative exported energy of a generator.  
-Unit of measurement: _kiloWatt-hours._
+Unit of measurement: _kilowatt-hours._
 
 ### HydraulicOilFilterRestrictionSwitch
 
  Whether the flow of oil in the hydraulic system is restricted by a clogged oil filter.  
-Unit of measurement: _Boolean._
+Unit of measurement: _boolean._
 
 ### TotalVehicleDistance
 
@@ -181,12 +181,12 @@ Unit of measurement: _metres._
 ### EngineFuelDeliveryPressure
 
  The pressure with which fuel is being delivered to the engine.  
-Unit of measurement: _kiloPascal._
+Unit of measurement: _kilopascal._
 
 ### EngineCoolantPressure
 
  The pressure of coolant fluid inside the engine.  
-Unit of measurement: _kiloPascal._
+Unit of measurement: _kilopascal._
 
 ### WheelBasedVehicleSpeed
 
@@ -196,7 +196,7 @@ Unit of measurement: _kilometres per hour._
 ### BarometricPressure
 
  The pressure of the ambient atmosphere.  
-Unit of measurement: _kiloPascal._
+Unit of measurement: _kilopascal._
 
 ### AmbientAirTemperature
 
@@ -221,7 +221,7 @@ Unit of measurement: _degrees Celsius._
 ### EngineAirFilterDifferentialPressure
 
  The difference in air pressure as measured across the engine air filter.  
-Unit of measurement: _kiloPascal._
+Unit of measurement: _kilopascal._
 
 ### CumulativeIdleHours
 
@@ -231,22 +231,22 @@ Unit of measurement: _hours._
 ### BatteryChargerState
 
  Whether the battery charger is charging the machine's battery or not.  
-Unit of measurement: _Boolean._
+Unit of measurement: _boolean._
 
 ### BatteryChargerPowerLineState
 
  Whether the battery charger is connected to a powerline or not.  
-Unit of measurement: _Boolean._
+Unit of measurement: _boolean._
 
 ### BatteryChargerOutputvoltage
 
  The output voltage of the battery charger.  
-Unit of measurement: _Volt._
+Unit of measurement: _volt._
 
 ### BatteryChargerOutputCurrent
 
  The output current of the battery charger.  
-Unit of measurement: _Ampere._
+Unit of measurement: _ampere._
 
 ### EngineTripFuel
 
@@ -256,7 +256,7 @@ Unit of measurement: _litres._
 ### AfterTreatmentDieselParticulateFilterDifferentialPressure
 
  The difference in air pressure as measured across the machine's diesel particulate filter.  
-Unit of measurement: _kiloPascal._
+Unit of measurement: _kilopascal._
 
 ### AfterTreatmentDieselParticulateFilterIntakeTemperature
 
@@ -276,12 +276,12 @@ Unit of measurement: _degrees Celsius._
 ### EngineIntakeAirPressure
 
  The pressure of the air as measured at the engine intake.  
-Unit of measurement: _kiloPascal._
+Unit of measurement: _kilopascal._
 
 ### EngineIntakeManifoldPressure
 
  The pressure of the air as measured at the engine intake manifold.  
-Unit of measurement: _kiloPascal._
+Unit of measurement: _kilopascal._
 
 ### EngineIntercoolerTemperature
 
@@ -301,12 +301,12 @@ Unit of measurement: _litres._
 ### ExhaustSystemHighTemperatureLampCommand
 
  Whether the exhaust temperature is too high.  
-Unit of measurement: _Boolean._
+Unit of measurement: _boolean._
 
 ### HydraulicPressure
 
  The pressure delivered by the hydraulic system.  
-Unit of measurement: _kiloPascal._
+Unit of measurement: _kilopascal._
 
 ### TransmissionOilTemperature
 
@@ -341,7 +341,7 @@ Unit of measurement: _kilogram._
 ### EngineStatus
 
  Whether the engine is running, or not.  
-Unit of measurement: _Boolean._
+Unit of measurement: _boolean._
 
 ### FuelUsedLast_24Hours
 
@@ -376,7 +376,7 @@ Unit of measurement: _kilometres per hour._
 ### OperationStatus
 
  Whether the machine/asset is operating, or not.  
-Unit of measurement: _Boolean_.
+Unit of measurement: _boolean_.
 
 ### CumulativeEngineHours
 
@@ -396,7 +396,7 @@ Unit of measurement: _metres_.
 ### PlatformElevated
 
  Whether the platform or implement of the machine is up from the bottom-most position or not.  
-Unit of measurement: _Boolean_.
+Unit of measurement: _boolean_.
 
 ### Payload
 
@@ -411,7 +411,7 @@ Unit of measurement: _percent_.
 ### BatteryCurrent
 
  The amount of charge going into (if positive) or out of (if negative) the battery.  
-Unit of measurement: _Ampere_.
+Unit of measurement: _ampere_.
 
 ### BatteryTemperature
 
@@ -421,87 +421,87 @@ Unit of measurement: _degrees Celcius_.
 ### AcPhaseL1NeturalRMSVoltage
 
  The root mean square (RMS) Voltage measured between phase L1 and neutral.  
-Unit of measurement: _Volt_.
+Unit of measurement: _volt_.
 
 ### AcPhaseL2NeturalRMSVoltage
 
  The root mean square (RMS) Voltage measured between phase L2 and neutral.  
-Unit of measurement: _Volt_.
+Unit of measurement: _volt_.
 
 ### AcPhaseL3NeturalRMSVoltage
 
  The root mean square (RMS) Voltage measured between phase L3 and neutral.  
-Unit of measurement: _Volt_.
+Unit of measurement: _volt_.
 
 ### AcPhaseL1Frequency
 
  The frequency of L1.  
-Unit of measurement: _Hertz_.
+Unit of measurement: _hertz_.
 
 ### AcPhaseL2Frequency
 
  The frequency of L2.  
-Unit of measurement: _Hertz_.
+Unit of measurement: _hertz_.
 
 ### AcPhaseL3Frequency
 
  The frequency of L3.  
-Unit of measurement: _Hertz_.
+Unit of measurement: _hertz_.
 
 ### AcPhaseL1RMSCurrent
 
  The root mean square (RMS) current of L1.  
-Unit of measurement: _Ampere_.
+Unit of measurement: _ampere_.
 
 ### AcPhaseL2RMSCurrent
 
  The root mean square (RMS) current of L2.  
-Unit of measurement: _Ampere_.
+Unit of measurement: _ampere_.
 
 ### AcPhaseL3RMSCurrent
 
  The root mean square (RMS) current of L3.  
-Unit of measurement: _Ampere_.
+Unit of measurement: _ampere_.
 
 ### AcPhaseL1L2RMSVoltage
 
  The root mean square (RMS) Voltage measured between phase L1 and L2.  
-Unit of measurement: _Volt_.
+Unit of measurement: _volt_.
 
 ### AcPhaseL2L3RMSVoltage
 
  The root mean square (RMS) Voltage measured between phase L2 and L3.  
-Unit of measurement: _Volt_.
+Unit of measurement: _volt_.
 
 ### AcPhaseL3L1RMSVoltage
 
  The root mean square (RMS) Voltage measured between phase L3 and L1.  
-Unit of measurement: _Volt_.
+Unit of measurement: _volt_.
 
 ### AcTotalActivePower
 
  The actual total Active Power output on all 3 phases. Active Power (a.k.a. Real Power) is measured (not calculated) and reflects the actual energy consumption per time unit (1W = 1Joule/s), for a purely resistive load it is the same as Volt * Amp, but for many AC systems it is NOT.  
-Unit of measurement: _Watt_.
+Unit of measurement: _watt_.
 
 ### AcPhaseL1ActivePower
 
  The Active Power output on phase L1. Active Power (a.k.a. Real Power) is measured (not calculated) and reflects the actual energy consumption per time unit (1W = 1Joule/s), for a purely resistive load it is the same as Volt * Amp, but for many AC systems it is NOT.  
-Unit of measurement: _Watt_.
+Unit of measurement: _watt_.
 
 ### AcPhaseL2ActivePower
 
  The Active Power output on phase L2. Active Power (a.k.a. Real Power) is measured (not calculated) and reflects the actual energy consumption per time unit (1W = 1Joule/s), for a purely resistive load it is the same as Volt * Amp, but for many AC systems it is NOT.  
-Unit of measurement: _Watt_.
+Unit of measurement: _watt_.
 
 ### AcPhaseL3ActivePower
 
  The Active Power output on phase L3. Active Power (a.k.a. Real Power) is measured (not calculated) and reflects the actual energy consumption per time unit (1W = 1Joule/s), for a purely resistive load it is the same as Volt * Amp, but for many AC systems it is NOT.  
-Unit of measurement: _Watt_.
+Unit of measurement: _watt_.
 
 ### AcTotalApparentPower
 
  The actual total apparent power output on all 3 phases. Apparent Power is calculated by multiplying phase-to-neutral-Voltage by Current, and if the load is NOT purely resistive the result will be larger than the actual power (W)  
-Unit of measurement: _Volt-Ampere_.
+Unit of measurement: _volt-ampere_.
 
 ### AcTotalPowerFactor
 
@@ -511,7 +511,7 @@ Unit of measurement: _not applicable_.
 ### AcTotalReactivePower
 
  The actual total Reactive Power output on all 3 phases. Is an imaginary number representing then part of Apparent power which does not do any work, or more precisely VAr = sqrt(sqr(VA) - sqr(W)).  
-Unit of measurement: _Volt-Ampere reactive_.
+Unit of measurement: _volt-ampere reactive_.
 
 ### PayloadTemperature
 
@@ -538,17 +538,17 @@ Unit of measurement: _percent_.
 ### AcAveragePhaseToNeutralRmsVoltage
 
 Average of the 3 phase-to-neutral voltages. This is an average of actual values and not an average over time.  
-Unit of measurement: _Volt_.
+Unit of measurement: _volt_.
 
 ### AcAveragePhaseToPhaseRmsVoltage
 
 Average of the 3 phase-to-phase voltages. This is an average of actual values and not an average over time.  
-Unit of measurement: _Volt_.
+Unit of measurement: _volt_.
 
 ### AcAverageRmsCurrent
 
 Average of the 3 individual phase (L1, L2, and L3) currents. This is an average of actual values and not an average over time.  
-Unit of measurement: _Ampere_.
+Unit of measurement: _ampere_.
 
 ### Accelerometer_X_Axis
 
@@ -586,34 +586,34 @@ Unit of measurement: _seconds_.
 ### EngineFuelFilterDifferentialPressure
 
 Pressure drop across the fuel filter, which affects the pressure with which fuel is being delivered to the engine.  
-Unit of measurement: _kiloPascal_.
+Unit of measurement: _kilopascal_.
 
 ### EngineOilFilterDifferentialPressure
 
 Pressure drop across the oil filter.  
-Unit of measurement: _kiloPascal_.
+Unit of measurement: _kilopascal_.
 
 ### AcAverageFrequency
 
 Average of the individual phase frequencies. This is an average of actual values and not an average over time.  
-Unit of measurement: _Hertz_.
+Unit of measurement: _hertz_.
 
 ### StabilizersDeployed
 
 Whether stabilizing equipment of the machine is deployed or not, examples could be all outrigger legs is lowered to the point where they stabilize/levels the machine, or a pothole protection system is in place.  
-Unit of measurement: _Boolean_.
+Unit of measurement: _boolean_.
 
 ### PlatformStowed
 
 Whether the platform or implement of the machine is stowed, for example, an articulated boom lift has both booms lowered and detracted.  
 This is often seen as a safety feature, since some machines are only allowed to drive or transported when the platform is in a stowed position. Other machines has a "high speed" drive which is only enabled when the platform is stowed.  
-Unit of measurement: _Boolean_.
+Unit of measurement: _boolean_.
 
 ### RescueModeActive
 
 Whether the machine is operated in rescue mode or not.  
 For instance, a boom lift is turned off but (in order to rescue an operator positioned on the platform) the platform is lowered using the ground control emergency rescue mode.  
-Unit of measurement: _Boolean_.
+Unit of measurement: _boolean_.
 
 ### BatteryStateOfHealthPercent
 
@@ -635,7 +635,7 @@ Unit of measurement: _count_.
 ### BatteryCumulativeDischargedEnergy
 
 Total amount of energy delivered by the battery.  
-Unit of measurement: _kiloWatt-hours_.
+Unit of measurement: _kilowatt-hours_.
 
 ### BatteryRemainingChargeTime
 
@@ -645,22 +645,22 @@ Unit of measurement: _seconds_.
 ### BatteryChargerInputVoltage
 
 The input voltage of the battery charger.  
-Unit of measurement: _Volt_.
+Unit of measurement: _volt_.
 
 ### BatteryChargerInputCurrent
 
 The input current of the battery charger.  
-Unit of measurement: _Ampere_.
+Unit of measurement: _ampere_.
 
 ### BatteryChargerOutputCurrentLimit
 
 Maximum allowed battery charging current, based on actual operating condition.  
-Unit of measurement: _Ampere_.
+Unit of measurement: _ampere_.
 
 ### BatteryChargerInputCurrentLimit
 
 Maximum allowed battery charger input current draw, based on actual operating condition.  
-Unit of measurement: _Ampere_.
+Unit of measurement: _ampere_.
 
 ### CumulativeCO2Emissions
 
