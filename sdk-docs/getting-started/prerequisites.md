@@ -20,4 +20,4 @@ To manage versions we recommend using something like [Volta](http://volta.sh) or
 
 We don't have any requirements on IDE but highly recommend [Visual Studio Code](https://code.visualstudio.com/).
 
-For developers working on a Windows PC, we recommend using WSL ([Windows subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/)).
+For developers working on a Windows PC, we recommend using WSL ([Windows subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/)). You can find more information about NodeJS development on Windows [here](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-overview).
