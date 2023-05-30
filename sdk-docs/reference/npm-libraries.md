@@ -12,7 +12,7 @@ category: 61fcd8e1a448f5004215317c
 The npm libraries that make up the SDK can be categorized into three types: vanilla JS libraries, tailwind-based styling libraries, and React libraries. You can browse all of our packages on [npmjs.com](https://www.npmjs.com/search?q=%40trackunit) too by searching for @trackunit.
 
 ## Vanilla JS Libraries
-While we recommend building Iris Apps with React, the following libraries enable you to use whatever framework you want (even plain old js).
+While we recommend building Iris Apps with React, the following libraries enable you to use whatever framework you want (even plain Javascript).
 
 - [@trackunit/iris-app](https://www.npmjs.com/package/@trackunit/iris-app)
 - [@trackunit/iris-app-api](https://www.npmjs.com/package/@trackunit/iris-app-api)
