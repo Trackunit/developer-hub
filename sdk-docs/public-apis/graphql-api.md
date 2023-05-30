@@ -93,6 +93,12 @@ export const App = () => {
     variables: {
       // Any variables your query requires
     },
+    // skip: !assetInfo?.assetId,
+    context: {
+      headers: { // Your http-headers here
+        //"TU-PREVIEW": "TIME-EXCAVATORS,JUNGLE-DIGGER", // enables speicifc properties that are in preview only
+      },
+    },
   });
 
   return (
@@ -110,3 +116,18 @@ export const App = () => {
   );
 };
 ```
+<br>
+
+> 📘 Nice to know
+>
+> The generated `graphql-hooks` employ the [Apollo library](https://www.apollographql.com/) to interact with the GraphqlAPI. In addition to the options demonstrated in the above example, such as `variables`, `skip`, and `context`, there exist various other options. You can find a comprehensive list of these options in the [Apollo Docs](https://www.apollographql.com/docs/react/api/react/hooks/#params-3).
+
+<br>
+
+> 📘 Nice to know 2!
+>
+> In the complete example mentioned above, we have commented out the HTTP header `TU-PREVIEW:<codeword(s)>`.
+Certain GraphQL objects are currently in a preview state and may undergo changes without prior notice.
+To indicate your acceptance of these terms, include the HTTP header `TU-PREVIEW:<codeword(s)>` in your query requests.
+The specific codeword varies for each preview object and can be found by referring to the [GraphQL Explorer](https://developers.trackunit.com/page/graphql-explorer).
+You can include one or more comma-separated codewords.
