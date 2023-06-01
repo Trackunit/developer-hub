@@ -10,11 +10,11 @@ The marketplace will be the gateway for new services to the industry provided by
 
 # Installation policies
 
-To control the behavior of your app inside the marketplace you have to specify an installation policy inside the Iris App manifest using the `installationPolicy` attribute.
+To control the behavior of your app inside the marketplace you have to specify an installation policy inside the Iris App manifest using the `installation.policy` attribute.
 
 There are five distinct installation policies, with their behaviour described in the table below:
 
-| InstallationPolicy             | Requires approval from CSM | Initially installed (once approved if applicable) | Uninstallable | Description <br/>                                                              |
+| InstallationPolicy             | Requires approval from sales ops | Initially installed (once approved if applicable) | Uninstallable | Description <br/>                                                              |
 |--------------------------------|----------------------------|---------------------------------------------------|---------------|--------------------------------------------------------------------------------|
 | PERMANENT                      | no                         | yes                                               | no            | Apps developed by Trackunit, needed by all customers                           |
 | PREINSTALLED                   | no                         | yes                                               | yes           | Apps developed by Trackunit or Partners that are part of the base subscription |
@@ -22,26 +22,30 @@ There are five distinct installation policies, with their behaviour described in
 | PREINSTALLED_REQUIRES_APPROVAL | yes                        | yes                                               | yes           | Apps developed by Trackunit that require extra pricing agreement               |
 | ON_DEMAND_REQUIRES_APPROVAL    | yes                        | no                                                | yes           | Apps developed by Partners that require extra pricing agreement                |
 
+<!--
+
 [//]: # (new image should go here)
 
 The image below demonstrates the installation flow for apps using each of the installation policies:
 
 ![](https://files.readme.io/e11630c-image.png)
 
+-->
+
 Most generally available apps should use a policy that requires explicit approval. Trackunit sales ops will make sure the customer has the right agreement before making the app available to the customer. This supports setting up rules for individually sold apps. Requirements such as pricing schemes should be agreed on with Trackunit before submitting the app for review.
 
-Customer specific apps developed for one or few customers should include a list of customer account IDs in the `validForAccountIds` attribute and use the `PREINSTALLED` policy.  
+Customer specific apps developed for one or few customers should include a list of customer account IDs in the `installation.accountIds` attribute and use the `PREINSTALLED` policy.  
 These apps will automatically be visible to the customers in the list.
 
-Subscription package apps that are tied to a specific subscription package should set the `allowForPackage` attribute and can then choose to use either the `ON_DEMAND` or `PREINSTALLED` policies. Everyone with this subscription package should get the app in the marketplace.
+Apps that are tied to a specific pricing plan should set the `installation.pricingPlans` attribute and can then choose to use either the `ON_DEMAND` or `PREINSTALLED` policies. Everyone with this pricing plan should get the app in the marketplace.
 
-The `PERMANENT` installation policy should only be used with prior agreement with Trackunit, since they will be enabled for all customers and customers cannot disable the app. The app will not be visible in the marketplace. The only way to limit which customers get the app is using the `validForAccountIds` and/or `allowForPackage` attributes.
+The `PERMANENT` installation policy should only be used with prior agreement with Trackunit, since they will be enabled for all customers and customers cannot uninstall the app. The app will not be visible in the marketplace. The only way to limit which customers get the app is using the `installation.accountIds` and/or `installation.pricingPlans` attributes.
 
 # Marketplace content
 
 ## Overview
 
-The marketplace overview will include the `name` and the `description` attributes from the app manifest. The description should be a short text without any formatting.  
+The marketplace overview will include the `name` and the `description` attributes from the app manifest. The description should be a short text without any formatting.
 To show a logo you should put a image inside the `assets` folder in your Iris App and specify the name of the image in the `logoPath` attribute.
 
 ## Detailed view
@@ -89,7 +93,6 @@ marketplace: {
       { type: "IMAGE", path: "gql_demo.png" },
       { type: "VIDEO", url: "https://www.youtube.com/watch?v=5rsJeFEr4IE" },
     ],
-    allowForPackage: ["VIEW", "COLLECT", "INSIGHT"],
     tags: []
 }
 ```
