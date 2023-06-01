@@ -14,7 +14,7 @@ In this guide, we'll be using the Trackunit SDK to define and manipulate custom 
 
 - Define a STRING and a DROPDOWN type field in the iris-app-manifest.json.
 - Implement regex patterns in the STRING field.
-- Use the @trackunit/iris-app-runtime-core library to render our custom fields.
+- Use the `@trackunit/iris-app-runtime-core` library to render our custom fields.
 - Update DROPDOWN custom field values.
 - Handle incompatible STRING field values when updating regex patterns.
 
@@ -57,7 +57,7 @@ To start, we need to define our custom fields in the `iris-app-manifest.json` fi
 ]
 ```
 
-Here we added a STRING field with key `myKey` and a DROPDOWN field with key `myDropdownKey`. The STRING field includes a `pattern` property with a simple regex that enforces alphanumeric input (letters, digits, and underscores).
+Here we added a STRING field with key `myKey` and a DROPDOWN field with key `myDropdownKey`. The STRING field includes a `pattern` property with a simple regex that enforces alphanumeric input (letters, digits, and underscores). `uiEditable` / `uiVisible` controls how the field will be shown in the Manager UI. This does not limit how the field is used inside the Iris App.
 
 ## Step 2: Rendering Custom Fields
 Now that we have defined our custom fields, let's render them. Navigate to your `app.tsx` file and use the @trackunit/iris-app-runtime-core library:
