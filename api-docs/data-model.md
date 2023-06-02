@@ -237,6 +237,10 @@ Unit of measurement: _percent._
 
 ### AfterTreatmentDieselParticulateFilterDifferentialPressure
 
+> 📘 Coming soon to Streaming API
+>
+> This insight will be available in Streaming API in July 2023.
+
 The difference in air pressure as measured across the machine's diesel particulate filter.  
 Unit of measurement: _kilopascal._
 
