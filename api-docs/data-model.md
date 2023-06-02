@@ -220,7 +220,10 @@ Unit of measurement: _degrees Celsius._
 > This insight will be available in Streaming API in July 2023.
 
 Indicates the status of diesel particulate filter(s) active regeneration, is a system status and not individual bank status.  
-Unit of measurement: _not applicable_.
+
+* `NOT_ACTIVE` - not active
+* `ACTIVE` - active
+* `REGENERATION_NEEDED` - regeneration needed - automatically initiated active regeneration imminent
 
 ### AfterTreatmentDieselParticulateFilterActiveRegenerationStatus
 
@@ -259,7 +262,16 @@ Unit of measurement: _percent._
 > This insight will be available in Streaming API in July 2023.
 
 Indicates the state of the diesel particulate filter(s) regeneration need and urgency, is a system status and not individual bank status.  
-Unit of measurement: _not applicable_.
+
+Enumeration:
+* `REGENERATION_NOT_NEEDED` - regeneration not needed
+* `REGENERATION_NEEDED_LOWEST_LEVEL` - regeneration needed - lowest level
+* `REGENERATION_NEEDED_MODERATE_LEVEL` - regeneration needed - moderate level
+* `REGENERATION_NEEDED_HIGHEST_LEVEL` - regeneration needed - highest level
+* `SAE_SPECIFIC_1` - reserved for SAE assignment
+* `SAE_SPECIFIC_2` - reserved for SAE assignment
+* `SAE_SPECIFIC_3` - reserved for SAE assignment
+
 ### AfterTreatmentDieselParticulateFilterStatus
 
 Whether regeneration of the machine's diesel particulate filter is needed, or not.  
