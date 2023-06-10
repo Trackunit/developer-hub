@@ -14,7 +14,7 @@ You can browse all of our packages on [npmjs.com](https://www.npmjs.com/search?q
 
 
 ## Vanilla JS Libraries
-While we recommend building Iris Apps with React, the following libraries enable you to use whatever framework you want (even plain old js).
+While we recommend building Iris Apps with React, the following libraries enable you to use whatever framework you want (even plain Javascript).
 
 | Library | Usage |
 | --- | --- |
