@@ -60,6 +60,7 @@ Possibly the most important configuration file that you need to understand.
 It configures the following crucial settings for your app:
 -  `specVersion`: The version of the app manifest file. Should not be changed manually. 
 - `moduleFederationName`: Name of your app including workspace name, automatically parsed from your app-specific package.json.
+- `activationMode`: Controls the visibility of your app and how it is installed. Closely connected to the properties **validForAccountIds** and **marketplace**.
 - `dependencies`: A full list of runtime dependencies for the app. Automatically parsed from the package.json in root. The list will be security scanned.
 - `devDependencies`: Same as above but for dev-dependencies. These are also security scanned.
 - `validDomains`: A list of any external domains that the app needs to communicate with. The list is audited in the approval step of the app and every external API call must be listed here to get through the verification process. Even if it goes through without being listed, your app will fail to call the endpoint.
@@ -67,7 +68,7 @@ It configures the following crucial settings for your app:
 - `marketplace`: Holds all the settings associated with your apps listing on the marketplace.
     - `name`: Well..the name of your app.
     - `description`: Write a small summary of your app here that describes what it does. Only supports plain text.
-    - `fullDescriptionPath`: The path to a markdown file that explains your app in more detail. The file must be stored in the assets folder within the app directory to work. The path is relative to that directory. This means that for a file apps/my-app/assets/description.md, this parameter should be: description.md
+    - `fullDescriptionPath`: The path to a markdown file that explains your app in more detail. The file must be stored in the assets folder within the app directory to work. The path is relative to that directory. For a file apps/my-app/assets/description.md, this parameter should be: description.md
     - `logoPath`: Path to an image in the assets folder of the app. The image will be shown in the marketplace. Example: typing "MyImage.png" here, will show the file "apps/my-app/assets/MyImage.png"
     - `assets`: Assets (images and videos) used for the marketplace.
     - `allowForPackage`: Defines with which subscription packages your app is compatible. Take great care when entering this, as your app might bug out (if it went through the approval phase in the first place) if what is stated here does not match reality.
