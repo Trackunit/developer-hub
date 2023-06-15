@@ -35,20 +35,16 @@ Assuming you have already created an extension - go to the root of that project 
 Now you are ready to create React hooks from your GraphQL queries, just copy your query or the below query to your src folder in the libs/[feature-name]/[name-of-your-extension]/src and name it demo.graphql
 
 ```Text Graphql
-query GetFirstAsset {
-  assets(first: 1) {
-    edges {
-      node {
-        id
-        model
-        brand
-      }
+query GetAssetsByProductionYear($first: Int, $productionYears: [String!]) {
+  assets(first: $first, filters: {productionYears: $productionYears}) {
+    payload {
+      productionYear
+      model
+      brand
     }
   }
 }
 ```
-
-
 
 ### 4. Generate React Hooks
 Call this command:
@@ -56,15 +52,14 @@ Call this command:
 nx run [feature-name]-[name-of-your-extension]:graphql-hooks
 ```
 
-
-
 ### 5. Use it in your React code 
-Now that it has generated a folder with generated files in your src folder you can use it in your React code. The syntax is like use\<YOUR_QUERY>Query. In the above example GetFirstAsset will translate into useGetFirstAssetQuery
+Now that it has generated a folder with generated files in your src folder you can use it in your React code. The syntax takes the form use\<YOUR_QUERY>Query.
+In the above example `GetAssetsByProductionYear` will translate into `useGetAssetsByProductionYearQuery`
 
 ```ts
-import { useGetFirstAssetQuery } from './generated/graphql-api';
+import { useGetAssetsByProductionYearQuery } from './generated/graphql-api';
 
-const { data, loading, error } = useGetFirstAssetQuery({
+const { data, loading, error } = useGetAssetsByProductionYearQuery({
   variables: {
     // Any variables your query requires
   },
@@ -85,34 +80,41 @@ import {
   Spinner,
   Heading,
 } from '@trackunit/react-components';
-import { useGetFirstAssetQuery } from './generated/graphql-api';
+import { useGetAssetsByProductionYearQuery } from './generated/graphql-api';
 
 
 export const App = () => {
-  const { data, loading, error } = useGetFirstAssetQuery({
+  const { data, loading, error } = useGetAssetsByProductionYearQuery({
     variables: {
-      // Any variables your query requires
+     first: 5, // Take first 5 results
+     productionYears: ["2017", "2023"] // Filter by these production years
     },
-    // skip: !assetInfo?.assetId,
+    // skip: <some_assetId>,
     context: {
       headers: { // Your http-headers here
         //"TU-PREVIEW": "TIME-EXCAVATORS,JUNGLE-DIGGER", // enables speicifc properties that are in preview only
       },
     },
   });
-
   return (
     <div className="w-full h-full grid place-content-center">
-    <Card className="w-full">
-      {loading && <Spinner centering="centered" />}
-      {error && <div>CRASHED: {error.message}</div>}
-      {data && <Heading variant="primary">We can now use useGetFirstAssetQuery</Heading>}
-      <Card>
-        <Text>Brand: {data?.assets.edges[0].node.brand}</Text>
-        <Text>Model: {data?.assets.edges[0].node.model}</Text>
+      <Card className="w-full">
+        {loading && <Spinner centering="centered" />}
+        {error && <div>CRASHED: {error.message}</div>}
+        {data && 
+          <div>
+            <Heading variant="primary">We can now use useGetAssetsByProductionYearQuery</Heading>
+            {data?.assets?.payload?.map((asset, index) => (
+              <Card key={index}>
+                <Text>Brand: {asset.brand}</Text>
+                <Text>Model: {asset.model}</Text>
+                <Text>Year: {asset.productionYear}</Text>
+              </Card>
+            ))}
+          </div>
+        }
       </Card>
-    </Card>
-  </div>
+    </div>
   );
 };
 ```
