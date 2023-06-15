@@ -27,7 +27,11 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
 
 1. `type` defines the custom field type (see [below](#custom-field-types) for all options).
 
-2. `entityType` defines what type of entity a custom field can be used on. Currently only `ASSET` and `ACCOUNT` is supported.
+2. `entityType` defines what type of entity a custom field can be used on. The following types are available:
+  - `ACCOUNT`
+  - `ASSET`
+  - `GROUP`
+  - `SITE`
 
 3. `key` defines the programmatic name of the field and cannot be changed after it has been created.
 
