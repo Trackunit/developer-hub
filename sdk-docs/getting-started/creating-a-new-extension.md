@@ -21,7 +21,7 @@ nx g @trackunit/iris-app:extend [name-of-your-extension]
 ### 2. Answer the following questions:
 
 - **What subdir would you like to use for this app-extension?:** 
-  - Trackunit recommends bundling extensions as related yet independent components of larger features. You can decide to leave this field empty, and then your extension's folder will be created in the root. But if you are working on bigger things, you have the option to put extensions in the same subfolder. Functionally it doesn't have an impact, but helps structure your folders better.
+  - Trackunit recommends bundling extensions as related yet independent components of larger features. You can decide to leave this field empty, and then your extension's folder will be created in the root. But if you are working on bigger things, you have the option to put extensions in the same subfolder. It will not impact functionality, but it helps structuring your code.
 - **What app should this app-extension extend?:**
   - Enter the app name used in step 3 in the **[Creating a new app](https://developers.trackunit.com/docs/creating-a-new-app)** section (e.g., my-first-app).  
     - 📌 This question will not appear if you only have a single app in your NX Workspace.
