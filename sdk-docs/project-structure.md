@@ -50,7 +50,7 @@ The libs folder should contain all the extensions, tools and helper-functions th
             - `app.spec.tsx`: Unit tests for the App component.
             - `app.tsx`: The entry-point of your custom code logic. Start coding here!
             - `index.tsx`: The entry-point of your extension. It will initialize the App component above and you shouldn't do any changes here. Your point of interest is app.tsx.
-
+        - `extension-manifest.ts`: A small configuration file for the extension that controls the type of the extension, the location of the source code and the name of the extension when it is rendered in the UI as a menu item. Depending on the type of extension, differetn configurations will be available. Check the JSDoc of the **IrisAppManifest** interface for specific explanations.
 
 
 
