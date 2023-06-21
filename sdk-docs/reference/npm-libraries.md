@@ -19,9 +19,9 @@ While we recommend building Iris Apps with React, the following libraries enable
 | Library | Usage |
 | --- | --- |
 | [@trackunit/iris-app](https://www.npmjs.com/package/@trackunit/iris-app) | Core library for building Iris applications with any JS framework. It's a [Nx](https://nx.dev/)  plugin that adds helpful generators used to setup your app.|
-| [@trackunit/iris-app-api](https://www.npmjs.com/package/@trackunit/iris-app-api) | A small package containing reusable types. TODO: what is the difference between this and runtime-core-api?|
-| [@trackunit/iris-app-runtime-core](https://www.npmjs.com/package/@trackunit/iris-app-runtime-core) | TODO |
-| [@trackunit/iris-app-runtime-core-api](https://www.npmjs.com/package/@trackunit/iris-app-runtime-core-api) | A small package containing reusable types. TODO: what is the difference between this and iris-app-api? |
+| [@trackunit/iris-app-api](https://www.npmjs.com/package/@trackunit/iris-app-api) | Contains types for main parts of the Iris APP SDK, such as the manifest. |
+| [@trackunit/iris-app-runtime-core](https://www.npmjs.com/package/@trackunit/iris-app-runtime-core) | Contains the code for the runtimes that are exposed to Iris Apps. These facilitate communication with the manager and other things like setting up the rest api. Some runtimes might be part of other packages, this is the CORE one, that will be in all Iris Apps. |
+| [@trackunit/iris-app-runtime-core-api](https://www.npmjs.com/package/@trackunit/iris-app-runtime-core-api) | Types for the @trackunit/iris-app-runtime-core package. |
 | [@trackunit/nx-utils](https://www.npmjs.com/package/@trackunit/nx-utils) | Contains reusable test utils for [Nx](https://nx.dev/). |
 | [@trackunit/rest-iso-feeds](https://www.npmjs.com/package/@trackunit/rest-iso-feeds) | The purpose of this library is to contain an easy access to trackunits REST apis. |
 | [@trackunit/iris-app-oem-api](https://www.npmjs.com/package/@trackunit/iris-app-oem-api) | Used to add custom brand images into the Trackunit Manager. |
@@ -41,7 +41,8 @@ The styling libraries save developers a ton of time and make it easy to streamli
 | [@trackunit/css-tailwind-custom-properties-plugin](https://www.npmjs.com/package/@trackunit/css-tailwind-custom-properties-plugin) | Exposes a plugin used to convert the variables property in a Tailwind configuration to css custom properties. |
 | [@trackunit/tailwind-styled-components](https://www.npmjs.com/package/@trackunit/tailwind-styled-components) | Is a wrapper for [tailwind-styled-components](https://www.npmjs.com/package/tailwind-styled-components) Exposing a small utility for nested inline intellisense and some typing fixes. |
 | [@trackunit/ui-icons](https://www.npmjs.com/package/@trackunit/ui-icons) | Used by the Icon component in [@trackunit/react-components](https://www.npmjs.com/package/@trackunit/react-components) |
-| [@trackunit/ui-design-tokens](https://www.npmjs.com/package/@trackunit/ui-design-tokens) | TODO. |
+| [@trackunit/ui-design-tokens](https://www.npmjs.com/package/@trackunit/ui-design-tokens) | Exposes the design tokens used to generate the Tailwind Config, as well as a color utility used to get colors from the theme without using css variables.
+
 
 # React Libraries
 The React libraries do all the plumbing for you in various scenarios. For example when you need to interact with the GraphQL API or you want to get a list of custom fields and display React components without needing to handle state variables yourself.
@@ -50,7 +51,7 @@ The React libraries do all the plumbing for you in various scenarios. For exampl
 | [@trackunit/react-core-hooks](https://www.npmjs.com/package/@trackunit/react-core-hooks) | Contains core React hooks used for getting data from our context providers inside Iris apps. |
 | [@trackunit/react-components](https://www.npmjs.com/package/@trackunit/react-components) | The home of Trackunits public UI library. |
 | [@trackunit/react-graphql-tools](https://www.npmjs.com/package/@trackunit/react-graphql-tools) | Provides tools for auto-generating hooks to interface our GraphQL API through React code. |
-| [@trackunit/react-core-contexts](https://www.npmjs.com/package/@trackunit/react-core-contexts) | Defines core context providers. TODO: brief description of what these providers are. |
+| [@trackunit/react-core-contexts](https://www.npmjs.com/package/@trackunit/react-core-contexts) | Defines core context providers. It is a wrapper for all the base react providers needed to use contexts available in the trackunit manager. This makes it possible to use Hooks and complex components in your Iris App. For example you can get data on the current user through the useCurrentUser hook.|
 | [@trackunit/react-core-contexts-test](https://www.npmjs.com/package/@trackunit/react-core-contexts-test) | Contains testing utilities for [@trackunit/react-core-contexts](https://www.npmjs.com/package/@trackunit/react-core-contexts). |
 | [@trackunit/react-core-contexts-api](https://www.npmjs.com/package/@trackunit/react-core-contexts-api) | Contains reusable React types. TODO: elaborate slightly. |
 | [@trackunit/custom-field-components](https://www.npmjs.com/package/@trackunit/custom-field-components) | Contains React components used to render UI for [Custom Fields](https://developers.trackunit.com/docs/save-data-from-your-app). |
