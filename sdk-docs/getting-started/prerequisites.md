@@ -15,9 +15,12 @@ The Iris App SDK needs certain tools to be on your machine:
 - Node version 16.14
 - NX version 15.9.2
 - Git
+- WSL (Windows only)
 
 To manage versions we recommend using something like [Volta](http://volta.sh) or similar to install node and nx.
 
 We don't have any requirements on IDE but highly recommend [Visual Studio Code](https://code.visualstudio.com/).
 
-For developers working on a Windows PC, we recommend using WSL ([Windows subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/)). You can find more information about NodeJS development on Windows [here](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-overview).
+Developers working on a Windows PC, should use WSL ([Windows subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/)). 
+You can find more information about NodeJS development on Windows [here](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-overview),
+and information on getting started with VS Code on WSL [here](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
