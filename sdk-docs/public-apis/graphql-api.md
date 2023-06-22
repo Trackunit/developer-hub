@@ -29,9 +29,21 @@ Assuming you have already created an extension - go to the root of that project 
     },
 ```
 
+### 3. Add "codegen.ts" to lib
+Now go to the root of that project (like libs/[feature-name]/[name-of-your-extension]/ ) and create a file called 'codegen.ts' and add this code to it:
+
+```ts
+import { type CodegenConfig } from "@graphql-codegen/cli";
+import { getGraphqlCodegenConfig } from "@trackunit/iris-app-build-utilities";
+
+const config: CodegenConfig = {
+  ...getGraphqlCodegenConfig(__dirname),
+};
+export default config;
+```
 
 
-### 3. Create Graphql Query 
+### 4. Create Graphql Query 
 Now you are ready to create React hooks from your GraphQL queries, just copy your query or the below query to your src folder in the libs/[feature-name]/[name-of-your-extension]/src and name it demo.graphql
 
 ```Text Graphql
@@ -46,20 +58,21 @@ query GetAssetsByProductionYear($first: Int, $productionYears: [String!]) {
 }
 ```
 
-### 4. Generate React Hooks
+### 5. Generate React Hooks
 Call this command:
 ```ts
 nx run [feature-name]-[name-of-your-extension]:graphql-hooks
 ```
 
-### 5. Use it in your React code 
-Now that it has generated a folder with generated files in your src folder you can use it in your React code. The syntax takes the form use\<YOUR_QUERY>Query.
-In the above example `GetAssetsByProductionYear` will translate into `useGetAssetsByProductionYearQuery`
+### 6. Use it in your React code 
+Now that it has generated a folder with generated files in your src folder you can use it in your React code. The syntax takes the form <YOUR_QUERY>Document.
+In the above example `GetAssetsByProductionYear` will translate into `GetAssetsByProductionYearDocument`
 
 ```ts
-import { useGetAssetsByProductionYearQuery } from './generated/graphql-api';
+import { useQuery } from "@apollo/client";
+import { GetAssetsByProductionYearDocument } from './generated/graphql-api/graphql';
 
-const { data, loading, error } = useGetAssetsByProductionYearQuery({
+const { data, loading, error } = useQuery(GetAssetsByProductionYearDocument, {
   variables: {
     // Any variables your query requires
   },
@@ -68,12 +81,13 @@ const { data, loading, error } = useGetAssetsByProductionYearQuery({
 
 
 
-### 6. You are now ready to call GraphQL using hooks 
+### 7. You are now ready to call GraphQL using hooks 
 For more advanced info on the executor you can read up on how to generate code from [GraphQL codegen cli](https://the-guild.dev/graphql/codegen/docs/getting-started/installation)   
 
 ## Example: Full React Component (App.tsx)
 
 ```typescript
+import { useQuery } from "@apollo/client";
 import {
   Card,
   Text,
