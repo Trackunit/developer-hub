@@ -49,11 +49,10 @@ The React libraries do all the plumbing for you in various scenarios. For exampl
 | Library | Usage |
 | --- | --- |
 | [@trackunit/react-core-hooks](https://www.npmjs.com/package/@trackunit/react-core-hooks) | Contains core React hooks used for getting data from our context providers inside Iris apps. |
-| [@trackunit/react-components](https://www.npmjs.com/package/@trackunit/react-components) | The home of Trackunits public UI library. |
 | [@trackunit/react-graphql-tools](https://www.npmjs.com/package/@trackunit/react-graphql-tools) | Provides tools for auto-generating hooks to interface our GraphQL API through React code. |
 | [@trackunit/react-core-contexts](https://www.npmjs.com/package/@trackunit/react-core-contexts) | Defines core context providers. It is a wrapper for all the base react providers needed to use contexts available in the trackunit manager. This makes it possible to use Hooks and complex components in your Iris App. For example you can get data on the current user through the useCurrentUser hook.|
 | [@trackunit/react-core-contexts-test](https://www.npmjs.com/package/@trackunit/react-core-contexts-test) | Contains testing utilities for [@trackunit/react-core-contexts](https://www.npmjs.com/package/@trackunit/react-core-contexts). |
-| [@trackunit/react-core-contexts-api](https://www.npmjs.com/package/@trackunit/react-core-contexts-api) | Contains reusable React types. TODO: elaborate slightly. |
+| [@trackunit/react-core-contexts-api](https://www.npmjs.com/package/@trackunit/react-core-contexts-api) | Holds the types for the providers and contexts in [react-core-contexts](https://www.npmjs.com/package/@trackunit/react-core-contexts). |
 | [@trackunit/custom-field-components](https://www.npmjs.com/package/@trackunit/custom-field-components) | Contains React components used to render UI for [Custom Fields](https://developers.trackunit.com/docs/save-data-from-your-app). |
 | [@trackunit/react-chart-components](https://www.npmjs.com/package/@trackunit/react-chart-components) | Contains a library of chart components. |
 | [@trackunit/react-filter-components](https://www.npmjs.com/package/@trackunit/react-filter-components) | Provides a library of filter components. |
