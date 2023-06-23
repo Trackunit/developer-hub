@@ -21,7 +21,7 @@ nx g @trackunit/iris-app:extend [name-of-your-extension]
 ### 2. Answer the following questions:
 
 - **What subdir would you like to use for this app-extension?:** 
-  - Trackunit recommends using the Feature (my-feature-1) directory to sort your extensions.
+  - Trackunit recommends bundling extensions as related yet independent components of larger features. You can decide to leave this field empty, and then your extension's folder will be created in the root. But if you are working on bigger things, you have the option to put extensions in the same subfolder. It will not impact functionality, but it helps structuring your code.
 - **What app should this app-extension extend?:**
   - Enter the app name used in step 3 in the **[Creating a new app](https://developers.trackunit.com/docs/creating-a-new-app)** section (e.g., my-first-app).  
     - 📌 This question will not appear if you only have a single app in your NX Workspace.
@@ -37,10 +37,10 @@ nx g @trackunit/iris-app:extend [name-of-your-extension]
 
 ```
 ✔ What name would you like to use for this app-extension? · [name-of-your-extension]
-✔ What subdir would you like to use for this app-extension? · [subdir-of-your-extension]
+✔ What subdir would you like to use for this app-extension? · [feature-name]
 ✔ Which Iris App extension should be generated? · FLEET_EXTENSION
 
-CREATE libs/[subdir-of-your-extension]/[name-of-your-extension]/extension-manifest.ts
+CREATE libs/[feature-name]/[name-of-your-extension]/extension-manifest.ts
 UPDATE package.json
 UPDATE nx.json
 CREATE jest.config.ts
