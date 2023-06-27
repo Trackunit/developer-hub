@@ -6,13 +6,13 @@ Welcome to the Time Series API documentation. This API enables you to retrieve t
 
 Machine insights provide a comprehensive list of conformed metrics, prefixed with `machine_insight_`, including ISO 15143-3 standard insights and additional insights.
 
-Advanced sensors capture metrics originating from various sources, often derived from CAN. Advanced sensors are no conformed and allows for capturing metrics that are uniquely defined for specific equipment. The metrics are prefixed with `advanced_sensor_`. When querying advanced sensor data, you can specify a unique sensor ID to retrieve metrics for a particular sensor mapping.
+Advanced sensors capture metrics originating from various sources, often derived from CAN. Advanced sensors are not conformed and allow for capturing metrics that are uniquely defined for specific equipment. The metrics are prefixed with `advanced_sensor_`. When querying advanced sensor data, you can specify a unique sensor ID to retrieve metrics for a particular sensor mapping.
 
-The Time Series API follows the standards of Prometheus, an open-source monitoring and time series database system. By adhering to Prometheus specifications, our API ensures compatibility with Prometheus clients and tooling, facilitating integration with existing Prometheus ecosystems.
-
+The Time Series API follows the standards of [Prometheus](https://prometheus.io/), an open-source monitoring and time series database system. By adhering to Prometheus specifications, our API ensures compatibility with Prometheus clients and tooling, facilitating integration with existing Prometheus ecosystems. E.g. [Grafana](https://prometheus.io/docs/visualization/grafana/) supports querying Prometheus, which enables you to create dashboards to visualize, alert on and understand your metrics.
+ 
 With our query endpoints, you can leverage PromQL, the powerful and expressive Prometheus query language, to retrieve and analyze time series data. PromQL offers a range of functions and operators for complex queries and calculations. The query responses adhere to Prometheus result formats for easy consumption and compatibility.
 
-In addition to Prometheus endpoints, we provide an metric export endpoint for retrieving metrics in their original ingested form. This gives you access to the raw time series data without aggregation or modifications. Retrieve precise values and timestamps for detailed analysis or integration with external systems.
+In addition to Prometheus endpoints, we provide a metric export endpoint for retrieving metrics in their original ingested form. This gives you access to the raw time series data without aggregation or modifications. Retrieve precise values and timestamps for detailed analysis or integration with external systems.
 
 This documentation guides you through the functionality of the Time Series API, including retrieving machine insights and advanced sensor data. It also provides resources for learning PromQL and formulating effective queries.
 
@@ -20,7 +20,7 @@ Explore the available endpoints and interact with the Time Series API to retriev
 
 ## Interface
 
-The API expose an OpenAPI JSON REST interface that you can call directly using your OAuth 2.0 access token. See [Access IRIS APIs](../reference/access-token) for further details on how to obtain an access token.
+The API exposes an OpenAPI JSON REST interface that you can call directly using your OAuth 2.0 access token. See [Access IRIS APIs](../reference/access-token) for further details on how to obtain an access token.
 
 ## Instant Query
 
@@ -76,5 +76,6 @@ Additionally, here are some tutorials and guides to help you get started with Pr
 
 - [PromQL Cheat Sheet](https://promlabs.com/promql-cheat-sheet/)
 - [PromQL Training Course by Promlabs](https://training.promlabs.com/training/understanding-promql)
+- [PromQL tutorial for beginners and humans](https://valyala.medium.com/promql-tutorial-for-beginners-9ab455142085)
 
 These resources should provide you with a solid foundation for utilizing PromQL to query the Time Series API.
