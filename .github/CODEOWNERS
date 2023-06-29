@@ -11,4 +11,7 @@
 /sdk-docs/ @Trackunit/team-iris-foundation @osmantoplica-trackunit
 /custompages/ @Trackunit/team-iris-foundation @osmantoplica-trackunit
 
+/api-docs/data-model.md @Trackunit/team-io
+/api-docs/machine-insights-streaming-dataformat.md @Trackunit/team-io
+/api-docs/streaming-api.md @Trackunit/team-io
 /custompages/iso-feeds.md @Trackunit/team-io
