@@ -49,6 +49,15 @@ The fields Location and LocationAddress contain the position, and the approximat
 | Altitudeunits (optional) | "metres"      | Units of the altitude (always normalized to "metres"), or null.                                                 |
 | datetime                 | 1604042795000 | [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this location was recorded. |
 
+## LocationMetadata
+
+Contains additional information about the Location.
+
+| Field                     | Example | Description                                                                                                                     |
+|:--------------------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------|
+| AccuracyRadius (optional) | 10.0    | Accuracy of the location defined as a radius in metres. Corresponds to the Estimated Horizontal Position Error (EHPE) from GPS. |
+| HighAccuracy (optional)   | true    | The location in com.aemp20.Location has high accuracy                                                                           |
+
 ## LocationAddress
 
 Contains the approximate street address of the given Location.
