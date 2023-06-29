@@ -61,6 +61,49 @@ Contains the approximate street address of the given Location.
 | GeoHash (optional) | "u4phd376qbg5"   | [GeoHash](https://en.wikipedia.org/wiki/Geohash) of the location.    |
 | datetime           | 1604042795000    | Unix timestamp in milliseconds, for when this location was recorded. |
 
+## AccessControlKeyUsage
+
+> 📘 Coming soon to Streaming API
+> 
+> This field will be available in Streaming API in July 2023.
+
+The field AccessControlKeyUsage contains information about an access operation for a machine. Relaying information about who initiated the operation, which key was used and if the operation was succesful.
+
+[block:parameters]
+{
+  "data": {
+    "h-0": "Field",
+    "h-1": "Example",
+    "h-2": "Description",
+    "0-0": "OperatorId (optional)",
+    "0-1": "\"60b1b9ab-1902-4e43-adfd-fc8f29acd838\"",
+    "0-2": "Id of the operator performing the operation, if identifiable.",
+    "1-0": "KeyId (optional)",
+    "1-1": "\"84c63030-00a2-4b90-81bd-e63ee18751e8\"",
+    "1-2": "Id of the key used in the operation, if identifiable.",
+    "2-0": "Operation",
+    "2-1": "\"LOCK\"  \n\"UNLOCK",
+    "2-2": "The type of operation performed.",
+    "3-0": "AccessType",
+    "3-1": "\"DIGITAL_KEY\"  \n\"ROLLING_PIN",
+    "3-2": "The type of access used for the operation. This can be on of DIGITAL_KEY, ROLLING_PIN, STATIC_PIN, KEY_CARD, KEYPAD_USE",
+    "4-0": "Success",
+    "4-1": "true",
+    "4-2": "Boolean value for whether the operation was successful.",
+    "5-0": "datetime",
+    "5-1": "1604042795000",
+    "5-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this operation was recorded."
+  },
+  "cols": 3,
+  "rows": 6,
+  "align": [
+    "left",
+    "left",
+    "left"
+  ]
+}
+[/block]
+
 ## Hours: CumulativeOperatingHours, CumulativeIdleHours, ...
 
 In general, the field CumulativeOperatingHours is the most interesting: this is the total amount of hours for the machine. Other fields might be present as well, if those datapoints are available for this machine, such as CumulativeIdleHours, CumulativeIdleNonOperatingHours, CumulativeProductiveHours, CumulativeMovingHours, etc. The general format of the Hours fields is:
