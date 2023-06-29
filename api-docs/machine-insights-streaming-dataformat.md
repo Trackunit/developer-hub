@@ -57,6 +57,7 @@ Contains the approximate street address of the given Location.
 |:-------------------|:-----------------|:---------------------------------------------------------------------|
 | Country (optional) | "Denmark"        | Country of the location.                                             |
 | Zipcode (optional) | "9000"           | Zipcode of the location.                                             |
+| City (optional)    | "Aalborg"        | City of the location.                                                |
 | Address (optional) | "Gasværksvej 24" | Street address of the location.                                      |
 | GeoHash (optional) | "u4phd376qbg5"   | [GeoHash](https://en.wikipedia.org/wiki/Geohash) of the location.    |
 | datetime           | 1604042795000    | Unix timestamp in milliseconds, for when this location was recorded. |
