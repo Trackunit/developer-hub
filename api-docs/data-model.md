@@ -91,6 +91,19 @@ Unit of measurement: _volt_.
 
 ### AcPhaseL1NeturalRMSVoltage
 
+> 🚧 Deprecated
+>
+> This insight is deprecated. Please use AcPhaseL1NeutralRMSVoltage.
+
+The root mean square (RMS) Voltage measured between phase L1 and neutral.  
+Unit of measurement: _volt_.
+
+### AcPhaseL1NeutralRMSVoltage
+
+> 📘 Coming soon to Streaming API
+>
+> This insight will be available in Streaming API in July 2023.
+
 The root mean square (RMS) Voltage measured between phase L1 and neutral.  
 Unit of measurement: _volt_.
 
@@ -116,6 +129,19 @@ Unit of measurement: _volt_.
 
 ### AcPhaseL2NeturalRMSVoltage
 
+> 🚧 Deprecated
+>
+> This insight is deprecated. Please use AcPhaseL2NeutralRMSVoltage.
+
+The root mean square (RMS) Voltage measured between phase L2 and neutral.  
+Unit of measurement: _volt_.
+
+### AcPhaseL2NeutralRMSVoltage
+
+> 📘 Coming soon to Streaming API
+>
+> This insight will be available in Streaming API in July 2023.
+
 The root mean square (RMS) Voltage measured between phase L2 and neutral.  
 Unit of measurement: _volt_.
 
@@ -140,6 +166,19 @@ The root mean square (RMS) Voltage measured between phase L3 and L1.
 Unit of measurement: _volt_.
 
 ### AcPhaseL3NeturalRMSVoltage
+
+> 🚧 Deprecated
+>
+> This insight is deprecated. Please use AcPhaseL3NeutralRMSVoltage.
+
+The root mean square (RMS) Voltage measured between phase L3 and neutral.  
+Unit of measurement: _volt_.
+
+### AcPhaseL3NeutralRMSVoltage
+
+> 📘 Coming soon to Streaming API
+>
+> This insight will be available in Streaming API in July 2023.
 
 The root mean square (RMS) Voltage measured between phase L3 and neutral.  
 Unit of measurement: _volt_.
