@@ -51,6 +51,10 @@ The fields Location and LocationAddress contain the position, and the approximat
 
 ## LocationMetadata
 
+> 📘 Coming soon to Streaming API
+>
+> This field will be available in Streaming API in July 2023.
+
 Contains additional information about the Location.
 
 | Field                     | Example | Description                                                                                                                     |
