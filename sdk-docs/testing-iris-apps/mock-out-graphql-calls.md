@@ -76,7 +76,7 @@ describe("App", () => {
 
 Let's break the test down.
 1. Notice that we imported the following libraries:
-    - [@testing-library/dom](https://github.com/testing-library/dom) provides utilities involved with querying the DOM for nodes in a way that's similar to how the user finds elements on the page. In this way, the library helps ensure your tests give you confidence that your application will work when a real user uses it.
+    - [@testing-library/dom](https://www.npmjs.com/package/@testing-library/dom) provides utilities involved with querying the DOM for nodes in a way that's similar to how the user finds elements on the page. In this way, the library helps ensure your tests give you confidence that your application will work when a real user uses it.
 
     - [@trackunit/react-core-contexts-test](https://www.npmjs.com/package/@trackunit/react-core-contexts-test) helps you mock Trackunit objects.
 
