@@ -10,7 +10,7 @@ parentDocSlug: test-iris-apps
 
 Consider the following query that retrieves the details of an asset with a given ID:
 
-```javascript
+```graphql
 query GetDemoAsset($assetId: String!) {
   asset(id: $assetId) {
     id
