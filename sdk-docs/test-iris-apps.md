@@ -1,7 +1,6 @@
 ---
 title: Testing Iris App
 category: 61fcd8e1a448f5004215317c
-parentDocSlug: testing-iris-apps
 ---
 
 > 🚧 Beta

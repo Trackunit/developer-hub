@@ -1,7 +1,7 @@
 ---
 title: Mocking out graphql calls
 category: 61fcd8e1a448f5004215317c
-parentDocSlug: testing-iris-apps
+parentDocSlug: test-iris-apps
 ---
 
 > 🚧 Beta
