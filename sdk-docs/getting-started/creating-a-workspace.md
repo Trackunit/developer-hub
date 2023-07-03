@@ -13,17 +13,17 @@ To setup an empty NX workspace follow the steps below, if you do not already kno
 ### 1. Run the command below to create an nx workspace for all your Iris Apps:
 
 ```
-npx create-nx-workspace@15.9.4 --preset=react-monorepo
+npx create-nx-workspace@16.4.1 --preset=react-monorepo
 ```
 
 ### 2. It should guide you to enter:
 
 ```
-✔ Repository name                                   · <repository-name>
+✔ Where would you like to create your workspace?    · <repository-name>
 ✔ Application name                                  · <sample-app-name>
-✔ Bundler to be used to build the application       · webpack
+✔ Which bundler would you like to use?              · webpack
 ✔ Default stylesheet format                         · css
-✔ Enable distributed caching to make your CI faster · Yes
+✔ Enable distributed caching to make your CI faster · No
 ```
 
 ### 3. Go into your NX Workspace folder
@@ -36,6 +36,6 @@ You now have a NX Workspace and are ready to create your first Iris app!
 
 > Note that a couple of sample apps was created as part of setting up the workspace. These are safe to delete by running the commands
 > ```
-> nx generate @nrwl/workspace:remove <sample-app-name>-e2e
-> nx generate @nrwl/workspace:remove <sample-app-name>
+> nx generate @nx/workspace:remove <sample-app-name>-e2e
+> nx generate @nx/workspace:remove <sample-app-name>
 > ```
