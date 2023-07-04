@@ -169,10 +169,10 @@ For the exact semantics and availability of these data points, please see the [d
 
 ## CANMessages
 
-> 📘 This is probably not the data you are looking for
+> 📘 This is low-level data
 >
-> In general most of the CAN data has been interpreted to Machine Insights by Trackunit, and it should only be necessary to look at the CANMessages themselves if something particular is needed. CANMessages are not normalized, and not data cleansed to the same degree.  
-> You are probably looking for one of the other fields.
+> Most of the CAN data has been interpreted to Machine Insights by Trackunit. CANMessages are not normalized, and not data cleansed to the same degree. CANMessages should only be necessary if something particular is needed.  
+> We recommend looking at the other fields first.
 
 CAN messages is data directly from the CAN bus of the machine. In general a working knowledge of the CAN bus, and sometimes the specific CAN bus of a machine, is needed to interpret this data. The CANMessages field is an array, where each element has the following format:
 
