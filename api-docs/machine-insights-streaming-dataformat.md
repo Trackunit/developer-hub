@@ -137,7 +137,7 @@ The general format of the Hours fields is:
 
 ## Machine Insights
 
-The main fields (around 80 in total) all describe some aspect of semantic data about a machine: FuelRemaining, EngineStatus, Distance travelled, etc. The availability of these data points will vary depending on the source of the telematic data (be it GPS, CAN-bus, ISO feed, etc.). The unit of measurement for each data point will always be the same, i.e., the unit for Distance will always be "km" for kilometres. The general format of the machine insights is, with varying field names:
+The main fields (around 130 in total) all describe some aspect of semantic data about a machine: FuelRemaining, EngineStatus, Distance travelled, etc. The availability of these data points will vary depending on the source of the telematic data (be it GPS, CAN-bus, ISO feed, etc.). The unit of measurement for each data point will always be the same, i.e., the unit for Distance will always be "km" for kilometres. The general format of the machine insights is, with varying field names:
 
 [block:parameters]
 {
