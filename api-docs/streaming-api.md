@@ -6,7 +6,7 @@ The Trackunit Streaming API is a near-realtime, low latency API, that enables cu
 
 > 📘 Available by request
 >
-> The Streaming API is only available by request as an add-on service. Customers need to be on an "Insight" subscription level and set-up costs/API license pricing will be handled by the  account manager. Once commercials are agreed upon Trackunit support can be contacted to set up the Streaming API functionality.
+> The Streaming API is only available by request as an add-on service. Customers need to be on an "Insight" subscription level and set-up costs/API license pricing will be handled by the account manager. Once commercials are agreed upon, Trackunit support can be contacted to set up the Streaming API functionality.
 
 ## Design
 
@@ -24,7 +24,7 @@ Data is available in two formats:
 
 We recommend the Machine Insights based topic for any future integrations.
 
-Technically, the data is provided in the [binary Avro dataformat](http://avro.apache.org/) which is very efficient, while at the same time allowing us to extend the dataformat in the future with additional datapoints. A Schema Registry is used to allow producers and consumers to evolve while maintaining compatibility. We will only do compatible changes to the dataformats and stay compatible with the previous version of the schemas, and announce any changes. We recommend to stay up to date, and implement these schema changes in a timely fashion in order to have access to all the available datapoints.
+Technically, the data is provided in the [binary Avro data format](http://avro.apache.org/) which is highly efficient, while simultaneously enabling us to extend the data format in the future with additional data points. A Schema Registry is utilized to facilitate the evolution of producers and consumers while preserving compatibility. We will exclusively make compatible changes to the data formats and ensure compatibility with the previous version of the schemas, while also providing notifications about any changes. We strongly advise staying up to date and promptly implementing these schema changes to access all the available data points.
 
 ## How to connect
 

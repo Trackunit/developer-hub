@@ -2,7 +2,7 @@
 title: Data Model
 category: 6295ae369ba4b1001464c9e5
 ---
-Trackunit's data model is semantically defined datapoints called machine insights, each of them capturing some insight into a machine or asset. This means that no matter the connectivity of the machine (be it directly through Trackunit or e.g. an ISO feed) the data model is the same, whereas the datapoints available for each machine may vary.
+Trackunit's data model is semantically defined data points called machine insights, each of them capturing some insight into a machine or asset. This means that no matter the connectivity of the machine (be it directly through Trackunit or e.g. an ISO feed) the data model is the same, whereas the data points available for each machine may vary.
 
 Each machine insight has a distinct definition, such that machine insights can be used across an entire fleet. Each machine insight is always normalised to a specific unit of measurement, typically an SI-unit.
 
