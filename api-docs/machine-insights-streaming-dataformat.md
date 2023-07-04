@@ -60,7 +60,7 @@ Contains additional information about the Location.
 | Field                     | Example | Description                                                                                                                     |
 |:--------------------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------|
 | AccuracyRadius (optional) | 10.0    | Accuracy of the location defined as a radius in metres. Corresponds to the Estimated Horizontal Position Error (EHPE) from GPS. |
-| HighAccuracy (optional)   | true    | The location in com.aemp20.Location has high accuracy                                                                           |
+| HighAccuracy (optional)   | true    | Whether the location in com.aemp20.Location is accurate enough to be used for business purposes.                                |
 
 ## LocationAddress
 
