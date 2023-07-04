@@ -6,7 +6,7 @@ The Trackunit Streaming API is a near-realtime, low latency API, that enables cu
 
 > 📘 Available by request
 >
-> The Streaming API is only available by request as an add-on service. Customers need to be on an "Insight" subscription level and set-up costs/API license pricing will be handled by the account manager. Once commercials are agreed upon, Trackunit support can be contacted to set up the Streaming API functionality.
+> The Streaming API is only available by request as an add-on service. Customers need to be on an "Expand" subscription level and set-up costs/API license pricing will be handled by the account manager. Once commercials are agreed upon, Trackunit support can be contacted to set up the Streaming API functionality.
 
 ## Design
 
