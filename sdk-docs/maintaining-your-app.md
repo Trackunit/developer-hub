@@ -18,10 +18,6 @@ We will periodically release updates for our SDK libraries. It is crucial to kee
 The SDK relies on specific Nx and Node.js versions. Ensure that your application complies with the required versions at all times. Do *not* update your Nx workspace immediately when a new Nx version is released. Instead, only upgrade when our SDKs depend on a newer version. If in doubt, refer to the [prerequisites](hhttps://developers.trackunit.com/docs/prerequisites) page.
 It will be updated whenever our packages depend on new Nx and Node versions. Warnings in your terminal will also notify you that your app is using the wrong versions.
 
-[Migrating](https://nx.dev/packages/nx/documents/migrate) an existing Nx workspace to a new version may not be a straightforward process.
-The migration may require manual intervention, such as deleting, moving, renaming, or creating certain files.
-The migration process depends on the Nx team's implementation. Sometimes they provide a tool that automatically migrates older versions
-to newer ones, while other times you may need to take additional steps.
-Always follow the provided guidelines and best practices for a smooth migration experience.
+Migrating an existing Nx workspace to a new version is relatively simple as long as you follow our guidelines and their best-practices when working with Nx.
 
-For more information on how to migrate an Nx workspace see Nx's own guide: [Manual migration of existing code bases](https://nx.dev/recipes/adopting-nx/manual)
+For more information on how to migrate an Nx workspace refer to the official docs about the [nx migrate](https://nx.dev/packages/nx/documents/migrate#examples) command.
