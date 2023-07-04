@@ -81,7 +81,7 @@ Contains the approximate street address of the given Location.
 > 
 > This field will be available in Streaming API in July 2023.
 
-The field AccessControlKeyUsage contains information about an access operation for a machine. Relaying information about who initiated the operation, which key was used and if the operation was succesful.
+The field AccessControlKeyUsage contains information about an access operation for a machine. Relaying information about who initiated the operation, which key was used and if the operation was successful.
 
 [block:parameters]
 {
