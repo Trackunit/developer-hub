@@ -3,13 +3,13 @@ title: Machine Insights Streaming Dataformat
 category: 62fbabf8d9095e057cc1cd2c
 parentDocSlug: streaming-api
 ---
-The Machine Insights based streaming dataformat provides high-level semantic information about machines. This means that e.g. information about "Operating Hours", "Fuel Remaining in Tank", "DEF Level" and "Battery Voltage" are immediately present in a normalized format - no matter the input source. This is perfectly tailored towards usage in a datalake or in AI-based analytics.
+The Machine Insights based streaming data format provides high-level semantic information about machines. This means that e.g. information about "Operating Hours", "Fuel Remaining in Tank", "DEF Level" and "Battery Voltage" are immediately present in a normalized format - no matter the input source. This is perfectly tailored towards usage in a data lake or in AI-based analytics.
 
-> 📘 All datafields are optional
+> 📘 All data fields are optional
 >
-> For the same machine some might be filled out in one message while others are filled out in the next message; which fields are filled out depends on the technical details of the datacollection. The interpretation should always be that the individual datapoint was provided at that individual timestamp.
+> For the same machine, some fields might be filled out in one message while others are filled out in the next message; which fields are filled out depends on the technical details of the data collection. The interpretation should always be that the individual data point was provided at its respective timestamp.
 
-Data is in general in-order, that is most recent datapoint last, but this is not guaranteed. If the most recent data is needed the timestamps should be compared. Any processing of historic data should be prepared to receive and handle data out of order.
+The data is generally ordered in sequence, with the most recent data point appearing last, although this order is not guaranteed. If the most recent data is needed the timestamps should be compared. Any processing of historic data should be prepared to receive and handle data out of order.
 
 ## Header and Metadata information
 
@@ -46,30 +46,34 @@ The fields Location and LocationAddress contain the position, and the approximat
 | Latitude                 | 57.048273     | Latitude of the location.                                                                                       |
 | Longitude                | 9.947384      | Longitude of the location.                                                                                      |
 | Altitude (optional)      | 17            | Altitude of the location, or null.                                                                              |
-| Altitudeunits (optional) | "metres"      | Units of the altitude (always normalized to "metres"), or null.                                                 |
+| AltitudeUnits (optional) | "metres"      | Units of the altitude (always normalized to "metres"), or null.                                                 |
 | datetime                 | 1604042795000 | [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this location was recorded. |
 
 ## LocationMetadata
+
+> 📘 Coming soon to Streaming API
+>
+> This field will be available in Streaming API in July 2023.
 
 Contains additional information about the Location.
 
 | Field                     | Example | Description                                                                                                                     |
 |:--------------------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------|
 | AccuracyRadius (optional) | 10.0    | Accuracy of the location defined as a radius in metres. Corresponds to the Estimated Horizontal Position Error (EHPE) from GPS. |
-| HighAccuracy (optional)   | true    | The location in com.aemp20.Location has high accuracy                                                                           |
+| HighAccuracy (optional)   | true    | Whether the location in com.aemp20.Location is accurate enough to be used for business purposes.                                |
 
 ## LocationAddress
 
 Contains the approximate street address of the given Location.
 
-| Field              | Example          | Description                                                          |
-|:-------------------|:-----------------|:---------------------------------------------------------------------|
-| Country (optional) | "Denmark"        | Country of the location.                                             |
-| Zipcode (optional) | "9000"           | Zipcode of the location.                                             |
-| City (optional)    | "Aalborg"        | City of the location.                                                |
-| Address (optional) | "Gasværksvej 24" | Street address of the location.                                      |
-| GeoHash (optional) | "u4phd376qbg5"   | [GeoHash](https://en.wikipedia.org/wiki/Geohash) of the location.    |
-| datetime           | 1604042795000    | Unix timestamp in milliseconds, for when this location was recorded. |
+| Field              | Example          | Description                                                                                                     |
+|:-------------------|:-----------------|:----------------------------------------------------------------------------------------------------------------|
+| Country (optional) | "Denmark"        | Country of the location.                                                                                        |
+| Zipcode (optional) | "9000"           | Zipcode of the location.                                                                                        |
+| City (optional)    | "Aalborg"        | City of the location.                                                                                           |
+| Address (optional) | "Gasværksvej 24" | Street address of the location.                                                                                 |
+| GeoHash (optional) | "u4phd376qbg5"   | [GeoHash](https://en.wikipedia.org/wiki/Geohash) of the location.                                               |
+| datetime           | 1604042795000    | [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this location was recorded. |
 
 ## AccessControlKeyUsage
 
@@ -77,7 +81,7 @@ Contains the approximate street address of the given Location.
 > 
 > This field will be available in Streaming API in July 2023.
 
-The field AccessControlKeyUsage contains information about an access operation for a machine. Relaying information about who initiated the operation, which key was used and if the operation was succesful.
+The field AccessControlKeyUsage contains information about an access operation for a machine. Relaying information about who initiated the operation, which key was used and if the operation was successful.
 
 [block:parameters]
 {
@@ -87,10 +91,10 @@ The field AccessControlKeyUsage contains information about an access operation f
     "h-2": "Description",
     "0-0": "OperatorId (optional)",
     "0-1": "\"60b1b9ab-1902-4e43-adfd-fc8f29acd838\"",
-    "0-2": "Id of the operator performing the operation, if identifiable.",
+    "0-2": "ID of the operator performing the operation, if identifiable.",
     "1-0": "KeyId (optional)",
     "1-1": "\"84c63030-00a2-4b90-81bd-e63ee18751e8\"",
-    "1-2": "Id of the key used in the operation, if identifiable.",
+    "1-2": "ID of the key used in the operation, if identifiable.",
     "2-0": "Operation",
     "2-1": "\"LOCK\"  \n\"UNLOCK",
     "2-2": "The type of operation performed.",
@@ -116,16 +120,24 @@ The field AccessControlKeyUsage contains information about an access operation f
 
 ## Hours: CumulativeOperatingHours, CumulativeIdleHours, ...
 
-In general, the field CumulativeOperatingHours is the most interesting: this is the total amount of hours for the machine. Other fields might be present as well, if those datapoints are available for this machine, such as CumulativeIdleHours, CumulativeIdleNonOperatingHours, CumulativeProductiveHours, CumulativeMovingHours, etc. The general format of the Hours fields is:
+The Cumulative Operating Hours field is a crucial parameter that represents the total number of hours the machine has been in operation. Depending on the machine type, the following fields may also be present:
 
-| Field    | Example       | Description                                                                                                      |
-|:---------|:--------------|:-----------------------------------------------------------------------------------------------------------------|
-| Hour     | 42.12         | Decimal amount of hours.                                                                                         |
-| datetime | 1604042795000 | [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this datapoint was recorded. |
+* CumulativeIdleHours
+* CumulativeIdleNonOperatingHours
+* CumulativeProductiveHours
+* CumulativeMovingHours
+* etc.
+
+The general format of the Hours fields is:
+
+| Field    | Example       | Description                                                                                                       |
+|:---------|:--------------|:------------------------------------------------------------------------------------------------------------------|
+| Hour     | 42.12         | Decimal amount of hours.                                                                                          |
+| datetime | 1604042795000 | [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this data point was recorded. |
 
 ## Machine Insights
 
-The main fields (around 80 in total) all describe some aspect of semantic data about a machine: FuelRemaining, EngineStatus, Distance travelled, etc. The availability of these datapoints will vary depending on the source of the telematic data (be it GPS, CAN-bus, ISO feed, etc.). The unit of measurement for each datapoint will always be the same, i.e., the unit for Distance will always be "km" for kilometres. The general format of the machine insights is, with varying field names:
+The main fields (around 130 in total) all describe some aspect of semantic data about a machine: FuelRemaining, EngineStatus, Distance travelled, etc. The availability of these data points will vary depending on the source of the telematic data (be it GPS, CAN-bus, ISO feed, etc.). The unit of measurement for each data point will always be the same, i.e., the unit for Distance will always be "km" for kilometres. The general format of the machine insights is, with varying field names:
 
 [block:parameters]
 {
@@ -135,13 +147,13 @@ The main fields (around 80 in total) all describe some aspect of semantic data a
 "h-2": "Description",
 "0-0": "Field with value (naming varies)",
 "0-1": "13.8  \ntrue",
-"0-2": "The value of the datapoint itself. Floating point or boolean.",
+"0-2": "The value of the data point itself. Floating point or boolean.",
 "1-0": "unit (naming sometimes varies)",
 "1-1": "\"km\"  \n\"volt\"",
-"1-2": "The unit of measurement for this dataseries. Will always stay the same for the same field.",
+"1-2": "The unit of measurement for this data series. Will always stay the same for the same field.",
 "2-0": "datetime",
 "2-1": "1604042795000",
-"2-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this datapoint was recorded."
+"2-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this data point was recorded."
 },
 "cols": 3,
 "rows": 3,
@@ -153,14 +165,14 @@ The main fields (around 80 in total) all describe some aspect of semantic data a
 }
 [/block]
 
-For the exact semantics and availability of these datapoints, please see the [data model description.](https://dev.trackunit.com/docs/trackunit-data-model)
+For the exact semantics and availability of these data points, please see the [data model description.](https://dev.trackunit.com/docs/trackunit-data-model)
 
 ## CANMessages
 
-> 📘 This is probably not the data you are looking for
+> 📘 This is low-level data
 >
-> In general most of the CAN data has been interpreted to Machine Insights by Trackunit, and it should only be necessary to look at the CANMessages themselves if something particular is needed. CANMessages are not normalized, and not data cleansed to the same degree.  
-> You are probably looking for one of the other fields.
+> Most of the CAN data has been interpreted to Machine Insights by Trackunit. CANMessages are not normalized, and not data cleansed to the same degree. CANMessages should only be necessary if something particular is needed.  
+> We recommend looking at the other fields first.
 
 CAN messages is data directly from the CAN bus of the machine. In general a working knowledge of the CAN bus, and sometimes the specific CAN bus of a machine, is needed to interpret this data. The CANMessages field is an array, where each element has the following format:
 
@@ -172,13 +184,13 @@ CAN messages is data directly from the CAN bus of the machine. In general a work
 "h-2": "Description",
 "0-0": "datetime",
 "0-1": "1604042795000",
-"0-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this datapoint was recorded.",
+"0-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this data point was recorded.",
 "1-0": "UnitOfMeasurement",
 "1-1": "\"%\"  \n\"rpm\"",
 "1-2": "The unit of measurement, as specified in the CAN profile; not normalized.",
 "2-0": "VariableId",
 "2-1": "212",
-"2-2": "The internal Trackunit VariableId for this dataitem.",
+"2-2": "The internal Trackunit VariableId for this data item.",
 "3-0": "VariableName",
 "3-1": "\"Engine Speed\"",
 "3-2": "The name corresponding to the VariableId.",
@@ -263,7 +275,7 @@ More details about how the data was picked is available in the "CanMessageData" 
 
 ## FaultCodes
 
-FaultCodes contain an array of faults that occured on a machine; typically because it was present on the CAN bus, but could also be imported from an ISO feed, or similar. Each element has the following fields:
+FaultCodes contain an array of faults that occurred on a machine, typically because they were present on the CAN bus, but they could also be imported from an ISO feed or similar sources. Each element in the array has the following fields:
 
 [block:parameters]
 {
@@ -288,7 +300,7 @@ FaultCodes contain an array of faults that occured on a machine; typically becau
 "4-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this fault started appearing.",
 "5-0": "datetimeCleared",
 "5-1": "null  \n1604046795000",
-"5-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this fault stopped appearing, or null if still present or unknown.  \nFor CAN errors there will normally be one message with datetimeCleared = null, followed at a later time by a message with datetimeCleared != null. From outher sources, this behaviour is not guaranteed."
+"5-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this fault stopped appearing, or null if still present or unknown.  \nFor CAN errors there will normally be one message with datetimeCleared = null, followed at a later time by a message with datetimeCleared != null. From other sources, this behaviour is not guaranteed."
 },
 "cols": 3,
 "rows": 6,
