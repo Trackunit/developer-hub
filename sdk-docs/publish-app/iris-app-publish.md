@@ -56,7 +56,7 @@ nx run [name-of-your-app]:publishApp
 ____
 ## Troubleshooting tips
 If anything fails during the publish flow, look for clues in the terminal:
-![](https://files.readme.io/publish-device-not-activated-termina.png)
+![](https://cdn.statically.io/gh/trackunit/developer-hub/master/sdk-docs/publish-device-not-activated-termina.png)
 
 If you get an error that you can't figure out yourself, like the one below, reach out to support.
-![](https://files.readme.io/publish-device-not-activated-web.png)
+![](https://cdn.statically.io/gh/trackunit/developer-hub/master/sdk-docs/publish-device-not-activated-web.png)
