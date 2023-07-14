@@ -94,11 +94,11 @@ import {
   Spinner,
   Heading,
 } from '@trackunit/react-components';
-import { useGetAssetsByProductionYearQuery } from './generated/graphql-api';
+import { GetAssetsByProductionYearDocument } from './generated/graphql-api/graphql';
 
 
 export const App = () => {
-  const { data, loading, error } = useGetAssetsByProductionYearQuery({
+ const { data, loading, error } = useQuery(GetAssetsByProductionYearDocument, {
     variables: {
      first: 5, // Take first 5 results
      productionYears: ["2017", "2023"] // Filter by these production years
