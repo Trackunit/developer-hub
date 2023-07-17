@@ -1,5 +1,5 @@
 ---
-title: Usage
+title: Time Series API - Usage guide
 category: 6492ae1582247100472ad7c5
 ---
 # Instant Query Examples
