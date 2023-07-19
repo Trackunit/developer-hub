@@ -2,11 +2,15 @@
 title: Pagination
 category: 6295ae369ba4b1001464c9e5
 ---
-All endpoints that return lists of objects use pagination. Pagination allows consumers to request a part of the list using an offset-based pagination mechanism.
+All endpoints that return lists of objects use pagination. Pagination allows consumers to request a part of the list using a page or cursor-based pagination mechanism.
 
-## Pagination Response Objects
+# Page-based pagination
+Page-based pagination also known ass offset-pagination, divides the result into smaller pages of elements.
+Using page-size and page-number to control the size of each page and which page to be returned.
 
-Please find a sample paginated JSON response below. Each paginated response contains the following attributes.
+## Page-based Pagination Response Object
+
+Please find a sample of a page-based paginated JSON response below. Each paginated response contains the following attributes.
 
 ```json
 {
@@ -34,9 +38,9 @@ Please find a sample paginated JSON response below. Each paginated response cont
  ⑤ Number of elements in the current page  
  ⑥ A list of resources in the page, each one represented as a JSON object
 
-## Requesting Paginated Results
+## Requesting Page-based Paginated Results
 
-In order to allow for a control over the pagination, Trackunit APIs expose a set of `size`, `page` and `sort` query parameters.
+In order to allow for a control over the pagination, Trackunit APIs expose a set of query parameters `size`, `page` and `sort` to control the result.
 
 For example:
 
@@ -53,3 +57,54 @@ Query parameters that control pagination are optional.
 | `size` | The size of the page to be returned | 20 |
 | `page` | 0-based page number. The response for a sample request above results in showing a second page. | 0 (first page) |
 | `sort` | Comma-separated list of attributes optionally prefixed with a + or a - sign to indicate ascending (default when prefix is missing) or descending order for each field. Please refer to the documentation of a specific endpoint to learn which attributes may be requested for sorting. | Default sorting depends on a case by case basis. |
+
+# Cursor-based pagination
+Cursor-based pagination, divides the result into smaller pages of elements.
+Using a page-limit and Cursor to control the size of each page and which page to be returned.
+Unlike page-based pagination, cursor-based returns an Id for the Cursor pointing to the previous or next page. Not allowing to skip pages.
+## Cursor-based Pagination Response object
+
+Find a sample cursor-paginated JSON response below. Each paginated response will contain some of the following attributes.
+
+```json
+{
+    ① "before": "00ul7f8m2qkOPuXF5357",
+    ② "after": "Wam4pf8m2qk8KuXF3446",
+    ③ "limit": 20,
+    ④ "content": [
+        {
+            ...
+        },
+        {
+            ...
+        },
+        ...
+    ]
+}
+```
+
+① Cursor pointing to the previous page  
+② Cursor pointing to the next page  
+③ Maximum number of elements in the page  
+④ A list of resources in the page, each one represented as a JSON object
+
+## Requesting cursor-based paginated result
+
+In order to control the cursor-based pagination, Trackunit APIs expose a set of query parameters `limit`, `before`, `after` and `sort` to control the result.
+
+For example:
+
+```
+GET https://iris.trackunit.com/public/api/operator/operators?limit=20&sort=-displayName&after=W251bGwsIjAwdXNwYTR2cnd3aTdrNngwMzU3Il0=
+```
+
+will result in showing the next page `after` the cursor of maximum 20 elements per page, sorted by `displayName` in descending order.
+
+Query parameters that control pagination are optional.
+
+| Parameter | Description                                                                                                                                                                                                                                                       | Default value                                                             |
+|:----------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
+| `before`  | The cursor Id pointing to the previous page. If there is any.                                                                                                                                                                                                     | 20                                                                        |
+| `after`   | The cursor Id pointing to the next page. If there is any.                                                                                                                                                                                                         | 0 (first page)                                                            |
+| `limit`   | The maximum number of elements to be returned in a page                                                                                                                                                                                                           | Default and max limit depends on a case by case basis                     |
+| `sort`    | attribute(s) optionally prefixed with a + or a - sign to indicate ascending (default when prefix is missing) or descending order for each field. Please refer to the documentation of a specific endpoint to learn which attributes may be requested for sorting. | Default sorting and number of attributes depends on a case by case basis. |
