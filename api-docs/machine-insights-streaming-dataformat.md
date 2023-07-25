@@ -51,10 +51,6 @@ The fields Location and LocationAddress contain the position, and the approximat
 
 ## LocationMetadata
 
-> 📘 Coming soon to Streaming API
->
-> This field will be available in Streaming API in July 2023.
-
 Contains additional information about the Location.
 
 | Field                     | Example | Description                                                                                                                     |
@@ -76,10 +72,6 @@ Contains the approximate street address of the given Location.
 | datetime           | 1604042795000    | [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this location was recorded. |
 
 ## AccessControlKeyUsage
-
-> 📘 Coming soon to Streaming API
-> 
-> This field will be available in Streaming API in July 2023.
 
 The field AccessControlKeyUsage contains information about an access operation for a machine. Relaying information about who initiated the operation, which key was used and if the operation was successful.
 
