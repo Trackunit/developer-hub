@@ -278,3 +278,60 @@ curl --location --request POST 'https://iris.trackunit.com/api/service-managemen
 
 
 You have now successfully completed a service cycle. If your service plan has further planned services then the next service is now planned and the asset is in service status PLANNED.
+
+## Predictions
+
+> 📘 This feature is only available with certain packages
+
+The Service Management app has the capability of predicting when services are due based on historical usage data. Predicted due dates are calculated using linear extrapolation on the usage of the machine (cumulative running hours/distance) over the last 30 days.
+They are calculated for all assets configured with service plans and are recalculated daily. If the planned service on an asset has multiple service criteria the prediction will be the first coming date of the calculations. The API response will include the criteria type that is basis for the calculation.
+If the asset usage drops for an extended period of time and causes the prediction to be too far in the future, the system will clear out the predicted date.  
+To get the predictions call the endpoints for service status, e.g.
+
+```curl
+  curl --request GET \
+     --url 'https://iris.trackunit.com/api/service-management/v2/plans/assignments/service-status?assetId=00000000-0000-0000-0000-000001427023' \
+     --header 'accept: application/json' \
+     --header 'authorization: Bearer <<YOUR_TOKEN>>
+```
+
+This will produce a response containing predictions for each planned service like:
+
+```json
+{
+  "plannedServiceStatuses": [
+    {
+      "servicePlanId": "14a32d8a-4f2a-4db4-baf9-608b186a6fab",
+      "plannedServiceId": "5e835878-31c9-4fa8-87fe-e10f98d0fd58",
+      "serviceProviderAccountId": "44e30abf-f6e8-4bd2-9c51-cb229ee91f02",
+      "cumulativeOperatingHoursCriteria": {
+        "criteria": {
+          "id": "c83cdb68-cf1f-4759-bd09-7f111ff74b5c",
+          "notifyHoursBefore": 100,
+          "serviceHours": 2100
+        },
+        "triggered": true
+      },
+      "timeCriteria": {
+        "criteria": {
+          "notifyDaysBefore": 30,
+          "serviceTime": "2024-04-23T08:10:09.124Z"
+        },
+        "triggered": false
+      },
+      "triggeredAt": "2023-05-08T15:00:13.464Z",
+      "status": "OVERDUE",
+      "name": "500h/12M Recurring",
+      "predictionCriteria": "CUMULATIVE_OPERATING_HOURS",
+      "predictedServiceTime": "2023-05-08T15:00:13.464Z",
+      "predictedAt": "2023-05-08T15:00:13.464Z"
+    }
+  ]
+}
+```
+
+The prediction is contained in the following fields:
+
+- `predictedServiceTime` - the expected due date
+- `predictionCriteria` - the criteria responsible for the predicted due date
+- `predictedAt` - the time the prediction was calculated
