@@ -281,9 +281,11 @@ You have now successfully completed a service cycle. If your service plan has fu
 
 ## Predictions
 
-The service management app is offering service prediction functionality. Predicted due dates are calculated using linear extrapolation on the usage of the machine (cumulative running hours/distance) over the last 30 days.
-They are calculated for all assets configured with service plans and are recalculated daily. If the planned service on an asset has multiple service criteria the prediction will be the first coming date of the calculations. In the API response it will be included which criteria type was the basis for the calculation.
-If usage of the machine drops off the prediction will be cleared when ends up being more than 10 years in the future.  
+> 📘 This feature is only available with certain packages
+
+The Service Management app has the capability of predicting when services are due based on historical usage data. Predicted due dates are calculated using linear extrapolation on the usage of the machine (cumulative running hours/distance) over the last 30 days.
+They are calculated for all assets configured with service plans and are recalculated daily. If the planned service on an asset has multiple service criteria the prediction will be the first coming date of the calculations. The API response will include the criteria type that is basis for the calculation.
+If the asset usage drops for an extended period of time and causes the prediction to be too far in the future, the system will clear out the predicted date.  
 To get the predictions call the endpoints for service status, e.g.
 
 ```curl
@@ -305,14 +307,14 @@ This will produce a response containing predictions for each planned service lik
       "cumulativeOperatingHoursCriteria": {
         "criteria": {
           "id": "c83cdb68-cf1f-4759-bd09-7f111ff74b5c",
-          "notifyHoursBefore": 1,
+          "notifyHoursBefore": 100,
           "serviceHours": 2100
         },
         "triggered": true
       },
       "timeCriteria": {
         "criteria": {
-          "notifyDaysBefore": 10,
+          "notifyDaysBefore": 30,
           "serviceTime": "2024-04-23T08:10:09.124Z"
         },
         "triggered": false
