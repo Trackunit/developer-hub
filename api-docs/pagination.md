@@ -60,8 +60,9 @@ Query parameters that control pagination are optional.
 
 # Cursor-based pagination
 Cursor-based pagination, divides the result into smaller pages of elements.
-Using a page-limit and Cursor to control the size of each page and which page to be returned.
-Unlike page-based pagination, cursor-based returns an Id for the Cursor pointing to the previous or next page. Not allowing to skip pages.
+Using a combination of page-limit and Cursor to control the number of elements returned and where the subsequent request should start from.
+Unlike page-based pagination, cursor-based returns an ID associated with the cursor, pointing to either the first or last elements in the returned result.
+This ID can be used to control where the next result set should begin from.
 ## Cursor-based Pagination Response object
 
 Find a sample cursor-paginated JSON response below. Each paginated response will contain some of the following attributes.
@@ -83,10 +84,10 @@ Find a sample cursor-paginated JSON response below. Each paginated response will
 }
 ```
 
-① Cursor pointing to the previous page  
-② Cursor pointing to the next page  
-③ Maximum number of elements in the page  
-④ A list of resources in the page, each one represented as a JSON object
+① Cursor pointing to the first element in the content  
+② Cursor pointing to the last element in the content
+③ Maximum number of content elements returned  
+④ A list of resources returned, each one represented as a JSON object
 
 ## Requesting cursor-based paginated result
 
@@ -98,13 +99,13 @@ For example:
 GET https://iris.trackunit.com/public/api/operator/operators?limit=20&sort=-displayName&after=W251bGwsIjAwdXNwYTR2cnd3aTdrNngwMzU3Il0=
 ```
 
-will result in showing the next page `after` the cursor of maximum 20 elements per page, sorted by `displayName` in descending order.
+Will result in a page of the next 20 elements `after` the last element in previous result, sorted by `displayName` in descending order.
 
 Query parameters that control pagination are optional.
 
 | Parameter | Description                                                                                                                                                                                                                                                       | Default value                                                             |
 |:----------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| `before`  | The cursor Id pointing to the previous page. If there is any.                                                                                                                                                                                                     | 20                                                                        |
-| `after`   | The cursor Id pointing to the next page. If there is any.                                                                                                                                                                                                         | 0 (first page)                                                            |
+| `before`  | Request elements from before The cursor Id. Only applicable if there is any previous result.                                                                                                                                                                      | None                                                                      |
+| `after`   | Request elements from after the cursor Id. Only applicable if there is more result.                                                                                                                                                                               | None                                                                      |
 | `limit`   | The maximum number of elements to be returned in a page                                                                                                                                                                                                           | Default and max limit depends on a case by case basis                     |
 | `sort`    | attribute(s) optionally prefixed with a + or a - sign to indicate ascending (default when prefix is missing) or descending order for each field. Please refer to the documentation of a specific endpoint to learn which attributes may be requested for sorting. | Default sorting and number of attributes depends on a case by case basis. |
