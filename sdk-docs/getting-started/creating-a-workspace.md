@@ -13,7 +13,7 @@ To setup an empty NX workspace follow the steps below, if you do not already kno
 ### 1. Run the command below to create an nx workspace for all your Iris Apps:
 
 ```
-npx create-nx-workspace@16.4.1 --preset=react-monorepo
+npx create-nx-workspace@16.5 --preset=react-monorepo
 ```
 
 ### 2. It should guide you to enter:
