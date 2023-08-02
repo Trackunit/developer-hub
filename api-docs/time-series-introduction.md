@@ -18,6 +18,13 @@ This documentation guides you through the functionality of the Time Series API, 
 
 Explore the available endpoints and interact with the Time Series API to retrieve valuable time series metrics for analysis and monitoring purposes.
 
+
+> 📘 Subscription requirement
+>
+> The Time Series API is only available to customers on the Evolve & Expand or the Link, Lift & Leap subscription packages. Data retention limits follow the chosen subscription package.
+
+
+
 ## Interface
 
 The API exposes an OpenAPI JSON REST interface that you can call directly using your OAuth 2.0 access token. See [Access IRIS APIs](../reference/access-token) for further details on how to obtain an access token.
