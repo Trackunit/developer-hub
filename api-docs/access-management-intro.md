@@ -1,6 +1,6 @@
 ---
-title: Service Management Introduction
-category: 624ebf4c9f55f70565968067
+title: Access Management Introduction
+category: 
 ---
 Our Access Management API provides a list of APIs enabling machine owners to assign access to machines for operators.
 
