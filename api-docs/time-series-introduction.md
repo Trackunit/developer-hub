@@ -21,7 +21,7 @@ Explore the available endpoints and interact with the Time Series API to retriev
 
 > 📘 Subscription requirement
 >
-> The Time Series API is only available to customers on the Evolve & Expand or the Link, Lift & Leap subscription packages. Data retention limits follow the chosen subscription package.
+> The Time Series API is only available to customers on the **Evolve & Expand** or the **Link, Lift & Leap** subscription packages. Data retention limits follow the chosen subscription package.
 
 
 
