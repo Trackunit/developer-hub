@@ -46,7 +46,7 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
 # Custom field types
 
 | Field type   | Description                                                                                                             | Extra properties                                        |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+|--------------|-------------------------------------------------------------------------------------------------------------------------| ------------------------------------------------------- |
 | BOOLEAN      | Boolean value that can store true or false.                                                                             |                                                         |
 | DATE         | Date stored in ISO8601 format.                                                                                          |                                                         |
 | DROPDOWN     | A predefined list of options. Supports both single and multi selects.                                                   | `allValues`, `multiSelect`, `dropDownValueReplacements` |
@@ -55,11 +55,13 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
 | PHONE_NUMBER | Phone number stored in E.164 format. Validated using [Google libphonenumber](https://github.com/google/libphonenumber). |                                                         |
 | STRING       | Free text field                                                                                                         | `minimumLength`, `maximumLength`, `pattern`             |
 | WEB_ADDRESS  | Web address. Will be shown as a link to open a new window in the UI.                                                    |                                                         |
+| JSON         | JSON values.                                                                                                            |                                                         |
+| MONETARY     | Monetary values with currency in ISO 4217 standard.                                                                     | `minimum`, `maximum`                                    |
 
 # Type specific properties
 
 | Property                    | Field type | Required | Description                                                                                             |
-| --------------------------- | ---------- | -------- | ------------------------------------------------------------------------------------------------------- |
+|-----------------------------|------------|----------|---------------------------------------------------------------------------------------------------------|
 | `maximum`                   | NUMBER     | No       | Maximum numeric value                                                                                   |
 | `minimum`                   | NUMBER     | No       | Minimum numeric value                                                                                   |
 | `isInteger`                 | NUMBER     | No       | Disallow decimal values                                                                                 |
@@ -69,6 +71,7 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
 | `allValues`                 | DROPDOWN   | Yes      | All allowed values                                                                                      |
 | `multiSelect`               | DROPDOWN   | No       | Allow multiple options to be selected. Default `false`                                                  |
 | `dropDownValueReplacements` | DROPDOWN   | No       | Map from old values no longer allowed to new values. Used for updating existing data                    |
+| `currency`                  | MONETARY   | yes      | Currency in ISO 4217 standard                                                                           |
 
 > 📘 Nice to know
 > 
