@@ -24,5 +24,5 @@ Access Management is built on the following concepts
 
 Constraints
 
-- To be able to use bluetooth keys and rolling pins the operator needs to have access to Trackunit Go.
+- To be able to use bluetooth keys and rolling pins the operator needs to have access to Trackunit On.
 - Access management is only supported by assets with a TU-600 installed.  
