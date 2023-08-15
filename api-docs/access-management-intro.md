@@ -20,7 +20,7 @@ Access Management is built on the following concepts
   - **Static pin** a pin that doesn't change
   - **Rolling pin** a pin that changes regularly
   - **Bluetooth key** A key that can unlock a machine through bluetooth.
-- An **operator** is a person that operates assets and exists in **operator registry**. 
+- An **operator** is a person that operates assets and exists in the **operator registry**. 
 
 Constraints
 
