@@ -213,7 +213,7 @@ Indicates the status of diesel particulate filter(s) active regeneration, is a s
 Whether active regeneration of the machine's diesel particulate filter is happening (or possibly inhibited), or not.  
 Unit of measurement: _boolean._
 
-### AfterTreatmentDieselParticulateFilterAshLoadpercent
+### AfterTreatmentDieselParticulateFilterAshLoadPercent
 
 The relative load of ash in the machine's diesel particulate filter.  
 Unit of measurement: _percent._
@@ -233,7 +233,7 @@ Unit of measurement: _degrees Celsius._
 Whether passive regeneration of the machine's diesel particulate filter is happening, or not.  
 Unit of measurement: _boolean._
 
-### AfterTreatmentDieselParticulateFilterSootLoadpercent
+### AfterTreatmentDieselParticulateFilterSootLoadPercent
 
 The relative load of soot in the machine's diesel particulate filter.  
 Unit of measurement: _percent._
@@ -286,7 +286,7 @@ Unit of measurement: _metres._
 The temperature of the ambient atmosphere.  
 Unit of measurement: _degrees Celsius._
 
-### AverageLoadFactorLast_24Hours
+### AverageLoadFactorLast24
 
 The average load factor of the asset over the last 24 hours, compared to the rated output.  
 Unit of measurement: _percent._
@@ -528,7 +528,7 @@ Unit of measurement: _kilopascal._
 The temperature of the oil inside the engine.  
 Unit of measurement: _degrees Celsius._
 
-### EnginepercentLoadAtCurrentSpeed
+### EnginePercentLoadAtCurrentSpeed
 
 The relative load of the engine at the current engine speed.  
 Unit of measurement: _percent._
@@ -573,7 +573,7 @@ Unit of measurement: _percent._
 The total capacity of the machine's fuel tank.  
 Unit of measurement: _litres._
 
-### FuelUsedLast_24Hours
+### FuelUsedLast24
 
 The total amount of fuel used by the machine in the last 24 hours.  
 Unit of measurement: _litres._
@@ -608,7 +608,7 @@ Unit of measurement: _degrees Celsius._
 Impact (g-force) - could be calculated as the vector length of the three axis accelerometer values (always a positive number), but might come from other sources.  
 Unit of measurement: _g-force_.
 
-### MaximumSpeedLast_24Hours
+### MaximumSpeedLast24
 
 The maximum speed the machine attained in the last 24 hours.  
 Unit of measurement: _kilometres per hour._
@@ -623,7 +623,7 @@ Unit of measurement: _boolean_.
 The absolute payload weight on the platform or implement of the machine.  
 Unit of measurement: _kilogram_.
 
-### Payloadpercentage
+### PayloadPercentage
 
 The relative payload of the machine, relative to the rated limit.  
 Unit of measurement: _percent._
