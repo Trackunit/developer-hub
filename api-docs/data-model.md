@@ -185,6 +185,11 @@ Total power load (taking both Actual (W) and Apparent (VA) consumption into cons
 Maximum of `AcTotalRelativeApparentPowerLoadPercentage` and `AcTotalRelativeActivePowerLoadPercentage`, which might not be available when this parameter is available. E.g. a generator is rated to a max continuous power delivery of 100kW/120kVA and the actual load is 40kW/45VA then this percentage is 40.  
 Unit of measurement: _percent_.
 
+### ActualEnginePercentTorque
+
+The engine torque as a percent of reference engine torque (Nm). The engine percent torque value will not be less than zero and it includes the torque developed in the cylinders required to overcome friction.  
+Unit of measurement: _percent_,
+
 ### AfterTreatmentDieselExhaustFluidConcentration
 
 The relative concentration of the fluid in the machine's diesel exhaust fluid tank.  
