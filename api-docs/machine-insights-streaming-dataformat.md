@@ -45,7 +45,7 @@ The fields Location and LocationAddress contain the position, and the approximat
 |:-------------------------|:--------------|:----------------------------------------------------------------------------------------------------------------|
 | Latitude                 | 57.048273     | Latitude of the location.                                                                                       |
 | Longitude                | 9.947384      | Longitude of the location.                                                                                      |
-| Altitude (optional)      | 17            | Altitude of the location, or null.                                                                              |
+| Altitude (optional)      | 17            | Altitude of the location, or null. If only Altitude is known, Latitude and Longitude will both be 0.            |
 | AltitudeUnits (optional) | "metres"      | Units of the altitude (always normalized to "metres"), or null.                                                 |
 | datetime                 | 1604042795000 | [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this location was recorded. |
 
@@ -163,7 +163,7 @@ For the exact semantics and availability of these data points, please see the [d
 
 > 📘 This is low-level data
 >
-> Most of the CAN data has been interpreted to Machine Insights by Trackunit. CANMessages are not normalized, and not data cleansed to the same degree. CANMessages should only be necessary if something particular is needed.  
+> Most of the CAN data has been interpreted to Machine Insights by Trackunit. CANMessages are not normalized, and not data cleansed to the same degree. CANMessages should only be necessary if something particular is needed.
 > We recommend looking at the other fields first.
 
 CAN messages is data directly from the CAN bus of the machine. In general a working knowledge of the CAN bus, and sometimes the specific CAN bus of a machine, is needed to interpret this data. The CANMessages field is an array, where each element has the following format:
