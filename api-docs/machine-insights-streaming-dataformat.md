@@ -41,13 +41,13 @@ The fields Location and LocationAddress contain the position, and the approximat
 
 ## Location
 
-| Field                    | Example       | Description                                                                                                     |
-|:-------------------------|:--------------|:----------------------------------------------------------------------------------------------------------------|
-| Latitude                 | 57.048273     | Latitude of the location.                                                                                       |
-| Longitude                | 9.947384      | Longitude of the location.                                                                                      |
-| Altitude (optional)      | 17            | Altitude of the location, or null. If only Altitude is known, Latitude and Longitude will both be 0.            |
-| AltitudeUnits (optional) | "metres"      | Units of the altitude (always normalized to "metres"), or null.                                                 |
-| datetime                 | 1604042795000 | [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this location was recorded. |
+| Field                    | Example       | Description                                                                                                                 |
+|:-------------------------|:--------------|:----------------------------------------------------------------------------------------------------------------------------|
+| Latitude                 | 57.048273     | Latitude of the location.                                                                                                   |
+| Longitude                | 9.947384      | Longitude of the location.                                                                                                  |
+| Altitude (optional)      | 17            | Altitude of the location, or null. If only Altitude is known for the current record, Latitude and Longitude will both be 0. |
+| AltitudeUnits (optional) | "metres"      | Units of the altitude (always normalized to "metres"), or null.                                                             |
+| datetime                 | 1604042795000 | [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this location was recorded.             |
 
 ## LocationMetadata
 
