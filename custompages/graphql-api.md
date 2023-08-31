@@ -30,8 +30,9 @@ If you haven't worked with GraphQL before, learn how to by following [the offici
 The next step is to go through our guide on how to interact with the GraphQL API using the SDK: 
 - [Calling Trackunit GraphQL API using the Iris App SDK](https://developers.trackunit.com/docs/graphql-api)
 
-If you want to query the API without using the SDK, you have to fetch your authentication token first:
+If you want to query the API without using the SDK, you have to:
 - [Obtain a token outside an Iris App](https://developers.trackunit.com/reference/access-token)
+- Point you GQL client to ```https://iris.trackunit.com/api/graphql/```
 
  The GraphQL explorer is an interactive way to familiarize yourself with the available data models:
 - [GraphQL Explorer and Query builder](./graphql-explorer)
