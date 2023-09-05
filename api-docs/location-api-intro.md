@@ -18,3 +18,5 @@ Additionally location properties provide meta data including:
 - `locationAddress`: Consists of street, zip code, city and country
 - `speed`: Speed of the asset, km/h (not available for assets with Bluetooth tags)
 - `updatedAt`: Date and time when the location was registered
+
+If you are interested in fetching historical location data for a certain asset, then check out the [location time-series endpoint of our Export ISO 15143-3 / AEMP 2.0] (https://developers.trackunit.com/reference/getlocationtimeseries).
