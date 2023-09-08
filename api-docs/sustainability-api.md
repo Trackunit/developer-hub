@@ -58,3 +58,4 @@ We have built our data structure and API to allow tracking of all types of consu
 
 - Visibility of emissions data is limited to asset visibility 
 - Emissions Data is updated daily at 04:00 UTC
+- API Rate Limiting: 200 requests per 15 minutes per user
