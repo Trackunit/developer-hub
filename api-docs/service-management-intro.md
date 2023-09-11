@@ -1,5 +1,5 @@
 ---
-title: Service Management Introduction
+title: Service Management - Introduction
 category: 624ebf4c9f55f70565968067
 ---
 Our Service Management API provides a list of APIs enabling service providers and machine owners in maintaining the service cycle of assets.
@@ -10,7 +10,7 @@ The document is intended for developers, who wants to integrate systems, write c
 
 > 📘 Available with the Service Management app
 >
-> This API is available for customers that has acquired a license for the Service Management capability.
+> This API is available for customers that have acquired a license for the Service Management capability.
 
 ## Interface
 
