@@ -167,3 +167,32 @@ This extension point allows you to add a new tab in the administration user inte
   ]
 }
 [/block]
+
+# Widget extension point
+
+This extension point allows you to add a widget to Trackunit Manager.
+
+## Header
+
+The widget has an header which should be filled out such that users know what widget it is.
+
+```ts
+header: {
+  name: "Mixer widget",
+  icon: "ConcreteMixer",
+},
+```
+
+## Widget size
+
+It is possible to control the widget size by specifying grid options:
+
+```ts
+gridOptions: {
+  minH: 2,
+  minW: 1,
+  maxH: 2,
+  maxW: 4,
+}
+```
+
