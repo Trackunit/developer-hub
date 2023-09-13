@@ -7,7 +7,7 @@ The Trackunit Sustainability API is a REST API that enables customers to access 
 
 > 📘 Available with the Emissions Reporting app 
 >
-> This API is available for customers that are a part of the "Expand" package.
+> This API is available for customers that have acquired a license for the Emissions Reporting capability.
 
 ## Interface
 
