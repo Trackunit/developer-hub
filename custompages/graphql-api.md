@@ -4,7 +4,7 @@ title: GraphQL API Documentation
 
 > 🚧 Beta
 > 
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
+> This is a beta version and subject to change while we are activily working on improvements.
 
 [block:embed]
 {
