@@ -37,8 +37,8 @@ The response from the instant query endpoint includes the result of the query, w
 
 Result types:
 
-- Matrix: A two-dimensional data structure representing multiple time series data. Used when the query involves multiple time series with different labels or dimensions. Enables working with multiple data series simultaneously.
-- Vector: A one-dimensional data structure representing a single time series. Used when the query involves a single time series. Provides values for a specific metric over time.
+- Matrix: A two-dimensional data structure representing multiple entries per time series data. Enables working with multiple data series simultaneously.
+- Vector: A one-dimensional data structure representing a single entry per time series.
 - Scalar: A single value, typically a number or boolean. Used when the query produces a single aggregated value or a specific metric attribute.
 - String: Text-based information. Used for retrieving metadata, labels, or descriptive information related to a metric.
 
