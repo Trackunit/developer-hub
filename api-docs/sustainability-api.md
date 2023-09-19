@@ -7,7 +7,7 @@ The Trackunit Sustainability API is a REST API that enables customers to access 
 
 > 📘 Available with the Emissions Reporting app 
 >
-> This API is available for customers that are a part of the "Expand" package.
+> This API is available for customers that have acquired a license for the Emissions Reporting capability.
 
 ## Interface
 
@@ -46,7 +46,7 @@ We have built our data structure and API to allow tracking of all types of consu
 
 ## Use-Cases
 
-1. The number 1 use-case is one within the contractor segment. Contractors need to estimate total and broken down emissions for each of a group of machines at a location (branch, yard, site, etc.), within a category, or for comparisons between categories. The Daily enpoint provides the broken down values per machine per day for the set of recent days. This broken down data can also be used upstream by OEMs and Rental Houses to provide contractor-specific insights to their end-customers. Including emissions on invoices is an example of how contractors can consume this information.
+1. The number 1 use-case is one within the contractor segment. Contractors need to estimate total and broken down emissions for each of a group of machines at a location (branch, yard, site, etc.), within a category, or for comparisons between categories. The Daily endpoint provides the broken down values per machine per day for the set of recent days. This broken down data can also be used upstream by OEMs and Rental Houses to provide contractor-specific insights to their end-customers. Including emissions on invoices is an example of how contractors can consume this information.
 
 
 2. Many companies have set targets for emissions. The Monthly endpoint provides the dashboard needed to track baselines, progress, impact of emissions reduction initiatives, etc. It provides a long term view of where we come from and can be used to make predictions for the future. This type of information is useful for periodic reporting to the board, for internal awareness, for reporting to investors, and to regulators if needed.
@@ -58,4 +58,4 @@ We have built our data structure and API to allow tracking of all types of consu
 
 - Visibility of emissions data is limited to asset visibility 
 - Emissions Data is updated daily at 04:00 UTC
-- API Rate Limiting: 1000 requests per 10 minutes per user
+- API Rate Limiting: 200 requests per 15 minutes per user
