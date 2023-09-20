@@ -12,7 +12,7 @@ The Time Series API follows the standards of [Prometheus](https://prometheus.io/
  
 With our query endpoints, you can leverage PromQL, the powerful and expressive Prometheus query language, to retrieve and analyze time series data. PromQL offers a range of functions and operators for complex queries and calculations. The query responses adhere to Prometheus result formats for easy consumption and compatibility.
 
-In addition to Prometheus endpoints, we provide a metric export endpoint for retrieving metrics in their original ingested form. This gives you access to the raw time series data without aggregation or modifications. Retrieve precise values and timestamps for detailed analysis or integration with external systems.
+In addition to Prometheus endpoints, we provide a metrics endpoint for retrieving metrics in their original ingested form. This gives you access to the raw time series data without aggregation or modifications. Retrieve precise values and timestamps for detailed analysis or integration with external systems.
 
 This documentation guides you through the functionality of the Time Series API, including retrieving machine insights and advanced sensor data. It also provides resources for learning PromQL and formulating effective queries.
 
@@ -22,8 +22,6 @@ Explore the available endpoints and interact with the Time Series API to retriev
 > 📘 Subscription requirement
 >
 > The Time Series API is only available to customers on the **Evolve & Expand** or the **Link, Lift & Leap** subscription packages. Data retention limits follow the chosen subscription package.
-
-
 
 ## Interface
 
@@ -62,11 +60,11 @@ By adjusting the step parameter, you can control the granularity or level of det
 
 [Explore the our Range Query examples](../reference/usage#range-query-examples)
 
-## Metric Export
+## Metrics
 
-The metric export endpoint allows you to retrieve metrics as they were ingested. It provides a way to access historical metric data for analysis, debugging, or offline processing.
+The metrics endpoint allows you to retrieve metrics as they were ingested. It provides a way to access historical metric data for analysis, debugging, or offline processing.
 
-To use the export endpoint, you construct a request URL with parameters such as the time range and metric filters. The system retrieves the relevant metrics from its database and returns them in JSON format.
+To use the metrics endpoint, you construct a request URL with parameters such as the time range and metric filters. The system retrieves the relevant metrics from its database and returns them in JSON format.
 
 Additionally, if the 'Accept-Encoding' header in your request is set to 'gzip', the response will be compressed using gzip encoding. This allows you to reduce the response time and size for efficient data transfer.
 

@@ -5,11 +5,11 @@ category: 6492ae1582247100472ad7c5
 # Instant Query Examples
 ## Example 1: Fetching the Metric at a Specific Timestamp
 
-Suppose we want to retrieve the "engine hours total vehicle hours" metric at 2023-05-01 00:00:00 UTC. We can make the following API request:
+Suppose we want to retrieve the "cumulative operating hours" metric at 2023-05-01 00:00:00 UTC. We can make the following API request:
 
 ```curl
 curl -G 'https://iris.trackunit.com/api/time-series/v1/asset/00000000-0000-0000-0000-000001569258/prometheus/api/v1/query' \
---data-urlencode 'query=machine_insight_engine_hours_total_vehicle_hours' \
+--data-urlencode 'query=machine_insight_cumulative_operating_hours' \
 --data-urlencode 'time=2023-05-01T00:00:00.000Z' -H 'Authorization: Bearer ACCESS_TOKEN'
 ```
 
@@ -35,11 +35,11 @@ To retrieve data within a larger time range, we can expand the look-behind windo
 
 ```curl
 curl -G 'https://iris.trackunit.com/api/time-series/v1/asset/00000000-0000-0000-0000-000001569258/prometheus/api/v1/query' \
---data-urlencode 'query=machine_insight_engine_hours_total_vehicle_hours[1d]' \
+--data-urlencode 'query=machine_insight_cumulative_operating_hours[1d]' \
 --data-urlencode 'time=2023-05-01T00:00:00.000Z' -H 'Authorization: Bearer ACCESS_TOKEN'
 ```
 
-Now, the API response will include all the ingested "engine hours total vehicle hours" metrics from the last day of April 2023.
+Now, the API response will include all the ingested "cumulative operating hours" metrics from the last day of April 2023.
 
 ```json JSON
 {
@@ -49,7 +49,7 @@ Now, the API response will include all the ingested "engine hours total vehicle 
         "result": [
             {
                 "metric": {
-                    "__name__": "machine_insight_engine_hours_total_vehicle_hours",
+                    "__name__": "machine_insight_cumulative_operating_hours",
                     "asset_id": "00000000-0000-0000-0000-000001569258",
                     "version": "1"
                 },
@@ -79,15 +79,15 @@ Now, the API response will include all the ingested "engine hours total vehicle 
 
 ## Example 3: Aggregating Metrics
 
-Suppose we are interested in calculating the increase in engine hours total vehicle hours over the last day of April 2023. We can utilize the `increase()` function in the query expression. The following API request demonstrates this:
+Suppose we are interested in calculating the increase in cumulative operating hours over the last day of April 2023. We can utilize the `increase()` function in the query expression. The following API request demonstrates this:
 
 ```curl
 curl -G 'https://iris.trackunit.com/api/time-series/v1/asset/00000000-0000-0000-0000-000001569258/prometheus/api/v1/query' \
---data-urlencode 'query=increase(machine_insight_engine_hours_total_vehicle_hours[1d])' \
+--data-urlencode 'query=increase(machine_insight_cumulative_operating_hours[1d])' \
 --data-urlencode 'time=2023-05-01T00:00:00.000Z' -H 'Authorization: Bearer ACCESS_TOKEN'
 ```
 
-The API response will provide the increase in engine hours for the given day.
+The API response will provide the increase in operating hours for the given day.
 
 ```json
 {
@@ -120,11 +120,11 @@ If you are only interested in the latest value at the specified timestamp (2023-
 
 ```curl
 curl -L -g -G 'https://iris.trackunit.com/api/time-series/v1/asset/00000000-0000-0000-0000-000001569258/prometheus/api/v1/query' \
---data-urlencode 'query=last_over_time(machine_insight_engine_hours_total_vehicle_hours[1d])' \
+--data-urlencode 'query=last_over_time(machine_insight_cumulative_operating_hours[1d])' \
 --data-urlencode 'time=2023-05-01T00:00:00.000Z' -H 'Authorization: Bearer ACCESS_TOKEN'
 ```
 
-The API response will provide the latest engine hours value for the given day.
+The API response will provide the latest operating hours value for the given day.
 
 ```json
 {
@@ -135,7 +135,7 @@ The API response will provide the latest engine hours value for the given day.
         "result": [
             {
                 "metric": {
-                    "__name__": "machine_insight_engine_hours_total_vehicle_hours",
+                    "__name__": "machine_insight_cumulative_operating_hours",
                     "asset_id": "00000000-0000-0000-0000-000001569258",
                     "version": "1"
                 },
@@ -155,18 +155,18 @@ The API response will provide the latest engine hours value for the given day.
 #Range Query Examples
 ## Example 1: Fetching the Metric at a Specific Time Range
 
-Suppose we want to retrieve the daily "engine hours total vehicle hours" metrics for May 2023. We can make the following API request:
+Suppose we want to retrieve the daily "cumulative operating hours" metrics for May 2023. We can make the following API request:
 
 ```curl
 curl -G 'https://iris.trackunit.com/api/time-series/v1/asset/00000000-0000-0000-0000-000001569258/prometheus/api/v1/query_range' \
---data-urlencode 'query=machine_insight_engine_hours_total_vehicle_hours' \
+--data-urlencode 'query=machine_insight_cumulative_operating_hours' \
 --data-urlencode 'start=2023-05-01T00:00:00.000Z' \
 --data-urlencode 'end=2023-06-01T00:00:00.000Z' \
 --data-urlencode 'step=1d' \
 -H 'Authorization: Bearer ACCESS_TOKEN'
 ```
 
-The range query will follow the given time range and step interval regardless of whether they match the time of ingest metrics. Therefore, the API response will provide the engine hours at the start of each day.
+The range query will follow the given time range and step interval regardless of whether they match the time of ingest metrics. Therefore, the API response will provide the operating hours at the start of each day.
 
 ```json
 {
@@ -177,7 +177,7 @@ The range query will follow the given time range and step interval regardless of
         "result": [
             {
                 "metric": {
-                    "__name__": "machine_insight_engine_hours_total_vehicle_hours",
+                    "__name__": "machine_insight_cumulative_operating_hours",
                     "asset_id": "00000000-0000-0000-0000-000001569258",
                     "version": "1"
                 },
@@ -322,18 +322,18 @@ The range query will follow the given time range and step interval regardless of
 
 ## Example 2: Calculating The Daily Increase In Engine Hours
 
-Suppose we are interested in calculating the daily increase in engine hours (total vehicle hours) for May 2023. To achieve this, we can utilize the `increase()` function in combination with expanding the look-behind window. In this case, we extend the window to one day (24 hours) by adding [1d] in the query expression. Since we added the window looking back one day, we need to start our time range from the 2nd of May; otherwise, the first value would represent the increase for the last day of April. The following API request demonstrates this:
+Suppose we are interested in calculating the daily increase in operating hours (total operating hours) for May 2023. To achieve this, we can utilize the `increase()` function in combination with expanding the look-behind window. In this case, we extend the window to one day (24 hours) by adding [1d] in the query expression. Since we added the window looking back one day, we need to start our time range from the 2nd of May; otherwise, the first value would represent the increase for the last day of April. The following API request demonstrates this:
 
 ```curl
 curl -G 'https://iris.trackunit.com/api/time-series/v1/asset/00000000-0000-0000-0000-000001569258/prometheus/api/v1/query_range' \
---data-urlencode 'query=increase(machine_insight_engine_hours_total_vehicle_hours[1d])' \
+--data-urlencode 'query=increase(machine_insight_cumulative_operating_hours[1d])' \
 --data-urlencode 'start=2023-05-02T00:00:00.000Z' \
 --data-urlencode 'end=2023-06-01T00:00:00.000Z' \
 --data-urlencode 'step=1d' \
 -H 'Authorization: Bearer ACCESS_TOKEN'
 ```
 
-The API response will provide the daily increase in engine hours for May 2023.
+The API response will provide the daily increase in operating hours for May 2023.
 
 ```json
 {
@@ -482,7 +482,7 @@ The API response will provide the daily increase in engine hours for May 2023.
 }
 ```
 
-By analyzing the response and comparing it to the response of Example 1, we can verify that the response is returning the daily increase. For example, on the 1st of May, the engine had 649.333 hours at the beginning of the day and 651.117 hours at the end, resulting in an increase of 1.78 hours, which matches our "increase" response.
+By analyzing the response and comparing it to the response of Example 1, we can verify that the response is returning the daily increase. For example, on the 1st of May, the machine had operated 649.333 hours at the beginning of the day and 651.117 hours at the end, resulting in an increase of 1.78 hours, which matches our "increase" response.
 
 ## Example 3: Combining metrics to find days with high fuel consumption and engine idle hours
 
