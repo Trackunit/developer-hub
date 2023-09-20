@@ -19,6 +19,19 @@ This documentation guides you through the functionality of the Time Series API, 
 Explore the available endpoints and interact with the Time Series API to retrieve valuable time series metrics for analysis and monitoring purposes.
 
 
+> 🚧 Alignment between the asset and telematics device counters
+> 
+> In certain situations, such as retrofitting a telematics device, compensating values (PreRun1, PreRun2, PreIdle, PreKm) are applied to synchronize the readings between the asset and the telematics device's odometer and run counters.
+>
+> The implementation of these value adjustments is currently in development and will be incorporated starting from version 2 for the following metrics:
+> * PreRun1 on machine_insight_cumulative_operating_hours
+> * PreIdle on machine_insight_engine_total_idle_hours
+> * PreKm on machine_insight_total_vehicle_distance
+> * PreRun1 on advanced_sensor_run_1
+> * PreRun2 on advanced_sensor_run_2
+> 
+> Please note that the version number is included as part of the metric identification.
+
 > 📘 Subscription requirement
 >
 > The Time Series API is only available to customers on the **Evolve & Expand** or the **Link, Lift & Leap** subscription packages. Data retention limits follow the chosen subscription package.
