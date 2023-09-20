@@ -40,6 +40,11 @@ Explore the available endpoints and interact with the Time Series API to retriev
 
 The API exposes an OpenAPI JSON REST interface that you can call directly using your OAuth 2.0 access token. See [Access IRIS APIs](../reference/access-token) for further details on how to obtain an access token.
 
+## Rate Limiting
+
+* Advanced Querying - max 100 requests per second
+* Metrics - max 20 requests per second
+
 ## Instant Query
 
 The instant query endpoint allows you to evaluate an instant query for a specific asset and a given point in time. You provide a PromQL query string that defines the metric or calculation you want to perform. The result of the query will be a single value or a set of values for the specified timestamp.
