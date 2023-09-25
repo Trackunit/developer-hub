@@ -10,6 +10,22 @@ parentDocSlug: reference
 
 # Breaking Changes
 
+## @trackunit/iris-app v0.0.X
+
+In this version we have renamed publishApp to submitApp to avoid confusion about when an app was actually made public. This change means that for existing apps you should open up the `project.json` file and change:
+
+```json
+  "publishApp": {
+    "executor": "@trackunit/iris-app:publish",
+```
+
+To now refer to the submit executor:
+
+```json
+  "submitApp": {
+    "executor": "@trackunit/iris-app:submit",
+```
+
 ## @trackunit/ui-icons v0.0.76
 
 In this version a new format was introduced for icons, which require an update of jest configurations in extensions that use this library.
