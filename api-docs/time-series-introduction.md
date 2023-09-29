@@ -21,14 +21,16 @@ Explore the available endpoints and interact with the Time Series API to retriev
 
 > 🚧 Alignment between the asset and telematics device counters
 > 
-> In certain situations, such as retrofitting a telematics device, compensating values (PreRun1, PreRun2, PreIdle, PreKm) are applied to synchronize the readings between the asset and the telematics device's odometer and run counters.
->
+> In certain situations, such as retrofitting a telematics device, compensating values are applied to synchronize the readings between the asset and the telematics device's odometer and run counters.
+> 
+> Compensating values can be obtained from Telematics Device API -> Devices telemetry -> Get device telemetry interpretation settings 
+> 
 > The implementation of these value adjustments is pending and therefore NOT applied. Affected metrics:
-> * PreRun1 on machine_insight_cumulative_operating_hours
-> * PreIdle on machine_insight_engine_total_idle_hours
-> * PreKm on machine_insight_total_vehicle_distance
-> * PreRun1 on advanced_sensor_run_1
-> * PreRun2 on advanced_sensor_run_2
+> * io.input1.offset on machine_insight_cumulative_operating_hours
+> * idle.offset on machine_insight_engine_total_idle_hours
+> * distance.offset on machine_insight_total_vehicle_distance
+> * io.input1.offset on advanced_sensor_run_1
+> * io.input2.offset on advanced_sensor_run_2
 > 
 > Implementation updates will be communicated through developer hub.
 
