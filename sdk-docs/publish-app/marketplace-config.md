@@ -8,19 +8,25 @@ The app is presented in the Iris Marketplace – from where apps can be deployed
 
 The marketplace will be the gateway for new services to the industry provided by customers themselves, partners and 3rd party software developers – as well as Trackunit.
 
+> 📘 Limited categories. 
+> 
+> Currently only the `ConnectivityAndNetwork` and `DataFeeds` is visible on the marketplace. As the marketplace evolves we will
+> add more categories. If you need another category please reach out to your contact person.
+> 
+
 # Installation policies
 
 To control the behavior of your app inside the marketplace you have to specify an installation policy inside the Iris App manifest using the `installation.policy` attribute.
 
 There are five distinct installation policies, with their behaviour described in the table below:
 
-| InstallationPolicy             | Requires approval from sales ops | Initially installed (once approved if applicable) | Uninstallable | Description <br/>                                                              |
-|--------------------------------|----------------------------|---------------------------------------------------|---------------|--------------------------------------------------------------------------------|
-| PERMANENT                      | no                         | yes                                               | no            | Apps developed by Trackunit, needed by all customers                           |
-| PREINSTALLED                   | no                         | yes                                               | yes           | Apps developed by Trackunit or Partners that are part of the base subscription |
-| ON_DEMAND                      | no                         | no                                                | yes           | Apps developed by Trackunit or Partners that are free to install               |
-| PREINSTALLED_REQUIRES_APPROVAL | yes                        | yes                                               | yes           | Apps developed by Trackunit that require extra pricing agreement               |
-| ON_DEMAND_REQUIRES_APPROVAL    | yes                        | no                                                | yes           | Apps developed by Partners that require extra pricing agreement                |
+| InstallationPolicy             | Requires approval from sales ops | Initially installed (once approved if applicable) | Uninstallable | Visible on Marketplace | Description <br/>                                                              |
+|--------------------------------|----------------------------|---------------------------------------------------|---------------|---------------|--------------------------------------------------------------------------------|
+| PERMANENT                      | no  | yes | no  | no  | Apps developed by Trackunit, needed by all customers                           |
+| PREINSTALLED                   | no  | yes | yes | no  | Apps developed by Trackunit or Partners that are part of the base subscription |
+| ON_DEMAND                      | no  | no  | yes | yes | Apps developed by Trackunit or Partners that are free to install               |
+| PREINSTALLED_REQUIRES_APPROVAL | yes | yes | yes | yes | Apps developed by Trackunit that require extra pricing agreement               |
+| ON_DEMAND_REQUIRES_APPROVAL    | yes | no  | yes | yes | Apps developed by Partners that require extra pricing agreement                |
 
 <!--
 
