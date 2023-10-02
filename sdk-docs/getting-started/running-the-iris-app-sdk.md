@@ -21,7 +21,21 @@ You might need to login before it hits that page, use your developer credentials
 
 ### 3. The screen for the developer-server called _**Iris App Developer Portal**_ will appear.
 
-![](https://files.readme.io/98fffa5-DeveloperTiles.png)
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/localmode.png",
+        null,
+        "App settings extension"
+      ],
+      "align": "center",
+      "sizing": "50% "
+    }
+  ]
+}
+[/block]
 
 ### 4. From this screen, make sure to enable **Local dev mode**.
 Local dev mode enables the manager (which is remotely hosted) to load the apps directly from your local development environment. It might take around 30 seconds to load the first time. 
