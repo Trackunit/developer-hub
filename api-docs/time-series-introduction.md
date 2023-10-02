@@ -23,7 +23,7 @@ Explore the available endpoints and interact with the Time Series API to retriev
 > 
 > In certain situations, such as retrofitting a telematics device, compensating values are applied to synchronize the readings between the asset and the telematics device's odometer and run counters.
 > 
-> Compensating values can be obtained from Telematics Device API -> Devices telemetry -> Get device telemetry interpretation settings 
+> Compensating values can be obtained from Telematics Device API -> Devices telemetry -> Get device telemetry interpretation setting, and applied manually.
 > 
 > The implementation of these value adjustments is pending and therefore NOT applied. Affected metrics:
 > * io.input1.offset on machine_insight_cumulative_operating_hours
