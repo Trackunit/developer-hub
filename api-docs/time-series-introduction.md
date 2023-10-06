@@ -23,9 +23,9 @@ Explore the available endpoints and interact with the Time Series API to retriev
 > 
 > In certain situations, such as retrofitting a telematics device, compensating values are applied to synchronize the readings between the asset and the telematics device's odometer and run counters.
 > 
-> The implementation of these value adjustments is pending and therefore NOT applied. Compensating values for the affected metrics can be obtained from **Time Series API -> Metrics -> > Get metric offsets**, and applied manually.
+> The implementation of these value adjustments is pending and therefore NOT applied. Compensating values for the affected metrics can be obtained from **Time Series API -> Metrics -> Get metric offsets**, and applied manually.
 > 
-> A subset of assets will require compensating values, but only for a limited set of metrics. The following metrics may be affected:
+> The following metrics may be affected:
 > * machine_insight_cumulative_operating_hours
 > * machine_insight_engine_total_idle_hours
 > * machine_insight_total_vehicle_distance
