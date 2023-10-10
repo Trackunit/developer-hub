@@ -1,6 +1,6 @@
 ---
 title: Time Series API - Introduction
-category: 6489bfd3660228033fde27ec
+category: 6492ae1582247100472ad7c5
 ---
 Welcome to the Time Series API documentation. This API enables you to retrieve time series metrics for specific assets, categorized as machine insights and advanced sensors.
 
