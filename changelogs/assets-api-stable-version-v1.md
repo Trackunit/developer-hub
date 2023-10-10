@@ -1,6 +1,5 @@
 ---
 title: Assets API v1
-type: added
 ---
 
 Released stable version v1 of Assets API.
