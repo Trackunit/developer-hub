@@ -1,6 +1,6 @@
 ---
 title: Time Series API - Usage guide
-category: 6492ae1582247100472ad7c5
+category: 65097f10ed04fd0047f22d48
 ---
 # Instant Query Examples
 ## Example 1: Fetching the Metric at a Specific Timestamp
