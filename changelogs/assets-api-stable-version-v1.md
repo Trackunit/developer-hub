@@ -1,12 +1,12 @@
 ---
-title: Assets API v1
+title: Added: Assets API v1
 ---
-
+October 10, 2023
 Released stable version v1 of Assets API.
 
-Discover the power of our Assets API, your key to manage asset domain. By leveraging the Assets API, developers can easily onboard, offboard assets to Iris, get assets fleet and update asset specification. API also allows to manage assets by share, transfer, unshare and remove visibility. For more information, see the documentation of the endpoints.
+Discover the power of our Assets API, your key to manage the asset domain. By leveraging the Assets API, developers can easily onboard and offboard assets to Trackunit Iris and get all assets in a fleet as well as update specifications for an asset. This API also allows to manage assets across accounts by enabling the share, transfer, unshare and remove visibility actions. For more information, see the documentation of the endpoints.
 
-Below all available endpoints.
+Below a list of all available endpoints:
 
 > ➕ GET: /asset/v1/assets
 
