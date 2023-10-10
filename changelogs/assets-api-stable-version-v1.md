@@ -1,6 +1,6 @@
 ---
-Type: Added
 title: Assets API v1
+type: added
 ---
 October 10, 2023
 Released stable version v1 of Assets API.
