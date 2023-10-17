@@ -1,10 +1,7 @@
 ---
 title: GraphQL Explorer
+category: 652e3a8e279c3f001f9acdc3
 ---
-
-> 🚧 Beta
-> 
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 [block:html]
 {
