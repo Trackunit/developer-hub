@@ -1,10 +1,7 @@
 ---
-title: GraphQL API Documentation
+title: GraphQL API - Introduction
+category: 652e3a8e279c3f001f9acdc3
 ---
-
-> 🚧 Beta
-> 
-> This is a beta version and subject to change while we are activily working on improvements.
 
 [block:embed]
 {
@@ -34,12 +31,15 @@ If you want to query the API without using the SDK, you have to:
 - [Obtain a token outside an Iris App](https://developers.trackunit.com/reference/access-token)
 - Point you GQL client to ```https://iris.trackunit.com/api/graphql/```
 
- The GraphQL explorer is an interactive way to familiarize yourself with the available data models:
-- [GraphQL Explorer and Query builder](./graphql-explorer)
 
-Click below to download the public schema if you need it:
-- [Public schema](https://apps.iris.trackunit.com/graphql-public-viewer/schema.gql)
+## Overview of GraphQL data sources
 
+Behind the scenes of this powerful GraphQL interface lies a collection of diverse data sources that fuel the information you interact with. These sources form the backbone of our GraphQL architecture, encompassing a range of databases, APIs, services, and more. Our GraphQL API acts as a unified gateway, enabling you to effortlessly access data from these disparate sources through a single, flexible endpoint. 
+
+Data sources include:
+
+- our public REST APIs, like the Asset API, Sites API, Location API or Time Series API
+- our Trackunit Search Engine powered by Elasticsearch
 
 > 📘 Nice to know
 >
@@ -47,3 +47,7 @@ Click below to download the public schema if you need it:
 Some fields are in a preview state and may change without notice.
 To indicate you accept these terms pass the HTTP header `TU-PREVIEW:<codeword>` with your query requests.
 The codeword differs for each preview field and you can find it by looking in the GQL schema (or explorer) above.
+
+Our [GraphQL Explorer and Query builder](./graphql-explorer) is an interactive way to familiarize yourself with the available data models. Here you can easily delve into the underlying data sources that empower our GraphQL API, offering you a clearer understanding of the wealth of information at your fingertips.
+
+Additionally you can also download the [Public schema](https://apps.iris.trackunit.com/graphql-public-viewer/schema.gql) of the Trackunit Iris GraphQL API.
