@@ -51,3 +51,16 @@ The codeword differs for each preview field and you can find it by looking in th
 Our [GraphQL Explorer and Query builder](./graphql-explorer) is an interactive way to familiarize yourself with the available data models. Here you can easily delve into the underlying data sources that empower our GraphQL API, offering you a clearer understanding of the wealth of information at your fingertips.
 
 Additionally you can also download the [Public schema](https://apps.iris.trackunit.com/graphql-public-viewer/schema.gql) of the Trackunit Iris GraphQL API.
+
+## Advise for efficient querying with GraphQL
+
+When querying a GraphQL API, adopting certain practices can significantly enhance efficiency and responsiveness: 
+
+- Begin by precisely defining your data requirements using field selection, requesting only the information you genuinely need to reduce unnecessary data transfer. 
+- Leverage query fragments to reuse common selections across multiple queries, avoiding redundant code and promoting consistency. 
+- Utilize pagination techniques for fetching large sets of data, such as utilizing the `first`, `last`, `before`, and `after` arguments to manage the amount of data returned in each query.
+- Implement client-side caching mechanisms to store frequently accessed data locally, decreasing the need for repeated requests. 
+- Experiment with persisted queries for often-used or complex queries to optimize performance by minimizing overhead. 
+- Lastly, employ batched requests to bundle multiple queries together in a single HTTP request, enhancing overall efficiency by reducing round-trip times. 
+
+By following these guidelines, you can make the most of GraphQL's capabilities and ensure efficient and streamlined interactions with the API.
