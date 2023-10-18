@@ -62,7 +62,7 @@ Result types:
 
 These result types allow for flexibility in representing and working with different types of data in an instant query. Choose the appropriate result type based on your specific use case to extract the desired information or perform calculations on the returned data.
 
-[Explore the our Instant Query examples](../reference/usage#instant-query-examples)
+[Explore the our Instant Query examples](../reference/time-series-usage#instant-query-examples)
 
 ## Range Query
 
@@ -78,7 +78,7 @@ Here's a breakdown of how a range query works:
 
 By adjusting the step parameter, you can control the granularity or level of detail in the returned data. Smaller step values result in more fine-grained data points.
 
-[Explore the our Range Query examples](../reference/usage#range-query-examples)
+[Explore the our Range Query examples](../reference/time-series-usage#range-query-examples)
 
 ## Metrics
 
