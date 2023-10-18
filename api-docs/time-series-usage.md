@@ -31,7 +31,7 @@ If there is no data ingested for the specified timestamp and a default 5-minute 
 
 ## Example 2: Expanding the Look-Behind Window
 
-To retrieve data within a larger time range, we can expand the look-behind window. In this case, we extend it to one day (24 hours) by adding [1d] to the query expression. The following API request demonstrates this:
+To retrieve data within a larger time range, we can expand the look-behind window. In this case, we extend it to one day (24 hours) by adding `[1d]` to the query expression. The following API request demonstrates this:
 
 ```curl
 curl -G 'https://iris.trackunit.com/api/time-series/v1/assets/00000000-0000-0000-0000-000001569258/prometheus/api/v1/query' \
@@ -322,7 +322,7 @@ The range query will follow the given time range and step interval regardless of
 
 ## Example 2: Calculating The Daily Increase In Engine Hours
 
-Suppose we are interested in calculating the daily increase in operating hours (total operating hours) for May 2023. To achieve this, we can utilize the `increase()` function in combination with expanding the look-behind window. In this case, we extend the window to one day (24 hours) by adding [1d] in the query expression. Since we added the window looking back one day, we need to start our time range from the 2nd of May; otherwise, the first value would represent the increase for the last day of April. The following API request demonstrates this:
+Suppose we are interested in calculating the daily increase in operating hours (total operating hours) for May 2023. To achieve this, we can utilize the `increase()` function in combination with expanding the look-behind window. In this case, we extend the window to one day (24 hours) by adding `[1d]` in the query expression. Since we added the window looking back one day, we need to start our time range from the 2nd of May; otherwise, the first value would represent the increase for the last day of April. The following API request demonstrates this:
 
 ```curl
 curl -G 'https://iris.trackunit.com/api/time-series/v1/assets/00000000-0000-0000-0000-000001569258/prometheus/api/v1/query_range' \

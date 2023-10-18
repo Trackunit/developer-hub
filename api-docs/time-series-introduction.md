@@ -86,7 +86,7 @@ The metrics endpoint allows you to retrieve metrics as they were ingested. It pr
 
 To use the metrics endpoint, you construct a request URL with parameters such as the time range and metric filters. The system retrieves the relevant metrics from its database and returns them in JSON format.
 
-Additionally, if the 'Accept-Encoding' header in your request is set to 'gzip', the response will be compressed using gzip encoding. This allows you to reduce the response time and size for efficient data transfer.
+Additionally, if the `Accept-Encoding` header in your request is set to `gzip`, the response will be compressed using gzip encoding. This allows you to reduce the response time and size for efficient data transfer.
 
 ## PromQL Documentation and Tutorials
 
