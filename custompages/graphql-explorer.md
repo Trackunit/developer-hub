@@ -1,6 +1,5 @@
 ---
 title: GraphQL Explorer
-category: 652e3a8e279c3f001f9acdc3
 ---
 
 [block:html]
