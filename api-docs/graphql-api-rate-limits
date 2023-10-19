@@ -51,3 +51,15 @@ If the 10 minute rate limit is reached we will return a GraphQL error with the `
     ]
 }
 ```
+
+If doing multiple calls we recommend clients to proactive query the `rateLimit` field in the graph to obtain the current status and adjust call rate accordingly:
+
+```
+query { 
+    rateLimit {
+        cost
+        remaining
+        resetIn
+    }
+}
+```
