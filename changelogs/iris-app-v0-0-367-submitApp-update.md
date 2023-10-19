@@ -1,5 +1,5 @@
 ---
-title: trackunit/iris-app v0.0.X - renamed publishApp to submitApp
+title: trackunit/iris-app v0.0.367 - renamed publishApp to submitApp
 type: improved
 ---
 
