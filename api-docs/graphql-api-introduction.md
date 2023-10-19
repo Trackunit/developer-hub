@@ -29,7 +29,7 @@ The next step is to go through our guide on how to interact with the GraphQL API
 
 If you want to query the API without using the SDK, you have to:
 - [Obtain a token outside an Iris App](https://developers.trackunit.com/reference/access-token)
-- Point you GQL client to ```https://iris.trackunit.com/api/graphql/```
+- Point your GQL client to ```https://iris.trackunit.com/api/graphql/```
 
 
 ## Overview of GraphQL data sources
