@@ -28,4 +28,4 @@ Here's a comparison of when to use each:
 5. Aggregating Data: GraphQL can aggregate data from multiple sources and present it as a single unified API, making it a good choice for applications that pull data from different services.
 
 In summary, use REST APIs when simplicity and compatibility with a variety of clients are your main concerns. 
-Use GraphQL APIs when you need more flexibility in data retrieval, have complex data relationships, and want to optimize data fetching for e.g. app development.
+Use GraphQL APIs when you need more flexibility in data retrieval, retrieve complex data relationships, and want to optimize data fetching for e.g. app development.
