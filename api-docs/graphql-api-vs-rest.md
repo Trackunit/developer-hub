@@ -9,9 +9,7 @@ category: 652e3a8e279c3f001f9acdc3
 >
 > Our REST APIs are designed to only expose a single domain within the Trackunit data model. If you need data from different parts of the Trackunit data model, consider using the public GraphQL API instead of the individual REST APIs.
 
-REST (Representational State Transfer) APIs and GraphQL APIs are both used for building web services. 
-They allow to interact with a server and retrieve or manipulate data. 
-However, they have different characteristics and are better suited for different use cases. 
+REST (Representational State Transfer) APIs and GraphQL APIs are both used for building web services. They allow to interact with a server and retrieve or manipulate data. However, they have different characteristics and are better suited for different use cases. 
 Here's a comparison of when to use each:
 
 **Use REST APIs when:**
@@ -27,5 +25,4 @@ Here's a comparison of when to use each:
 4. Avoiding Over-Fetching and Under-Fetching: GraphQL allows clients to request exactly the data they need, reducing the chances of over-fetching (retrieving more data than necessary) or under-fetching (not getting enough data).
 5. Aggregating Data: GraphQL can aggregate data from multiple sources and present it as a single unified API, making it a good choice for applications that pull data from different services.
 
-In summary, use REST APIs when simplicity and compatibility with a variety of clients are your main concerns. 
-Use GraphQL APIs when you need more flexibility in data retrieval, retrieve complex data relationships, and want to optimize data fetching for e.g. app development.
+In summary, use REST APIs when simplicity and compatibility with a variety of clients are your main concerns. Use GraphQL APIs when you need more flexibility in data retrieval, retrieve complex data relationships, and want to optimize data fetching for e.g. app development.
