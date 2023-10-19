@@ -10,7 +10,7 @@ parentDocSlug: iris-app-sdk-reference
 
 # Breaking Changes
 
-## @trackunit/iris-app v0.0.X
+## @trackunit/iris-app v0.0.367
 
 In this version we have renamed publishApp to submitApp to avoid confusion about when an app was actually made public. This change means that for existing apps you should open up the `project.json` file and change:
 

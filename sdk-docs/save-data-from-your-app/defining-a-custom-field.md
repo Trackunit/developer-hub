@@ -62,16 +62,18 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
 
 | Property                    | Field type | Required | Description                                                                                             |
 |-----------------------------|------------|----------|---------------------------------------------------------------------------------------------------------|
-| `maximum`                   | NUMBER     | No       | Maximum numeric value                                                                                   |
-| `minimum`                   | NUMBER     | No       | Minimum numeric value                                                                                   |
-| `isInteger`                 | NUMBER     | No       | Disallow decimal values                                                                                 |
-| `maximumLength`             | STRING     | No       | Maximum length of the text                                                                              |
-| `minimumLength`             | STRING     | No       | Minimum length of the text                                                                              |
-| `pattern`                   | STRING     | No       | The allowed regular expression. Syntax is documented [here](https://github.com/google/re2/wiki/Syntax). |
-| `allValues`                 | DROPDOWN   | Yes      | All allowed values                                                                                      |
-| `multiSelect`               | DROPDOWN   | No       | Allow multiple options to be selected. Default `false`                                                  |
-| `dropDownValueReplacements` | DROPDOWN   | No       | Map from old values no longer allowed to new values. Used for updating existing data                    |
-| `currency`                  | MONETARY   | yes      | Currency in ISO 4217 standard                                                                           |
+| `maximum`           | NUMBER     | No       | Maximum numeric value |
+| `minimum`           | NUMBER     | No       | Minimum numeric value |
+| `unitSi`            | NUMBER     | No       | Unit used for users using SI Customary system of measurement |
+| `unitUs`            | NUMBER     | No       | Unit used for users using US Customary system of measurement |
+| `isInteger`         | NUMBER     | No       | Disallow decimal values. Can't be true if `unitSi` or `unitUs` is specified |
+| `maximumLength`     | STRING     | No       | Maximum length of the text |
+| `minimumLength`     | STRING     | No       | Minimum length of the text |
+| `pattern`           | STRING     | No       | The allowed regular expression. Syntax is documented [here](https://github.com/google/re2/wiki/Syntax). |
+| `allValues`         | DROPDOWN   | Yes      | All allowed values |
+| `multiSelect`       | DROPDOWN   | No       | Allow multiple options to be selected. Default `false`                                                  |
+| `valueReplacements` | DROPDOWN   | No       | Map from old values no longer allowed to new values. Used for updating existing data                    |
+| `currency`          | MONETARY   | yes      | Currency in ISO 4217 standard |
 
 > 📘 Nice to know
 > 
