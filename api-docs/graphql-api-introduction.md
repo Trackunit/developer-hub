@@ -20,9 +20,7 @@ category: 652e3a8e279c3f001f9acdc3
 
 The GraphQL API offers more flexible queries than the Trackunit REST API and only retrieves the data needed. Making it easier to quickly retrieve the data needed for your application.
 
-With GraphQL, you construct queries and mutations to fetch or modify data.
-Unlike REST APIs, which use multiple endpoints, GraphQL uses a single endpoint to handle all requests.
-If you haven't worked with GraphQL before, learn how to by following [the official GraphQL documentation](https://graphql.org/learn/).
+With GraphQL, you construct queries and mutations to fetch or modify data. Unlike REST APIs, which use multiple endpoints, GraphQL uses a single endpoint to handle all requests. If you haven't worked with GraphQL before, learn how to by following [the official GraphQL documentation](https://graphql.org/learn/).
 
 The next step is to go through our guide on how to interact with the GraphQL API using the SDK: 
 - [Calling Trackunit GraphQL API using the Iris App SDK](https://developers.trackunit.com/docs/graphql-api)
