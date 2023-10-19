@@ -62,7 +62,7 @@ Result types:
 
 These result types allow for flexibility in representing and working with different types of data in an instant query. Choose the appropriate result type based on your specific use case to extract the desired information or perform calculations on the returned data.
 
-[Explore the our Instant Query examples](../reference/usage#instant-query-examples)
+[Explore the our Instant Query examples](../reference/time-series-usage#instant-query-examples)
 
 ## Range Query
 
@@ -78,7 +78,7 @@ Here's a breakdown of how a range query works:
 
 By adjusting the step parameter, you can control the granularity or level of detail in the returned data. Smaller step values result in more fine-grained data points.
 
-[Explore the our Range Query examples](../reference/usage#range-query-examples)
+[Explore the our Range Query examples](../reference/time-series-usage#range-query-examples)
 
 ## Metrics
 
@@ -86,7 +86,7 @@ The metrics endpoint allows you to retrieve metrics as they were ingested. It pr
 
 To use the metrics endpoint, you construct a request URL with parameters such as the time range and metric filters. The system retrieves the relevant metrics from its database and returns them in JSON format.
 
-Additionally, if the 'Accept-Encoding' header in your request is set to 'gzip', the response will be compressed using gzip encoding. This allows you to reduce the response time and size for efficient data transfer.
+Additionally, if the `Accept-Encoding` header in your request is set to `gzip`, the response will be compressed using gzip encoding. This allows you to reduce the response time and size for efficient data transfer.
 
 ## PromQL Documentation and Tutorials
 
