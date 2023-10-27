@@ -1,5 +1,5 @@
 ---
-title: Operator Registry Introduction
+title: Operator Registry - Introduction
 category: 62e8eba5923a5105f57589e7
 ---
 Our Operator API provides a list of APIs enabling management of operators.
