@@ -11,8 +11,6 @@ The Trackunit Sustainability API is a REST API that enables customers to access 
 
 ## Interface
 
-The API expose an OpenAPI JSON REST interface that you can call directly using your OAuth 2.0 access token. See [Access IRIS APIs](../reference/access-token) for further details on how to obtain an access token.
-
 #### There are 3 endpoints currently available:
 1. Monthly: Aggregated 12 values per asset, 1 for each of the last 12 months
 2. Lifetime: Aggregated 1 value per asset representing the total accumulation since the machine was originally put in use. This value is updated once a day
