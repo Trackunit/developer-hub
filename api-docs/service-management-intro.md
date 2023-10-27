@@ -12,10 +12,6 @@ The document is intended for developers, who wants to integrate systems, write c
 >
 > This API is available for customers that have acquired a license for the Service Management capability.
 
-## Interface
-
-The API expose an OpenAPI JSON REST interface that you can call directly using your OAuth 2.0 access token. See [Access IRIS APIs](../reference/access-token) for further details on how to obtain an access token.
-
 ## Concepts
 
 Service Management is built on the following concepts
