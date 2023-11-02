@@ -20,3 +20,8 @@ Additionally location properties provide meta data including:
 - `updatedAt`: Date and time when the location was registered
 
 If you are interested in fetching historical location data for a certain asset, then check out the [location time-series endpoint of our Export ISO 15143-3 / AEMP 2.0](https://developers.trackunit.com/reference/getlocationtimeseries).
+
+### Rate Limiting
+To get more information about rate limiting see [Rate & Size Limiting](https://developers.trackunit.com/reference/rate-limit).
+* [Get locations](https://developers.trackunit.com/reference/getlocations) - one request per second for specific page and user
+* [Get location](https://developers.trackunit.com/reference/getlocation) - one request per second for specific asset id and user
