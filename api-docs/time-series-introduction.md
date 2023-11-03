@@ -38,10 +38,6 @@ Explore the available endpoints and interact with the Time Series API to retriev
 >
 > The Time Series API is only available to customers on the **Evolve & Expand** or the **Link, Lift & Leap** subscription packages. Data retention limits follow the chosen subscription package.
 
-## Interface
-
-The API exposes an OpenAPI JSON REST interface that you can call directly using your OAuth 2.0 access token. See [Access IRIS APIs](../reference/access-token) for further details on how to obtain an access token.
-
 ## Rate Limiting
 
 * Advanced Querying - max 100 requests per second

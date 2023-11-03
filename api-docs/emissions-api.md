@@ -1,5 +1,5 @@
 ---
-title: Sustainability API Introduction 
+title: Emissions API - Introduction 
 category: 64c280b4cab95c006f9359e3
 ---
 
@@ -10,8 +10,6 @@ The Trackunit Sustainability API is a REST API that enables customers to access 
 > This API is available for customers that have acquired a license for the Emissions Reporting capability.
 
 ## Interface
-
-The API expose an OpenAPI JSON REST interface that you can call directly using your OAuth 2.0 access token. See [Access IRIS APIs](../reference/access-token) for further details on how to obtain an access token.
 
 #### There are 3 endpoints currently available:
 1. Monthly: Aggregated 12 values per asset, 1 for each of the last 12 months

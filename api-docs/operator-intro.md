@@ -1,14 +1,10 @@
 ---
-title: Operator Registry Introduction
+title: Operator Registry - Introduction
 category: 62e8eba5923a5105f57589e7
 ---
 Our Operator API provides a list of APIs enabling management of operators.
 
 The document is intended for developers, who wants to integrate systems, write client libraries or other interactions on an API-level.
-
-## Interface
-
-The API expose an OpenAPI JSON REST interface that you can call directly using your OAuth 2.0 access token. See [Access IRIS APIs](../reference/access-token) for further details on how to obtain an access token.
 
 ## Concepts
 

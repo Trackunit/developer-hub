@@ -1,14 +1,10 @@
 ---
-title: Access Management Introduction
+title: Access Management - Introduction
 category: 62ea3a0fef042a063b8717c7
 ---
 Our Access Management API provides a list of APIs enabling machine owners to assign access to machines for operators.
 
 The document is intended for developers, who wants to integrate systems, write client libraries or other interactions on an API-level.
-
-## Interface
-
-The API expose an OpenAPI JSON REST interface that you can call directly using your OAuth 2.0 access token. See [Access IRIS APIs](../reference/access-token) for further details on how to obtain an access token.
 
 ## Concepts
 
