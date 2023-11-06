@@ -5,7 +5,7 @@ category: 6295ae369ba4b1001464c9e5
 All endpoints that return lists of objects use pagination. Pagination allows consumers to request a part of the list using a page or cursor-based pagination mechanism.
 
 # Page-based pagination
-Page-based pagination also known ass offset-pagination, divides the result into smaller pages of elements.
+Page-based pagination also known as offset-pagination, divides the result into smaller pages of elements.
 Using page-size and page-number to control the size of each page and which page to be returned.
 
 ## Page-based Pagination Response Object

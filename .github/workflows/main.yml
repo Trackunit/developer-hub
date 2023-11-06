@@ -36,3 +36,11 @@ jobs:
         uses: readmeio/rdme@v8
         with:
           rdme: custompages ./custompages --key=${{ secrets.README_API_KEY }}
+
+      # Run GitHub Action to sync changelogs in `changelog` directory
+      - name: Sync changelog pages docs
+        # We recommend specifying a fixed version, i.e. @v8
+        # Docs: https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
+        uses: readmeio/rdme@v8
+        with:
+          rdme: changelogs ./changelogs --key=${{ secrets.README_API_KEY }}

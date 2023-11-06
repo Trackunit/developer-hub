@@ -1,20 +1,11 @@
 ---
-title: Change Log
-category: 61fcd8e1a448f5004215317c
-parentDocSlug: reference
+title: trackunit/ui-icons v0.0.76 - new format for icons
+type: improved
 ---
 
-> 🚧 Beta
->
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
+[Breaking change] In this version of our Iris App SDK a new format was introduced for icons, which require an update of jest configurations in extensions that use this library.
 
-# Breaking Changes
-
-## @trackunit/ui-icons v0.0.76
-
-In this version a new format was introduced for icons, which require an update of jest configurations in extensions that use this library.
-
-> Ekstensions created with `@trackunit/iris-app@0.0.366` should already have the required configuration.
+> Extensions created with `@trackunit/iris-app@0.0.366` should already have the required configuration.
 
 Add the following entries to the `moduleNameMapper` array of `jest.config.ts` in all relevant libraries.
 

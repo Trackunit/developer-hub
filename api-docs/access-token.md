@@ -1,6 +1,6 @@
 ---
 title: Access Token
-category: 6295ae369ba4b1001464c9e5
+category: 652e70de24294117a69a20f0
 ---
 IRIS APIs use the [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749) for authentication and authorization. IRIS APIs supports OAuth 2.0's Resource Owner Password Flow.
 
