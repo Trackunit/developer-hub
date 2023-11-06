@@ -195,3 +195,21 @@ gridOptions: {
 # Asset Events Actions extension point
 
 This extension point allows you to add a user interface in the Events within Asset Home in Trackunit Manager. The extension is controlled in the extension-manifest.ts file.
+
+## Menu Item
+
+```ts
+menuItem: {
+  name: "Specification";
+}
+```
+
+### Visibility
+
+Visibility is controlled using conditions. The Event's Type must match the Type entered within the code.
+
+```ts
+conditions:{
+  eventType: "event-type",
+}
+```
