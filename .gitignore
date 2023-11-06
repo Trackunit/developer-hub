@@ -1,1 +1,11 @@
-/.idea/
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+### OS X ###
+.DS_Store
