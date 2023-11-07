@@ -20,17 +20,17 @@ This extension point allows you to add a new tab to the Assets Home screen withi
 
 [block:image]
 {
-"images": [
-{
-"image": [
-"https://cdn.statically.io/gh/trackunit/developer-hub/master/sdk-docs/extension_to_asset_home.png",
-null,
-"Asset home extension"
-],
-"align": "center",
-"sizing": "50% "
-}
-]
+  "images": [
+    {
+      "image": [
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/sdk-docs/extension_to_asset_home.png",
+        null,
+        "Asset home extension"
+      ],
+      "align": "center",
+      "sizing": "50% "
+    }
+  ]
 }
 [/block]
 
@@ -59,17 +59,17 @@ This extension point allows you to add a new tab to the Site Home screen within 
 
 [block:image]
 {
-"images": [
-{
-"image": [
-"https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_to_site.png",
-null,
-"Site home extension"
-],
-"align": "center",
-"sizing": "50% "
-}
-]
+  "images": [
+    {
+      "image": [
+        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_to_site.png",
+        null,
+        "Site home extension"
+      ],
+      "align": "center",
+      "sizing": "50% "
+    }
+  ]
 }
 [/block]
 
@@ -79,17 +79,17 @@ This extension point allows you to add a new tab to the tiles list on the Main M
 
 [block:image]
 {
-"images": [
-{
-"image": [
-"https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_to_navbar.png",
-null,
-"Fleet wide extension"
-],
-"align": "center",
-"sizing": "50% "
-}
-]
+  "images": [
+    {
+      "image": [
+        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_to_navbar.png",
+        null,
+        "Fleet wide extension"
+      ],
+      "align": "center",
+      "sizing": "50% "
+    }
+  ]
 }
 [/block]
 
@@ -110,17 +110,17 @@ The Report Extension Point allows you to add a new report to the Reports screen 
 
 [block:image]
 {
-"images": [
-{
-"image": [
-"https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_reports.png",
-null,
-"Report extension"
-],
-"align": "center",
-"sizing": "50% "
-}
-]
+  "images": [
+    {
+      "image": [
+        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_reports.png",
+        null,
+        "Report extension"
+      ],
+      "align": "center",
+      "sizing": "50% "
+    }
+  ]
 }
 [/block]
 
@@ -130,17 +130,17 @@ This extension point allows you to add a configuration user interface for your a
 
 [block:image]
 {
-"images": [
-{
-"image": [
-"https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_settings.png",
-null,
-"App settings extension"
-],
-"align": "center",
-"sizing": "50% "
-}
-]
+  "images": [
+    {
+      "image": [
+        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_settings.png",
+        null,
+        "App settings extension"
+      ],
+      "align": "center",
+      "sizing": "50% "
+    }
+  ]
 }
 [/block]
 
@@ -150,17 +150,17 @@ This extension point allows you to add a new tab in the administration user inte
 
 [block:image]
 {
-"images": [
-{
-"image": [
-"https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_administration.png",
-null,
-"Administration extension"
-],
-"align": "center",
-"sizing": "50% "
-}
-]
+  "images": [
+    {
+      "image": [
+        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_administration.png",
+        null,
+        "Administration extension"
+      ],
+      "align": "center",
+      "sizing": "50% "
+    }
+  ]
 }
 [/block]
 
