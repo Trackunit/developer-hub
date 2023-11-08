@@ -20,17 +20,24 @@ Visit the Manager application to create an API User and obtain OAuth 2.0 credent
 > 
 > API Users will act as the admin user. Only the admin user can access the "API Access"-page to create API Users and obtain credentials.
 
-Find the "API Access" page in the upper right corner of the Manager application.
+Find the "API Access" page under Administration → API Access.
 
-![](https://files.readme.io/af2792b-d4792b9-a8de0f7-Skrmbillede_2020-04-15_kl._12.33.13.png "d4792b9-a8de0f7-Skrmbillede_2020-04-15_kl._12.33.13.png")
+![Screenshot of snippet showing API Access under Administration Settings](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/api-access-admin-settings.png "API Access settings")
 
-Create a new API User by clicking "Create New API User". 
+Create a new API User by clicking "Create API User".
 
-![](https://files.readme.io/a7dc2b4-397ca9d-72bbb1f-Skrmbillede_2020-04-14_kl._15.50.31.png "397ca9d-72bbb1f-Skrmbillede_2020-04-14_kl._15.50.31.png")
+![Screenshot of API Access UI](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/api-access-create-api-user.png "Create API User UI")
 
-Capture the username and password of created user along with the "Client ID" and "Client Secret". Beware the password will only be visible this one time.
+Attach a name and description to the API User for easy identification.
 
-![](https://files.readme.io/4b969c6-f2791eb-a04e37e-Skrmbillede_2020-04-14_kl._16.39.47.png "f2791eb-a04e37e-Skrmbillede_2020-04-14_kl._16.39.47.png")
+![Screenshot of dialog with name and description for API User](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/api-access-create-api-user-dialog.png "Dialog of API User creation")
+
+Capture the username and password of created user along with the "Client ID" and "Client Secret".
+> 📘 Password
+>
+> Remember to save the password. The password will only be visible this **_one time_**.
+
+![Screenshot showing credentials needed to authenticate](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/api-access-created-user.png "Created API User")
 
 ## 2. Obtain an access token from the IRIS Authorization Server.
 
