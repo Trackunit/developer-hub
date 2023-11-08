@@ -20,7 +20,7 @@ Visit the Manager application to create an API User and obtain OAuth 2.0 credent
 > 
 > API Users will act as the admin user. Only the admin user can access the "API Access"-page to create API Users and obtain credentials.
 
-Find the "API Access" page under Settings → Administration.
+Find the "API Access" page under Administration → API Access.
 
 ![Screenshot of snippet showing API Access under Administration Settings](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/api-access-admin-settings.png "API Access settings")
 
