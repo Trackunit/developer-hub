@@ -124,7 +124,7 @@ The Report Extension Point allows you to add a new report to the Reports screen 
 }
 [/block]
 
-# App settings extension point
+# App Settings Extension Point
 
 This extension point allows you to add a configuration user interface for your app in the App library. After a user installs an app he will be guided to the app library, so this is the perfect place to add an extension if your app requires configuration.
 
@@ -144,7 +144,7 @@ This extension point allows you to add a configuration user interface for your a
 }
 [/block]
 
-# Administration extension point
+# Administration Extension Point
 
 This extension point allows you to add a new tab in the administration user interface. It will only be visible to users in the Administrator role.
 
@@ -164,7 +164,7 @@ This extension point allows you to add a new tab in the administration user inte
 }
 [/block]
 
-# Widget extension point
+# Widget Extension Point
 
 This extension point allows you to add a widget to Trackunit Manager.
 
@@ -192,7 +192,7 @@ gridOptions: {
 }
 ```
 
-# Asset Events Actions extension point
+# Asset Events Actions Extension Point
 
 This extension point allows you to add a user interface in the Events within Asset Home in Trackunit Manager. The extension is controlled in the extension-manifest.ts file.
 
