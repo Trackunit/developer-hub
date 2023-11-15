@@ -21,21 +21,27 @@ npm install @trackunit/react-core-hooks
 Then you can import the core hooks in your extensions  `app.tsx`:
 
 ```typescript
-import { useNavigationRuntime } from '@trackunit/react-core-hooks';
+import { useAssetRuntime, useHasAccessTo, useNavigateInHost } from "@trackunit/react-core-hooks";
 ```
 
 In this example we can navigate to asset home if you have the assetID.
 
 ```typescript
 import { Button } from '@trackunit/react-components';
-import { useNavigationRuntime } from '@trackunit/react-core-hooks';
+import { useAssetRuntime, useHasAccessTo, useNavigateInHost } from "@trackunit/react-core-hooks";
 
 export const App = () => {
-  const { gotoAssetHome }= useNavigationRuntime(); 
+  const { assetInfo } = useAssetRuntime();
+
+  const { gotoAssetHome }= useNavigateInHost(); 
+  const { hasAccess: hasAccessToMovementTab } = useHasAccessTo({ assetId: assetInfo?.assetId, page: "movement" });
   
   return (
     <div>
-      <Button onClick={ () =>gotoAssetHome("[NEED_AN_ASSET_ID]")}>MOVE TO ASSET</Button>
+      <p>Can goto asset MovementTab: {hasAccessToMovementTab ? "YES" : "NO"}</p>
+      <Button onClick={() => assetInfo?.assetId && gotoAssetHome(assetInfo.assetId, { page: "movement" })}>
+        MOVE TO ASSET
+      </Button>
     </div>
   );
 };
