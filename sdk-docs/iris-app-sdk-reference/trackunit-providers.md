@@ -16,7 +16,14 @@ The provider also wraps the ThemeProvider, which is currently needed for our Rea
 
 The following hooks from `react-core-hooks` can be used inside the provider:
 
+- **useToken Hook:** This hook will retrieve an access token.
 - **userCurrentUser Hook:** This hook will retrieve data on the current user.
 - **useEnvironment Hook:** This hook will read the current environment.
 - **useUserSubscription Hook:** This hook will retrieve the user's subscription package and features.
-- **useToken Hook:** This hook will retrieve an access token.
+- **useHasAccessTo Hook:** This hook will check if the user has access to a specific page. 
+- **useNavigateInHost Hook:** This hook will allow you to navigate to another page in the host.
+- **useFilterBarContext Hook:** This hook will allow you to get the current filter bar context if filter is available on the page in the host.
+- **useCustomFieldRuntimeForEntity Hook:** This hook will allow you to get the current custom field information.
+- **useSiteRuntime Hook:** This hook will allow you to get the current site information if available on the page in the host.
+- **useAssetRuntime Hook:** This hook will allow you to get the current asset information if available on the page in the host.
+- **useToast Hook:** This hook will allow you to show a toast message in the host.
