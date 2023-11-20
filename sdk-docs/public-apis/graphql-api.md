@@ -8,7 +8,7 @@ parentDocSlug: public-apis
 > 
 > This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
-Trackunit exposes a [GraphQL API](/page/graphql-api) to create your query and we also expose an NX executor to make it easy to query our GraphQL API inside your Iris App extension.
+Trackunit exposes a [GraphQL API](/reference/graphql-api-introduction) to create your query and we also expose an NX executor to make it easy to query our GraphQL API inside your Iris App extension.
 
 In this example, we will use a Query for asset information.  
 
@@ -145,5 +145,5 @@ export const App = () => {
 > In the complete example mentioned above, we have commented out the HTTP header `TU-PREVIEW:<codeword(s)>`.
 Certain GraphQL objects are currently in a preview state and may undergo changes without prior notice.
 To indicate your acceptance of these terms, include the HTTP header `TU-PREVIEW:<codeword(s)>` in your query requests.
-The specific codeword varies for each preview object and can be found by referring to the [GraphQL Explorer](https://developers.trackunit.com/page/graphql-explorer).
+The specific codeword varies for each preview object and can be found by referring to the [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/).
 You can include one or more comma-separated codewords.
