@@ -45,7 +45,7 @@ Trackunit provides an extensive UI Component library. When using components from
 }
 [/block]
 
-For more information see: [UI Components](/page/ui-components)
+For more information see: [UI Components](https://apps.iris.trackunit.com/storybook/)
 
 # Interact with the manager
 
