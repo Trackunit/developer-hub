@@ -1,6 +1,6 @@
 ---
 title: Adding Endpoints
-category: 655b2193f0258c0504193a44
+category: 652e408346c8860073a6bd12
 ---
 To get started listening to events on the Iris Platform, all you have to do is configure your endpoints. 
 

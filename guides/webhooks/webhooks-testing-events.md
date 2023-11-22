@@ -1,6 +1,6 @@
 ---
 title: Testing Events
-category: 655b21d6c294db058b12d061
+category: 652e408346c8860073a6bd12
 ---
 The easiest way to gain confidence in your endpoint configuration is to start receiving events as quickly as possible.
 

@@ -1,6 +1,6 @@
 ---
 title: Securing Webhooks
-category: 655cb987ccdd24003f0e7d41
+category: 652e408346c8860073a6bd12
 ---
 Due to the nature of webhooks, attackers can potentially impersonate services by sending fake webhooks to an endpoint. Consider this: it's simply an HTTP POST from an unknown source. This poses a security risk for many applications or, at the very least, introduces potential issues.
 
