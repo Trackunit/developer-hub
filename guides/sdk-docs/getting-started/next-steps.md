@@ -34,7 +34,7 @@ Trackunit provides an extensive UI Component library. When using components from
   "images": [
     {
       "image": [
-        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/ui-components.png",
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/sdk-docs/ui-components.png",
         null,
         "UI Components"
       ],

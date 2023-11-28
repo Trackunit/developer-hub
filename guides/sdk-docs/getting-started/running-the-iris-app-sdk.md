@@ -26,7 +26,7 @@ You might need to login before it hits that page, use your developer credentials
   "images": [
     {
       "image": [
-        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/localmode.png",
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/sdk-docs/localmode.png",
         null,
         "App settings extension"
       ],

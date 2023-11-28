@@ -23,7 +23,7 @@ This extension point allows you to add a new tab to the Assets Home screen withi
   "images": [
     {
       "image": [
-        "https://cdn.statically.io/gh/trackunit/developer-hub/master/sdk-docs/extension_to_asset_home.png",
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/sdk-docs/extension_to_asset_home.png",
         null,
         "Asset home extension"
       ],
@@ -62,7 +62,7 @@ This extension point allows you to add a new tab to the Site Home screen within 
   "images": [
     {
       "image": [
-        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_to_site.png",
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/sdk-docs/extension_to_site.png",
         null,
         "Site home extension"
       ],
@@ -82,7 +82,7 @@ This extension point allows you to add a new tab to the tiles list on the Main M
   "images": [
     {
       "image": [
-        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_to_navbar.png",
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/sdk-docs/extension_to_navbar.png",
         null,
         "Fleet wide extension"
       ],
@@ -113,7 +113,7 @@ The Report Extension Point allows you to add a new report to the Reports screen 
   "images": [
     {
       "image": [
-        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_reports.png",
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/sdk-docs/extension_reports.png",
         null,
         "Report extension"
       ],
@@ -133,7 +133,7 @@ This extension point allows you to add a configuration user interface for your a
   "images": [
     {
       "image": [
-        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_settings.png",
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/sdk-docs/extension_settings.png",
         null,
         "App settings extension"
       ],
@@ -153,7 +153,7 @@ This extension point allows you to add a new tab in the administration user inte
   "images": [
     {
       "image": [
-        "https://cdn.statically.io/gh/Trackunit/developer-hub/master/sdk-docs/extension_administration.png",
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/sdk-docs/extension_administration.png",
         null,
         "Administration extension"
       ],
