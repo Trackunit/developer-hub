@@ -63,7 +63,3 @@ This is a Quickstart guide intended to help you set up a basic development envir
 
 - **Explore Extension Points**: Investigate different extension points like Asset Home, Site Home, or Fleet Wide.
 - **Read Documentation**: Refer to [Trackunit Developers](https://developers.trackunit.com/docs/) for detailed documentation.
-
-## Conclusion
-
-Congratulations on setting up your first Iris App with an extension! Explore the SDK to build and enhance your app further.
