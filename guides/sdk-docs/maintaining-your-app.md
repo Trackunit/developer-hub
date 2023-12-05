@@ -20,4 +20,4 @@ It will be updated whenever our packages depend on new Nx and Node versions. War
 
 Migrating an existing Nx workspace to a new version is relatively simple as long as you follow our guidelines and their best-practices when working with Nx.
 
-For more information on how to migrate an Nx workspace refer to the official docs about the [nx migrate](https://nx.dev/packages/nx/documents/migrate#examples) command.
+For more information on how to migrate an Nx workspace refer to the official docs about the [nx migrate](https://nx.dev/nx-api/nx/documents/migrate#examples) command.
