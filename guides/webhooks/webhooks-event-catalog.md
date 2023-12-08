@@ -12,7 +12,7 @@ Find it in the Trackunit Manager by navigating to Administration > Webhooks > Ev
 
 Available events encompass different domains within the Trackunit Iris platform and therefore enable you to create numerous synergies within your business ecosystem.
 
-*Example events:*
+**Example events:**
 - alerts.asset.on
 - alerts.asset.off
 - faults.asset.on
