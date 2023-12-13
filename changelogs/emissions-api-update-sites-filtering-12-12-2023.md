@@ -3,7 +3,7 @@ title: Emissions API v1 Update
 type: added
 ---
 
-Added new Endpoints to the Emissions API to enable filtering by assets, as well as getting emissions value for sites.
+Added new Endpoints to the Emissions API to enable filtering by asset Ids, as well as getting emissions value for sites.
 
 Below is a list of all the new endpoints:
 
@@ -11,63 +11,63 @@ Below is a list of all the new endpoints:
 
 [Get period](ref:getemissions)
 
-> ➕ POST:
+> ➕ POST: /emissions/period
 
 [Filter period](ref:filteremissions)
 
-> ➕ GET:
+> ➕ GET: /emissions/period/kpis
 
 [Get period KPIs](ref:getemissionskpis)
 
-> ➕ POST:
+> ➕ POST: /emissions/period/kpis
 
 [Filter period KPIs](ref:filteremissionskpis)
 
-> ➕ POST:
+> ➕ POST: /emissions/monthly
 
 [Filter monthly](ref:filtermonthlyemissions)
 
-> ➕ GET:
+> ➕ GET: /emissions/monthly/summary
 
 [Get monthly summary](ref:getmonthlyemissionsaggregated)
 
-> ➕ POST:
+> ➕ POST: /emissions/monthly/summary
 
 [Filter monthly summary](ref:filtermonthlyemissionsaggregated)
 
-> ➕ POST:
+> ➕ POST: /emissions/lifetime
 
 [Filter lifetime](ref:filterlifetimeemissions)
 
-> ➕ GET:
+> ➕ GET: /emissions/lifetime/kpis
 
 [Get Lifetime KPIs](ref:getlifetimeemissionskpis)
 
-> ➕ POST:
+> ➕ POST: /emissions/lifetime/kpis
 
 [Filter Lifetime KPIs](ref:filterlifetimeemissionskpis)
 
-> ➕ POST:
+> ➕ POST: /emissions/daily
 
 [Filter daily](ref:filterdailyemissions)
 
-> ➕ GET:
+> ➕ GET: /emissions/daily/summary
 
 [Get daily summary](ref:getdailyemissionsaggregated)
 
-> ➕ POST:
+> ➕ POST: /emissions/daily/summary
 
 [Filter daily summary](ref:filterdailyemissionsaggregated)
 
-> ➕ GET:
+> ➕ GET: /emissions/daily/kpis
 
 [Get daily KPIs](ref:getdailyemissionskpis)
 
-> ➕ GET:
+> ➕ POST: /emissions/daily/kpis
 
 [Filter daily KPIs](ref:filterdailyemissionskpis)
 
-> ➕ GET:
+> ➕ GET: /sites/{siteId}/emissions
 
 [Get site](ref:getsiteemissionsbysiteid)
 

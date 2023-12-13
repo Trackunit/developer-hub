@@ -15,8 +15,8 @@ The Trackunit Emissions API is a REST API that enables customers to access emiss
 1. Monthly: Aggregated 12 values per asset, 1 for each of the last 12 months
 2. Lifetime: Aggregated 1 value per asset representing the total accumulation since the machine was originally put in use. This value is updated once a day
 3. Daily: This is a non-aggregated limited set of most recent values (ex. 60 days). It provides one value per day for each of the recent days.
-4. Period: This is an aggregated set of values for a specific period of time. The current periods can be returned by previous day, previous seven days, or previous thirty days. It provides one value per period for each of the days in the period.
-5. Sites: This is an aggregated set of values for a specific site. It provides one value per month for as long as the site has existed. Site Ids are returned by the Sites endpoint.
+4. Period: This is an aggregated set of values for a specific period of time. The current periods can be returned by previous day, previous seven days, or previous thirty days. It provides one value per period, per asset.
+5. Sites: This is an aggregated set of values for a specific site. It provides one value per month for as long as the site has existed. Site Ids are returned by the Sites API.
 
 #### KPI Endpoints
 * Returns Emissions, Total Fuel, Total Emissions, Total Usage Hours, Total kWh, Fuel Compilation, Emissions Compilation, Usage Hours Compilation, kWh Compilation, Average Emissions, Average Emissions by Usage Hours, Different Power Types, grouped by asset types
