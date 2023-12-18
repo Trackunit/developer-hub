@@ -11,6 +11,10 @@ Alert configurations are the rules that determine when alerts are generated for 
 Active alerts can be seen on the event page of asset home, where it is also possible to either dismiss the alert event (this will make it disappear from the attention list),
 or resolve the alert event (this will make the asset return to a good criticality state if there are no other active events on the asset).
 
+__NB: Be aware when integrating with this API that the enums specified in the OpenApi spec should be expected to expand without it being treated as a breaking change.__
+__This means that when generating a client for this API you should ensure that the client can handle unknown enum values by e.g. defaulting to an unknown enum value.
+An example of how to handle this is how the OpenApi java client generator with the configuration parameter ```enumUnknownDefaultCase```.__
+
 The alert configuration object structure make use of a pattern where for some fields only one of several fields should be set to a non-null value.
 When this is the case there will be a ```***Type``` field that is set to indicate which of the field is expected to have a value.
 An example of using this structure is the ```configurationDetails``` field which has an object value with several different fields. 
