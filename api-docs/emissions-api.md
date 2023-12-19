@@ -3,7 +3,7 @@ title: Emissions API - Introduction
 category: 64c280b4cab95c006f9359e3
 ---
 
-The Trackunit Sustainability API is a REST API that enables customers to access emissions data for their assets.
+The Trackunit Emissions API is a REST API that enables customers to access emissions data for their assets.
 
 > 📘 Available with the Emissions Reporting app 
 >
@@ -11,10 +11,18 @@ The Trackunit Sustainability API is a REST API that enables customers to access 
 
 ## Interface
 
-#### There are 3 endpoints currently available:
+#### There are 5 categories currently available:
 1. Monthly: Aggregated 12 values per asset, 1 for each of the last 12 months
 2. Lifetime: Aggregated 1 value per asset representing the total accumulation since the machine was originally put in use. This value is updated once a day
 3. Daily: This is a non-aggregated limited set of most recent values (ex. 60 days). It provides one value per day for each of the recent days.
+4. Period: This is an aggregated set of values for a specific period of time. The current periods can be returned by previous day, previous seven days, or previous thirty days. It provides one value per period, per asset.
+5. Sites: This is an aggregated set of values for a specific site. It provides one value per month for as long as the site has existed. Site Ids are returned by the Sites API.
+
+#### KPI Endpoints
+* Returns Emissions, Total Fuel, Total Emissions, Total Usage Hours, Total kWh, Fuel Compilation, Emissions Compilation, Usage Hours Compilation, kWh Compilation, Average Emissions, Average Emissions by Usage Hours, Different Power Types, grouped by asset types
+
+#### Summary Endpoints
+* Returns a summary of all assets emissions values grouped by the chosen timeframe
 
 ## Concepts
 
@@ -54,6 +62,7 @@ We have built our data structure and API to allow tracking of all types of consu
 
 ## Constraints
 
+- Sites Endpoint can only be viewed by Admins of the account
 - Visibility of emissions data is limited to asset visibility 
 - Emissions Data is updated daily at 04:00 UTC
 - API Rate Limiting: 1000 requests per 10 minutes per user

@@ -18,10 +18,14 @@ parentDocSlug: getting-started
 nx run [name-of-your-app]:serve
 ```
 
-### 2. A browser window will open with this url <https://dev.manager.trackunit.com/iris-sdk-portal/main#runLocal>.
+... wait for the text to say ... compiled successfully in ...
+
+### 2. Open a browser 
+Using this url: <https://new.manager.trackunit.com/iris-sdk-portal/main#runLocal>.
+
 You might need to login before it hits that page, use your developer credentials.
 
-### 3. The screen for the developer-server called _**Iris App Developer Portal**_ will appear.
+### 3. The screen for the developer portal called _**Iris App Developer Portal**_ will appear.
 
 [block:image]
 {
@@ -40,7 +44,7 @@ You might need to login before it hits that page, use your developer credentials
 [/block]
 
 ### 4. From this screen, make sure to enable **Local dev mode**.
-Local dev mode enables the manager (which is remotely hosted) to load the apps directly from your local development environment. It might take around 30 seconds to load the first time. 
+Local dev mode enables the manager (which is remotely hosted) to load the apps directly from your local development environment. It might take around 30 seconds to load the first time. This is also where you can turn off running in local dev mode.
 
 
 > 📘 Troubleshooting Tips
