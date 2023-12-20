@@ -2,6 +2,11 @@
 title: Time Series API - Usage guide
 category: 65097f10ed04fd0047f22d48
 ---
+
+> 📘 Also access 'Time Series' data for an Asset via the GraphQL API
+> 
+> Via the Public GraphQL API, you can utilize query capabilities to fetch 'Time Series' data connected to an asset. Explore the GraphQL schema through our [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/). Follow the 'asset' entry point and select 'timeSeries' to perform instant queries and range queries.
+
 # Instant Query Examples
 ## Example 1: Fetching the Metric at a Specific Timestamp
 
