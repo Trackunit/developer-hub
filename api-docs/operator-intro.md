@@ -6,7 +6,7 @@ Our Operator API provides a list of APIs enabling management of operators.
 
 > 📘 Subscription requirement
 > 
-> This API is available for customers that have acquired a license for the Access Control API capability.
+> This API is available for customers that have acquired a license for the Access Control API capability, and been migrated to IRIS Access Control.
 
 The document is intended for developers, who wants to integrate systems, write client libraries or other interactions on an API-level.
 
@@ -33,3 +33,5 @@ The operator registry is built on the following concepts
 - When deleting an operator that has accepted and invite the operator will still be able to sign in to the Trackunit Go app but will loose access to all data shared with the operator.
 
 ## Rate Limiting
+
+* Fetching operators - max 60 requests per minute
