@@ -6,7 +6,7 @@ Our Operator API provides a list of APIs enabling management of operators.
 
 > 📘 Subscription requirement
 > 
-> This API is available for customers that have acquired a license for the Access Control API capability, and been migrated to IRIS Access Control.
+> This API is available for customers that have acquired a license for the Access Control API capability, and have been migrated to IRIS Access Control.
 
 The document is intended for developers, who wants to integrate systems, write client libraries or other interactions on an API-level.
 
