@@ -8,7 +8,7 @@ Perfect to sync latest asset location data to any other system.
 
 > 📘 Also access location data for an Asset via the GraphQL API
 > 
-> Via the Public GraphQL API, you can utilize query capabilities to fetch 'location' data connected to an asset. Explore the GraphQL schema through our [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/). Follow the 'asset' entry point and select 'locations'. 
+> Via the Public GraphQL API, you can utilize query capabilities to fetch 'location' data together with other asset data in one API call. Explore the GraphQL schema through our [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/). Follow the 'asset' entry point and select 'locations'. 
 
 This API delivers location data in the [GeoJson](https://geojson.org/) format and the Geometry type is chosen to always be `point`, which serves the coordinates. 
 The `coordinates` array consists of two or three coordinates, in fixed order: longitude, latitude, optionally altitude:
