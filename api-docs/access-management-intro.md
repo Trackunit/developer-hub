@@ -4,6 +4,10 @@ category: 62ea3a0fef042a063b8717c7
 ---
 Our Access Management API provides a list of APIs enabling machine owners to assign access to machines for operators.
 
+> 📘 Subscription requirement
+> 
+> This API is available for customers that have acquired a license for the Access Control API capability, and have been migrated to IRIS Access Control.
+
 The document is intended for developers, who wants to integrate systems, write client libraries or other interactions on an API-level.
 
 ## Concepts
@@ -20,4 +24,8 @@ Access Management is built on the following concepts
 
 Constraints
 
-- To be able to use bluetooth keys and rolling pins the operator needs to have access to Trackunit On.
+- To be able to use bluetooth keys and rolling pins the operator needs to have access to the mobile app Trackunit On.
+
+## Rate Limiting
+
+* Fetching key-usage - max 1 call per operator/asset per minute
