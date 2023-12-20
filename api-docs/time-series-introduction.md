@@ -2,11 +2,15 @@
 title: Time Series API - Introduction
 category: 65097f10ed04fd0047f22d48
 ---
-Welcome to the Time Series API documentation. This API enables you to retrieve time series metrics for specific assets, categorized as machine insights and advanced sensors.
+Welcome to the Time Series API documentation. This REST API enables you to retrieve time series metrics for specific assets, categorized as machine insights and advanced sensors.
 
 Machine insights provide a comprehensive list of conformed metrics, prefixed with `machine_insight_`, including ISO 15143-3 standard insights and additional insights.
 
 Advanced sensors capture metrics originating from various sources, often derived from CAN. Advanced sensors are not conformed and allow for capturing metrics that are uniquely defined for specific equipment. The metrics are prefixed with `advanced_sensor_`. When querying advanced sensor data, you can specify a unique sensor ID to retrieve metrics for a particular sensor mapping.
+
+> 📘 Also access 'Time Series' data for an Asset via the GraphQL API
+> 
+> Via the Public GraphQL API, you can utilize query capabilities to fetch 'Time Series' data connected to an asset. Explore the GraphQL schema through our [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/). Follow the 'asset' entry point and select 'timeSeries' to perform instant queries and range queries. 
 
 The Time Series API follows the standards of [Prometheus](https://prometheus.io/), an open-source monitoring and time series database system. By adhering to Prometheus specifications, our API ensures compatibility with Prometheus clients and tooling, facilitating integration with existing Prometheus ecosystems. E.g. [Grafana](https://prometheus.io/docs/visualization/grafana/) supports querying Prometheus, which enables you to create dashboards to visualize, alert on and understand your metrics.
  

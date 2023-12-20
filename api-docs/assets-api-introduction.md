@@ -3,7 +3,11 @@ title: Assets API - Introduction
 category: 63170aaed72d5f00a36a8afe
 ---
 
-Discover the power of our Assets API, your key to manage the asset domain. By leveraging the Assets API, developers can easily get all assets in a fleet as well as update specifications for an asset. This API also allows to manage assets across accounts by enabling the share, transfer, unshare and remove visibility actions. For more information, see the documentation of the endpoints.
+Discover the power of our Assets API, your key to manage the asset domain. By leveraging the Assets API, developers can easily get all assets in a fleet as well as update specifications for an asset. This REST API also allows to manage assets across accounts by enabling the share, transfer, unshare and remove visibility actions. For more information, see the documentation of the endpoints.
+
+> 📘 Also access data connected to Asset(s) via the GraphQL API
+> 
+> Via the Public GraphQL API, you can utilize query capabilities to fetch data connected to asset(s) and other domains which would be multiple separate calls in the REST APIs. Additionally you can perform mutations to modify data associated with asset(s). Explore the GraphQL schema through our [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/). 
 
 > 🚧 No onboarding / offboarding support of machine type assets
 > 
