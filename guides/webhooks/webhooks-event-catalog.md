@@ -1,5 +1,5 @@
 ---
-title: Event Catalog
+title: Event Catalog - PREVIEW
 category: 652e408346c8860073a6bd12
 ---
 The Event Catalog offers a list of events to which developers can subscribe using webhooks. It encompasses comprehensive documentation for each event, providing both a detailed schema definition and examples.

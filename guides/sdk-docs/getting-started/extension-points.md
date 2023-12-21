@@ -10,7 +10,21 @@ parentDocSlug: getting-started
 
 An Iris App is a collection of a number of extensions.
 
-![](https://cdn.statically.io/gh/trackunit/developer-hub/master/iris%20app.png)
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/iris%20app.png",
+        null,
+        "Asset home extension"
+      ],
+      "align": "center",
+      "sizing": "50% "
+    }
+  ]
+}
+[/block]
 
 The Iris App SDK provides these extension points in the manager.
 
