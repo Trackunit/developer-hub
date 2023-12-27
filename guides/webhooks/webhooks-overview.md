@@ -23,7 +23,7 @@ With the addition of webhooks, we are extending our Iris capabilities to make it
 
 ## How Webhooks Work
 1. **Adding Endpoint:**
-You subscribe to specific [events](https://developers.trackunit.com/docs/event-catalog) of interest by providing a callback URL in your application. This URL is where we will send HTTP POST requests when the subscribed events occur.
+You subscribe to specific [events](https://developers.trackunit.com/docs/webhooks-event-catalog) of interest by providing a callback URL in your application. This URL is where we will send HTTP POST requests when the subscribed events occur.
 
 
 2. **Event Trigger:**
