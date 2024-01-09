@@ -33,6 +33,7 @@ The currently supported scopes are listed here:
 | `account.audit-log.view` | Can view audit logs |
 | `account.billing.manage` | Can manage billing |
 | `account.custom-fields.manage` | Can manage custom fields |
+| `account.customer.manage` | Can manage customers |
 | `account.delete` | Can delete account |
 | `account.event.manage` | Can manage events |
 | `account.event.report-issue` | Can report issue as event |
