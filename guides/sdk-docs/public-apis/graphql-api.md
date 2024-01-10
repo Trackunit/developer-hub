@@ -51,10 +51,12 @@ Now you are ready to create React hooks from your GraphQL queries, just copy you
 ```graphql
 query GetAssetsByProductionYear($first: Int, $productionYears: [String!]) {
   assets(first: $first, filters: {productionYears: $productionYears}) {
-    payload {
-      productionYear
-      model
-      brand
+    edges {
+      nodes {
+        productionYear
+        model
+        brand
+      }
     }
   }
 }
@@ -67,7 +69,7 @@ nx run [feature-name]-[name-of-your-extension]:graphql-hooks
 ```
 
 ## 6. Use it in your React code 
-Now that it has generated a folder with generated files in your src folder you can use it in your React code. The syntax takes the form `<YOUR_QUERY>Document`.
+Now that it has generated a folder with generated files in your `src` folder you can use it in your React code. The syntax takes the form `<YOUR_QUERY>Document`.
 In the above example `GetAssetsByProductionYear` will translate into `GetAssetsByProductionYearDocument`
 
 ```typescript
@@ -95,7 +97,7 @@ The process for mutation is similar.
 
 ## 1. Add mutation to .graphql file 
 
-You should start with adding a mutation to the `demo.graphql` created above.
+You should start with adding a mutation to the `demo.graphql` created above or any other file with extension `.graphql` in the `src` folder.
 
 ```graphql
 mutation MyMutation($eventId: String!) {
@@ -112,7 +114,7 @@ nx run [feature-name]-[name-of-your-extension]:graphql-hooks
 ```
 
 ## 3. Use it in your React code 
-Now that it has updated the generated files in your src folder you can use it in your React code. The syntax takes the form `<YOUR_MUTATION>Document`.
+Now that it has updated the generated files in your `src` folder you can use it in your React code. The syntax takes the form `<YOUR_MUTATION>Document`.
 In the above example `MyMutation` will translate into `MyMutationDocument`
 
 ```typescript
