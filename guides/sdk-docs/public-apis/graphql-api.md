@@ -156,6 +156,8 @@ const { data, loading, error } = useQuery(GetAssetsByProductionYearDocument, {
 
 You may look up the feature code name in the [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/).
 
+Multiple code names can be send by comma separating them.
+
 > 🚧 Do not use preview features in production. 
 > 
 > Preview feature may change without notice. So do not include them in critical code.
