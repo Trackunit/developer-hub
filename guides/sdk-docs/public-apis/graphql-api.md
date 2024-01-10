@@ -86,6 +86,9 @@ const { data, loading, error } = useQuery(GetAssetsByProductionYearDocument, {
 ## 7. You are now ready to call GraphQL using hooks 
 For more advanced info on the executor you can read up on how to generate code from [GraphQL codegen cli](https://the-guild.dev/graphql/codegen/docs/getting-started/installation)   
 
+More information about the `useQuery` hook is available in [the Apollo React Client docs](https://www.apollographql.com/docs/react/data/queries).
+
+
 # Mutations
 
 The process for mutation is similar. 
@@ -127,6 +130,8 @@ myMutation({
 
 // Use data, loading and error same way as for the query
 ```
+
+More information about the `useMutation` hook is available in [the Apollo React Client docs](https://www.apollographql.com/docs/react/data/mutations).
 
 # Preview features
 
