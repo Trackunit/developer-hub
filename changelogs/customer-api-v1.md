@@ -22,7 +22,6 @@ query GetCustomers(
     edges {
       node {
         id
-        customerId
         name
         type
       }
