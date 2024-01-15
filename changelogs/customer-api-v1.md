@@ -6,6 +6,8 @@ type: added
 Released stable version v1 of Customer API as REST and GraphQL endpoint.
 For more information, see the documentation and introduction of the endpoints.
 
+# GraphQL
+
 > ➕ Trackunit Iris GraphQL API
 
 Example:
@@ -38,9 +40,11 @@ query GetCustomers(
 
 [See all relevant GQL documentation](https://developers.trackunit.com/reference/graphql-api-introduction)
 
+# REST
+
 Below a list of all available REST endpoints:
 
-Customer:
+## Customer:
 
 > ➕ GET: /customer/v1/customers/{customerId}
 
@@ -62,7 +66,7 @@ Customer:
 
 [Delete customer](ref:deletecustomer)
 
-Customer Contact:
+## Customer Contact:
 
 > ➕ GET: customer/v1/customers/{customerId}/contacts/{contactId}
 
