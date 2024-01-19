@@ -20,7 +20,12 @@ The Iris App SDK needs certain tools to be on your machine:
 
 To manage versions we recommend using something like [Volta](http://volta.sh) or similar to install node and nx.
 
-We don't have any requirements on IDE but highly recommend [Visual Studio Code](https://code.visualstudio.com/).
+We don't have any requirements on IDE but highly recommend [Visual Studio Code](https://code.visualstudio.com/) with the following vscode extensions.
+
+- [GraphQL: Language Feature Support](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql)
+- [GraphQL: Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql-syntax)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- [Jest Runner](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner)
 
 Developers working on a Windows PC, should use WSL ([Windows subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/)).
 You can find more information about NodeJS development on Windows [here](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-overview),
