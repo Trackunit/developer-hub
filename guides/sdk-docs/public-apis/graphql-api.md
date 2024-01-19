@@ -5,7 +5,7 @@ parentDocSlug: public-apis
 ---
 
 > 🚧 Beta
-> 
+>
 > This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 Trackunit exposes a [GraphQL API](/reference/graphql-api-introduction) to create your query and we also expose an NX executor to make it easy to query our GraphQL API inside your Iris App extension.
@@ -14,38 +14,22 @@ Trackunit exposes a [GraphQL API](/reference/graphql-api-introduction) to create
 
 In this example, we will use a Query for asset information.  
 
-## 1. Open a Terminal or Command Window and enter: 
+## 1. Open a Terminal or Command Window and enter
 
 ```
 npm install @trackunit/react-graphql-tools
 ```
 
+## 2. Set up Graphql tooling
 
+Call this command:
 
-## 2. Add "graphql-hooks" to targets
-Assuming you have already created an extension - go to the root of that project (like `libs/[feature-name]/[name-of-your-extension]/`) otherwise follow [this guide](creating-a-new-extension) and open the `project.json` and add to the targets node:
-
-```typescript
-    "graphql-hooks": {
-      "executor": "@trackunit/react-graphql-tools:createHooks"
-    },
+```sh
+nx generate @trackunit/react-graphql-tools:add-grapqhl --project=[feature-name]-[name-of-your-extension]
 ```
 
-## 3. Add "codegen.ts" to lib
-Now go to the root of that project (like `libs/[feature-name]/[name-of-your-extension]/`) and create a file called `codegen.ts` and add this code to it:
+## 3. Create Graphql Query
 
-```typescript
-import { type CodegenConfig } from "@graphql-codegen/cli";
-import { getGraphqlCodegenConfig } from "@trackunit/iris-app-build-utilities";
-
-const config: CodegenConfig = {
-  ...getGraphqlCodegenConfig(__dirname),
-};
-export default config;
-```
-
-
-## 4. Create Graphql Query 
 Now you are ready to create React hooks from your GraphQL queries, just copy your query or the below query to your src folder in the `libs/[feature-name]/[name-of-your-extension]/src` and name it `demo.graphql`.
 
 ```graphql
@@ -62,13 +46,16 @@ query GetAssetsByProductionYear($first: Int, $productionYears: [String!]) {
 }
 ```
 
-## 5. Generate React Hooks
+## 4. Generate React Hooks
+
 Call this command:
+
 ```sh
 nx run [feature-name]-[name-of-your-extension]:graphql-hooks
 ```
 
-## 6. Use it in your React code 
+## 5. Use it in your React code
+
 Now that it has generated a folder with generated files in your `src` folder you can use it in your React code. The syntax takes the form `<YOUR_QUERY>Document`.
 In the above example `GetAssetsByProductionYear` will translate into `GetAssetsByProductionYearDocument`
 
@@ -83,19 +70,17 @@ const { data, loading, error } = useQuery(GetAssetsByProductionYearDocument, {
 });
 ```
 
+## 6. You are now ready to call GraphQL using hooks
 
-
-## 7. You are now ready to call GraphQL using hooks 
-For more advanced info on the executor you can read up on how to generate code from [GraphQL codegen cli](https://the-guild.dev/graphql/codegen/docs/getting-started/installation)   
+For more advanced info on the executor you can read up on how to generate code from [GraphQL codegen cli](https://the-guild.dev/graphql/codegen/docs/getting-started/installation)
 
 More information about the `useQuery` hook is available in [the Apollo React Client docs](https://www.apollographql.com/docs/react/data/queries).
 
-
 # Mutations
 
-The process for mutation is similar. 
+The process for mutation is similar.
 
-## 1. Add mutation to .graphql file 
+## 1. Add mutation to .graphql file
 
 You should start with adding a mutation to the `demo.graphql` created above or any other file with extension `.graphql` in the `src` folder.
 
@@ -108,12 +93,15 @@ mutation MyMutation($eventId: String!) {
 ```
 
 ## 2. Generate React Hooks
+
 Call this command:
+
 ```sh
 nx run [feature-name]-[name-of-your-extension]:graphql-hooks
 ```
 
-## 3. Use it in your React code 
+## 3. Use it in your React code
+
 Now that it has updated the generated files in your `src` folder you can use it in your React code. The syntax takes the form `<YOUR_MUTATION>Document`.
 In the above example `MyMutation` will translate into `MyMutationDocument`
 
@@ -158,8 +146,8 @@ You may look up the feature code name in the [GraphQL Explorer](https://apps.iri
 
 Multiple code names can be send by comma separating them.
 
-> 🚧 Do not use preview features in production. 
-> 
+> 🚧 Do not use preview features in production.
+>
 > Preview feature may change without notice. So do not include them in critical code.
 
 # Example: Full React Component (App.tsx)
@@ -212,7 +200,6 @@ export const App = () => {
 ```
 
 <br>
-
 
 > 📘 Nice to know
 >
