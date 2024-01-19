@@ -13,7 +13,7 @@ Alerts allow you to set up powerful notifications based on different trigger con
 ## Interface & Concepts
 For the first release of the public alerts API you will be able to manage your alert configurations with the Create, Read, Update and Delete operations.
 
-Alert configurations are the rules that determine when alerts are generated for your assets. All [alert types] (https://helpcenter.trackunit.com/s/article/How-do-I-work-with-alerts-in-Trackunit-Manager?language=en_US) are available for configuration via this API.
+Alert configurations are the rules that determine when alerts are generated for your assets. All [alert types](https://helpcenter.trackunit.com/s/article/How-do-I-work-with-alerts-in-Trackunit-Manager?language=en_US) are available for configuration via this API.
 
 > 🚧 Handling of enums when generating a client
 > 
@@ -21,7 +21,7 @@ Alert configurations are the rules that determine when alerts are generated for 
 > 
 > This means that when generating a client for this API you should ensure that the client can handle unknown enum values by e.g. defaulting to an unknown enum value.
 > 
-> An example of how to handle this is how the OpenApi java client generator with the configuration parameter ```enumUnknownDefaultCase``` does it [documentation](https://openapi-generator.tech/docs/generators/java/).
+> An example of how to handle this is how the OpenApi java client generator with the configuration parameter ```enumUnknownDefaultCase``` does it. See further [documentation](https://openapi-generator.tech/docs/generators/java/).
 
 The alert configuration object structure make use of a pattern where for some fields only one of several fields should be set to a non-null value.
 When this is the case there will be a ```***Type``` field that is set to indicate which of the field is expected to have a value.
