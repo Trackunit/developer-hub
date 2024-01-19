@@ -30,7 +30,7 @@ Here only the field that is indicated by the ```alertType```  should be non-null
 A good way to get a feel for the object structure might be to get your existing alerts through the get all endpoint, and inspect the response.
 
 ## Rate Limiting
-
+ 
 Rate limiting on this API is currently specified as a maximum of 1000 requests in 10 minutes per API user.
 
 
