@@ -107,7 +107,7 @@ In the above example `MyMutation` will translate into `MyMutationDocument`
 
 ```typescript
 import { useMutation } from "@apollo/client";
-import { GetAssetsByProductionYearDocument } from './generated/graphql-api/graphql';
+import { MyMutationDocument } from './generated/graphql-api/graphql';
 
 const [myMutation, { data, loading, error }] = useMutation(MyMutationDocument);
 
@@ -132,6 +132,7 @@ To call a preview query you will need to include `TU-PREVIEW` header like this:
 ```typescript
 const { data, loading, error } = useQuery(GetAssetsByProductionYearDocument, {
   variables: {
+    first: 5, // Take first 5 results
     // Any variables your query requires
   },
   context: { 
@@ -167,7 +168,6 @@ export const App = () => {
  const { data, loading, error } = useQuery(GetAssetsByProductionYearDocument, {
     variables: {
      first: 5, // Take first 5 results
-     productionYears: ["2017", "2023"] // Filter by these production years
     },
     // skip: <some_assetId>,
     context: {
