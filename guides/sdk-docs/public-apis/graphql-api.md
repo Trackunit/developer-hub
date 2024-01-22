@@ -36,7 +36,7 @@ Now you are ready to create React hooks from your GraphQL queries, just copy you
 query GetAssetsByProductionYear($first: Int, $productionYears: [String!]) {
   assets(first: $first, filters: {productionYears: $productionYears}) {
     edges {
-      nodes {
+      node {
         productionYear
         model
         brand
