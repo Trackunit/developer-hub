@@ -29,27 +29,27 @@ Unless other limits are specified in the API documentation the page size is
 ## Fair Use Policy
 
 #### In summary
-To uphold peak performance of all Trackunit APIs and ensure a positive experience for all partners and customers, we strongly encourage developers to review and optimize their API calls and workflows. If an application or an integration creates an excessive load on our APIs, Trackunit is at liberty, without warning, to restrict the integration's access to our APIs. We are happy to offer help and guidance on how to optimise your technical implementation.
+To uphold peak performance of all Trackunit APIs as well as webhooks and ensure a positive experience for all partners and customers, we strongly encourage developers to review and optimize their API calls and integration workflows. If an application or an integration creates an excessive load on our APIs, Trackunit is at liberty, without warning, to restrict the integration's access to our APIs. We are happy to offer help and guidance on how to optimise your technical implementation.
 
 #### Scope
-This policy governs the use of Trackunit's APIs by all users, including developers, businesses, and individuals.
+This policy governs the use of Trackunit's APIs and webhooks by all users, including developers, businesses, and individuals.
 
 #### Acceptable Use:
-- Integrate our APIs to enhance software or applications.
-- Retrieve useful data using our APIs.
-- Develop and test software with our APIs.
+- Integrate our APIs and webhooks to enhance software or applications.
+- Retrieve useful data using our APIs and webhooks.
+- Develop and test software with our APIs and webhooks.
 
 #### Unacceptable Use:
 - Violation of laws or regulations.
-- Copy, reproduce, or distribute our APIs without consent.
-- Use our APIs for illegal, harmful, or malicious purposes.
-- Attempt to reverse engineer or decompile our APIs.
-- Use our APIs in ways that harm our services, infrastructure, or users.
+- Copy, reproduce, or distribute our APIs or webhooks without consent.
+- Use our APIs or webhooks for illegal, harmful, or malicious purposes.
+- Attempt to reverse engineer or decompile our APIs or webhooks.
+- Use our APIs or webhooks in ways that harm our services, infrastructure, or users.
 - Collect personal data without appropriate consent.
-- Resell or commercialize our APIs.
+- Resell or commercialize our APIs or webhooks.
 
 #### Usage Limits
-We may establish usage limits for our APIs, including limits on the number of requests per minute, day, or other time period. If you exceed these limits, we may take measures to ensure compliance with this Policy, including limiting or suspending your access to our APIs.
+We may establish usage limits for our APIs, including limits on the number of requests per minute, day, or other time period. If you exceed these limits, we may take measures to ensure compliance with this Policy, including limiting or suspending your access to our APIs. For webhooks we expect event volumes to not exceed 1 million events per month per Trackunit customer and we reserve the right to take measures to ensure compliance with this Policy.
 
 #### Enforcement
-We reserve the right to take any action we deem necessary to enforce this Policy, including, but not limited to, limiting or suspending your access to our APIs, terminating your account, or taking legal action.
+We reserve the right to take any action we deem necessary to enforce this Policy, including, but not limited to, limiting or suspending your access to our APIs and webhooks, terminating your account, or taking legal action.
