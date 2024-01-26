@@ -13,6 +13,8 @@ In this guide, we'll walk you through the concept of webhooks and provide detail
 ## What Are Webhooks?
 Webhooks are user-defined HTTP callbacks. They allow our system to notify your application about events that occur in real-time. Instead of repeatedly polling our API to check for updates, your application subscribes to specific events, and we send HTTP POST requests to the provided URL whenever these events occur.
 
+![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/webhooks/webhooks-approach.png)
+
 ## Why Use Webhooks?
 With the addition of webhooks, we are extending our Iris capabilities to make it easier to set up meaningful workflows by e.g. triggering actions and notifications in external systems that help you run your business. The Trackunit Iris platform collects and stores data about events that happened to an asset. Via our webhooks technology you can subscribe to relevant event types and get event data served in real-time. By subscribing to these events via webhooks, you can easily trigger actions across connected  programs to simplify operations or generate user notifications in your preferred interfaces. 
 
