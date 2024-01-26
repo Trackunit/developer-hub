@@ -1,12 +1,12 @@
 ---
-title: Overview - PREVIEW
+title: Overview
 category: 652e408346c8860073a6bd12
 ---
 Welcome to Trackunit's Webhooks guide!
 
-> 🚧 Early Access
-> 
-> We are seeking Early Access customers for our webhooks capability at the moment. Contact your account manager if you are interested in joining the Early Access program. You can already preview our new webhooks documentation.
+> 📘 Subscription requirement
+>
+> Webhooks are available to customers on the **Explore, Evolve & Expand** or the **Link, Lift & Leap** subscription packages and our [Fair Usage Policy](https://developers.trackunit.com/reference/rate-limit#fair-use-policy) applies.
 
 In this guide, we'll walk you through the concept of webhooks and provide detailed instructions on how to consume them in your applications. Webhooks are a powerful mechanism for enabling real-time communication between our system and yours.
 
