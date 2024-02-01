@@ -8,19 +8,21 @@ Let's dive into practical examples of how webhooks can make a real difference to
 ## Direct alert events to where the issues can be addressed immediately
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/webhooks/webhooks-usecase2.png)
 
-Save time and act fast with real-time alert events. In the bustling world of construction, staying on top of equipment maintenance is crucial for keeping projects running smoothly. Via webhooks you can include alert events seamlessly in your digital workflows, so that operational alerts such as low battery levels or fuel levels can instantly be shown in the systems that are used on-site. Ensure that relevant people are notified in your system of choice and empowered to act upon the alert, therefore addressing issues before they escalate.
+Save time and act fast with real-time alert events! In the bustling world of construction, staying on top of equipment maintenance is crucial for keeping projects running smoothly. Via webhooks you can include alert events seamlessly in your digital workflows, so that operational alerts such as low battery levels or fuel levels can instantly be shown in the systems that are used on-site. Ensure that relevant people are notified in your system of choice and empowered to act upon the alert, therefore addressing issues before they escalate.
 Utilize webhooks to empower construction teams to focus their time and resources where they matter most – driving productivity and minimizing downtime on the job site.
 
 ## Automatically detect if an asset has arrived at or left the delivery site
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/webhooks/webhooks-usecase3.png)
 
-Automate delivery workflows with site events. In the construction industry, timely delivery of materials and equipment is crucial for project success. With webhooks, your business can streamline delivery processes by automatically detecting when assets arrive at or leave the delivery site. Imagine a scenario where a shipment of critical machines arrives – you can set up webhooks to trigger instant notifications, alerting project managers and site supervisors in real-time in the system of your choice. Conversely, when assets depart a site, you can set up your ERP system to trigger automatic updates when the webhook delivers the event, ensuring accurate inventory tracking and seamless coordination across the supply chain. By harnessing the power of webhooks, you can optimize logistics, minimize delays, and keep projects on track with precision and efficiency.
+Automate delivery workflows with site events! In the construction industry, timely delivery of materials and equipment is crucial for project success. With webhooks, your business can streamline delivery processes by automatically detecting when assets arrive at or leave the delivery site. Imagine a scenario where a shipment of critical machines arrives – you can set up webhooks to trigger instant notifications, alerting project managers and site supervisors in real-time in the system of your choice. Conversely, when assets depart a site, you can set up your ERP system to trigger automatic updates when the webhook delivers the event, ensuring accurate inventory tracking and seamless coordination across the supply chain. By harnessing the power of webhooks, you can optimize logistics, minimize delays, and keep projects on track with precision and efficiency.
 
 ## Enrich ERP data with site events to build theft detection workflows
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/webhooks/webhooks-usecase4.png)
 
 ## Understand equipment health with fault code events to unlock pro-active care
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/webhooks/webhooks-usecase5.png)
+
+Stay on top of machine health with fault code events! In the dynamic world of construction, equipment downtime can derail projects and incur significant costs. With webhooks, you can proactively monitor and address machine health issues in the system of your choice before they escalate. By leveraging fault code events, webhooks provide real-time insights into equipment performance, alerting your maintenance team to potential issues such as engine faults or hydraulic system malfunctions. Armed with this valuable data, proactive maintenance can be scheduled, minimizing downtime and maximizing productivity on the job site. With webhooks, you can unlock a new level of proactive care, ensuring that your equipment operates at peak performance, project after project.
 
 ## Sync event data to any system in real-time
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/webhooks/webhooks-usecase1.png)
