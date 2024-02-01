@@ -8,12 +8,13 @@ Let's dive into practical examples of how webhooks can make a real difference to
 ## Direct alert events to where the issues can be addressed immediately
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/webhooks/webhooks-usecase2.png)
 
-Save time and act fast with real-time alert events. In the bustling world of construction, staying on top of equipment maintenance is crucial for keeping projects running smoothly. Via webhooks you can include alert events seamlessly in your digital workflows, so that operational alerts such as low battery levels or DEF tank levels can instantly be shown in the systems that are used on-site. Ensure that relevant people are notified in your system of choice and empowered to act upon the alert, therefore addressing issues before they escalate.
+Save time and act fast with real-time alert events. In the bustling world of construction, staying on top of equipment maintenance is crucial for keeping projects running smoothly. Via webhooks you can include alert events seamlessly in your digital workflows, so that operational alerts such as low battery levels or fuel levels can instantly be shown in the systems that are used on-site. Ensure that relevant people are notified in your system of choice and empowered to act upon the alert, therefore addressing issues before they escalate.
 Utilize webhooks to empower construction teams to focus their time and resources where they matter most – driving productivity and minimizing downtime on the job site.
 
 ## Automatically detect if an asset has arrived at or left the delivery site
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/webhooks/webhooks-usecase3.png)
 
+Automate delivery workflows with site events. In the construction industry, timely delivery of materials and equipment is crucial for project success. With webhooks, your business can streamline delivery processes by automatically detecting when assets arrive at or leave the delivery site. Imagine a scenario where a shipment of critical machines arrives – you can set up webhooks to trigger instant notifications, alerting project managers and site supervisors in real-time in the system of your choice. Conversely, when assets depart a site, you can set up your ERP system to trigger automatic updates when the webhook delivers the event, ensuring accurate inventory tracking and seamless coordination across the supply chain. By harnessing the power of webhooks, you can optimize logistics, minimize delays, and keep projects on track with precision and efficiency.
 
 ## Enrich ERP data with site events to build theft detection workflows
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/webhooks/webhooks-usecase4.png)
