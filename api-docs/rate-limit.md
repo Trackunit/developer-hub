@@ -29,7 +29,7 @@ Unless other limits are specified in the API documentation the page size is
 ## Fair Use Policy
 
 #### In summary
-To uphold peak performance of all Trackunit APIs as well as webhooks and ensure a positive experience for all partners and customers, we strongly encourage developers to review and optimize their API calls and integration workflows. If an application or an integration creates an excessive load on our APIs, Trackunit is at liberty, without warning, to restrict the integration's access to our APIs. We are happy to offer help and guidance on how to optimise your technical implementation.
+To uphold peak performance of all Trackunit APIs as well as webhooks and ensure a positive experience for all partners and customers, we strongly encourage developers to review and optimize their API calls and integration workflows. If an application or an integration creates an excessive load on our APIs, Trackunit is at liberty, without warning, to restrict the integration's access to our APIs. Additionally we monitor error rates on webhook endpoints and reserve the right to disable endpoints that continuously have excessive failure rates. We are happy to offer help and guidance on how to optimise your technical implementation.
 
 #### Scope
 This policy governs the use of Trackunit's APIs and webhooks by all users, including developers, businesses, and individuals.
