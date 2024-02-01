@@ -19,6 +19,8 @@ Automate delivery workflows with site events! In the construction industry, time
 ## Enrich ERP data with site events to build theft detection workflows
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/webhooks/webhooks-usecase4.png)
 
+Advance theft-detection with site events! In the construction industry, protecting valuable assets from theft is a top priority. Webhooks can play a pivotal role in enhancing your security measures by enriching ERP data with real-time site events. Imagine a scenario where a machine leaves a site but is not authorized to do so by e.g. not being marked as on rent. Easily discover such cases by feeding real-time site events into your ERP system and cross-check if assets were allowed to leave the site. By integrating site events into theft detection workflows, you can bolster your security measures, mitigate risks, and safeguard your assets against theft. With webhooks, theft protection becomes proactive and efficient, ensuring peace of mind and security on every job site.
+
 ## Understand equipment health with fault code events to unlock pro-active care
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/webhooks/webhooks-usecase5.png)
 
