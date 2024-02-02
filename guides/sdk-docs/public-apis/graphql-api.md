@@ -25,7 +25,7 @@ npm install @trackunit/react-graphql-tools
 Call this command:
 
 ```sh
-nx generate @trackunit/react-graphql-tools:add-grapqhl --project=[feature-name]-[name-of-your-extension]
+nx generate @trackunit/react-graphql-tools:add-graphql --project=[feature-name]-[name-of-your-extension]
 ```
 
 ## 3. Create Graphql Query
