@@ -87,7 +87,7 @@ curl --location --request POST 'https://auth.trackunit.com/apptoken' \
 --data-urlencode 'grant_type=client_credentials' \
 --data-urlencode 'client_id=0oa10o3h43eulvWtz358' \
 --data-urlencode 'client_secret=wZtQppu1huik4cYBAhYXnZS29pSudTBne2SE6WEM5C5' \
---data-urlencode 'scope=asset.view'
+--data-urlencode 'scope=asset.view account.view'
 ```
 
 Remember to include the desired scopes and make sure they are all listed in the manifest.
@@ -99,7 +99,7 @@ This will give an result like this:
     "token_type": "Bearer",
     "expires_in": 3600,
     "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0.dozjgNryP4J3jVmNHl0w5N_XgL0n3I9PlFUP0THsR8U",
-    "scope": "asset.view"
+    "scope": "asset.view account.view"
 }
 ```
 
