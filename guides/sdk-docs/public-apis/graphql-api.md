@@ -22,10 +22,12 @@ npm install @trackunit/react-graphql-tools
 
 ## 2. Set up Graphql tooling
 
+Look in the `project.json` file of the library where you want to add a GraphQL query and find the `name` of the project. For extensions in a subdir the name will be `[subdir-name]-[name-of-your-extension]`. 
+
 Call this command:
 
 ```sh
-nx generate @trackunit/react-graphql-tools:add-grapqhl --project=[feature-name]-[name-of-your-extension]
+nx generate @trackunit/react-graphql-tools:add-grapqhl --project=[project-name]
 ```
 
 ## 3. Create Graphql Query
