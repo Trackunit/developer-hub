@@ -8,10 +8,12 @@
 
 /.github/CODEOWNERS @sieker-trackunit
 
-/sdk-docs/ @Trackunit/team-iris-foundation @osmantoplica-trackunit
-/custompages/ @Trackunit/team-iris-foundation @osmantoplica-trackunit
+/guides/sdk-docs/ @Trackunit/team-iris-foundation
+/custompages/graphql-visualizer.md @Trackunit/team-iris-foundation
 
 /api-docs/data-model.md @Trackunit/team-io
 /api-docs/machine-insights-streaming-dataformat.md @Trackunit/team-io
 /api-docs/streaming-api.md @Trackunit/team-io
 /custompages/iso-feeds.md @Trackunit/team-io
+
+/ @KateVomBerg
