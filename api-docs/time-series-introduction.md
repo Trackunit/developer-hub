@@ -62,7 +62,7 @@ There are 3 main sources of the series:
 
 When querying advanced sensor data, you can specify a unique sensor ID to retrieve metrics for a particular sensor mapping. For example: `{sensor_id="run_1"}` or `{sensor_id="variable_11231"}`.
 
-Every asset has its own combination of available series and labels depending on type of the equipment and its configuration. It is not possible to list all the names in this documentation, however the API provides 3 endpoints to list [time series names](getlistoftimeseries), [label names](getlistoflabelnames) and [label values](getlistoflabelvalues) for specific asset.
+Every asset has its own combination of available series and labels depending on type of the equipment and its configuration. It is not possible to list all the names in this documentation, however the API provides 3 endpoints to list [time series names](getlistoftimeseries), [label names](getlistoflabelnames) and [label values](getlistoflabelvalues) for specific asset.
 
 ## Instant Query
 
