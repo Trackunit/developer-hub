@@ -47,6 +47,23 @@ Explore the available endpoints and interact with the Time Series API to retriev
 * Advanced Querying - max 100 requests per second
 * Metrics - max 20 requests per second
 
+## Series names and labels
+
+To retrieve or analyze any time series data you specify the name of the series or label.
+
+There are 3 main sources of the series:
+1. **Machine insights** - for example: `machine_insight_cumulative_operating_hours`.  
+   Their names consist of `machine_insight_` prefix followed by lowercase insight name separated with underscores (`_`). See [Data Model](data-model) for list of possible machine insights.
+2. **Standard CAN inputs and outputs** - for example `advanced_sensor_input_1` or `advanced_sensor_run_1`.  
+   Their names start with `advanced_sensor_` prefix followed by input number (1-10) or run number (1-6).
+3. **Other sensors** originating from various sources capturing metrics that are uniquely defined for specific equipment. For example: `advanced_sensor_work_light_switch_front_left_status`.  
+   If applicable, the unit of measurement can be read from `unit_of_measurement` label.  
+   Some of the sensors might generate multiple series with minimum, maximum and average values. In such case the series name will contain suffix `_min`, `_max` or `_avg`.
+
+When querying advanced sensor data, you can specify a unique sensor ID to retrieve metrics for a particular sensor mapping. For example: `{sensor_id="run_1"}` or `{sensor_id="variable_11231"}`.
+
+Every asset has its own combination of available series and labels depending on type of the equipment and its configuration. It is not possible to list all the names in this documentation, however the API provides 3 endpoints to list [time series names](getlistoftimeseries), [label names](getlistoflabelnames) and [label values](getlistoflabelvalues) for specific asset.
+
 ## Instant Query
 
 The instant query endpoint allows you to evaluate an instant query for a specific asset and a given point in time. You provide a PromQL query string that defines the metric or calculation you want to perform. The result of the query will be a single value or a set of values for the specified timestamp.
