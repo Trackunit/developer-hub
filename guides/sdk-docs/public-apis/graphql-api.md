@@ -27,7 +27,7 @@ Look in the `project.json` file of the library where you want to add a GraphQL q
 Call this command:
 
 ```sh
-nx generate @trackunit/react-graphql-tools:add-grapqhl --project=[project-name]
+nx generate @trackunit/react-graphql-tools:add-graphql --project=[project-name]
 ```
 
 ## 3. Create Graphql Query
