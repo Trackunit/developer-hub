@@ -4,9 +4,13 @@ category: 65097f10ed04fd0047f22d48
 ---
 Welcome to the Time Series API documentation. This REST API enables you to retrieve time series metrics for specific assets, categorized as machine insights and advanced sensors.
 
-Machine insights provide a comprehensive list of conformed metrics, prefixed with `machine_insight_`, including ISO 15143-3 standard insights and additional insights.
+> 📘 Subscription requirement
+>
+> The Time Series API is only available to customers on the **Evolve & Expand** or the **Link, Lift & Leap** subscription packages. Data retention limits follow the chosen subscription package.
 
-Advanced sensors capture metrics originating from various sources, often derived from CAN. Advanced sensors are not conformed and allow for capturing metrics that are uniquely defined for specific equipment. The metrics are prefixed with `advanced_sensor_`. When querying advanced sensor data, you can specify a unique sensor ID to retrieve metrics for a particular sensor mapping.
+**Machine insights** provide a comprehensive list of conformed metrics, prefixed with `machine_insight_`, including ISO 15143-3 standard insights and additional insights.
+
+**Advanced sensors** capture metrics originating from various sources, often derived from CAN. Advanced sensors are not conformed and allow for capturing metrics that are uniquely defined for specific equipment. The metrics are prefixed with `advanced_sensor_`. When querying advanced sensor data, you can specify a unique sensor ID to retrieve metrics for a particular sensor mapping.
 
 > 📘 Also access 'Time Series' data for an Asset via the GraphQL API
 > 
@@ -36,11 +40,7 @@ Explore the available endpoints and interact with the Time Series API to retriev
 > * advanced_sensor_run_1
 > * advanced_sensor_run_2
 > 
-> Implementation updates will be communicated through developer hub.
-
-> 📘 Subscription requirement
->
-> The Time Series API is only available to customers on the **Evolve & Expand** or the **Link, Lift & Leap** subscription packages. Data retention limits follow the chosen subscription package.
+> Implementation updates will be communicated through this developer hub.
 
 ## Rate Limiting
 
@@ -49,20 +49,26 @@ Explore the available endpoints and interact with the Time Series API to retriev
 
 ## Series names and labels
 
-To retrieve or analyze any time series data you specify the name of the series or label.
+To retrieve or analyze any time series data, you specify the name of the series or label.
 
-There are 3 main sources of the series:
+There are 3 main sources of series:
 1. **Machine insights** - for example: `machine_insight_cumulative_operating_hours`.  
-   Their names consist of `machine_insight_` prefix followed by lowercase insight name separated with underscores (`_`). See [Data Model](data-model) for list of possible machine insights.
+   Their names consist of the `machine_insight_` prefix followed by lowercase insight name separated with underscores (`_`). See [Data Model](data-model) for a list of all possible machine insights.
 2. **Standard CAN inputs and outputs** - for example `advanced_sensor_input_1` or `advanced_sensor_run_1`.  
-   Their names start with `advanced_sensor_` prefix followed by input number (1-10) or run number (1-6).
-3. **Other sensors** originating from various sources capturing metrics that are uniquely defined for specific equipment. For example: `advanced_sensor_work_light_switch_front_left_status`.  
-   If applicable, the unit of measurement can be read from `unit_of_measurement` label.  
-   Some of the sensors might generate multiple series with minimum, maximum and average values. In such case the series name will contain suffix `_min`, `_max` or `_avg`.
+   Their names start with the `advanced_sensor_` prefix followed by an input number (1-10) or a run number (1-6).
+3. **Other sensors** can originate from various sources and capture metrics that are uniquely defined for specific equipment. For example: `advanced_sensor_work_light_switch_front_left_status`.  
+   If applicable, the unit of measurement can be read from the `unit_of_measurement` label.  
+   Some of these sensors might generate multiple series with minimum, maximum and average values. In such cases the series name will contain the suffix `_min`, `_max` or `_avg`.
 
 When querying advanced sensor data, you can specify a unique sensor ID to retrieve metrics for a particular sensor mapping. For example: `{sensor_id="run_1"}` or `{sensor_id="variable_11231"}`.
 
-Every asset has its own combination of available series and labels depending on type of the equipment and its configuration. It is not possible to list all the names in this documentation, however the API provides 3 endpoints to list [time series names](getlistoftimeseries), [label names](getlistoflabelnames) and [label values](getlistoflabelvalues) for specific asset.
+Every asset has its own combination of available series and labels depending on the type of the equipment and its configuration. It is not possible to list all the names in this documentation, however the API provides 3 endpoints to list [time series names](getlistoftimeseries), [label names](getlistoflabelnames) and [label values](getlistoflabelvalues) for a specific asset.
+
+> 📘 Prometheus & special characters
+>
+> Please be aware that Prometheus interprets certain characters in other ways than you might expect. For example: if an advanced sensor name contains parentheses (), you will need to escape and/or [percent-encode](https://en.wikipedia.org/wiki/Percent-encoding) these parentheses depending on your request type. This means that `advanced_sensor_roading_high_(%)` has to turn into the following instead:
+> - GET request: `advanced_sensor_handling_high_%5C%28%5C%25%5C%29`
+> - POST request: `advanced_sensor_handling_high_\(\%\)`
 
 ## Instant Query
 
