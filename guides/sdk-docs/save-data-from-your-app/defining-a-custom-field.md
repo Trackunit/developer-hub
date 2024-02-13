@@ -18,7 +18,8 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
       key: 'myKey',
       title: 'String Field',
       uiEditable: true,
-      uiVisible: true
+      uiVisible: true,
+      scopeType: ScopeType.ACCOUNT
     }
   ]
 ```
@@ -39,6 +40,8 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
 
 5. `uiEditable` / `uiVisible` controls how the field will be shown in the Manager UI. This does not limit how the field is used inside the Iris App.
 
+6. `scopeType` controls who can access the field values. Default is only within the users account.
+
   Apart from the these standard properties, some field types have [extra properties defined below](#type-specific-properties).
 
   **All custom fields defined by an Iris App will be owned by the Iris App, and the Iris App developer should consider existing data when changing field definitions.**
@@ -57,6 +60,14 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
 | WEB_ADDRESS  | Web address. Will be shown as a link to open a new window in the UI.                                                    |                                                         |
 | JSON         | JSON values.                                                                                                            |                                                         |
 | MONETARY     | Monetary values with currency in ISO 4217 standard.                                                                     | `minimum`, `maximum`                                    |
+
+# Scope types
+
+| Scope type                | Description | 
+|---------------------------|-------------------------------|
+| ACCOUNT                   | Values with account scope will be shared within a single account |
+| ACCOUNT_WRITE_GLOBAL_READ | Updating values will be possible within a single account and visible to all accounts (read) |
+| GLOBAL                    | Values with global scope will be shared between all accounts with access to the entity |
 
 # Type specific properties
 
