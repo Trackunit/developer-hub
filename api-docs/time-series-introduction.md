@@ -66,7 +66,9 @@ Every asset has its own combination of available series and labels depending on 
 
 > 📘 Prometheus & special characters
 >
-> Please be aware that Prometheus interprets certain characters in other ways than you might expect. For example: if an advanced sensor name contains paranthesis (), you will need to escape and URLencode these paranthesis to create a valid request. This means that `query=advanced_sensor_roading_high_(%)` has to turn into `query=advanced_sensor_roading_high_%5C%28%25%5C%29` instead.
+> Please be aware that Prometheus interprets certain characters in other ways than you might expect. For example: if an advanced sensor name contains parantheses (), you will need to escape and/or [percent-encode](https://en.wikipedia.org/wiki/Percent-encoding) these parantheses depending on your request type. This means that `advanced_sensor_roading_high_(%)` has to turn into the following instead:
+> - GET request: `advanced_sensor_handling_high_%5C%28%5C%25%5C%29`
+> - POST request: `advanced_sensor_handling_high_\(\%\)`
 
 ## Instant Query
 
