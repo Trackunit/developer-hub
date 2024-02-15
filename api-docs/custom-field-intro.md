@@ -9,4 +9,4 @@ category: 628c96a84164f50225dd1f14
 
 Custom fields provides a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager.
 
-Currently we support extending assets and accounts with new fields.
+Currently we support extending assets, accounts, groups and sites with new fields.
