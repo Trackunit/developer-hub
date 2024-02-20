@@ -17,7 +17,7 @@ To define a custom field, you first need to add a definition using the API.
 | E-mail       | Email field. Will be rendered with a mailto link in the UI.                                |
 | Monetary     | Monetary values with currency in ISO 4217 standard.                                        |
 | Number       | Numeric values. Supports unit conversion between metric and US customary units.            |
-| Phone number | Phone number. Validates the format but does not validate the phone number actually exists. |
+| Phone number | Phone number. Validates the format according to country specific rules, but does not validate the phone number actually exists. |
 | Text string  | Free text field. Supports limiting length.                                                 |
 | Web address  | Web address. Will be shown as a link to open a new window in the UI.                       |
 
@@ -33,7 +33,7 @@ Custom field definitions can be owned by one of these:
 - **Iris App** - An app may contribute field definitions when it is installed
 - **Trackunit** - Trackunit defines a number of standard fields to aid interoperability.
 
-When creating a definition using this API it will always be owned by your customer account.
+When creating a definition using this API it will always be owned by your customer account. It is however possible to retrieve all 3 types using the API.
 
 ## Data sharing
 

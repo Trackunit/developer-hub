@@ -13,7 +13,7 @@ When changing custom field definitions, you need to follow the following general
 
 ### General Rules
 -   You cannot change a Custom Field Definition `type` after creation (e.g., changing a string field to a number field).
--   The Definition `Key` must be unique (within the app).
+-   The Definition `key` (if specified) must be unique (within your account).
 
 ### Type Rules
 Each field type has special rules:
@@ -26,20 +26,20 @@ Each field type has special rules:
 	    
 	-   If the replacement value is already selected, a duplicate value will not be created.
 	    
-	-   When changing a multi-select field to a single-select field, any value with more than one option will be replaced with the default value.
+	-   When changing a multi-select field to a single-select field, any value with more than one option will be cleared.
 	    
-	-   The existing value will be saved for retrieval in the API.
+	-   The existing value will be saved for retrieval in the API in the `lastIncompatibleValue` field.
     
 -   **Number**
     
-	-   Any existing value outside the new min/max range will be replaced with the default value. **If no default value is specified, it will be set to null.**
+	-   Any existing value outside the new min/max range will be set to null.
 	    
-	-   The existing value will be saved for retrieval in the API. <!-- What does even mean? Can the old value be fetched in the API? -->
+	-   The existing value will be saved for retrieval in the API in the `lastIncompatibleValue` field.
     
 -   **String**
     
 	-   If an existing value is longer than the new maximum length, the value will be truncated.
 	    
-	-   The existing value will be saved for retrieval in the API.
+	-   The existing value will be saved for retrieval in the API in the `lastIncompatibleValue` field.
 
 	- Regex patterns can be changed, but be warned that existing data can become uncompliant with the new pattern.
