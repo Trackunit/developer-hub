@@ -22,6 +22,4 @@ As an example, this means that an attempt that fails three times before eventual
 
 ## Failed delivery handling & manual retries
 
-After the conclusion of the above attempts the message will be marked as 'Failed' for this endpoint, and you will get a webhook of type 'message.attempt.exhausted' notifying you of this error.
-
-You can then use the interface under Administration → Webhooks in the Trackunit Manager to [manually replay each message](https://developers.trackunit.com/docs/webhooks-replaying-messages) at any time, or automatically retry / recover all failed messages starting from a given date.
+After the conclusion of the above attempts the message will be marked as 'Failed' for this endpoint. You can then use the interface under Administration → Webhooks in the Trackunit Manager to [manually replay each message](https://developers.trackunit.com/docs/webhooks-replaying-messages) at any time, or automatically retry / recover all failed messages starting from a given date.
