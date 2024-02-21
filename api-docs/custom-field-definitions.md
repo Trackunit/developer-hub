@@ -17,11 +17,11 @@ To define a custom field, you first need to add a definition using the API.
 | E-mail       | Email field. Will be rendered with a mailto link in the UI.                                |
 | Monetary     | Monetary values with currency in ISO 4217 standard.                                        |
 | Number       | Numeric values. Supports unit conversion between metric and US customary units.            |
-| Phone number | Phone number. Validates the format according to country specific rules, but does not validate the phone number actually exists. |
+| Phone number | Phone number. Validates the format according to country specific rules, but does not validate wheter the phone number actually exists. |
 | Text string  | Free text field. Supports limiting length.                                                 |
 | Web address  | Web address. Will be shown as a link to open a new window in the UI.                       |
 
-It is possible to control if new fields should show up in appropriate places in the user interface or be an API only field.
+It is possible to control if new fields should show up in appropriate places in the user interface or be an API only field using the `uiVisible` / `uiEditable` fields.
 
 Once a definition has been created values can be set using the [values API](custom-field-values).
 
