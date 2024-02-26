@@ -3,9 +3,15 @@ title: Definitions
 category: 628c96a84164f50225dd1f14
 ---
 
-> 🚧 Beta
->
-> This is a beta version and subject to change without notice.
+> 📘 Subscription requirement
+> 
+> The Custom Fields API is only available to customers on the **Evolve & Expand** or the **Lift & Leap** subscription packages.
+
+> ➡️ [OpenAPI Specification for the Custom Fields API domain](https://developers.trackunit.com/openapi/628c96a84164f50225dd1f13)
+> 
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/628c96a84164f50225dd1f13).
+
+# Create a field definition
 
 To define a custom field, you first need to add a definition using the API.
 
