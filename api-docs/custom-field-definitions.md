@@ -42,7 +42,7 @@ Regardless of who owns the definition of a field the values in a field may be sh
 | Scope type                | Description | 
 |---------------------------|-------------------------------|
 | ACCOUNT                   | Values with account scope will be shared within a single account |
-| ACCOUNT_WRITE_GLOBAL_READ | Updating values will be possible within a single account and visible to all accounts (read) |
+| ACCOUNT_WRITE_GLOBAL_READ | Updating values will be possible within a single account and visible to all accounts (read) with access to the entity. |
 | GLOBAL                    | Values with global scope will be shared between all accounts with access to the entity |
 
 So that means that if you create a new field definition for an Asset and mark it as scope `ACCOUNT_WRITE_GLOBAL_READ` then you can add the field to an asset and you are allowed to update the value but in case you share it to other accounts they will only be able to see the value but not change it.
