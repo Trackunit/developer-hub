@@ -29,6 +29,13 @@ An example of using this structure is the ```configurationDetails``` field which
 Here only the field that is indicated by the ```alertType```  should be non-null. 
 A good way to get a feel for the object structure might be to get your existing alerts through the get all endpoint, and inspect the response.
 
+When updating an existing alert configuration, some fields are marked as non-editable:
+
+- In ```AlertConfigurationDetail```, the ```AlertType``` can not be modified i.e. it is not allowed to change from one alert type to another, e.g. from ```INPUT_ALERT``` to ```OPERATIONAL_ALERT```
+- In case of ```ÌNPUT_ALERT```, it is not allowed to change ```InputAlertType``` e.g. from ```INPUT_1``` to ```INPUT_2```
+- In case of ```OPERATIONAL_ALERT```, it is not allowed to change ```OperationalAlertType``` e.g. from ```BATTERY_VOLTAGE``` to ```DEF_TANK_LEVEL```
+
+
 ## Rate Limiting
  
 Rate limiting on this API is currently specified as a maximum of 1000 requests in 10 minutes per API user.
