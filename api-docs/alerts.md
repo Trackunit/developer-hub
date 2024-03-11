@@ -29,7 +29,7 @@ An example of using this structure is the ```configurationDetails``` field which
 Here only the field that is indicated by the ```alertType```  should be non-null. 
 A good way to get a feel for the object structure might be to get your existing alerts through the get all endpoint, and inspect the response.
 
-When updating an existing alert configuration, some fields are marked as non-editable:
+When updating an existing alert configuration, some fields are marked as non-editable. See the following examples:
 
 - In ```AlertConfigurationDetail```, the ```AlertType``` can not be modified i.e. it is not allowed to change from one alert type to another, e.g. from ```INPUT_ALERT``` to ```OPERATIONAL_ALERT```
 - In case of ```ÌNPUT_ALERT```, it is not allowed to change ```InputAlertType``` e.g. from ```INPUT_1``` to ```INPUT_2```
