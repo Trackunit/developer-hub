@@ -26,6 +26,8 @@ We recommend the Machine Insights based topic for any future integrations.
 
 Technically, the data is provided in the [binary Avro data format](http://avro.apache.org/) which is highly efficient, while simultaneously enabling us to extend the data format in the future with additional data points. A Schema Registry is utilized to facilitate the evolution of producers and consumers while preserving compatibility. We will exclusively make compatible changes to the data formats and ensure compatibility with the previous version of the schemas, while also providing notifications about any changes. We strongly advise staying up to date and promptly implementing these schema changes to access all the available data points.
 
+In Apache Kafka, each message has an associated [timestamp](https://kafka.apache.org/documentation/#intro_concepts_and_terms) that reflects when the data was first received by the IRIS platform.
+
 ## How to connect
 
 The technical solution is a Kafka cluster with Avro messages using a Schema Registry. Confluent provides a [number of examples in various programming languages](https://github.com/confluentinc/examples/tree/7.4.0-post/clients/cloud#with-schema-registry). We provide a customized and complete example of how to connect through Java.
