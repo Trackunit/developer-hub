@@ -29,7 +29,7 @@ Use the [Custom Fields Values API](/reference/custom-field-values) to set values
 [Get values](ref:custom-fields-get-values)
 
 > ➕ POST: /custom-fields/v1/values
-[Create value](ref:createvalue-1)
+[Create value](ref:custom-fields-create-value)
 
 > ➕ PATCH: /custom-fields/v1/values/{valueId}
 [Update value](ref:patchvalue)
