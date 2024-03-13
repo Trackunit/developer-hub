@@ -26,7 +26,7 @@ To define a custom field, you first need to [add a definition using the API.](/r
 Use the [Custom Fields Values API](/reference/custom-field-values) to set values on your defined custom fields
 
 > ➕ GET: /custom-fields/v1/values
-[Get values](ref:getvaluesforaccount)
+[Get values](ref:custom-fields-get-values)
 
 > ➕ POST: /custom-fields/v1/values
 [Create value](ref:createvalue-1)
