@@ -15,7 +15,7 @@ To define a custom field, you first need to [add a definition using the API.](/r
 [Get definitions](ref:getdefinitionsforaccount-1)
 
 > ➕ POST: /custom-fields/v1/definitions
-[Create definition](ref:createdefinitionforaccount)
+[Create definition](ref:custom-fields-create-definition)
 
 > ➕ PATCH: /custom-fields/v1/definitions/{definitionId}
 [Update definition](ref:custom-fields-patch-definition)
