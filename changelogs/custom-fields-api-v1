@@ -32,7 +32,7 @@ Use the [Custom Fields Values API](/reference/custom-field-values) to set values
 [Create value](ref:custom-fields-create-value)
 
 > ➕ PATCH: /custom-fields/v1/values/{valueId}
-[Update value](ref:patchvalue)
+[Update value](ref:custom-fields-patch-value)
 
 > ➕ DELETE: /custom-fields/v1/values/{valueId}
 [Delete value](ref:deletevalue)
