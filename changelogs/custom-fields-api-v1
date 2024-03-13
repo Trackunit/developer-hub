@@ -12,7 +12,7 @@ Below all available endpoints:
 To define a custom field, you first need to [add a definition using the API.](/reference/custom-field-definitions)
 
 > ➕ GET: /custom-fields/v1/definitions
-[Get definitions](ref:getdefinitionsforaccount-1)
+[Get definitions](ref:custom-fields-get-definitions)
 
 > ➕ POST: /custom-fields/v1/definitions
 [Create definition](ref:custom-fields-create-definition)
