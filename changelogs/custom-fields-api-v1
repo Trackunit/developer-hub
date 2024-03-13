@@ -18,7 +18,7 @@ To define a custom field, you first need to [add a definition using the API.](/r
 [Create definition](ref:createdefinitionforaccount)
 
 > ➕ PATCH: /custom-fields/v1/definitions/{definitionId}
-[Update definition](ref:patchdefinition)
+[Update definition](ref:custom-fields-patch-definition)
 
 > ➕ DELETE: /custom-fields/v1/definitions/{definitionId}
 [Delete definition](ref:custom-fields-delete-definition)
