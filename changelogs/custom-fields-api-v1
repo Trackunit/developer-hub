@@ -21,7 +21,7 @@ To define a custom field, you first need to [add a definition using the API.](/r
 [Update definition](ref:patchdefinition)
 
 > ➕ DELETE: /custom-fields/v1/definitions/{definitionId}
-[Delete definition](ref:deletedefinition)
+[Delete definition](ref:custom-fields-delete-definition)
 
 Use the [Custom Fields Values API](/reference/custom-field-values) to set values on your defined custom fields
 
