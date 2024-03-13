@@ -35,4 +35,4 @@ Use the [Custom Fields Values API](/reference/custom-field-values) to set values
 [Update value](ref:custom-fields-patch-value)
 
 > ➕ DELETE: /custom-fields/v1/values/{valueId}
-[Delete value](ref:deletevalue)
+[Delete value](ref:custom-fields-delete-value)
