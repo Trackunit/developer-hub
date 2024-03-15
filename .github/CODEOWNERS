@@ -8,7 +8,12 @@
 
 /.github/CODEOWNERS @sieker-trackunit
 
-/guides/sdk-docs/ @Trackunit/team-iris-foundation
+/guides/ @KateVomBerg
+/api-docs/ @KateVomBerg
+/custompages/ @KateVomBerg
+/changelogs/ @KateVomBerg
+
+/guides/sdk-docs/ @Trackunit/team-iris-foundation @KateVomBerg
 /custompages/graphql-visualizer.md @Trackunit/team-iris-foundation
 
 /api-docs/data-model.md @Trackunit/team-io
@@ -16,7 +21,3 @@
 /api-docs/streaming-api.md @Trackunit/team-io
 /custompages/iso-feeds.md @Trackunit/team-io
 
-/guides/ @KateVomBerg
-/api-docs/ @KateVomBerg
-/custompages/ @KateVomBerg
-/changelogs/ @KateVomBerg
