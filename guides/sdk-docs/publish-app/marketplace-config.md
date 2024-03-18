@@ -8,12 +8,6 @@ The app is presented in the Iris Marketplace – from where apps can be deployed
 
 The marketplace will be the gateway for new services to the industry provided by customers themselves, partners and 3rd party software developers – as well as Trackunit.
 
-> 📘 Limited categories. 
-> 
-> Currently only the `ConnectivityAndNetwork` and `DataFeeds` is visible on the marketplace. As the marketplace evolves we will
-> add more categories. If you need another category please reach out to your contact person.
-> 
-
 # Installation policies
 
 To control the behavior of your app inside the marketplace you have to specify an installation policy inside the Iris App manifest using the `installation.policy` attribute.
@@ -62,7 +56,9 @@ To add a longer description you should create a markdown file inside the `assets
 
 Any screenshots can also be added to the `assets` folder. They should all be listed in the `assets` array inside the manifest with their type set to `IMAGE`.
 
-Videos of the app can also be added by uploading the video to Youtube and then adding a link to the video in the `assets` array inside the manifest.
+Videos of the app can also be added by uploading the video to Youtube or Vimeo and then adding a link to the video in the `assets` array inside the manifest. The video link should follow one of these formats for the Marketplace to pick it up as a video link:
+- `https://www.youtube.com/watch?v=XXXXXXXX`
+- `https://vimeo.com/XXXXXXXX`
 
 ### Description markdown format
 
@@ -78,8 +74,6 @@ And a list
 - Iris
 - App
 ```
-
-
 
 To test the markdown syntax [this site](https://marked.js.org/demo/?text=%23%20The%20largest%20heading%0AWith%20**bold**%20and%20*italic*%20text.%0A%23%23%20The%20second%20largest%20heading%0AA%20a%20%5Blink%5D(https%3A%2F%2Ftrackunit.com)%20to%20somewhere.%0A%23%23%23%23%23%23%20The%20smallest%20heading%0AAnd%20a%20list%0A-%20Iris%0A-%20App&options=%7B%0A%20%22async%22%3A%20false%2C%0A%20%22baseUrl%22%3A%20null%2C%0A%20%22breaks%22%3A%20false%2C%0A%20%22extensions%22%3A%20null%2C%0A%20%22gfm%22%3A%20true%2C%0A%20%22headerIds%22%3A%20true%2C%0A%20%22headerPrefix%22%3A%20%22%22%2C%0A%20%22highlight%22%3A%20null%2C%0A%20%22langPrefix%22%3A%20%22language-%22%2C%0A%20%22mangle%22%3A%20true%2C%0A%20%22pedantic%22%3A%20false%2C%0A%20%22sanitize%22%3A%20false%2C%0A%20%22sanitizer%22%3A%20null%2C%0A%20%22silent%22%3A%20false%2C%0A%20%22smartLists%22%3A%20false%2C%0A%20%22smartypants%22%3A%20false%2C%0A%20%22tokenizer%22%3A%20null%2C%0A%20%22walkTokens%22%3A%20null%2C%0A%20%22xhtml%22%3A%20false%0A%7D&version=master) can be used.
 
