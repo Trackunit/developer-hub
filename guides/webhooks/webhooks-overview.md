@@ -6,7 +6,7 @@ Welcome to Trackunit's Webhooks guide!
 
 > 📘 Subscription requirement
 >
-> Webhooks are available to customers on the **Explore, Evolve & Expand** or the **Link, Lift & Leap** subscription packages and our [Fair Usage Policy](https://developers.trackunit.com/reference/rate-limit#fair-use-policy) applies.
+> Reach out to your Trackunit representative to learn how to gain access to Webhooks.
 
 In this guide, we'll walk you through the concept of webhooks and provide detailed instructions on how to consume them in your applications. Webhooks are a powerful mechanism for enabling real-time communication between our system and yours.
 
