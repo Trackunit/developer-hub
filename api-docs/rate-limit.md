@@ -49,7 +49,7 @@ This policy governs the use of Trackunit's APIs and webhooks by all users, inclu
 - Resell or commercialize our APIs or webhooks.
 
 #### Usage Limits
-We may establish usage limits for our APIs, including limits on the number of requests per minute, day, or other time period. If you exceed these limits, we may take measures to ensure compliance with this Policy, including limiting or suspending your access to our APIs. For webhooks we expect event volumes to not exceed 1 million events per month per Trackunit customer and we reserve the right to take measures to ensure compliance with this Policy.
+We may establish usage limits for our APIs, including limits on the number of requests per minute, day, or other time period. If you exceed these limits, we may take measures to ensure compliance with this Policy, including limiting or suspending your access to our APIs.
 
 #### Enforcement
 We reserve the right to take any action we deem necessary to enforce this Policy, including, but not limited to, limiting or suspending your access to our APIs and webhooks, terminating your account, or taking legal action.
