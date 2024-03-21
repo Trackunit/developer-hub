@@ -16,6 +16,9 @@ npm install @trackunit/custom-field-api
 
 2. Use the `useCustomFieldsValueAndDefinition` hook to retrieve custom fields definitions and values saved to the specified `Asset ID`. Use the hook `useCustomFieldDefinitions` if you need to get all available definitions.
 
+> Note: In order to use custom fields your app needs the correct consent scopes.
+> `asset.view` to read, and `account.asset.manage` to be able to update values.
+
 ```ts
 import {
   CustomFieldValueAndDefinition,
