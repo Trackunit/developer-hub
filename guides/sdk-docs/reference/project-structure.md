@@ -74,7 +74,7 @@ It configures the following crucial settings for your app:
 - `moduleFederationName`: Name of your app including workspace name, automatically parsed from your app-specific package.json.
 - `dependencies`: A full list of runtime dependencies for the app. Automatically parsed from the package.json in root. The list will be security scanned.
 - `devDependencies`: Same as above but for dev-dependencies. These are also security scanned.
-- `validDomains`: A list of any external domains that the app needs to communicate with. The list is audited in the approval step of the app and every external API call must be listed here to get through the verification process. Even if it goes through without being listed, your app will fail to call the endpoint.
+- `cspHeader`: Desired CSP header for the app, useful if the app needs to communicate with external services. The list is audited in the approval step of the app and every external API call must be listed here to get through the verification process. Even if it goes through without being listed, your app will fail to call the endpoint. More information about CSP can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP). 
 - `validForAccountIds`: Put `ALL_ACCOUNTS` in if your app is available to all users. If you want to only make it available to certain users, provide a list of account ID's as strings.
 - `marketplace`: Holds all the settings associated with your apps listing on the marketplace.
   - `name`: Well..the name of your app.
