@@ -87,4 +87,12 @@ Below a list of all available REST endpoints:
 
 [Delete contact](ref:deletecontact)
 
+@@ Customer Asset assignments:
 
+> ➕ GET: customer/v1/customers/{customerid}/assets
+
+[Get assets](ref:getassets)
+
+> ➕ POST: customer/v1/customers/{customerid}/assets
+
+[Update assets](ref:updateassets)
