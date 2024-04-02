@@ -87,7 +87,7 @@ Below a list of all available REST endpoints:
 
 [Delete contact](ref:deletecontact)
 
-@@ Customer Asset assignments:
+## Customer Asset assignments:
 
 > ➕ GET: customer/v1/customers/{customerid}/assets
 
