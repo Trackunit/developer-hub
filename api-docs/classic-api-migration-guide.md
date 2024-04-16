@@ -6,3 +6,14 @@ category: 6613a6c0a960880062004859
 Trackunit's underlying platforms have undergone a transformation, incorporating new scale-out technologies and our state-of-the-art platform is called Iris. It encompasses countless enhancements, aims to sustain seamless performance and facilitates continued scalability for ongoing usage and new technology capabilities. With the introduction of the Trackunit Iris platform, we are phasing out support for our legacy platform and Classic API suite.
 
 Learn how to harness the power of the Iris platform and migrate your business away from using legacy Classic APIs.
+
+## Concept shift: From Units to Assets
+
+(Explain the shift in thinking from assets to units)
+
+## Asset administration
+
+### Groups API
+Working with groups helps you manage your fleet and segment it in a way that makes sense for your day-to-day operations. Groups act like simple workspaces that can be used to focus your fleet overview by narrowing to a subset of assets.
+
+The Classic Group API allowed you to create and manage collections of units. Because Iris is build around the concept of assets, the Iris Group API allows you now to create and manage collections of assets instead. Additionally the Iris Group API endpoints also allow you to manage which users should have access to groups.
