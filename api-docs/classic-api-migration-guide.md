@@ -1,5 +1,5 @@
 ---
-title: Migration guide: Classic to Iris APIs
+title: Classic to Iris APIs Migration Guide
 category: 6613a6c0a960880062004859
 ---
 
