@@ -38,24 +38,24 @@ This is a Quickstart guide intended to help you set up a basic development envir
 
 ## Step 3: Create Your First Iris App
 
-1. **Generate Iris App**: Execute `nx generate @trackunit/iris-app:create your-app-name`.
+1. **Generate Iris App**: Execute `npx nx generate @trackunit/iris-app:create your-app-name`.
 2. **Navigate to App Directory**: Find your app in the `apps` directory.
 
 ## Step 4: Create an Extension
 
-1. **Generate Extension**: Use `nx g @trackunit/iris-app:extend your-extension-name`.
+1. **Generate Extension**: Use `npx nx g @trackunit/iris-app:extend your-extension-name`.
 2. **Configure Extension**: Follow the prompts to configure the extension (e.g., select the type of extension, name, etc.).
 3. **Develop Extension**: Add your custom logic and UI components in the extension directory.
 
 ## Step 5: Develop Your App
 
 1. **Write Your Code**: Start coding your app and extension in the respective `src` directories.
-2. **Local Development**: Use `nx run your-app-name:serve` to serve your app locally for testing.
+2. **Local Development**: Use `npx nx run your-app-name:serve` to serve your app locally for testing.
 
 ## Step 6: Build and Deploy
 
-1. **Build Your App**: Run `nx run your-app-name:build` to build your app.
-2. **Submit for Approval**: Use `nx run your-app-name:submitApp` to submit your app for approval.
+1. **Build Your App**: Run `npx nx run your-app-name:build` to build your app.
+2. **Submit for Approval**: Use `npx nx run your-app-name:submitApp` to submit your app for approval.
 
 ## Next Steps
 
