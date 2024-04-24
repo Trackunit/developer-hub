@@ -13,8 +13,8 @@ Trackunit will then make sure to enable the developer console inside manager tha
 
 The Iris App SDK needs certain tools to be on your machine:
 
-- Node LTS (version 18.17.0)
-- NX version 17.1.3
+- Node LTS (version 18.18.0)
+- NX version 18.3.3
 - Git
 - WSL (Windows only)
 
