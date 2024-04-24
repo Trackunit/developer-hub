@@ -5,7 +5,7 @@ parentDocSlug: save-data-from-your-app
 ---
 
 > 🚧 Beta
-> 
+>
 > This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 # Trackunit SDK: Working with Custom Fields
@@ -19,6 +19,7 @@ In this guide, we'll be using the Trackunit SDK to define and manipulate custom 
 - Handle incompatible STRING field values when updating regex patterns.
 
 ## Prerequisites
+
 Before we start, you need to install the Iris App Runtime. Open a terminal and type:
 
 ```bash
@@ -32,6 +33,7 @@ npm install @trackunit/custom-field-components
 ```
 
 ## Step 1: Defining a Custom Field
+
 To start, we need to define our custom fields in the `iris-app-manifest.json` file. Let's add a STRING and a DROPDOWN field. To do this, add a `customFieldDefinitions` array to your iris app manifest:
 
 ```json
@@ -43,7 +45,7 @@ To start, we need to define our custom fields in the `iris-app-manifest.json` fi
     "title": "String Field",
     "uiEditable": true,
     "uiVisible": true,
-    "pattern": "^\\w+$" // (letters, digits, and underscores) 
+    "pattern": "^\\w+$" // (letters, digits, and underscores)
   },
   {
     "type": "DROPDOWN",
@@ -60,6 +62,7 @@ To start, we need to define our custom fields in the `iris-app-manifest.json` fi
 Here we added a STRING field with key `myKey` and a DROPDOWN field with key `myDropdownKey`. The STRING field includes a `pattern` property with a simple regex that enforces alphanumeric input (letters, digits, and underscores). `uiEditable` / `uiVisible` controls how the field will be shown in the Manager UI. This does not limit how the field is used inside the Iris App.
 
 ## Step 2: Rendering Custom Fields
+
 Now that we have defined our custom fields, let's render them. Navigate to your `app.tsx` file and use the @trackunit/iris-app-runtime-core library:
 
 ```ts
@@ -101,12 +104,15 @@ export const App: React.FC = () => {
 ```
 
 This script will render our custom fields on the page. Run your app and navigate to any Asset to see your fields.
+
 ```bash
-nx run <your_app>:serve
+npx nx run <your_app>:serve
 ```
+
 Fill out the values and hit Save Changes to store values in your fields. Pick `Option 1` for the dropdown and type `abc123` for the string.
 
 ## Step 3: Updating the DROPDOWN Field
+
 Let's say you want to remove `Option 1` from the dropdown list and replace it with `Option 4`. From the previous step, you already have data that uses Option 1, so that's problematic. We can do this using the `dropDownValueReplacements` property. Navigate to the `iris-app-manifest.json` and update the DROPDOWN field as follows:
 
 ```json
@@ -127,6 +133,7 @@ Let's say you want to remove `Option 1` from the dropdown list and replace it wi
 Run your app again and you'll see that "Option 1" has been replaced by "Option 4".
 
 ## Step 4: Updating the STRING Field
+
 Finally, let's demonstrate how to change the regex pattern for our STRING field. Currently, the pattern allows numbers. We'll change it to disallow numbers. We'll also specify a `defaultStringValue` that will replace any non-compliant existing values:
 
 ```json

@@ -12,7 +12,7 @@ Trackunit exposes a [GraphQL API](/reference/graphql-api-introduction) to create
 
 # Query walkthrough
 
-In this example, we will use a Query for asset information.  
+In this example, we will use a Query for asset information.
 
 ## 1. Open a Terminal or Command Window and enter
 
@@ -22,12 +22,12 @@ npm install @trackunit/react-graphql-tools
 
 ## 2. Set up Graphql tooling
 
-Look in the `project.json` file of the library where you want to add a GraphQL query and find the `name` of the project. For extensions in a subdir the name will be `[subdir-name]-[name-of-your-extension]`. 
+Look in the `project.json` file of the library where you want to add a GraphQL query and find the `name` of the project. For extensions in a subdir the name will be `[subdir-name]-[name-of-your-extension]`.
 
 Call this command:
 
 ```sh
-nx generate @trackunit/react-graphql-tools:add-graphql --project=[project-name]
+npx nx generate @trackunit/react-graphql-tools:add-graphql --project=[project-name]
 ```
 
 ## 3. Create Graphql Query
@@ -36,7 +36,7 @@ Now you are ready to create React hooks from your GraphQL queries, just copy you
 
 ```graphql
 query GetAssetsByProductionYear($first: Int, $productionYears: [String!]) {
-  assets(first: $first, filters: {productionYears: $productionYears}) {
+  assets(first: $first, filters: { productionYears: $productionYears }) {
     edges {
       node {
         productionYear
@@ -53,7 +53,7 @@ query GetAssetsByProductionYear($first: Int, $productionYears: [String!]) {
 Call this command:
 
 ```sh
-nx run [feature-name]-[name-of-your-extension]:graphql-hooks
+npx nx run [feature-name]-[name-of-your-extension]:graphql-hooks
 ```
 
 ## 5. Use it in your React code
@@ -63,7 +63,7 @@ In the above example `GetAssetsByProductionYear` will translate into `GetAssetsB
 
 ```typescript
 import { useQuery } from "@apollo/client";
-import { GetAssetsByProductionYearDocument } from './generated/graphql-api/graphql';
+import { GetAssetsByProductionYearDocument } from "./generated/graphql-api/graphql";
 
 const { data, loading, error } = useQuery(GetAssetsByProductionYearDocument, {
   variables: {
@@ -99,7 +99,7 @@ mutation MyMutation($eventId: String!) {
 Call this command:
 
 ```sh
-nx run [feature-name]-[name-of-your-extension]:graphql-hooks
+npx nx run [feature-name]-[name-of-your-extension]:graphql-hooks
 ```
 
 ## 3. Use it in your React code
@@ -109,15 +109,15 @@ In the above example `MyMutation` will translate into `MyMutationDocument`
 
 ```typescript
 import { useMutation } from "@apollo/client";
-import { MyMutationDocument } from './generated/graphql-api/graphql';
+import { MyMutationDocument } from "./generated/graphql-api/graphql";
 
 const [myMutation, { data, loading, error }] = useMutation(MyMutationDocument);
 
 // Use mutation function to call the mutation
 myMutation({
   variables: {
-    eventId: "foo"
-  }
+    eventId: "foo",
+  },
 });
 
 // Use data, loading and error same way as for the query
@@ -137,10 +137,10 @@ const { data, loading, error } = useQuery(GetAssetsByProductionYearDocument, {
     first: 5, // Take first 5 results
     // Any variables your query requires
   },
-  context: { 
+  context: {
     headers: {
-      "TU-PREVIEW": "<FEATURE-CODE-NAME>" // Look up the feature code name in the schema docs.
-    }
+      "TU-PREVIEW": "<FEATURE-CODE-NAME>", // Look up the feature code name in the schema docs.
+    },
   },
 });
 ```
@@ -183,7 +183,7 @@ export const App = () => {
       <Card className="w-full">
         {loading && <Spinner centering="centered" />}
         {error && <div>CRASHED: {error.message}</div>}
-        {data && 
+        {data &&
           <div>
             <Heading variant="primary">We can now use useGetAssetsByProductionYearQuery</Heading>
             {data?.assets?.payload?.map((asset, index) => (
@@ -212,7 +212,7 @@ export const App = () => {
 > 📘 Nice to know 2!
 >
 > In the complete example mentioned above, we have commented out the HTTP header `TU-PREVIEW:<codeword(s)>`.
-Certain GraphQL objects are currently in a preview state and may undergo changes without prior notice.
-To indicate your acceptance of these terms, include the HTTP header `TU-PREVIEW:<codeword(s)>` in your query requests.
-The specific codeword varies for each preview object and can be found by referring to the [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/).
-You can include one or more comma-separated codewords.
+> Certain GraphQL objects are currently in a preview state and may undergo changes without prior notice.
+> To indicate your acceptance of these terms, include the HTTP header `TU-PREVIEW:<codeword(s)>` in your query requests.
+> The specific codeword varies for each preview object and can be found by referring to the [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/).
+> You can include one or more comma-separated codewords.

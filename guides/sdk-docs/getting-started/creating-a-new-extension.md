@@ -13,7 +13,7 @@ Once you have created the Iris App, you will need to create an extension and con
 ### 1. Create your first extension
 
 ```bash
-nx g @trackunit/iris-app:extend [name-of-your-extension]
+npx nx g @trackunit/iris-app:extend [name-of-your-extension]
 ```
 
 ### 2. Answer the following questions:

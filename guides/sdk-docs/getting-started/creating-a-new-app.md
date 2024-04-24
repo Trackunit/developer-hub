@@ -5,17 +5,15 @@ parentDocSlug: getting-started
 ---
 
 > 🚧 Beta
-> 
+>
 > This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
 In this step, we will create a new app in the workspace. An app is the deployable unit that will contain all the extensions and configurations.
 
-
-
 ### 1. Use the Iris App SDK to generate your first Iris App
 
-```
-nx generate @trackunit/iris-app:create [name-of-your-app]
+```bash
+npx nx generate @trackunit/iris-app:create [name-of-your-app]
 ```
 
 > Note: If you did not use the `@trackunit/create-iris-app-workspace` CLI to generate your workspace, you must add the Iris App SDK first by executing:
@@ -24,8 +22,7 @@ nx generate @trackunit/iris-app:create [name-of-your-app]
 > npm install @trackunit/iris-app
 > ```
 
-
-### 2. A confirmation message will appear confirming that the command was successful.  
+### 2. A confirmation message will appear confirming that the command was successful.
 
 ```
 UPDATE package.json
@@ -40,9 +37,7 @@ CREATE apps/app/tsconfig.json
 CREATE apps/app/webpack.config.ts
 ```
 
-
-
-### 3. Your first Iris App will be In the apps folder. 
+### 3. Your first Iris App will be In the apps folder.
 
 ```
 ⊢ apps
