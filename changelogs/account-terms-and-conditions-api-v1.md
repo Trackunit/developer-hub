@@ -23,8 +23,9 @@ Example:
       "externalReference": "Acme",
       "termsAndConditions": [
         {
-          "date": "2024-04-25T07:56:28.792Z",
-          "lastConsentDate": "2024-04-25T07:56:28.792Z",
+          "appName": "TrackunitManager",
+          "date": "2024-04-26T13:36:12.745Z",
+          "lastConsentDate": "2024-04-26T13:36:12.745Z",
           "name": "Data processing",
           "version": 1
         }
