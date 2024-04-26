@@ -38,7 +38,9 @@ Going forward use the [Iris Sites API](https://developers.trackunit.com/referenc
 The [Classic Clients](https://dev.trackunit.com/docs/client) & [Contacts](https://dev.trackunit.com/docs/contact) functionality now has an equivalent feature called Customers in Trackunit Iris. We recommend you start using Customers as soon as possible to get access to the latest functionalities and be on board with the foundation for exiting new features like [ERP integrations](https://portal.productboard.com/mbaayvr5tzubn5acbd8dvqa8/c/288-rental-erp-integrations) and [Branded Customer Portals](https://portal.productboard.com/mbaayvr5tzubn5acbd8dvqa8/c/290-branded-customer-portals).
 
 > 🚧 Migration note
-> If you have set up Clients in Manager Classic that are attached to Service Management and Alarms in Manager Classic, we recommend that you wait until those two features are completely migrated over to Trackunit Iris to avoid disrupting your business processes. If you are in doubt, contact your Trackunit representative. 
+> If you have set up Clients in Manager Classic that are attached to Service Management and Alarms in Manager Classic, we recommend that you wait until those two features are completely migrated over to Trackunit Iris to avoid disrupting your business processes. If you are in doubt, contact your Trackunit representative.
+
+(any migration tool for clients?)
 
 The [Iris Customer API](https://developers.trackunit.com/reference/customers-api-intro) empowers developers to interact with customer information, including details about customers, their associated contacts and asset assignments.
 
