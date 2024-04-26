@@ -26,7 +26,7 @@ The [Classic Group API](https://dev.trackunit.com/docs/group) allowed you to cre
 
 
 ### Sites API
-With the Iris platform we have evolved the concept of **Classic Zones (map areas)** and **Classic Points (location points on a map)** and collapsed the two into our new Sites concept. Sites keep the same importance as zones for running reports and creating alerts. Leverage automatically detected sites or enter site boundaries as you see fit – including the option to apply labels depending on the site type.
+With the Iris platform we have evolved the concept of [Classic Zones](https://dev.trackunit.com/docs/zone) (map areas) and [Classic Points](https://dev.trackunit.com/docs/point) (location points on a map) and collapsed the two into our new Sites concept. Sites keep the same importance as zones for running reports and creating alerts. Leverage automatically detected sites or enter site boundaries as you see fit – including the option to apply labels depending on the site type.
 
 With the introduction of Sites in Trackunit Manager, existing Zones in Manager Classic were automatically transferred to Sites and classified as Classic Zones. To harvest the full power of Sites, it is recommended to [manually convert a Zone into a Site type](https://helpcenter.trackunit.com/s/article/How-do-I-convert-a-Zone-to-a-Site?language=en_US) of your choice and get an up-to-the-minute picture of equipment status across job sites.
 
