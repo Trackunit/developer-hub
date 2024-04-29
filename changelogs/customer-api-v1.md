@@ -1,9 +1,4 @@
----
-title: Customer API v1
-type: added
----
-
-Released stable version v1 of Customer API as REST and GraphQL endpoint.
+Released stable version v1 of Customer API as REST and GraphQL endpoint.  
 For more information, see the documentation and introduction of the endpoints.
 
 # GraphQL
@@ -11,6 +6,7 @@ For more information, see the documentation and introduction of the endpoints.
 > ➕ Trackunit Iris GraphQL API
 
 Example:
+
 ```
 query GetCustomers(
   $before: Cursor
@@ -73,26 +69,26 @@ Below a list of all available REST endpoints:
 
 > ➕ GET: customer/v1/customers/{customerid}/contacts
 
-[Get contacts](ref:getcontacts)
+[Get contacts](ref:getcontactsbyids)
 
 > ➕ POST: customer/v1/customers/{customerid}/contacts
 
-[Create contact](ref:createcontact)
+[Create contact](ref:createcontact-1)
 
 > ➕ PATCH: customer/v1/customers/{customerid}/contacts/{contactId}
 
-[Update contact](ref:updatecontact)
+[Update contact](ref:updatecontact-1)
 
 > ➕ DELETE: customer/v1/customers/{customerid}/contacts/{contactId}
 
-[Delete contact](ref:deletecontact)
+[Delete contact](ref:deletecontact-1)
 
 ## Customer Asset assignments:
 
 > ➕ GET: customer/v1/customers/{customerid}/assets
 
-[Get assets](ref:getassets)
+[Get assets](ref:getassets-1)
 
 > ➕ POST: customer/v1/customers/{customerid}/assets
 
-[Update assets](ref:updateassets)
+[Update assets](ref:updateasset)
