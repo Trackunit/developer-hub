@@ -9,7 +9,11 @@ Learn how to harness the power of the Iris platform and migrate your business aw
 
 ## Concept shift: From Units to Assets
 
-(Explain the shift in thinking from assets to units)
+Trackunit's data model has undergone a significant paradigm shift, transitioning from a unit-centric approach, where telematics devices and machines overlapped and identification relied on potentially non-unique strings, to a more refined machine-centric model, initially separating telematics devices from machines. 
+
+Now, the latest evolution with Iris embraces an asset-centric perspective, where the system supports multiple telematics devices per asset and ISO feeds, enabling seamless integration and robust data management. Moreover, it facilitates support for Bluetooth tags and attachment / machine connections, streamlining operations and enhancing connectivity across the asset ecosystem. This shift marks a pivotal advancement, empowering Trackunit to better cater to the complex needs of modern asset management and telemetry.
+
+
 
 ## Asset administration
 
