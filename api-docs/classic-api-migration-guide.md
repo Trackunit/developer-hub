@@ -25,8 +25,8 @@ Working with groups helps you manage your fleet and segment it in a way that mak
 
 The [Classic Group API](https://dev.trackunit.com/docs/group) allowed you to create and manage collections of units. Because Iris is build around the concept of assets, the [Iris Group API](https://developers.trackunit.com/reference/getgroups) allows you now to create and manage collections of assets instead. Additionally the Iris Group API endpoints also allow you to manage which users should have access to groups.
 
-(any migration tool here for groups?!)
-+ what about Classic Category?!
+*(any migration tool here for groups?!)*
+*+ what about Classic Category?!*
 
 
 ### Sites API
@@ -44,7 +44,7 @@ The [Classic Clients](https://dev.trackunit.com/docs/client) & [Contacts](https:
 > 🚧 Migration note
 > If you have set up Clients in Manager Classic that are attached to Service Management and Alarms in Manager Classic, we recommend that you wait until those two features are completely migrated over to Trackunit Iris to avoid disrupting your business processes. If you are in doubt, contact your Trackunit representative.
 
-(any migration tool for clients?)
+*(any migration tool for clients?)*
 
 The [Iris Customer API](https://developers.trackunit.com/reference/customers-api-intro) empowers developers to interact with customer information, including details about customers, their associated contacts and asset assignments.
 
@@ -56,8 +56,8 @@ The [Iris Customer API](https://developers.trackunit.com/reference/customers-api
 
 ## Data Archive APIs
 
-???
-
+### Trips API
+...
 
 ## Additional Capabilities in Iris
 By shifting to the Trackunit Iris platform you will also gain additional capabilities. Below we have linked some of the highlights for you.
