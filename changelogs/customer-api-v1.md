@@ -1,3 +1,8 @@
+---
+title: Customer API v1
+type: added
+---
+
 Released stable version v1 of Customer API as REST and GraphQL endpoint.  
 For more information, see the documentation and introduction of the endpoints.
 
