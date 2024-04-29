@@ -15,7 +15,7 @@ Now, the latest evolution with Iris embraces an asset-centric perspective, where
 
 ![From Classic Unit to Iris Asset](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/ClassicUnit-to-IrisAsset.png)
 
-## Asset administration
+## Asset administration APIs
 
 ### Asset API
 (TBD)
@@ -36,7 +36,7 @@ With the introduction of Sites in Trackunit Manager, existing Zones in Manager C
 
 Going forward use the [Iris Sites API](https://developers.trackunit.com/reference/getsites) to create and manage your Sites at scale and also e.g. retrieve a comprehensive site history, encompassing either asset intervals within a list of sites or the sites visited by a list of assets.
 
-## Organizational Management
+## Organizational Management APIs
 
 ### Customers API
 The [Classic Clients](https://dev.trackunit.com/docs/client) & [Contacts](https://dev.trackunit.com/docs/contact) functionality now has an equivalent feature called Customers in Trackunit Iris. We recommend you start using Customers as soon as possible to get access to the latest functionalities and be on board with the foundation for exiting new features like [ERP integrations](https://portal.productboard.com/mbaayvr5tzubn5acbd8dvqa8/c/288-rental-erp-integrations) and [Branded Customer Portals](https://portal.productboard.com/mbaayvr5tzubn5acbd8dvqa8/c/290-branded-customer-portals).
@@ -47,6 +47,16 @@ The [Classic Clients](https://dev.trackunit.com/docs/client) & [Contacts](https:
 (any migration tool for clients?)
 
 The [Iris Customer API](https://developers.trackunit.com/reference/customers-api-intro) empowers developers to interact with customer information, including details about customers, their associated contacts and asset assignments.
+
+## Configuration APIs
+
+### Alerts API
+...
+
+
+## Data Archive APIs
+
+???
 
 
 ## Additional Capabilities in Iris
