@@ -53,11 +53,16 @@ The [Iris Customer API](https://developers.trackunit.com/reference/customers-api
 ### Alerts API
 ...
 
+### Telematics Device API
+*... replacing parts of Unit API??? ...*
+
+### Telematics Foundation APIs
+*... explain how the Unit APIs are being replaced...*
 
 ## Data Archive APIs
 
 ### Trips API
-...
+(TBD)
 
 ## Additional Capabilities in Iris
 By shifting to the Trackunit Iris platform you will also gain additional capabilities. Below we have linked some of the highlights for you.
@@ -66,11 +71,11 @@ By shifting to the Trackunit Iris platform you will also gain additional capabil
 - With our [Custom Fields API](https://developers.trackunit.com/reference/custom-field-intro), Trackunit Iris can host all the data that you need. Custom Fields will enable you to capture and organize additional metadata that holds significant contextual value, thereby facilitating more robust data categorization and retrieval processes for you and your end-customers.
 - Discover the power of our [Location API](https://developers.trackunit.com/reference/location-api-intro), your key to effortlessly accessing and tracking real-time GPS coordinates for your entire fleet of connected assets.
 - Supercharge your telematics data exploration with our [Time Series API](https://developers.trackunit.com/reference/time-series-introduction), your gateway to a wealth of machine insights and advanced sensor data. Designed to empower your exploration of time series data, this API offers seamless access to endpoints that can be queried using PromQL.
-- Easily scale your experience of Trackunit Manager's feature modules by utilizing their accompanying APIs. Check out our [Service Management APIs](https://developers.trackunit.com/reference/service-management-intro), [Access Management](https://developers.trackunit.com/reference/access-management-intro) & [Operator APIs](https://developers.trackunit.com/reference/operator-intro) as well as [Emissions Reporting APIs](https://developers.trackunit.com/reference/emissions-api) in Iris
+- Easily scale your experience of Trackunit Manager's feature modules by utilizing their accompanying Iris APIs. Check out our [Service Management APIs](https://developers.trackunit.com/reference/service-management-intro), [Access Management](https://developers.trackunit.com/reference/access-management-intro) & [Operator APIs](https://developers.trackunit.com/reference/operator-intro) as well as [Emissions Reporting APIs](https://developers.trackunit.com/reference/emissions-api) in Iris.
 
 **Discover more technologies that the Iris platform has to offer:**
-- Familiarize yourself with the power of our [Iris GraphQL API](https://developers.trackunit.com/reference/graphql-api-introduction) and e.g. get started with using it as a custom data source for your [PowerBI dashboards](https://developers.trackunit.com/docs/powerbi-guide)
-- Harness our [Webhooks](https://developers.trackunit.com/docs/webhooks-overview) offering to receive real-time updates about what happens to your assets in any system
-- Explore how to work with our [Iris App SDK](https://developers.trackunit.com/docs/overview) and use our [Component Library](https://apps.iris.trackunit.com/storybook/?path=/docs/introduction--docs) to easily build beautiful apps and distribute them via the [Trackunit Marketplace](https://new.manager.trackunit.com/marketplace)
+- Familiarize yourself with the power of our [Iris GraphQL API](https://developers.trackunit.com/reference/graphql-api-introduction) and e.g. get started with using it as a custom data source for your [PowerBI dashboards](https://developers.trackunit.com/docs/powerbi-guide).
+- Harness our [Webhooks](https://developers.trackunit.com/docs/webhooks-overview) offering to receive real-time updates about what happens to your assets in any system.
+- Explore how to work with our [Iris App SDK](https://developers.trackunit.com/docs/overview) and use our [Component Library](https://apps.iris.trackunit.com/storybook/?path=/docs/introduction--docs) to easily build beautiful apps and distribute them via the [Trackunit Marketplace](https://new.manager.trackunit.com/marketplace).
 
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/welcome/overview.png)
