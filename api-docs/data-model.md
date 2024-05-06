@@ -331,7 +331,7 @@ Unit of measurement: _ampere._
 Maximum allowed battery charging current, based on actual operating condition.  
 Unit of measurement: _ampere_.
 
-### BatteryChargerOutputvoltage
+### BatteryChargerOutputVoltage
 
 The output voltage of the battery charger.  
 Unit of measurement: _volt._
