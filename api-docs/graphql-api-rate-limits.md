@@ -48,10 +48,17 @@ If the 10 minute rate limit is reached we will return a GraphQL error with the `
 }
 ```
 
-If doing multiple calls we recommend clients to proactive query the `rateLimit` field in the graph to obtain the current status and adjust call rate accordingly:
+## Consuming GraphQL API in a rate limit safe way
 
-```
-query { 
+If doing multiple calls we recommend clients to proactive query the `rateLimit` field in the graph to obtain the current status and adjust call rate accordingly.
+
+Assuming we have a query that retrieves some assets after a certain cursor:
+
+```graphql
+query MyQuery($afterCursor: Cursor!) { 
+    assets(first: 50, after: $afterCursor) {
+        ...
+    }
     rateLimit {
         cost
         remaining
@@ -59,3 +66,54 @@ query {
     }
 }
 ```
+
+Comparing the `remaining` value to the current `cost` of the query will allow you to slow down if remaining become low and then use `resetIn` to wait until the rate limit is reset.
+
+In code it would look something like this:
+
+```js
+while (hasNextPage) {
+  const result = executeQuery(... afterCursor ...);
+
+  // Process data
+
+  // Get relay parameters
+  hasNextPage = result.data.assets.pageInfo.hasNextPage;
+  afterCursor = result.data.assets.pageInfo.endCursor;
+
+  // Check rate limit
+  remaining = result.data.rateLimit.remaining;
+  resetIn = result.data.rateLimit.resetIn;
+  cost = result.data.rateLimit.cost;
+  if (remaining < cost * 10) {
+    // Rate limit exceeded. Wait for reset
+    sleep(resetIn);
+  }
+}
+```
+
+In the above example we use 10 times the cost as a safety buffer. This is done since the rate limit is per user/API token so it could potentially break other clients.
+
+If you expect to always hit the rate limit it is better to simply reduce the call rate up front like this:
+
+```js
+while (hasNextPage) {
+  const result = executeQuery(... afterCursor ...);
+
+  // Process data
+
+  // Get relay parameters
+  hasNextPage = result.data.assets.pageInfo.hasNextPage;
+  afterCursor = result.data.assets.pageInfo.endCursor;
+
+  // Check rate limit
+  remaining = result.data.rateLimit.remaining;
+  resetIn = result.data.rateLimit.resetIn;
+  cost = result.data.rateLimit.cost;
+  maxCalls = Math.floor(remaining / cost);
+  sleepBetweenCalls = Math.ceiling(resetIn / maxCalls);
+  sleep(Math.min(resetIn, sleepBetweenCalls));
+}
+```
+
+This will spread out the calls such that it will not break the rate limit.
