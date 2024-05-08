@@ -75,12 +75,24 @@ In code it would look something like this:
 while (hasNextPage) {
   const result = executeQuery(... afterCursor ...);
 
+  // Check if we hit the rate limit
+  if (result.errors?.find((error) => error.extensions.code === "RATE_LIMITED")) {
+      // Rate limit exceeded. Wait for reset
+      sleet(resetIn);
+      continue;
+  }
+
   // Process data
 
   // Get relay parameters
   hasNextPage = result.data.assets.pageInfo.hasNextPage;
   afterCursor = result.data.assets.pageInfo.endCursor;
+}
+```
 
+In the above example we continue until we hit the rate limit. The rate limit is per user/API token so it could potentially break other clients. If the credentials is used for multiple queries consider stopping a bit before hitting the limit:
+
+```js
   // Check rate limit
   remaining = result.data.rateLimit.remaining;
   resetIn = result.data.rateLimit.resetIn;
@@ -89,23 +101,13 @@ while (hasNextPage) {
     // Rate limit exceeded. Wait for reset
     sleep(resetIn);
   }
-}
 ```
 
-In the above example we use 10 times the cost as a safety buffer. This is done since the rate limit is per user/API token so it could potentially break other clients.
+In the above example we use 10 times the cost as a safety buffer.
 
 If you expect to always hit the rate limit it is better to simply reduce the call rate up front like this:
 
 ```js
-while (hasNextPage) {
-  const result = executeQuery(... afterCursor ...);
-
-  // Process data
-
-  // Get relay parameters
-  hasNextPage = result.data.assets.pageInfo.hasNextPage;
-  afterCursor = result.data.assets.pageInfo.endCursor;
-
   // Check rate limit
   remaining = result.data.rateLimit.remaining;
   resetIn = result.data.rateLimit.resetIn;
