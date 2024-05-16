@@ -27,13 +27,7 @@ npx nx g @trackunit/iris-app:extend [name-of-your-extension]
 
 - **Which Iris App extension should be generated?:**
 
-  - **Fleet** Allows you to add a new tab to the main menu in Trackunit Manager.
-  - **Asset Home** Allows you to add a new tab to the menu on the Asset Home screen in Trackunit Manager.
-  - **Site Home** Allows you to add a new tab to the menu on the Site Home screen in Trackunit Manager.
-  - **Report** Allows you to add a new report to the Reports screen in Trackunit Manager.
-  - **Admin** Allows you to add a new tab in the adminstration page in Trackunit Manager.
-
-    ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/which%20iris%20app%20extension%20should%20be%20generated_.png)
+  - See the **[extension point types](https://developers.trackunit.com/docs/extension-points)**
 
 ```
 ✔ What name would you like to use for this app-extension? · [name-of-your-extension]
