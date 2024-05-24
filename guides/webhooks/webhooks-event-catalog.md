@@ -26,7 +26,7 @@ Available events encompass different domains within the Trackunit Iris platform 
 ## How are events created in Trackunit?
 
 ### Alert events
-Alert configurations are the rules that determine when alert events are generated for your assets. Learn how to create alerts either via [Trackunit Manager](https://helpcenter.trackunit.com/s/article/How-do-I-work-with-alerts-in-Trackunit-Manager?language=en_US) or via the [Alert Configuration API](https://developers.trackunit.com/reference/alerts). During the configuration of the alert you can choose to specify subscribers for email notifications or save the alert configurations without subscribers. Afterwards you can then set up a webhooks subscription to get all alert events on your account.
+Alert configurations are the rules that determine when alert events are generated for your assets. Learn how to create alerts either via [Trackunit Manager](https://help.trackunit.com/en/articles/137636-how-do-i-work-with-alerts-in-trackunit-manager) or via the [Alert Configuration API](https://developers.trackunit.com/reference/alerts). During the configuration of the alert you can choose to specify subscribers for email notifications or save the alert configurations without subscribers. Afterwards you can then set up a webhooks subscription to get all alert events on your account.
 
 > ℹ️ Trigger settings: critical alert vs. log
 > 
@@ -36,7 +36,7 @@ Alert configurations are the rules that determine when alert events are generate
 You can subscribe to the same fault code events that you can see on your tracked assets in Trackunit Manager.
 
 ### Service Management events
-If you have acquired a license for [Trackunit's Service Management module](https://helpcenter.trackunit.com/s/article/What-is-Service-Management?language=en_US), then you can set up service plans and assign them to your assets. Events are being created whenever the service status of an asset gets updated.
+If you have acquired a license for [Trackunit's Service Management module](https://help.trackunit.com/en/articles/139653-what-is-service-management), then you can set up service plans and assign them to your assets. Events are being created whenever the service status of an asset gets updated.
 
 ### Site events
-By creating [sites](https://helpcenter.trackunit.com/s/article/How-do-I-work-with-Sites-in-Trackunit-Manager?language=en_US) you can gain an up-to-the-minute view of equipment location and status for your construction sites, depots, workplaces or otherwise defined areas. Once you have defined sites in Trackunit, events get created whenever an asset enters or leaves a site.
+By creating [sites](https://help.trackunit.com/en/articles/138504-how-do-i-work-with-sites-in-trackunit-manager) you can gain an up-to-the-minute view of equipment location and status for your construction sites, depots, workplaces or otherwise defined areas. Once you have defined sites in Trackunit, events get created whenever an asset enters or leaves a site.

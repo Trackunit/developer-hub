@@ -13,7 +13,7 @@ Alerts allow you to set up powerful notifications based on different trigger con
 ## Interface & Concepts
 For the first release of the public alerts API you will be able to manage your alert configurations with the Create, Read, Update and Delete operations.
 
-Alert configurations are the rules that determine when alerts are generated for your assets. All [alert types](https://helpcenter.trackunit.com/s/article/How-do-I-work-with-alerts-in-Trackunit-Manager?language=en_US) are available for configuration via this API.
+Alert configurations are the rules that determine when alerts are generated for your assets. All [alert types](https://help.trackunit.com/en/articles/137636-how-do-i-work-with-alerts-in-trackunit-manager) are available for configuration via this API.
 
 > 🚧 Handling of enums when generating a client
 > 
