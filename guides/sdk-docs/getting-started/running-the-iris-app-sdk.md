@@ -22,7 +22,7 @@ npx nx run [name-of-your-app]:serve
 
 ### 2. Open a browser
 
-Using this url: <https://new.manager.trackunit.com/iris-sdk-portal/main#runLocal>.
+Using this url: <https://new.manager.trackunit.com/iris-sdk-portal#runLocal>.
 
 You might need to login before it hits that page, use your developer credentials.
 
