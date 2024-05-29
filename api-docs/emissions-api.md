@@ -60,6 +60,10 @@ We have built our data structure and API to allow tracking of all types of consu
 
 3. Understanding trends of changing use and emissions rate as machines age is an important insight within a fast-changing commercial and regulatory environment. The Lifetime endpoint can provide a big picture view at the asset level to course adjustments in purchasing and dispatching to meet the marketplace where the needs are.
 
+## Data Source Score
+
+Data Source Score is a field that provides a score for the data source of the emissions data per asset. The score is a value between 0 and 100, where 0 is the lowest score and 100 is the highest score. The Data Source Score documentation can be found [here](https://help.trackunit.com/en/articles/170775-what-is-the-data-source-score-in-emissions-reporting).
+
 ## Constraints
 
 - Sites Endpoint can only be viewed by Admins of the account
