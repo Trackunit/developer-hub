@@ -16,19 +16,19 @@ The Data Source Score documentation can be found [here](https://help.trackunit.c
 
 > ➕ GET: /v2/emissions/period
 
-[Get period](ref:getemissionsV2)
+[Get period](ref:getemissionsperiodV2)
 
 > ➕ POST: /v2/emissions/period
 
-[Filter period](ref:filteremissionsV2)
+[Filter period](ref:filteremissionsperiodV2)
 
 > ➕ GET: /v2/emissions/period/kpis
 
-[Get period KPIs](ref:getemissionskpisV2)
+[Get period KPIs](ref:getemissionsperiodkpisV2)
 
 > ➕ POST: /v2/emissions/period/kpis
 
-[Filter period KPIs](ref:filteremissionskpisV2)
+[Filter period KPIs](ref:filteremissionsperiodkpisV2)
 
 > ➕ POST: /v2/emissions/monthly
 
@@ -36,11 +36,11 @@ The Data Source Score documentation can be found [here](https://help.trackunit.c
 
 > ➕ GET: /v2/emissions/monthly/summary
 
-[Get monthly summary](ref:getmonthlyemissionsaggregatedV2)
+[Get monthly summary](ref:getmonthlyemissionssummaryV2)
 
 > ➕ POST: /v2/emissions/monthly/summary
 
-[Filter monthly summary](ref:filtermonthlyemissionsaggregatedV2)
+[Filter monthly summary](ref:filtermonthlyemissionssummaryV2)
 
 > ➕ POST: /v2/emissions/lifetime
 
@@ -60,11 +60,11 @@ The Data Source Score documentation can be found [here](https://help.trackunit.c
 
 > ➕ GET: /v2/emissions/daily/summary
 
-[Get daily summary](ref:getdailyemissionsaggregatedV2)
+[Get daily summary](ref:getdailyemissionssummaryV2)
 
 > ➕ POST: /v2/emissions/daily/summary
 
-[Filter daily summary](ref:filterdailyemissionsaggregatedV2)
+[Filter daily summary](ref:filterdailyemissionssummaryV2)
 
 > ➕ GET: /v2/emissions/daily/kpis
 
