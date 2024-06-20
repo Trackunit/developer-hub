@@ -16,64 +16,64 @@ The Data Source Score documentation can be found [here](https://help.trackunit.c
 
 > ➕ GET: /v2/emissions/period
 
-[Get period](ref:getemissionsperiodV2)
+[Get period](ref:getemissionsperiodv2)
 
 > ➕ POST: /v2/emissions/period
 
-[Filter period](ref:filteremissionsperiodV2)
+[Filter period](ref:filteremissionsperiodv2)
 
 > ➕ GET: /v2/emissions/period/kpis
 
-[Get period KPIs](ref:getemissionsperiodkpisV2)
+[Get period KPIs](ref:getemissionsperiodkpisv2)
 
 > ➕ POST: /v2/emissions/period/kpis
 
-[Filter period KPIs](ref:filteremissionsperiodkpisV2)
+[Filter period KPIs](ref:filteremissionsperiodkpisv2)
 
 > ➕ POST: /v2/emissions/monthly
 
-[Filter monthly](ref:filtermonthlyemissionsV2)
+[Filter monthly](ref:filtermonthlyemissionsv2)
 
 > ➕ GET: /v2/emissions/monthly/summary
 
-[Get monthly summary](ref:getmonthlyemissionssummaryV2)
+[Get monthly summary](ref:getmonthlyemissionssummaryv2)
 
 > ➕ POST: /v2/emissions/monthly/summary
 
-[Filter monthly summary](ref:filtermonthlyemissionssummaryV2)
+[Filter monthly summary](ref:filtermonthlyemissionssummaryv2)
 
 > ➕ POST: /v2/emissions/lifetime
 
-[Filter lifetime](ref:filterlifetimeemissionsV2)
+[Filter lifetime](ref:filterlifetimeemissionsv2)
 
 > ➕ GET: /v2/emissions/lifetime/kpis
 
-[Get Lifetime KPIs](ref:getlifetimeemissionskpisV2)
+[Get Lifetime KPIs](ref:getlifetimeemissionskpisv2)
 
 > ➕ POST: /v2/emissions/lifetime/kpis
 
-[Filter Lifetime KPIs](ref:filterlifetimeemissionskpisV2)
+[Filter Lifetime KPIs](ref:filterlifetimeemissionskpisv2)
 
 > ➕ POST: /v2/emissions/daily
 
-[Filter daily](ref:filterdailyemissionsV2)
+[Filter daily](ref:filterdailyemissionsv2)
 
 > ➕ GET: /v2/emissions/daily/summary
 
-[Get daily summary](ref:getdailyemissionssummaryV2)
+[Get daily summary](ref:getdailyemissionssummaryv2)
 
 > ➕ POST: /v2/emissions/daily/summary
 
-[Filter daily summary](ref:filterdailyemissionssummaryV2)
+[Filter daily summary](ref:filterdailyemissionssummaryv2)
 
 > ➕ GET: /v2/emissions/daily/kpis
 
-[Get daily KPIs](ref:getdailyemissionskpisV2)
+[Get daily KPIs](ref:getdailyemissionskpisv2)
 
 > ➕ POST: /v2/emissions/daily/kpis
 
-[Filter daily KPIs](ref:filterdailyemissionskpisV2)
+[Filter daily KPIs](ref:filterdailyemissionskpisv2)
 
 > ➕ GET: /v2/sites/{siteId}/emissions
 
-[Get site](ref:getsiteemissionsbysiteidV2)
+[Get site](ref:getsiteemissionsbysiteidv2)
