@@ -7,7 +7,7 @@ type: improved
 
 We are doing this since we have seen issues with more specific CSP rules and conflicts with `default-src`.
 
-So in case you have to call call an external API and defined:
+So in case you have to call an external API and defined:
 
 ```json
 {
