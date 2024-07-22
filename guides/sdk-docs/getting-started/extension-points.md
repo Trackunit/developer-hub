@@ -118,6 +118,17 @@ menuItem: {
 
 The `icon` field allows you to select the icon used in the navigation bar. See the Icon component in our [UI Components](https://apps.iris.trackunit.com/storybook/) Library for an overview of supported icons.
 
+### Visibility
+
+Visibility is controlled using conditions. If Brand and Model fields are filled out they must match at least one asset in the fleet for the menu item to show.
+
+```ts
+conditions: {
+  brand: "your-brand", // optional as single or array
+  model: ["your model", "your model2"] // optional as single or array
+}
+```
+
 # Report Extension Point
 
 The Report Extension Point allows you to add a new report to the Reports screen within Trackunit Manager. The extension is controlled in the extension-manifest.ts file.
