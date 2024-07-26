@@ -10,7 +10,28 @@ The marketplace will be the gateway for new services to the industry provided by
 
 # Installation policies
 
-To control the behavior of your app inside the marketplace you have to specify an installation policy inside the Iris App manifest using the `installation.policy` attribute.
+To control the behavior of your app inside the marketplace you have to specify an installation policy inside the Iris App manifest using the `installation.pricingPlanPolicy` attribute.
+
+It is possible to specify a policy regardless of the customer plan:
+
+```json
+installation: {
+  pricingPlanPolicy: { ALL_PLANS: "ON_DEMAND" },
+  ...
+}
+```
+
+Or make it dependent on the pricing plan of the customer installing the app by providing a map between pricing plan and policy:
+
+```json
+installation: {
+  pricingPlanPolicy: { 
+    LEAP: "PREINSTALLED" 
+    LIFT: "PREINSTALLED_REQUIRES_APPROVAL" 
+  },
+  ...
+}
+```
 
 There are five distinct installation policies, with their behaviour described in the table below:
 
@@ -37,9 +58,9 @@ Most generally available apps should use a policy that requires explicit approva
 Customer specific apps developed for one or few customers should include a list of customer account IDs in the `installation.accountIds` attribute and use the `PREINSTALLED` policy.  
 These apps will automatically be visible to the customers in the list.
 
-Apps that are tied to a specific pricing plan should set the `installation.pricingPlans` attribute and can then choose to use either the `ON_DEMAND` or `PREINSTALLED` policies. Everyone with this pricing plan should get the app in the marketplace.
+Apps that are tied to a specific pricing plan should set the `installation.pricingPlanPolicy` attribute and map the relevant plans to either the `ON_DEMAND` or `PREINSTALLED` policies. Everyone with this pricing plan should get the app in the marketplace.
 
-The `PERMANENT` installation policy should only be used with prior agreement with Trackunit, since they will be enabled for all customers and customers cannot uninstall the app. The app will not be visible in the marketplace. The only way to limit which customers get the app is using the `installation.accountIds` and/or `installation.pricingPlans` attributes.
+The `PERMANENT` installation policy should only be used with prior agreement with Trackunit, since they will be enabled for all customers and customers cannot uninstall the app. The app will not be visible in the marketplace. The only way to limit which customers get the app is using the `installation.accountIds` and/or `installation.pricingPlanPolicy` attributes.
 
 # Marketplace content
 
