@@ -58,5 +58,5 @@ The currently supported scopes are listed here:
 | `account.support-access.approval-flow`                                             | Can approve support access requests                                    |
 | `account.user.manage`                                                              | Can manage users                                                       |
 | `account.view`                                                                     | Can view account                                                       |
-| `account.irisx.proxy.store-secret`                                                 | Can store secrets in the vault                                         
+| `account.iris.app.store-secret`                                                    | Can store secrets when configuring Iris app                            |
 | `asset.view`                                                                       | Can view assets                                                        |
