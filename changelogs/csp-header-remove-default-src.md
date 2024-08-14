@@ -1,5 +1,5 @@
 ---
-title: trackunit/iris-app-spi v0.0.172 - removed `default-src` from CSP header
+title: trackunit/iris-app-api v0.0.172 - removed `default-src` from CSP header
 type: improved
 ---
 
