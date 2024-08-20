@@ -8,7 +8,7 @@ parentDocSlug: getting-started
 >
 > This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
-The Iris App SDK uses [NX](https://nx.dev) to manage code structure and allow easily sharing code between apps if you are developing multiple apps and extensions.
+The App SDK uses [NX](https://nx.dev) to manage code structure and allow easily sharing code between apps if you are developing multiple apps and extensions.
 To get an idea about what NX is and what it can do, see this [link](https://nx.dev/getting-started/why-nx) or watch this [10 min introductory video](https://www.youtube.com/watch?v=-_4WMl-Fn0w)
 
 The plan for this tutorial is:

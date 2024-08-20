@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Getting Started with the SDK
 category: 61fcd8e1a448f5004215317c
 ---
 
