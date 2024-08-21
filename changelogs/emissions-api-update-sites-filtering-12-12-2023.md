@@ -9,65 +9,65 @@ Below is a list of all the new endpoints:
 
 > ➕ GET: /emissions/period
 
-[Get period](ref:getemissions)
+Get period
 
 > ➕ POST: /emissions/period
 
-[Filter period](ref:filteremissions)
+Filter period
 
 > ➕ GET: /emissions/period/kpis
 
-[Get period KPIs](ref:getemissionskpis)
+Get period KPIs
 
 > ➕ POST: /emissions/period/kpis
 
-[Filter period KPIs](ref:filteremissionskpis)
+Filter period KPIs
 
 > ➕ POST: /emissions/monthly
 
-[Filter monthly](ref:filtermonthlyemissions)
+Filter monthly
 
 > ➕ GET: /emissions/monthly/summary
 
-[Get monthly summary](ref:getmonthlyemissionsaggregated)
+Get monthly summary
 
 > ➕ POST: /emissions/monthly/summary
 
-[Filter monthly summary](ref:filtermonthlyemissionsaggregated)
+Filter monthly summary
 
 > ➕ POST: /emissions/lifetime
 
-[Filter lifetime](ref:filterlifetimeemissions)
+Filter lifetime
 
 > ➕ GET: /emissions/lifetime/kpis
 
-[Get Lifetime KPIs](ref:getlifetimeemissionskpis)
+Get Lifetime KPIs
 
 > ➕ POST: /emissions/lifetime/kpis
 
-[Filter Lifetime KPIs](ref:filterlifetimeemissionskpis)
+Filter Lifetime KPIs
 
 > ➕ POST: /emissions/daily
 
-[Filter daily](ref:filterdailyemissions)
+Filter daily
 
 > ➕ GET: /emissions/daily/summary
 
-[Get daily summary](ref:getdailyemissionsaggregated)
+Get daily summary
 
 > ➕ POST: /emissions/daily/summary
 
-[Filter daily summary](ref:filterdailyemissionsaggregated)
+Filter daily summary
 
 > ➕ GET: /emissions/daily/kpis
 
-[Get daily KPIs](ref:getdailyemissionskpis)
+Get daily KPIs
 
 > ➕ POST: /emissions/daily/kpis
 
-[Filter daily KPIs](ref:filterdailyemissionskpis)
+Filter daily KPIs
 
 > ➕ GET: /sites/{siteId}/emissions
 
-[Get site](ref:getsiteemissionsbysiteid)
+Get site
 
