@@ -5,7 +5,6 @@ category: 652e408346c8860073a6bd12
 
 ---
 
-# Connectors
 Connectors in Automation Studio are powerful integration tools that enable seamless data flow and workflow automation between various enterprise systems. With over 1,200 pre-built connectors, users can easily link their existing applications, enhancing operational efficiency and data accessibility.
 
 ## Key Features
