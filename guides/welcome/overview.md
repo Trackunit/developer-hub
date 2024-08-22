@@ -1,9 +1,9 @@
 ---
-title: Guides & Resources
+title: IrisX Overview
 category: 652e405820342e0033e0d25f
 ---
 
-![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/welcome/overview.png)
+// ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/welcome/overview.png)
 
 
 **Get up to speed with all that the Trackunit Iris platform has to offer:**
