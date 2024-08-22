@@ -14,6 +14,8 @@ Connectors in Automation Studio are powerful integration tools that enable seaml
 ## Types of Connectors
 - **ERP & CRM Connectors**: Facilitate data sharing between rental systems, ERP, and service scheduling.
 Custom Connectors: Developed using APIs to integrate less common or proprietary systems.
+- **Trackunit Connector**: Integrates all Trackunit APIs into Automation Studio
+- **IrisX Analytics**: Leverage advanced analytics for workflow automation.
 
 ## Enable workflow Automation
 Connectors enable automated workflows by passing events and data between systems. This allows users to create triggers that initiate actions across multiple platforms, streamlining business processes.
