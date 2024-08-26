@@ -1,6 +1,7 @@
 ---
 title: ERP Connectors
 category: 652e408346c8860073a6bd12
+parentDocSlug: Connectors
 
 
 ---
