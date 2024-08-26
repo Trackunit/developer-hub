@@ -1,10 +1,10 @@
 ---
-title: Recipe Builder
+title: Workflow Automation Projects
 category: 66c49b7d61daf600186e12cb
 parentDocSlug: automation-studio-overview
 ---
 
-The Recipe Builder is a core component of Automation Studio that allows users to create automated workflows, referred to as "recipes." These recipes define a series of actions triggered by specific events or conditions, enabling seamless integration and process automation across various systems.
+The Workflow Automation Projects and their Recipe Builder is a core component of Automation Studio that allows users to create automated workflows, referred to as "recipes." These recipes define a series of actions triggered by specific events or conditions, enabling seamless integration and process automation across various systems.
 
 ## Key Components
 1. **Triggers**: Events that initiate the execution of a recipe. Triggers can be based on time, data changes, or specific actions in connected systems.
@@ -12,7 +12,7 @@ The Recipe Builder is a core component of Automation Studio that allows users to
 1. **Conditions**: Optional logic that determines whether certain actions should be executed based on specific criteria.
 
 
-## Building a Recipe
+## Creating a Recipe
 1. Access the Recipe Builder: Navigate to the Automation Studio interface and select the Recipe Builder tool.
 Create a New Recipe:
 
