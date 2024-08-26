@@ -13,7 +13,7 @@ Trackunit’s suite of API integrations to enable your team to eliminate duplica
 
 ## IrisX Integrations & Connectors Features
 
-- **APIs**: Seamlessly connect critical systems and applications with our comprehensive suite of IrisX APIs.
+- **IrisX APIs**: Seamlessly connect critical systems and applications with our comprehensive suite of IrisX APIs.
 - **Pre-build Connectors**: Connectors are powerful integration tools that enable seamless connectivity between a vast array of applications and services, facilitating smooth data flow and automation across your entire tech stack.
 - **ERP & CRM Connectors**: Combine your ERP and telematics data to drive efficiencies across your whole business
 - **Webhooks**: Sync real-time event data to your own systems for easy management and sharing of urgent notifications. Webhooks keep your app updated with real-time notifications from Trackunit.
