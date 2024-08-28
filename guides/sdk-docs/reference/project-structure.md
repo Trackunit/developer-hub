@@ -4,10 +4,6 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: iris-app-sdk-reference
 ---
 
-> 🚧 Beta
->
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
-
 # Project Structure
 
 The Iris App SDK leverages the Nx build system to generate a mono-repo structure for app development. This structure allows developers to create and manage multiple apps and extensions within the same repository. By utilizing the mono-repo approach, developers can easily share code and resources between apps, reducing redundancy and enhancing maintainability. The shared codebase promotes consistency across applications and simplifies collaboration within teams. Therefore our suggested approach is to have _one_ workspace setup and develop all your apps and extensions in it.
