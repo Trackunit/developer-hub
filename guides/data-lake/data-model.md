@@ -221,5 +221,3 @@ The users schema contains a single table - the user table, which contains inform
 user:
 
     account_id → irisx.account.account.account_id
-
-# Tips and Tricks for Efficient Usage
