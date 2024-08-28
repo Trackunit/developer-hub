@@ -4,10 +4,7 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: test-iris-apps
 ---
 
-
-
-
-If you need to mock out runtimes you can do it like this, lets say you are using our hook `useAssetRuntime()` in your Iris App extension.
+If you need to mock out runtimes you can do it like this, lets say you are using our hook `useAssetRuntime()` in your IrisX App extension.
 Then you can mock it out like this:
 
 ```typescript

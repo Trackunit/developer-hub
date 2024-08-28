@@ -5,7 +5,7 @@ parentDocSlug: getting-started
 ---
 
 
-An Iris App is a collection of a number of extensions.
+An IrisX App is a collection of a number of extensions.
 
 [block:image]
 {
@@ -23,7 +23,7 @@ An Iris App is a collection of a number of extensions.
 }
 [/block]
 
-The Iris App SDK provides these extension points in the manager.
+The App SDK provides these extension points in the manager.
 
 # Asset Home Extension Point
 

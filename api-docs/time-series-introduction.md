@@ -6,7 +6,8 @@ Welcome to the Time Series API documentation. This REST API enables you to retri
 
 > 📘 Subscription requirement
 >
-> The Time Series API is only available to customers on the **Evolve & Expand** or the **Link, Lift & Leap** subscription packages. Data retention limits follow the chosen subscription package.
+> The Time Series API is only available to customers on IrisX. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
+
 
 **Machine insights** provide a comprehensive list of conformed metrics, prefixed with `machine_insight_`, including ISO 15143-3 standard insights and additional insights.
 

@@ -1,5 +1,5 @@
 ---
-title: Calling Trackunit APIs in an Iris App
+title: Calling Trackunit APIs in an IrisX App
 category: 61fcd8e1a448f5004215317c
 ---
 

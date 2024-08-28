@@ -3,7 +3,7 @@ title: trackunit/ui-icons v0.0.76 - new format for icons
 type: improved
 ---
 
-[Breaking change] In this version of our Iris App SDK a new format was introduced for icons, which require an update of jest configurations in extensions that use this library.
+[Breaking change] In this version of our App SDK a new format was introduced for icons, which require an update of jest configurations in extensions that use this library.
 
 > Extensions created with `@trackunit/iris-app@0.0.366` should already have the required configuration.
 

@@ -4,11 +4,9 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: save-data-from-your-app
 ---
 
+# Trackunit App SDK: Working with Custom Fields
 
-
-# Trackunit SDK: Working with Custom Fields
-
-In this guide, we'll be using the Trackunit SDK to define and manipulate custom fields in the Iris app. We will walk you through how to:
+In this guide, we'll be using the Trackunit SDK to define and manipulate custom fields in the IrisX App. We will walk you through how to:
 
 - Define a STRING and a DROPDOWN type field in the iris-app-manifest.json.
 - Implement regex patterns in the STRING field.
@@ -18,7 +16,7 @@ In this guide, we'll be using the Trackunit SDK to define and manipulate custom 
 
 ## Prerequisites
 
-Before we start, you need to install the Iris App Runtime. Open a terminal and type:
+Before we start, you need to install the IrisX App Runtime. Open a terminal and type:
 
 ```bash
 npm install @trackunit/iris-app-runtime-core
@@ -32,7 +30,7 @@ npm install @trackunit/custom-field-components
 
 ## Step 1: Defining a Custom Field
 
-To start, we need to define our custom fields in the `iris-app-manifest.json` file. Let's add a STRING and a DROPDOWN field. To do this, add a `customFieldDefinitions` array to your iris app manifest:
+To start, we need to define our custom fields in the `iris-app-manifest.json` file. Let's add a STRING and a DROPDOWN field. To do this, add a `customFieldDefinitions` array to your IrisX App manifest:
 
 ```json
 "customFieldDefinitions": [
@@ -57,7 +55,7 @@ To start, we need to define our custom fields in the `iris-app-manifest.json` fi
 ]
 ```
 
-Here we added a STRING field with key `myKey` and a DROPDOWN field with key `myDropdownKey`. The STRING field includes a `pattern` property with a simple regex that enforces alphanumeric input (letters, digits, and underscores). `uiEditable` / `uiVisible` controls how the field will be shown in the Manager UI. This does not limit how the field is used inside the Iris App.
+Here we added a STRING field with key `myKey` and a DROPDOWN field with key `myDropdownKey`. The STRING field includes a `pattern` property with a simple regex that enforces alphanumeric input (letters, digits, and underscores). `uiEditable` / `uiVisible` controls how the field will be shown in the Manager UI. This does not limit how the field is used inside the IrisX App.
 
 ## Step 2: Rendering Custom Fields
 

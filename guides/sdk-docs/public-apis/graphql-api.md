@@ -4,7 +4,7 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: public-apis
 ---
 
-Trackunit exposes a [GraphQL API](/reference/graphql-api-introduction) to create your query and we also expose an NX executor to make it easy to query our GraphQL API inside your Iris App extension.
+Trackunit exposes a [GraphQL API](/reference/graphql-api-introduction) to create your query and we also expose an NX executor to make it easy to query our GraphQL API inside your IrisX App extension.
 
 # Query walkthrough
 

@@ -11,4 +11,4 @@ Before submitting though, you will have to consider who to make your application
 
 > 📘 Nice to know
 >
-> After publishing an Iris App SDK, Trackunit must first approve the app before it will be visible in the marketplace.
+> After publishing an App SDK, Trackunit must first approve the app before it will be visible in the marketplace.

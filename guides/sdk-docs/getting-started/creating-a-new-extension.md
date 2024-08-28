@@ -4,7 +4,7 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: getting-started
 ---
 
-Once you have created the Iris App, you will need to create an extension and connect it to the app. An extension is either a hook in to a certain place in the Manager UI or a report.
+Once you have created the IrisX App, you will need to create an extension and connect it to the app. An extension is either a hook in to a certain place in the Manager UI or a report.
 
 ### 1. Create your first extension
 
@@ -21,14 +21,14 @@ npx nx g @trackunit/iris-app:extend [name-of-your-extension]
   - Enter the app name used in step 3 in the **[Creating a new app](https://developers.trackunit.com/docs/creating-a-new-app)** section (e.g., my-first-app).
     - 📌 This question will not appear if you only have a single app in your NX Workspace.
 
-- **Which Iris App extension should be generated?:**
+- **Which IrisX App extension should be generated?:**
 
   - See the **[extension point types](https://developers.trackunit.com/docs/extension-points)**
 
 ```
 ✔ What name would you like to use for this app-extension? · [name-of-your-extension]
 ✔ What subdir would you like to use for this app-extension? · [feature-name]
-✔ Which Iris App extension should be generated? · FLEET_EXTENSION
+✔ Which IrisX App extension should be generated? · FLEET_EXTENSION
 
 CREATE libs/[feature-name]/[name-of-your-extension]/extension-manifest.ts
 UPDATE package.json
@@ -72,7 +72,7 @@ CREATE libs/[subdir-of-your-extension]/[name-of-your-extension]/src/index.tsx
     ⊢ .gitkeep
 ```
 
-### 4. The new extension is also added to the `iris-app-manifest.ts` file in your Iris App under apps.
+### 4. The new extension is also added to the `iris-app-manifest.ts` file in your IrisX App under apps.
 
 ```
   extensions: [[name-of-your-extension]Extension],
@@ -94,5 +94,5 @@ const extensionManifest: ReportExtensionManifest = {
 export default extensionManifest;
 ```
 
-Now that you have created an Iris App with 1 extension, you are ready to run the Iris App.
-( you can add more extensions or new Iris Apps later )
+Now that you have created an IrisX App with 1 extension, you are ready to run the IrisX App.
+( you can add more extensions or new IrisX Apps later )

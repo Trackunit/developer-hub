@@ -6,7 +6,7 @@ parentDocSlug: public-apis
 
 
 
-We support calling our API on behalf of a user who have installed your Iris App without having to rely on the user to launch your app inside Trackunit Manager.
+We support calling our API on behalf of a user who have installed your IrisX App without having to rely on the user to launch your app inside Trackunit Manager.
 
 If you need access to make API calls on behalf of the user you will need to specify `tokenCallback` in the App manifest along with the `scopes` (see [here](app-tokens) for more information on scopes):
 

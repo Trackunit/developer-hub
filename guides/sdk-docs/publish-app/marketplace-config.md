@@ -10,7 +10,7 @@ The marketplace will be the gateway for new services to the industry provided by
 
 # Installation policies
 
-To control the behavior of your app inside the marketplace you have to specify an installation policy inside the Iris App manifest using the `installation.pricingPlanPolicy` attribute.
+To control the behavior of your app inside the marketplace you have to specify an installation policy inside the IrisX App manifest using the `installation.pricingPlanPolicy` attribute.
 
 It is possible to specify a policy regardless of the customer plan:
 
@@ -67,7 +67,7 @@ The `PERMANENT` installation policy should only be used with prior agreement wit
 ## Overview
 
 The marketplace overview will include the `name` and the `description` attributes from the app manifest. The description should be a short text without any formatting.
-To show a logo you should put a image inside the `assets` folder in your Iris App and specify the name of the image in the `logoPath` attribute.
+To show a logo you should put a image inside the `assets` folder in your IrisX App and specify the name of the image in the `logoPath` attribute.
 
 ## Detailed view
 
@@ -100,7 +100,7 @@ To test the markdown syntax [this site](https://marked.js.org/demo/?text=%23%20T
 
 ## Example
 
-Example of marketplace content inside Iris App manifest:
+Example of marketplace content inside IrisX App manifest:
 
 ```typescript
 marketplace: {

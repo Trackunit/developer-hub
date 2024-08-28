@@ -1,5 +1,5 @@
 ---
-title: Iris App Tokens and API access
+title: IrisX App Tokens and API access
 category: 61fcd8e1a448f5004215317c
 parentDocSlug: public-apis
 ---
@@ -12,7 +12,7 @@ app may choose to mark a scope `optional: true`. This means that the user instal
 scope to the app.
 
 So for example if the app requires access to show asset data, and may also change assets, but will function without. You
-can add something like this to your Iris App manifest:
+can add something like this to your IrisX App manifest:
 
 ```json
   scopes: [
@@ -53,5 +53,5 @@ The currently supported scopes are listed here:
 | `account.support-access.approval-flow`                                             | Can approve support access requests                                    |
 | `account.user.manage`                                                              | Can manage users                                                       |
 | `account.view`                                                                     | Can view account                                                       |
-| `account.iris.app.store-secret`                                                    | Can store secrets when configuring Iris app                            |
+| `account.iris.app.store-secret`                                                    | Can store secrets when configuring IrisX App                            |
 | `asset.view`                                                                       | Can view assets                                                        |
