@@ -4,11 +4,6 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: public-apis
 ---
 
-> 🚧 Beta
->
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in
-> the final version.
-
 When launching your app the Trackunit Manager will provide a token for your app. For security purposes this token will
 not provide full access to all APIs but limited to the scopes specified in the app manifest.
 
