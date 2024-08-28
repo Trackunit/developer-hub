@@ -4,9 +4,7 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: test-iris-apps
 ---
 
-> 🚧 Beta
-> 
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
+
 
 
 If you need to mock out runtimes you can do it like this, lets say you are using our hook `useAssetRuntime()` in your Iris App extension.

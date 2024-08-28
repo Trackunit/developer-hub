@@ -4,10 +4,6 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: getting-started
 ---
 
-> 🚧 Beta
->
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
-
 > 📘 This is intended for local testing on the developer machine.
 >
 > If you need to share your Iris App with other parties, you will need to submit your app.

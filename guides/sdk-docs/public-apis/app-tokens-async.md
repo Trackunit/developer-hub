@@ -4,9 +4,7 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: public-apis
 ---
 
-> 🚧 Beta
-> 
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
+
 
 We support calling our API on behalf of a user who have installed your Iris App without having to rely on the user to launch your app inside Trackunit Manager.
 

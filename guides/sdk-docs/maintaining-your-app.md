@@ -4,10 +4,6 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: iris-app-sdk-reference
 ---
 
-> 🚧 Beta
->
-> Please note that this is a beta version and is subject to change without notice. The final version may include changes to pricing, terms, conditions, and availability.
-
 ### Security Patching
 
 As a developer, it is essential to keep your application and its dependencies up-to-date, ensuring that there are no vulnerabilities. With each update, you should bump the version number and submit it for review. Our team will manually review and approve each update, ensuring the safety and stability of the platform. We are continiously scanning apps on the platform for vulnurabilities and not upgrading your app can cause it to be disabled.

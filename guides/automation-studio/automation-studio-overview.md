@@ -20,6 +20,8 @@ Automation Studio provides extensive connectivity and delivers automation throug
 - **Workflow Automation Projects**
 The fast and powerful way to design, automate, and optimize business workflows. Workflow Recipes are automations for business processes. They are a set of workflows that help connect your business applications. Coupled with many other advanced features, recipes are able to handle all app integration and workflow automation scenarios ranging from simple to complex.
 
+
+
 - **Role-Based Access Control**: Implements a role-based setup for user permissions, ensuring that individuals have access only to the features and data necessary for their roles. This enhances security and governance, allowing organizations to manage user access effectively and comply with regulatory requirements.
 
 

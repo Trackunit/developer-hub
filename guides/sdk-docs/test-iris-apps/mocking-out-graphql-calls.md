@@ -4,10 +4,6 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: test-iris-apps
 ---
 
-> 🚧 Beta
-> 
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
-
 Consider the following query that retrieves the details of an asset with a given ID:
 
 ```graphql

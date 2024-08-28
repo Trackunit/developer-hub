@@ -4,10 +4,6 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: getting-started
 ---
 
-> 🚧 Beta
->
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
-
 In this step, we will create a new app in the workspace. An app is the deployable unit that will contain all the extensions and configurations.
 
 ### 1. Use the Iris App SDK to generate your first Iris App
