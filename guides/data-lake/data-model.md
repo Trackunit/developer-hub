@@ -28,7 +28,8 @@ The key view in the access_management schema contains records of access keys for
 ![The schema contains a single view, the key view.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/51QVZEIc.png)
 
 
-*Links to other tables* **
+**Links to other tables**
+
 key:
 
     account_id → irisx.account.account.account_id
@@ -45,9 +46,8 @@ Finally the customer_contacts view contains information about the contacts, and 
 ![The account schema contains account and customer information.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/oy8dp8dk.png)
 
 
+**Links to other tables**
 
-
-*Links to other tables* **
 account_asset:
 
     account_id → irisx.account.account.account_id
@@ -72,7 +72,8 @@ Note: A series of values from a unique sensor is identified by the key (asset_id
 ![Timeseries data for advanced sensors can be found in the advanced_sensor schema.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/Wk-rXysA.png)
 
 
-*Links to other tables* **
+**Links to other tables**
+
 advanced_sensor, advanced_sensor_infor, advanced_sensor_latest:
 
     asset_id → irisx.asset.asset.asset_id
@@ -87,7 +88,8 @@ Note: When defining a custom field on an account in TU Manager data for these cu
 ![Asset data and asset custom fields can be found in the asset schema.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/Txv0FGMM.png)
 
 
-*Links to other tables**:*
+**Links to other tables**
+
 asset_custom_fields:
 
     asset_id → irisx.asset.asset.asset_id
@@ -101,15 +103,16 @@ asset_custom_fields_account_specific:
 
 The dimensions schema includes information about the time intervals used for insights. These three views and the time intervals they represent align with the insights time series view of the same interval.
 
-![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/940tSfgw.png)
+![The dimension schema includes views with the standard time intervals used for insights.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/940tSfgw.png)
 
 ## Events
 
 The events schema contains a number of views that holds different types of event data.
 
-![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/Kbplg2yk.png)
+![Events data can be found in this schema.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/Kbplg2yk.png)
 
-*Links to other tables**:*
+**Links to other tables**
+
 alert, canerror, damagereport, inspection, machinefault, service, servicemanagement, precheck:
 
     asset_id → irisx.asset.asset.asset_id
@@ -127,7 +130,8 @@ The group schema contains information about groups of assets and groups of users
 ![Asset and user group views can be found in this schema.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/dtAV51Q4.png)
 
 
-*Links to other tables**:*
+**Links to other tables**
+
 group:
 
     account_id → irisx.account.account.account_id
@@ -160,7 +164,7 @@ The last three tables have the measurements aligned for either 2 minute interval
 
 For detailed information on each individual insight look here: https://developers.trackunit.com/reference/data-model
 
-*Links to other tables* *(for all insights tables):*
+**Links to other tables (for all insights tables)**
 
     asset_id → irisx.asset.asset.asset_id
 
@@ -168,10 +172,11 @@ For detailed information on each individual insight look here: https://developer
 
 Sites are geographical locations that can contain machines and equipment. Sites can be of the following types: CONSTRUCTION_SITE, DEPOT, WORK_PLACE, AREA, CLASSIC_ZONE, CLASSIC_POI.
 
-![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/vKWGDmXc.png)
+![The sites schema contains geographical location and information about these.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/vKWGDmXc.png)
 
 
-*Links to other tables*
+**Links to other tables**
+
 site
 
     account_id → irisx.account.account.account_id
@@ -200,8 +205,8 @@ Information about the hardware unit is found in `telematics_device`, and informa
 
 ![Telematics devices and account transfer tables.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/g6UhxFRU.png)
 
+**Links to other tables**
 
-*Links to other tables* **
 telematics_device:
 
     asset_id → irisx.asset.asset.asset_id
@@ -217,7 +222,8 @@ The users schema contains a single table - the user table, which contains inform
 ![The user view contains a list of the users of Trackunit Manager.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/XxSuXx2I.png)
 
 
-*Links to other tables*
+**Links to other tables**
+
 user:
 
     account_id → irisx.account.account.account_id
