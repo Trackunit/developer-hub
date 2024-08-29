@@ -19,14 +19,11 @@ The current list of schemas can be seen here:
 
 ![Overview of schemas in the irisx catalog. Each schema contains multiple tables with data.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/0R_vWsqo.png)
 
-
-
 ## Access Management
 
 The key view in the access_management schema contains records of access keys for machines, their period of validity and other data about the key and the access it provides.
 
 ![The schema contains a single view, the key view.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/51QVZEIc.png)
-
 
 **Links to other tables**
 
@@ -44,7 +41,6 @@ Similarly the customer_asset view contains information about which assets the a 
 Finally the customer_contacts view contains information about the contacts, and their information, for a given customer.
 
 ![The account schema contains account and customer information.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/oy8dp8dk.png)
-
 
 **Links to other tables**
 
@@ -71,7 +67,6 @@ Note: A series of values from a unique sensor is identified by the key (asset_id
 
 ![Timeseries data for advanced sensors can be found in the advanced_sensor schema.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/Wk-rXysA.png)
 
-
 **Links to other tables**
 
 advanced_sensor, advanced_sensor_infor, advanced_sensor_latest:
@@ -86,7 +81,6 @@ The asset_custom_fields and asset_custom_fields_account_specific views contains 
 Note: When defining a custom field on an account in TU Manager data for these custom fields will be present in the account specific view.
 
 ![Asset data and asset custom fields can be found in the asset schema.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/Txv0FGMM.png)
-
 
 **Links to other tables**
 
@@ -129,7 +123,6 @@ The group schema contains information about groups of assets and groups of users
 
 ![Asset and user group views can be found in this schema.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/dtAV51Q4.png)
 
-
 **Links to other tables**
 
 group:
@@ -161,7 +154,6 @@ The last three tables have the measurements aligned for either 2 minute interval
 
 ![Example of the five tables that are available for each insight.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/GeX9-RXw.png)
 
-
 For detailed information on each individual insight look here: https://developers.trackunit.com/reference/data-model
 
 **Links to other tables (for all insights tables)**
@@ -173,7 +165,6 @@ For detailed information on each individual insight look here: https://developer
 Sites are geographical locations that can contain machines and equipment. Sites can be of the following types: CONSTRUCTION_SITE, DEPOT, WORK_PLACE, AREA, CLASSIC_ZONE, CLASSIC_POI.
 
 ![The sites schema contains geographical location and information about these.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/vKWGDmXc.png)
-
 
 **Links to other tables**
 
@@ -220,7 +211,6 @@ telematics_device_account_transfer:
 The users schema contains a single table - the user table, which contains information about the users of Trackunit Manager.
 
 ![The user view contains a list of the users of Trackunit Manager.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/XxSuXx2I.png)
-
 
 **Links to other tables**
 
