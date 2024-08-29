@@ -1,18 +1,20 @@
 ---
 title: Workflow Automation Projects
 category: 66c49b7d61daf600186e12cb
-parentDocSlug: automation-studio-overview
 ---
 
 The Workflow Automation Projects and their Recipe Builder is a core component of Automation Studio that allows users to create automated workflows, referred to as "recipes." These recipes define a series of actions triggered by specific events or conditions, enabling seamless integration and process automation across various systems.
 
 ## Key Components
+
+### Recipe
 1. **Triggers**: Events that initiate the execution of a recipe. Triggers can be based on time, data changes, or specific actions in connected systems.
 1. **Actions**: Tasks that the recipe performs once the trigger condition is met. Actions can include data transformations, API calls, or updates to connected systems.
 1. **Conditions**: Optional logic that determines whether certain actions should be executed based on specific criteria.
 
+![Recipe](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/recipe.png)
 
-## Creating a Recipe
+<!-- ## Creating a Recipe
 1. Access the Recipe Builder: Navigate to the Automation Studio interface and select the Recipe Builder tool.
 Create a New Recipe:
 
@@ -35,7 +37,7 @@ Create a New Recipe:
  - - Utilize the testing feature to simulate the trigger and validate that the actions execute as expected.
  - - Review logs and outputs to troubleshoot any issues.
 
-1. Deploy the Recipe: Once testing is complete, deploy the recipe to make it active. Monitor its performance and make adjustments as needed.
+1. Deploy the Recipe: Once testing is complete, deploy the recipe to make it active. Monitor its performance and make adjustments as needed. -->
 
 
 ## Best Practices

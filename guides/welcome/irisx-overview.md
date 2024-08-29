@@ -8,7 +8,7 @@ IrisX provides a comprehensive suite of capabilities, featuring a Data Lake for 
 ## What is IrisX?
 IrisX is an advanced Construction Industry Specific Cloud Platform that builds on top of existing Iris APIs, providing enhanced functionalities for data management, analytics, and automation. It offers a suite of APIs that enable users to customize their data models, integrate seamlessly with various applications, and leverage advanced features such as custom fields, real-time data access, and workflow automation. IrisX is designed to facilitate deeper insights and more flexible data handling tailored to specific business needs.
 
-![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/welcome/overview.png)
+![IrisX Capabilities](https://cdn.statically.io/gh/trackunit/developer-hub/master/irisx-capabilities.png)
 
 
 **Get up to speed with all that the Trackunit IrisX platform has to offer:**
@@ -17,3 +17,4 @@ IrisX is an advanced Construction Industry Specific Cloud Platform that builds o
 - Browse the [IrisX API suite](https://developers.trackunit.com/reference/access-token) and unlock the potential of system-to-system integrations
 - Familiarize yourself with the power of our [GraphQL API](https://developers.trackunit.com/reference/graphql-api-introduction).
 - Harness our [Webhooks](https://developers.trackunit.com/docs/webhooks-overview) offering to receive real-time updates about what happens to your assets in any system
+

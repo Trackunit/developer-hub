@@ -6,7 +6,7 @@ This is done to have version control and allow for collaboration on all the docu
 ## Structure
 The documentation is structured in the following way:
 - `api-docs` - Contains all the documentation for the APIs
-- `sdk-docs` - Contains all the documentation for the APP SDK
+- `sdk-docs` - Contains all the documentation for the App SDK
 - `custompages` - Contains all the documentation for the custom pages
 
 ## How to contribute

@@ -4,11 +4,8 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: save-data-from-your-app
 ---
 
-> 🚧 Beta
-> 
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
-To define a custom field, you need to add a `customFieldDefinitions` array to your iris app manifest:
+To define a custom field, you need to add a `customFieldDefinitions` array to your IrisX App manifest:
 
 ```json
   customFieldDefinitions: [
@@ -38,13 +35,13 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
 
 4. `title` defines the UI visible name of the field.
 
-5. `uiEditable` / `uiVisible` controls how the field will be shown in the Manager UI. This does not limit how the field is used inside the Iris App.
+5. `uiEditable` / `uiVisible` controls how the field will be shown in the Manager UI. This does not limit how the field is used inside the IrisX App.
 
 6. `scopeType` controls who can access the field values. Default is only within the users account.
 
   Apart from the these standard properties, some field types have [extra properties defined below](#type-specific-properties).
 
-  **All custom fields defined by an Iris App will be owned by the Iris App, and the Iris App developer should consider existing data when changing field definitions.**
+  **All custom fields defined by an IrisX App will be owned by the IrisX App, and the IrisX App developer should consider existing data when changing field definitions.**
 
 # Custom field types
 

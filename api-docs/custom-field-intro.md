@@ -10,6 +10,9 @@ Custom fields provide a way to define new fields in the Trackunit data model. Al
 > 📘 Subscription requirement
 > 
 > The Custom Fields API is only available to customers on the **Evolve & Expand** or the **Lift & Leap** subscription packages.
+> 
+> IrisX is required to create and change custom field definitions. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
+
 
 ## Get Started
 Explore how to create custom fields by:

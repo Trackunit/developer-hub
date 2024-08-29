@@ -3,11 +3,8 @@ title: Extending the data model
 category: 61fcd8e1a448f5004215317c
 ---
 
-> 🚧 Beta
-> 
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
 
-To help Iris app developers easily store extra data we allow an app to define custom fields on an asset or an account. When a field has been defined, a value can be set for an asset using the Iris App runtime.
+To help IrisX App developers easily store extra data we allow an app to define custom fields on an asset or an account. When a field has been defined, a value can be set for an asset using the IrisX App runtime.
 
 
 ### The benefits of using custom fields
@@ -24,4 +21,4 @@ As a rule of thumb, whenever you find the need to store additional information a
 
 > 📘 Nice to know
 > 
-> The definition is created when the Iris App SDK is approved and shared across all assets. The value is set on each asset by the Iris App developer.
+> The definition is created when the App SDK is approved and shared across all assets. The value is set on each asset by the IrisX App developer.

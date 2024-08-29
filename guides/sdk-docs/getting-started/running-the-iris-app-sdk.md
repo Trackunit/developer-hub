@@ -1,18 +1,14 @@
 ---
-title: Run your Iris App
+title: Run your IrisX App
 category: 61fcd8e1a448f5004215317c
 parentDocSlug: getting-started
 ---
 
-> 🚧 Beta
->
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
-
 > 📘 This is intended for local testing on the developer machine.
 >
-> If you need to share your Iris App with other parties, you will need to submit your app.
+> If you need to share your IrisX App with other parties, you will need to submit your app.
 
-### 1. Use the NX command to serve the Iris App for local testing.
+### 1. Use the NX command to serve the IrisX App for local testing.
 
 ```
 npx nx run [name-of-your-app]:serve
@@ -26,7 +22,7 @@ Using this url: <https://new.manager.trackunit.com/iris-sdk-portal#runLocal>.
 
 You might need to login before it hits that page, use your developer credentials.
 
-### 3. The screen for the developer portal called _**Iris App Developer Portal**_ will appear.
+### 3. The screen for the developer portal called _**IrisX App Developer Portal**_ will appear.
 
 [block:image]
 {

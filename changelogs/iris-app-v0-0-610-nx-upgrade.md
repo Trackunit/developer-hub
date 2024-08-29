@@ -3,7 +3,7 @@ title: trackunit/iris-app v0.0.610 - NX upgraded to v19.5.6
 type: improved
 ---
 
-In this version of our Iris App SDK, we have upgraded NX to v19.5.6.
+In this version of our App SDK, we have upgraded NX to v19.5.6.
 Make sure to upgrade your extensions to the latest version of NX.
 
 ```bash

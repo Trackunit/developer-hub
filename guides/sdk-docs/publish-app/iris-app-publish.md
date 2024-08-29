@@ -1,24 +1,20 @@
 ---
-title: How to submit an Iris App SDK
+title: How to submit an App SDK
 category: 61fcd8e1a448f5004215317c
 parentDocSlug: publish-app
 ---
 
-> 🚧 Beta
->
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
-
-Submitting an Iris App SDK will allow you to offer the app to customers to download and use.
+Submitting an App SDK will allow you to offer the app to customers to download and use.
 
 This guide assumes you've completed the [getting started](./getting-started) guide.
 
-1. Open a Terminal or Command window and enter the build command (`nx run [name-of-your-app]:build`) to build your Iris App SDK.
+1. Open a Terminal or Command window and enter the build command (`nx run [name-of-your-app]:build`) to build your App SDK.
 
 ```
 npx nx run [name-of-your-app]:build
 ```
 
-2. Verify the Name and Version number in the package.json in the `dist/apps/[name-of-your-app]`. When the Iris App SDK is submitted, the name and version fields combine to create a unique identifier for the app.
+2. Verify the Name and Version number in the package.json in the `dist/apps/[name-of-your-app]`. When the App SDK is submitted, the name and version fields combine to create a unique identifier for the app.
 
 ```
 "name": "[name-of-your-app]"

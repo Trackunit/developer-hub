@@ -4,19 +4,15 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: getting-started
 ---
 
-> 🚧 Beta
->
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
-
-# Trackunit Iris App SDK Quickstart Guide
+# Trackunit App SDK Quickstart Guide
 
 ## Introduction
 
-The Trackunit Iris App SDK enables developers to create applications that integrate seamlessly with the Trackunit Manager. This guide provides a quick overview of the steps to start developing your own Iris Apps.
+The Trackunit App SDK enables developers to create applications that integrate seamlessly with the Trackunit Manager. This guide provides a quick overview of the steps to start developing your own IrisX Apps.
 
 ## Disclaimer
 
-This is a Quickstart guide intended to help you set up a basic development environment and start a simple Iris App. For comprehensive details, advanced features, and best practices, please refer to the full [Trackunit Developers Documentation](https://developers.trackunit.com/docs/introduction).
+This is a Quickstart guide intended to help you set up a basic development environment and start a simple IrisX App. For comprehensive details, advanced features, and best practices, please refer to the full [Trackunit Developers Documentation](https://developers.trackunit.com/docs/introduction).
 
 ## Prerequisites
 
@@ -36,9 +32,9 @@ This is a Quickstart guide intended to help you set up a basic development envir
 1. **Generate Workspace**: Run `npx @trackunit/create-iris-app-workspace your-workspace-name`.
 2. **Navigate to Workspace**: Use `cd your-workspace-name` to move into your new workspace directory.
 
-## Step 3: Create Your First Iris App
+## Step 3: Create Your First IrisX App
 
-1. **Generate Iris App**: Execute `npx nx generate @trackunit/iris-app:create your-app-name`.
+1. **Generate IrisX App**: Execute `npx nx generate @trackunit/iris-app:create your-app-name`.
 2. **Navigate to App Directory**: Find your app in the `apps` directory.
 
 ## Step 4: Create an Extension

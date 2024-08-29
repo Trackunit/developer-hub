@@ -4,16 +4,12 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: public-apis
 ---
 
-> 🚧 Beta
-> 
-> This is a beta version and subject to change without notice. Pricing, terms, conditions and availability may change in the final version.
-
 > 📘 GraphQL
 >
 > The REST APIs are designed to only expose a single domain within the Trackunit data model.
 > If you need data from different parts of the Trackunit data model consider using the [public GraphQL API](./graphql-api) instead of the individual REST APIs.
 
-Trackunit exposes public REST APIs as NPM packages to make it easy to query our REST APIs inside an Iris App.
+Trackunit exposes public REST APIs as NPM packages to make it easy to query our REST APIs inside an IrisX App.
 
 In this example, we will use the Rest Machine API.  
 

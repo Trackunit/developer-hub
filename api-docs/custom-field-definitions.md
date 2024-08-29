@@ -5,7 +5,8 @@ category: 628c96a84164f50225dd1f14
 
 > 📘 Subscription requirement
 > 
-> The Custom Fields API is only available to customers on the **Evolve & Expand** or the **Lift & Leap** subscription packages.
+> IrisX is required to create and change custom field definitions. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
+
 
 > ➡️ [OpenAPI Specification for the Custom Fields API domain](https://developers.trackunit.com/openapi/628c96a84164f50225dd1f13)
 > 
@@ -36,7 +37,7 @@ Once a definition has been created values can be set using the [values API](cust
 Custom field definitions can be owned by one of these:
 
 - **Customer account** - Customer defined fields will be owned by the customer account and require admin permission in that account to change.
-- **Iris App** - An app may contribute field definitions when it is installed
+- **IrisX App** - An app may contribute field definitions when it is installed
 - **Trackunit** - Trackunit defines a number of standard fields to aid interoperability.
 
 When creating a definition using this API it will always be owned by your customer account. It is however possible to retrieve all 3 types using the API.

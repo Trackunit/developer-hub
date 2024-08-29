@@ -2,7 +2,6 @@
 title: Blueprints
 category: 652e405820342e0033e0d25f
 ---
-Use Blueprints to Accelerate Your Digital Journey
 
 ## Definition of Blueprint
 Blueprint is a set of technical tools such as data sets and code examples, available to customers to build and deploy their bespoke solutions. It aims to serve customers to reduce deployment risk and accelerate value creation.
@@ -11,8 +10,10 @@ Blueprint is a set of technical tools such as data sets and code examples, avail
 A blueprint is a reproduction of a technical drawing or engineering drawing using a contact print process on light-sensitive sheets introduced by Sir John Herschel in 1842. The process allowed rapid and accurate production of an unlimited number of copies. It was widely used for over a century for the reproduction of specification drawings used in construction.
 
 
+
 ## How to use a Blueprint
 Blueprints are code examples and data science notebooks to typical IrisX use cases. By using a blueprint as a starting point, users can move quickly towards value creation. Blueprints ensures low risk and faster value creation for IrisX customers. 
+
 
 
 ## List of Available Blueprints
