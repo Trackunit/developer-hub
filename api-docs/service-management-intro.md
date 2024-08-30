@@ -79,7 +79,7 @@ Locate the Service Management app and navigate to Configuration and then "Manage
 
 Create a new service plan by clicking "Create service plan" in the top right corner of the "Manage Service Plans" tab.
 
-Fill in the name of your service plan and add one or more services by clicking "Add service" located in the bottom right corner of the tile. Afterwards create it by clicking "Create".
+Fill in the name of your service plan and add one or more services by clicking "Add service" located in the bottom right corner of the app. Afterwards create it by clicking "Create".
 
 ## 3. Assign service plan & service provider
 
