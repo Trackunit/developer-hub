@@ -1,13 +1,13 @@
 ---
-title: trackunit/iris-app v0.0.610 - NX upgraded to v19.5.6
+title: trackunit/iris-app v0.0.610 - NX upgraded to v19.6.5
 type: improved
 ---
 
-In this version of our App SDK, we have upgraded NX to v19.5.6.
+In this version of our App SDK, we have upgraded NX to v19.6.5.
 Make sure to upgrade your extensions to the latest version of NX.
 
 ```bash
-npx nx migrate 19.5.6
+npx nx migrate 19.6.5
 npx nx migrate --run-migrations
 ```
 
