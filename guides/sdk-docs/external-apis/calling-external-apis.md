@@ -1,6 +1,6 @@
 ---
-title: Calling external APIs from an Iris App
-category: new
+title: Using Iris App SDK Proxy
+category: 61fcd8e1a448f5004215317c
 parentDocSlug: external-apis
 ---
 
