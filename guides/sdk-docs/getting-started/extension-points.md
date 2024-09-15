@@ -302,3 +302,21 @@ conditions:{
 }
 ```
 
+# App lifecycle extension point
+
+This extension point allows to execute code serverside when an app is installed or uninstalled. The code will receive an [app token](./app-tokens) that allows to call the Iris APIs as the customer who just installed the app.
+
+Example:
+
+```ts
+import { IrisAppLifecycleAppInstalled, IrisAppLifecycleAppUninstalled } from "@trackunit/iris-app-api";
+
+export const appInstalled: IrisAppLifecycleAppInstalled = async (appToken, accountId) => {
+  console.log("App installed", accountId);
+};
+
+export const appUninstalled: IrisAppLifecycleAppUninstalled = async (appToken, accountId) => {
+  console.log("App uninstalled", accountId);
+};
+```
+
