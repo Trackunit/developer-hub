@@ -1,7 +1,7 @@
 ---
 title: Trackunit Connector
 category: 652e408346c8860073a6bd12
-parentDocSlug: Connectors
+parentDocSlug: connectors
 
 
 ---
