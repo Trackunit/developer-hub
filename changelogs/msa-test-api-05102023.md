@@ -10,40 +10,40 @@ Below all available endpoints.
 
 > ➕ GET: /asset/v1/asset
 
-[Get asset](ref:getasset)
+[Get asset](ref:getasset_v1)
 
 > ➕ GET: /asset/v1/assets
 
-[Get assets](ref:getassets)
+[Get assets](ref:getassets_v1)
 
 > ➕ POST: /asset/v1/assets/onboard
 
-[Onboard asset](ref:onboardasset)
+[Onboard asset](ref:onboardasset_v1)
 
 > ➕ POST: /asset/v1/assets/{assetId}/offboard
 
-[Offboard asset](ref:offboardasset)
+[Offboard asset](ref:offboardasset_v1)
 
 > ➕ GET: /asset/v1/assets/{assetId}/shares
 
-[List asset shares](ref:getassetshares)
+[List asset shares](ref:getassetshares_v1)
 
 > ➕ PATCH: /asset/v1/assets/{assetId}
 
-[Update asset](ref:patchasset)
+[Update asset](ref:patchasset_v1)
 
 > ➕ POST: /asset/v1/assets/remove-visibility
 
-[Remove visibility](ref:removevisibilityforassets)
+[Remove visibility](ref:removevisibilityforassets_v1)
 
 > ➕ POST: /asset/v1/assets/share
 
-[Share assets](ref:shareassets)
+[Share assets](ref:shareassets_v1)
 
 > ➕ POST: /asset/v1/assets/transfer
 
-[Transfer assets](ref:transferassets)
+[Transfer assets](ref:transferassets_v1)
 
 > ➕ POST: /asset/v1/assets/unshare
 
-[Unshare assets](ref:unshareassets)
+[Unshare assets](ref:unshareassets_v1)

@@ -55,12 +55,13 @@ menuItem: {
 
 ### Visibility
 
-Visibility is controlled using conditions. The Asset's Brand and Model fields must match the Brand and Model entered within the code.
+Visibility is controlled using conditions. The Asset's Brand and Model fields must match the Brand and Model entered within the code. The requiredCustomField field is optional and can be used to control when the menu item should be visible.
 
 ```ts
 conditions: {
   brand: "your-brand", // optional as single or array
   model: ["your model", "your model2"] // optional as single or array
+  requiredCustomField: { customFieldKey: "customField1", requiredValue: "enableMyPage" } // optional as single or array to control when the menu item should be visible
 }
 ```
 
@@ -84,9 +85,9 @@ This extension point allows you to add a new tab to the Site Home screen within 
 }
 [/block]
 
-# Fleet Wide Extension Point
+# Fleet Extension Point
 
-This extension point allows you to add a new tab to the tiles list on the Main Menu within Trackunit Manager, as illustrated in the image below. The extension is controlled in the extension-manifest.ts file.
+This extension point allows you to add a new menu item to the apps list on the Main Menu within Trackunit Manager, as illustrated in the image below. The extension is controlled in the extension-manifest.ts file.
 
 [block:image]
 {
@@ -214,15 +215,76 @@ gridOptions: {
 }
 ```
 
-# Asset Events Actions Extension Point
+# Customer Home Extension Point
 
-This extension point allows you to add a user interface in the Events within Asset Home in Trackunit Manager. The extension is controlled in the extension-manifest.ts file.
+This extension point allows you to add a user interface within customer home in Trackunit Manager. The extension is controlled in the extension-manifest.ts file.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/sdk-docs/extension_customer_home.png",
+        null,
+        "Customer home extension"
+      ],
+      "align": "center",
+      "sizing": "50% "
+    }
+  ]
+}
+[/block]
 
 ## Menu Item
 
 ```ts
 menuItem: {
-  name: "Specification";
+  name: "My Customer Page";
+}
+```
+
+
+# Asset Events Actions Extension Point
+
+This extension point allows you to add a user interface in the Events within Asset Home in Trackunit Manager. The extension is controlled in the extension-manifest.ts file.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/sdk-docs/extension_asset_events_actions1.png",
+        null,
+        "Asset Event extension"
+      ],
+      "align": "center",
+      "sizing": "50% "
+    }
+  ]
+}
+[/block]
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/sdk-docs/extension_asset_events_actions2.png",
+        null,
+        "Asset Event extension"
+      ],
+      "align": "center",
+      "sizing": "50% "
+    }
+  ]
+}
+[/block]
+
+## Menu Item
+
+```ts
+menuItem: {
+  name: "My Special Event";
 }
 ```
 
@@ -233,5 +295,28 @@ Visibility is controlled using conditions. The Event's Type must match the Type 
 ```ts
 conditions:{
   eventType: "event-type",
+  sourceAddress: 123; // optional as single or array
+  failureModeIdentifier: 123; // optional as single or array
+  suspectParameterNumber: 123; // optional as single or array
+  requiredCustomField: { customFieldKey: "customField1", requiredValue: "enableMyPage" } // optional as single or array to control when the menu item should be visible
 }
 ```
+
+# App lifecycle extension point
+
+This extension point allows to execute code serverside when an app is installed or uninstalled. The code will receive an [app token](./app-tokens) that allows to call the Iris APIs as the customer who just installed the app.
+
+Example:
+
+```ts
+import { IrisAppLifecycleAppInstalled, IrisAppLifecycleAppUninstalled } from "@trackunit/iris-app-api";
+
+export const appInstalled: IrisAppLifecycleAppInstalled = async (appToken, accountId) => {
+  console.log("App installed", accountId);
+};
+
+export const appUninstalled: IrisAppLifecycleAppUninstalled = async (appToken, accountId) => {
+  console.log("App uninstalled", accountId);
+};
+```
+
