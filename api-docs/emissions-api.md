@@ -66,7 +66,7 @@ Data Source Score is a field that provides a score for the data source of the em
 
 ## Constraints
 
-- Sites Endpoint can only be viewed by Admins of the account
 - Visibility of emissions data is limited to asset visibility 
 - Emissions Data is updated daily at 04:00 UTC
 - API Rate Limiting: 1000 requests per 10 minutes per user
+- Sites asset emissions history can only be retrieved by admin users for deleted or removed assets
