@@ -11,9 +11,9 @@ We support calling our API on behalf of a user who have installed your IrisX App
 If you need access to make API calls on behalf of the user you will need to specify `tokenCallback` in the App manifest along with the `scopes` (see [here](app-tokens) for more information on scopes):
 
 ```json
-  scopes: [ ... ],
-  tokenCallback: {
-    url: "https://myserver.com/appinstall",
+  "scopes": [ ... ],
+  "tokenCallback": {
+    "url": "https://myserver.com/appinstall",
   },
 ```
 
@@ -58,3 +58,8 @@ This will give an result like this:
 Note the `expires_in`, since it indicates when you need to obtain a new token.
 
 To call the API include a `Authorization: Bearer <access_token>` header in the request.
+
+## Validating application credentials
+
+To make sure the client credentials you received are actually coming from Trackunit, we include a custom header with our request: `Trackunit-Identity`.
+It contains a signed JWT token that you can validate using the public key available at `https://iris.trackunit.com/api/marketplace/jwks`.
