@@ -13,7 +13,7 @@ If you need access to make API calls on behalf of the user you will need to spec
 ```json
   "scopes": [ ... ],
   "tokenCallback": {
-    url: "https://myserver.com/appinstall",
+    "url": "https://myserver.com/appinstall",
   },
 ```
 
