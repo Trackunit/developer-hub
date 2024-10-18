@@ -103,19 +103,24 @@ The dimensions schema includes information about the time intervals used for ins
 
 The events schema contains a number of views that holds different types of event data.
 
-![Events data can be found in this schema.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/Kbplg2yk.png)
+![Events data can be found in this schema.](fgeu768.png)
 
-**Links to other tables**
-
-alert, canerror, damagereport, inspection, machinefault, service, servicemanagement, precheck:
+`canerror`:  Errors from the J1939 protocol
 
     asset_id → irisx.asset.asset.asset_id
     account_id → irisx.account.account.account_id
+    fault_code, asset_id → irisx.event.fault_code_description.fault_code, asset_id
 
-precheck_item:
+`machinefault`: Custom/CAN Open/AEMP faults
 
-    precheck_id → irisx.event.precheck.precheck_id
-    precheck_item_id → irisx.event.precheck_input_item.precheck_item_id
+    asset_id → irisx.asset.asset.asset_id
+    account_id → irisx.account.account.account_id
+    fault_code, asset_id → irisx.event.fault_code_description.fault_code, asset_id
+
+`fault_code_description`: Translations of an asset `fault_code` to a fault description.
+
+    Key: asset_id, fault_code
+
 
 ## Groups
 
