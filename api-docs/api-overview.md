@@ -5,18 +5,18 @@ category: 652e70de24294117a69a20f0
 
 ![Trackunit Iris APIs Overview](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/iris-api-overview.png)
 
-## Organizational Management
+### Organizational Management
 
-### Ensure your team has the appropriate permissions relevant to their role, maintain user information, and control access to your organization’s data in relation to your customers.
+Ensure your team has the appropriate permissions relevant to their role, maintain user information, and control access to your organization’s data in relation to your customers.
 
 Explore relevant APIs in this category:
 
 - [Users API](https://developers.trackunit.com/reference/getusers)
 - [Customer API](https://developers.trackunit.com/reference/customers)
 
-## Asset Administration
+### Asset Administration
 
-### Control who gains visibility to your assets, assign ownership, define site locations, and enrich assets with custom meta data.
+Control who gains visibility to your assets, assign ownership, define site locations, and enrich assets with custom meta data.
 
 Explore relevant APIs in this category:
 
@@ -25,9 +25,9 @@ Explore relevant APIs in this category:
 - [Sites API](https://developers.trackunit.com/reference/getsites)
 - [Custom Fields API](https://developers.trackunit.com/reference/custom-field-intro)
 
-## Configuration
+### Configuration
 
-### Optimize connectivity across your fleet through streamlined onboarding, alerts, and remote care of your telematics equipment managed from your system of choice.
+Optimize connectivity across your fleet through streamlined onboarding, alerts, and remote care of your telematics equipment managed from your system of choice.
 
 Explore relevant APIs in this category:
 
@@ -36,18 +36,18 @@ Explore relevant APIs in this category:
 - [Telematics Device API](https://developers.trackunit.com/reference/telematics-device-introduction)
 - [Alert API](https://developers.trackunit.com/reference/alerts)
 
-## Telematics Foundation
+### Telematics Foundation
 
-### Monitor mixed-fleet insights and leverage integrations to track asset locations and gain real world utilization data.
+Monitor mixed-fleet insights and leverage integrations to track asset locations and gain real world utilization data.
 
 Explore relevant APIs in this category:
 
 - [Location API](https://developers.trackunit.com/reference/location-api-intro)
 - [Export ISO 15143-3 (AEMP 2.0) API (snapshot data)](https://developers.trackunit.com/reference/snapshot)
 
-## Data Archive
+### Data Archive
 
-### Jumpstart your data exploration journey with advanced querying capabilities and historical data points.
+Jumpstart your data exploration journey with advanced querying capabilities and historical data points.
 
 Explore relevant APIs in this category:
 
@@ -56,9 +56,9 @@ Explore relevant APIs in this category:
 
 Also see the definitions of all our machine insights data points in our [data model](https://developers.trackunit.com/reference/data-model) and a [comparison of our different Data Archive APIs](https://developers.trackunit.com/reference/comparison-overview-of-data-archive-apis).
 
-## Feature APIs
+### Feature APIs
 
-### Easily scale your experience of Trackunit Manager's feature modules by utilizing their accompanying APIs.
+Easily scale your experience of Trackunit Manager's feature modules by utilizing their accompanying APIs.
 
 Explore relevant APIs in this category:
 
