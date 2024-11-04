@@ -1,5 +1,5 @@
 ---
-title: Data Model
+title: Data Lake Model
 category: 66c49b88a564ee00518afd6d
 ---
 
