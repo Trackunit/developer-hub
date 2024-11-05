@@ -7,15 +7,17 @@ The Telematics Device API offers seamless access to a rich array of features met
 
 The document is intended for developers, who wants to integrate systems, write client libraries or other interactions on an API-level.
 
-**Example use cases:**
+## Example use cases
 
-- Keep an overview of device distribution on your assets --> GET list of devices identity
-- Build a UI to change CAN profiles of your devices --> GET reported state and UPDATE device state
-- Add device state documentation to explorer configuration options --> GET device documentation
+- Keep an overview of device distribution on your assets --> see [GET list of devices identity](https://developers.trackunit.com/reference/getdeviceidentity)
+- Build a UI to change CAN profiles of your devices --> see [GET reported state](https://developers.trackunit.com/reference/getdevicestate) and [UPDATE device state](https://developers.trackunit.com/reference/updatedesiredstate)
+- View device state documentation to explore configuration options --> see [GET device documentation](https://developers.trackunit.com/reference/getdocumentation)
 
-Device Identity endpoints
+## Interface
 
-The Device identity endpoints deliver all data related to identity, type, capabilities, and birth certificate of a device. It is typically data that only changes in the start and end of a device lifecycle. It does not include states, configurations or any other device data insights that frequently change (see [Device state](https://developers.trackunit.com/reference/devices-state) endpoints for that)
+### Device Identity endpoints
+
+The Device identity endpoints deliver all data related to identity, type, capabilities, and birth certificate of a device. It is typically data that only changes in the start and end of a device lifecycle. It does not include states, configurations or any other device data insights that frequently change (see [Device state](https://developers.trackunit.com/reference/devices-state) endpoints for that).
 
 The Device Identity is a natural starting point for entering the Telematics Device domain.  
 It currently includes:
@@ -25,7 +27,7 @@ It currently includes:
 - Device type
 - Production date
 
-Device State endpoints
+### Device State endpoints
 
 The Device state endpoints provide insights about the current state and the desired state after a configuration change for a telematics device. It further enables updating certain device configuration elements to create a new desired state.
 
@@ -35,6 +37,8 @@ The following configuration elements are currently included:
 - CAN profile
 - Input filtering
 - Output1 mode
+
+#### Get device state
 
 The telematics device state data includes both **a reported and a desired state**:
 
@@ -48,7 +52,7 @@ The telematics device state data includes both **a reported and a desired state*
 - Reported state might also include additional information like:
   - Activity Detection for canbus. This indicates if the Telematics Device has been wired to the canbus and is capable of sending CAN data.
 
-### Illustrative example
+**Illustrative example**
 
 Following is some examples on how the state can be interpreted for a CAN Profile configuration.
 
@@ -100,7 +104,7 @@ The desired and reported state shows a different CAN Profile. This means that th
 
 Be aware that telematics devices might be in areas with no network connectivity or in an operational state where it would be inappropriate to update. In these cases, synchronisations might take hours or even days. There’s no timeout and the telematics device will be updated when possible.
 
-Update desired state
+#### Update desired state
 
 Partially update the state of a telematics device by setting a desired state. Partially update means that only configurations in the update will be changed. Any configurations not set will be ignored and remain unchanged. Multiple configurations can be changed in one update.
 
@@ -113,7 +117,7 @@ Currently the configurations are limited to the following but will be expanded o
 
 The states that are available for a given telematics device vary by device type, customer and firmware versions. See the [Get desired state documentation](https://developers.trackunit.com/reference/getdocumentation) endpoint to fetch the list of available states for a given telematics device.
 
-### Examples on how to update a desired state of a telematics device
+**Examples on how to update a desired state of a telematics device**
 
 Configure the CAN Profile to “Profile 1” with id 123:
 
@@ -151,7 +155,7 @@ Configure both the CAN Profile and inputFiltering in one update:
 
 Use the [Get device state](https://developers.trackunit.com/reference/getdevicestate) to follow up on the execution.
 
-Get desired state
+#### Get desired state
 
 The states that are available for a given telematics device vary by device type, customer and firmware versions. This endpoint can be used to fetch the list of available states for a given telematics device.
 
@@ -196,7 +200,7 @@ Enabling inputFiltering using the template will be to update the desired state w
 
 See [Update desired state](https://developers.trackunit.com/reference/updatedesiredstate) for more information.
 
-Device Telemetry endpoint
+### Device Telemetry endpoint
 
 The Device telemetry endpoint delivers information about the internal state of the device. The details are gathered through multiple channels on the device itself. Telemetry contains values that changes frequently. All metrics regarding power supply, physically wired inputs/outputs and wireless technologies are all considered telemetry. The telemetry provided is always the latest values received from the device.
 
@@ -207,7 +211,7 @@ The following pieces of telemetry is currently supported:
 - IO (Inputs, Output)
 - Sensors (External sensor information)
 
-### Example
+**Example**
 
 Below is an example response from the telemetry endpoint:
 
