@@ -65,4 +65,4 @@ Explore relevant APIs in this category:
 - [Service Management APIs](https://developers.trackunit.com/reference/service-management-intro)
 - [Access Management](https://developers.trackunit.com/reference/access-management-intro) & [Operator APIs](https://developers.trackunit.com/reference/operator-intro)
 - [Emissions Reporting APIs](https://developers.trackunit.com/reference/emissions-api)
-- ERP integrations via the [Rental API](https://developers.trackunit.com/reference/erp-integration-introduction)
+- ERP integrations via the [Rental API](https://developers.trackunit.com/reference/rental-erp-api-intro)
