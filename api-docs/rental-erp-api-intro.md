@@ -16,7 +16,7 @@ The ERP integrations are built on the following concepts
 - An **asset** is a trackable piece of equipment e.g. a machine or an accessory.
 - **Contract item** is an entry in a **contract** that contains information about when an asset is rented out to a customer.
 - **Contract** is linked to a **customer** and therefore it connects an asset to a customer.
-- **Customer** is the customer of the business that can rent (and therefore get access to) an asset.
+- **Customer** is the customer of the business that can rent (and therefore get access to) an asset (see the [Customer API](https://developers.trackunit.com/reference/customers-api-intro)).
 
 ![Trackunit Iris Rental Model](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/rental-model-diagram.png)
 
