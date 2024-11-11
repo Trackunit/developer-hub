@@ -134,7 +134,7 @@ Verify the response body contains the service plan you just created in the Manag
 
 Assign the service plan to one of your assets. Capture the id of the service plan you want to assign from the response listing your service plans - in the example above the id is **3f3543f7-9c58-4d6c-8c67-ce48349bc46d**. Also locate the id of the asset you want to assign your service plan to.
 
-You can locate the id of your asset by getting a list of your machines from the [Asset API](../reference/getassets).
+You can locate the id of your asset by getting a list of your machines from the [Asset API](../reference/getassets_v2beta1).
 
 ```curl
 curl --request GET \
