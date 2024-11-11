@@ -33,7 +33,7 @@ Explore relevant APIs in this category:
 
 - [Asset Onboarding](https://developers.trackunit.com/reference/onboardasset) & [Offboarding APIs](https://developers.trackunit.com/reference/offboardasset) (currently not supporting the asset type "machine")
 - [Machine Onboarding API](https://app.swaggerhub.com/apis-docs/trackunit.com/machine-onboarding/1.0.46) & [Onboarding Events API](https://app.swaggerhub.com/apis-docs/trackunit.com/onboarding-events-api/1.0.15)
-- [Telematics Device API](https://developers.trackunit.com/reference/telematics-device-introduction)
+- [Telematics Device API](https://developers.trackunit.com/reference/telematics-device-api-intro)
 - [Alert API](https://developers.trackunit.com/reference/alerts)
 
 ## Telematics Foundation
@@ -65,4 +65,4 @@ Explore relevant APIs in this category:
 - [Service Management APIs](https://developers.trackunit.com/reference/service-management-intro)
 - [Access Management](https://developers.trackunit.com/reference/access-management-intro) & [Operator APIs](https://developers.trackunit.com/reference/operator-intro)
 - [Emissions Reporting APIs](https://developers.trackunit.com/reference/emissions-api)
-- ERP integrations via the [Rental API](https://developers.trackunit.com/reference/erp-integration-introduction)
+- ERP integrations via the [Rental API](https://developers.trackunit.com/reference/rental-erp-api-intro)
