@@ -15,16 +15,16 @@ To retrieve a list of site ids use the Sites API.
 
 > ➕ GET: /v2/sites/{siteId}/emissions/monthly
 
-[Get Assets by Site Monthly](ref:getSiteEmissionsMonthlyBySiteId)
+[Get Assets by Site Monthly](ref:getsiteemissionsmonthlybysiteid)
 
 > ➕ POST: /v2/sites/{siteId}/emissions/monthly
 
-[Filter Assets by Site Monthly](ref:filterSiteEmissionsMonthlyBySiteId)
+[Filter Assets by Site Monthly](ref:filtersiteemissionsmonthlybysiteid)
 
 > ➕ GET: /v2/sites/{siteId}/emissions/monthly/summary
 
-[Get Assets by Site Monthly Summary](ref:getSiteEmissionsMonthlySummaryBySiteId)
+[Get Assets by Site Monthly Summary](ref:getsiteemissionsmonthlysummarybysiteid)
 
 > ➕ POST: /v2/sites/{siteId}/emissions/monthly/summary
 
-[Filter Assets by Site Monthly Summary](ref:filterSiteEmissionsMonthlySummaryBySiteId)
+[Filter Assets by Site Monthly Summary](ref:filtersiteemissionsmonthlysummarybysiteid)
