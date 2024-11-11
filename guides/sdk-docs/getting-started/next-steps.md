@@ -55,5 +55,5 @@ For more information see: [Manager integration](./runtime-libs)
 
 When you are done developing your app it is time to take the app to the Marketplace to expose it to users.
 
-For more information see: [Extending the data model](./publish-app)
+For more information see: [Put your app on the marketplace](./publish-app)
 
