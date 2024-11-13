@@ -25,26 +25,6 @@ Below a list of all available endpoints:
 
 [Offboard asset](ref:offboardasset_v1)
 
-> ➕ GET: /asset/v1/assets/{assetId}/shares
-
-[List asset shares](ref:getassetshares_v1)
-
 > ➕ PATCH: /asset/v1/assets/{assetId}
 
 [Update asset](ref:patchasset_v1)
-
-> ➕ POST: /asset/v1/assets/remove-visibility
-
-[Remove visibility](ref:removevisibilityforassets_v1)
-
-> ➕ POST: /asset/v1/assets/share
-
-[Share assets](ref:shareassets_v1)
-
-> ➕ POST: /asset/v1/assets/transfer
-
-[Transfer assets](ref:transferassets_v1)
-
-> ➕ POST: /asset/v1/assets/unshare
-
-[Unshare assets](ref:unshareassets_v1)
