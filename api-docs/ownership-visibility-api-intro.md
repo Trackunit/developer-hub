@@ -1,6 +1,6 @@
 ---
 title: Ownership & Visibility - Introduction
-category: 6720e7ed8b7c9f0064a50f02
+category: 6720e7ed8b7c9f0064a50f04
 ---
 
 Ownership & Visibility API requests are used to manage assets' visibility and ownership on the Trackunit platform.
