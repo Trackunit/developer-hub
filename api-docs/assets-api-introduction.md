@@ -27,6 +27,8 @@ Assets have the following properties:
 | Type       | Description                                                                                                                |
 | :--------- | :------------------------------------------------------------------------------------------------------------------------- |
 | Machine    | A large powered asset.                                                                                                     |
+| Vehicle	   | Heavy assets used for transporting people or goods, especially on land. (V2 Beta only)                                     |
+| Gateway	   | Serve as a communication managers between bluetooth tags and the Iris platform.                                            |
 | Equipment  | A non-powered asset.                                                                                                       |
 | Tool       | A small powered asset.                                                                                                     |
 | Attachment | A thing which can be added/attached to something else (machine or equipment) in order to make it more useful or versatile. |
