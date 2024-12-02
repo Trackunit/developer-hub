@@ -72,6 +72,8 @@ It configures the following crucial settings for your app:
 - `devDependencies`: Same as above but for dev-dependencies. These are also security scanned.
 - `cspHeader`: Desired CSP header for the app, useful if the app needs to communicate with external services. The list is audited in the approval step of the app and every external API call must be listed here to get through the verification process. Even if it goes through without being listed, your app will fail to call the endpoint. More information about CSP can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
   - The CSP header also contains a `sandbox` property to also control the iframe sandbox around the app. This allows the developer to request extra sandbox features.
+- `permissionsPolicy`: Desired permissions policy for the app. This is useful if the app requires access to machine features or shared resources like the clipboard. The permissions policy spec is still experimental and browser support varies.  
+  More information about Permissions policies can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy).
 - `validForAccountIds`: Put `ALL_ACCOUNTS` in if your app is available to all users. If you want to only make it available to certain users, provide a list of account ID's as strings.
 - `marketplace`: Holds all the settings associated with your apps listing on the marketplace.
   - `name`: Well..the name of your app.
