@@ -13,7 +13,7 @@ The ERP Connectors are designed to facilitate seamless integration between the I
 ## Explore available ERP connectors
 ERP Connectors provide a robust solution for integrating IrisX with various ERP systems, enabling organizations to streamline operations, enhance data visibility, and make informed decisions based on real-time data. By leveraging these connectors, businesses can optimize their processes and improve overall efficiency.
 
-(image)
+![Examples of ERP connectors](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/erp-connectors-examples.png)
 
 See the list of ERP Connectors on the [Trackunit Marketplace](https://new.manager.trackunit.com/marketplace?q=&c=RENTAL_MANAGEMENT).
 
