@@ -55,7 +55,7 @@ Authenticate against the IRIS Authorization Server using the OAuth 2.0 credentia
 
 ```curl
 curl --location --request POST 'https://auth.trackunit.com/token' \
---header 'Authorization: Basic PDxjbGllbnRfaWQ+Pjo8PGNsaWVudF9zZWNyZXQ+Pg==' \
+--header 'Authorization: Basic <<base64 encoded client_id:client_secret>>' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'grant_type=password' \
 --data-urlencode 'username=<<username>>' \
@@ -102,7 +102,7 @@ Authorization Server will return a refresh token that can be used to obtain a ne
 
 ```curl
 curl --location --request POST 'https://auth.trackunit.com/token' \
---header 'Authorization: Basic PDxjbGllbnRfaWQ+Pjo8PGNsaWVudF9zZWNyZXQ+Pg==' \
+--header 'Authorization: Basic <<base64 encoded client_id:client_secret>>' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'grant_type=password' \
 --data-urlencode 'username=<<username>>' \
@@ -126,7 +126,7 @@ You can use the refresh token to obtain a new access token and a new refresh tok
 
 ```curl
 curl --location --request POST 'https://auth.trackunit.com/token' \
---header 'Authorization: Basic PDxjbGllbnRfaWQ+Pjo8PGNsaWVudF9zZWNyZXQ+Pg==' \
+--header 'Authorization: Basic <<base64 encoded client_id:client_secret>>' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'grant_type=refresh_token' \
 --data-urlencode 'refresh_token=<<refresh_token>>'
