@@ -90,9 +90,14 @@ After an application obtains an access token, it sends the token to a IRIS API i
 ## 4. Refresh the access token, if necessary.
 
 Access tokens have limited lifetimes. If your application needs access to a IRIS API beyond the lifetime of a single
-access token, it can obtain a new token from the IRIS Authorization Server.
+access token, it can obtain a new token from the IRIS Authorization Server by calling the token endpoint again.
 
-To support this functionality, include the `offline_access` scope when requesting an access token. The IRIS
+### Refreshing an access token using a refresh token
+
+IRIS Authorization Server supports the use of refresh tokens for tokens created after January 1st 2025. If you have an
+older API user you will need to create a new one to get refresh token support.
+
+To enable this functionality, include the `offline_access` scope when requesting an access token. The IRIS
 Authorization Server will return a refresh token that can be used to obtain a new access token.
 
 ```curl
