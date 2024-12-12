@@ -5,7 +5,7 @@ category: 61fcd8e1a448f5004215317c
 
 Develop applications that extends the power of telematics data, proprietary data, and third-party data. This drives innovation and displays the most relevant data and analytics for your business.
 
-![Administration menu](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/apps-extensions/apps-irisX.png)
+![IrisX Apps & Extensions](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/apps-extensions/apps-irisX.png)
 
 ## Use Cases
 - Develop tailored digital solutions that extend the power of your telematics data, proprietary data, and third-party data. 
