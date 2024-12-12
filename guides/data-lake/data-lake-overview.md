@@ -7,6 +7,8 @@ The Data Lake is the backbone of IrisX. Build specifically for construction and 
 
 IrisX Data Lake is the perfect solution for organizations aiming to build a secure, scalable, and flexible data infrastructure that supports a wide range of analytics and machine learning applications.
 
+![IrisX Data Lake](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/data-lake-irisX.png)
+
 ## Use Cases
 - Integrate and normalize telematics data for comprehensive performance monitoring and advanced analytics.
 - Transform data into actionable insights with encrypted transmission, ensuring reliability. 
