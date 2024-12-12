@@ -5,6 +5,8 @@ category: 652e408346c8860073a6bd12
 
 Consolidate data from multiple business platforms into one central location with IrisX APIs and Integrations. Easily leverage data integration and quickly streamline your day-to-day processes. Bring manual processes to a halt by integrating multiple systems into one central location for your team.  
 
+![IrisX Connectors & Integrations](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/integrations-irisX.png)
+
 ## Use Cases
 - Integrate and consolidate data from multiple business platforms.
 - Use IrisX API integrations to enable your team to eliminate duplicate work processes, maintain one source of truth, and make better business decisions. 
