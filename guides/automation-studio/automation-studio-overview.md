@@ -5,6 +5,7 @@ category: 66c49b7d61daf600186e12cb
 
 Automation Studio provides extensive connectivity and delivers automation throughout your entire tech stack. The Workflow Automation Projects are a central spot to design, automate, and optimize workflows without having to write code. 
 
+![IrisX Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/automation-studio-irisX.png)
 
 ## Use Cases
 
