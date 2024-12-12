@@ -26,10 +26,10 @@ Trackunit provides a number a number of standard fields for common metadata, tha
 ## How to set values on standard fields
 
 1. Use the [Custom Fields Values API](/reference/custom-fields-get-values) to get all available fields.
-- Specify the 'entityId' for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId or siteId.
+- Specify the `entityId` for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId or siteId.
 - Specify which System Of Measurement you would like to use (SI or US customary)
 
-2. Use the 'Create', 'Update' or 'Delete value' endpoints for any futher operations on the available fields.
+2. Use the `Create`, `Update` or `Delete value` endpoints for any futher operations on the available fields.
 
 # Define your own custom fields
 
