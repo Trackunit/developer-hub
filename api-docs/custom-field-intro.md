@@ -21,7 +21,7 @@ Trackunit provides a number a number of standard fields for common metadata, tha
 | Rated electric motor power | Power output of the electric motor in kilo-Watts | text (kW) | asset |
 | Total rated battery capacity | Total rated capacity summed (only if batteries in parallel) over all traction batteries, in ampere-hours. | text (Ah) | asset |
 | Total rated battery power capacity | Total rated energy capacity summed over all traction batteries, in kilo-watt-hours  | text (kWh) | asset |
-| Warranty end date |  | date | asset |
+| Warranty end date | The end date of the asset's warranty. | date | asset |
 
 ## How to set values on standard fields
 
