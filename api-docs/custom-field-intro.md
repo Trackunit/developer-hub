@@ -3,10 +3,10 @@ title: Custom Fields API - Introduction
 category: 628c96a84164f50225dd1f14
 ---
 
-Adding relevant information beyond standard metadata like brand and model is important to help catalogue your assets. With our Custom Fields offering, Trackunit Iris can host all the data that you need. Custom Fields will enable you to capture and organize additional metadata that holds significant contextual value, thereby facilitating more robust data categorization and retrieval processes for you and your end-customers.
+With our Custom Fields offering, Trackunit Iris can host all the data that you need. Custom Fields will enable you to capture and organize additional metadata that holds significant contextual value, thereby facilitating more robust data categorization and retrieval processes for you and your end-customers.
 
 # Additional standard fields for commom metadata
-Trackunit provides a number a number of standard fields for common metadata, that can be used by all customers to extend the available data model.
+Trackunit provides a number a number of standard fields for common metadata, that can be used by all customers to extend the available data model. These fields can exists across different domains of Trackunit's data model and currently can extend assets, accounts, groups or sites.
 
 | Field name | Description | Type (UoM) | Related domain |
 | -------- | ------- |-------- | ------- |
@@ -23,6 +23,13 @@ Trackunit provides a number a number of standard fields for common metadata, tha
 | Total rated battery power capacity | Total rated energy capacity summed over all traction batteries, in kilo-watt-hours  | text (kWh) | asset |
 | Warranty end date |  | date | asset |
 
+## How to set values on standard fields
+
+1. Use the [Custom Fields Values API](/reference/custom-fields-get-values) to get all available fields.
+- Specify the 'entityId' for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId or siteId.
+- Specify which System Of Measurement you would like to use (SI or US customary)
+
+2. Use the 'Create', 'Update' or 'Delete value' endpoints for any futher operations on the available fields.
 
 # Define your own custom fields
 
@@ -33,21 +40,21 @@ Custom fields provide a way to define new fields in the Trackunit data model. Al
 > IrisX is required to create and change custom field definitions. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
 
 
-## Get Started
-Explore how to create custom fields by:
+## Get started with creating custom fields
+
 1. To define a custom field, you first need to [add a definition using the API.](/reference/custom-field-definitions)
 2. Use the [Custom Fields Values API](/reference/custom-field-values) to set values on your defined custom fields.
 
 
-## Changing Custom Field Definitions
+## Changing custom field definitions
 
 When changing custom field definitions, you need to follow the following general rules and type-specific rules:
 
-### General Rules
+### General rules
 -   You cannot change a Custom Field Definition `type` after creation (e.g., changing a string field to a number field).
 -   The Definition `key` (if specified) must be unique (within your account).
 
-### Type Rules
+### Type rules
 Each field type has special rules:
 
 -   **Drop-down:**
