@@ -8,6 +8,7 @@ Take the next step with advanced modeling techniques, such as ML, LLMs and GenAI
 ## What is AI & Machine Learning?
 AI & ML allow customer to run AI & ML algorithms with tools for model training, deployment, and management in a sandboxed and secure environment. IrisX ensures strict data privacy, making it easy to get started with all necessary models and tools while maintaining end-to-end data security that is more and more important to our customers.
 
+![AI & ML with IrisX](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/ai-ml/ai-irisX.png)
 
 ## Features & Capabilities
 - Data management, model training, and deployment in a single toolchain, reducing complexity.
