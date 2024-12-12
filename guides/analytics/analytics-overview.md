@@ -5,6 +5,7 @@ category: 66c49b0049fa5200312dc835
 
 IrisX Analytics & Insights supports collaborative data science with interactive, web-based notebooks and robust visualization tools. This capability features customizable reports to analyze trends and performance metrics, facilitates scalable data workflows, and provides real-time analysis. 
 
+![IrisX Analytics](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/analytics/analytics-irisX.png)
 
 ## Use Cases
 - Streamline the workflow from data preparation to actionable insights.
