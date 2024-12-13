@@ -5,11 +5,14 @@ category: 65cf5609fd092b005a505dd5
 
 ![Trackunit Iris APIs for Asset Administration](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/apis-asset-administration.png)
 
-### Control who gains visibility to your assets, assign ownership, define site locations, and enrich assets with custom meta data.
+### Streamline asset onboarding, control who gains visibility to your assets, assign ownership, define site locations, and enrich assets with custom meta data.
 
 Explore relevant APIs in this category:
 
 - [Assets API](https://developers.trackunit.com/reference/assets-api-introduction)
+- [Ownership & Visibility API](https://developers.trackunit.com/reference/ownership-visibility-api-intro)
+- [Asset Onboarding](https://developers.trackunit.com/reference/onboardasset_v1) & [Offboarding APIs](https://developers.trackunit.com/reference/offboardasset_v1) (currently not supporting the asset type "machine")
+- [Machine APIs](https://developers.trackunit.com/reference/machine-apis-intro) for onboarding and cataloging machines
 - [Groups API](https://developers.trackunit.com/reference/getgroups)
 - [Sites API](https://developers.trackunit.com/reference/getsites)
 - [Custom Fields API](https://developers.trackunit.com/reference/custom-field-intro)
