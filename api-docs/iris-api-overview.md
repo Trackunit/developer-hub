@@ -16,22 +16,24 @@ Explore relevant APIs in this category:
 
 ## Asset Administration
 
-Control who gains visibility to your assets, assign ownership, define site locations, and enrich assets with custom meta data.
+Streamline asset onboarding, control who gains visibility to your assets, assign ownership, define site locations, and enrich assets with custom meta data.
 
 Explore relevant APIs in this category:
 
 - [Assets API](https://developers.trackunit.com/reference/assets-api-introduction)
+- [Ownership & Visibility API](https://developers.trackunit.com/reference/ownership-visibility-api-intro)
+- [Asset Onboarding](https://developers.trackunit.com/reference/onboardasset_v1) & [Offboarding APIs](https://developers.trackunit.com/reference/offboardasset_v1) (currently not supporting the asset type "machine")
+- [Machine APIs](https://developers.trackunit.com/reference/machine-apis-intro) for onboarding and cataloging machines
 - [Groups API](https://developers.trackunit.com/reference/getgroups)
 - [Sites API](https://developers.trackunit.com/reference/getsites)
 - [Custom Fields API](https://developers.trackunit.com/reference/custom-field-intro)
 
 ## Configuration
 
-Optimize connectivity across your fleet through streamlined onboarding, alerts, and remote care of your telematics equipment managed from your system of choice.
+Optimize connectivity across your fleet through streamlined alerts and remote care of your telematics equipment managed from your system of choice.
 
 Explore relevant APIs in this category:
 
-- [Asset Onboarding](https://developers.trackunit.com/reference/onboardasset_v1) & [Offboarding APIs](https://developers.trackunit.com/reference/offboardasset_v1) (currently not supporting the asset type "machine")
 - [Telematics Device API](https://developers.trackunit.com/reference/telematics-device-api-intro)
 - [Alert API](https://developers.trackunit.com/reference/alerts)
 
@@ -64,4 +66,4 @@ Explore relevant APIs in this category:
 - [Service Management APIs](https://developers.trackunit.com/reference/service-management-intro)
 - [Access Management](https://developers.trackunit.com/reference/access-management-intro) & [Operator APIs](https://developers.trackunit.com/reference/operator-intro)
 - [Emissions Reporting APIs](https://developers.trackunit.com/reference/emissions-api)
-- ERP integrations via the [Rental API](https://developers.trackunit.com/reference/rental-erp-api-intro)
+- ERP integrations via the [Rental ERP API](https://developers.trackunit.com/reference/rental-erp-api-intro)
