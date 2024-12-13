@@ -6,7 +6,7 @@ category: 628c96a84164f50225dd1f14
 With our Custom Fields offering, Trackunit Iris can host all the data that you need. Custom Fields will enable you to capture and organize additional metadata that holds significant contextual value, thereby facilitating more robust data categorization and retrieval processes for you and your end-customers.
 
 # Additional standard fields for commom metadata
-Trackunit provides a number a number of standard fields for common metadata, that can be used by all customers to extend the available data model. These fields can exists across different domains of Trackunit's data model and currently can extend assets, accounts, groups or sites.
+Trackunit provides a number of standard fields for common metadata, that can be used by all customers to extend the available data model. These fields can exists across different domains of Trackunit's data model and currently can extend assets, accounts, groups or sites.
 
 | Field name | Description | Type (UoM) | Related domain |
 | -------- | ------- |-------- | ------- |
