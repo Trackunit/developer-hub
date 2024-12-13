@@ -24,7 +24,7 @@ The ERP integrations are built on the following concepts
 
 Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**.
 
-1. To define a custom field, you first need to [add a definition using the API.](/reference/custom-field-definitions)
+1. To define a custom field, you first need to [add a definition using the Custom Fields Definitions API.](/reference/custom-field-definitions)
 2. Use the [Custom Fields Values API](/reference/custom-field-values) to set values on your defined custom fields.
 - Specify the `entityId` for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId, siteId, customerId or rentalContractId.
 
