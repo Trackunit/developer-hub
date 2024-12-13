@@ -6,7 +6,7 @@ category: 628c96a84164f50225dd1f14
 With our Custom Fields offering, Trackunit Iris can host all the data that you need. Custom Fields will enable you to capture and organize additional metadata that holds significant contextual value, thereby facilitating more robust data categorization and retrieval processes for you and your end-customers.
 
 # Additional standard fields for commom metadata
-Trackunit provides a number of standard fields for common metadata, that can be used by all customers to extend the available data model. These fields can exists across different domains of Trackunit's data model and currently can extend assets, accounts, groups or sites.
+Trackunit provides a number of standard fields for common metadata, that can be used by all customers to extend the available data model.
 
 | Field name | Description | Type (UoM) | Related domain |
 | -------- | ------- |-------- | ------- |
@@ -26,14 +26,14 @@ Trackunit provides a number of standard fields for common metadata, that can be 
 ## How to set values on standard fields
 
 1. Use the [Custom Fields Values API](/reference/custom-fields-get-values) to get all available fields.
-- Specify the `entityId` for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId or siteId.
+- Specify the `entityId` for your query, which is an assetId for any fields listed above.
 - Specify which System Of Measurement you would like to use (SI or US customary)
 
 2. Use the `Create`, `Update` or `Delete value` endpoints for any futher operations on the available fields.
 
 # Define your own custom fields
 
-Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups and sites with new fields**.
+Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**.
 
 > 📘 Subscription requirement
 > 
@@ -44,7 +44,7 @@ Custom fields provide a way to define new fields in the Trackunit data model. Al
 
 1. To define a custom field, you first need to [add a definition using the API.](/reference/custom-field-definitions)
 2. Use the [Custom Fields Values API](/reference/custom-field-values) to set values on your defined custom fields.
-
+- Specify the `entityId` for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId, siteId, customerId or rentalContractId.
 
 ## Changing custom field definitions
 
