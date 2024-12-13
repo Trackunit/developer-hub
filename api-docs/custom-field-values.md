@@ -11,17 +11,17 @@ category: 628c96a84164f50225dd1f14
 
 ## Set values on additional standard fields
 
-Trackunit provides a number a number of standard fields for common metadata, that can be used by all customers to extend the available data model. These fields can exists across different domains of Trackunit's data model and currently can extend assets, accounts, groups or sites.
+Trackunit provides a number a number of standard fields for common metadata, that can be used by all customers to extend the available data model.
 
 1. Use the [Custom Fields Values API](/reference/custom-fields-get-values) to get all available fields.
-- Specify the `entityId` for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId or siteId.
+- Specify the `entityId` for your query, which is an assetId for the current list of standard fields.
 - Specify which System Of Measurement you would like to use (SI or US customary)
 
 2. Use the `Create`, `Update` or `Delete value` endpoints for any futher operations on the available fields.
 
 # Set values on your own custom fields
 
-Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups and sites with new fields**.
+Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**.
 
 > 📘 Subscription requirement
 > 
