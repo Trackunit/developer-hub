@@ -19,3 +19,15 @@ The customer API is built on the following concepts
 - A customer is a registration of a business relationship with another legal entity.
 - A customer contact is a registration of a way to get in contact with this entity. It is not necessarily a person, as it can also be a call center or a department.
 - A customer asset is represents a relationship between the customer and the asset. Fx. an asset being rented to that customer or an asset assign to undergo service by a service provider.
+
+## Extending the Data Model
+
+Missing any fields needed to define your customers perfectly? Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**.
+
+> 📘 Subscription requirement
+> 
+> IrisX is required to create and change custom field definitions. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
+
+1. To define a custom field, you first need to [add a definition using the Custom Fields Definitions API.](/reference/custom-field-definitions)
+2. Use the [Custom Fields Values API](/reference/custom-field-values) to set values on your defined custom fields.
+- Specify the `entityId` for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId, siteId, customerId or rentalContractId.

@@ -20,6 +20,14 @@ The ERP integrations are built on the following concepts
 
 ![Trackunit Iris Rental Model](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/rental-model-diagram.png)
 
+## Extending the Data Model
+
+Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**.
+
+1. To define a custom field, you first need to [add a definition using the Custom Fields Definitions API.](/reference/custom-field-definitions)
+2. Use the [Custom Fields Values API](/reference/custom-field-values) to set values on your defined custom fields.
+- Specify the `entityId` for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId, siteId, customerId or rentalContractId.
+
 ## Constraints
 
 - Only assets owned by the account can can be updated with data from the ERP system.
