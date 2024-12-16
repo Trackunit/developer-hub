@@ -13,9 +13,7 @@ category: 628c96a84164f50225dd1f14
 
 Trackunit provides a number a number of standard fields for common metadata, that can be used by all customers to extend the available data model.
 
-1. Use the [Custom Fields Values API](/reference/custom-fields-get-values) to get all available fields.
-- Specify the `entityId` for your query, which is an assetId for the current list of standard fields.
-- Specify which System Of Measurement you would like to use (SI or US customary)
+1. Use the [Custom Fields Values API](/reference/custom-fields-get-values) to get all available fields. Specify the `entityId` for your query, which is an assetId for the current list of standard fields.
 
 2. Use the `Create`, `Update` or `Delete value` endpoints for any futher operations on the available fields.
 
