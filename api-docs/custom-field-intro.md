@@ -25,10 +25,7 @@ Trackunit provides a number of standard fields for common metadata, that can be 
 
 ## How to set values on standard fields
 
-1. Use the [Custom Fields Values API](/reference/custom-fields-get-values) to get all available fields.
-- Specify the `entityId` for your query, which is an assetId for any fields listed above.
-- Specify which System Of Measurement you would like to use (SI or US customary)
-
+1. Use the [Custom Fields Values API](/reference/custom-fields-get-values) to get all available fields. Specify the `entityId` for your query, which is an assetId for any fields listed above.
 2. Use the `Create`, `Update` or `Delete value` endpoints for any futher operations on the available fields.
 
 # Define your own custom fields
@@ -43,8 +40,7 @@ Custom fields provide a way to define new fields in the Trackunit data model. Al
 ## Get started with creating custom fields
 
 1. To define a custom field, you first need to [add a definition using the API.](/reference/custom-field-definitions)
-2. Use the [Custom Fields Values API](/reference/custom-field-values) to set values on your defined custom fields.
-- Specify the `entityId` for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId, siteId, customerId or rentalContractId.
+2. Use the [Custom Fields Values API](/reference/custom-field-values) to set values on your defined custom fields. Specify the `entityId` for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId, siteId, customerId or rentalContractId.
 
 ## Changing custom field definitions
 
