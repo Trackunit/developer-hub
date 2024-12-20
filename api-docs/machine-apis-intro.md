@@ -5,7 +5,7 @@ category: 675ac7f3f2aec2002c641eaf
 
 > 🚧 Onboarding / offboarding of machines
 > 
-> The Asset API currently does not yet support onboarding or offboarding assets with the MACHINE asset type. We are planning to support this in the Asset API in the future. For now the listed Machine domain APIs should be used in the meantime. Read more about the evolution of Trackunit's data model below.
+> The Asset API does not yet support onboarding or offboarding assets with the MACHINE asset type. We are planning to support this in the Asset API in the near future. For now the listed Machine APIs should be used in the meantime. Read more about the evolution of Trackunit's data model below.
 
 ## Concept shift: From Units to Machines to Assets
 
