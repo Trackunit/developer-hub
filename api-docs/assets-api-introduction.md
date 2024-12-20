@@ -3,7 +3,7 @@ title: Assets API - Introduction
 category: 63170aaed72d5f00a36a8afe
 ---
 
-Discover the power of our Assets API, your key to manage the asset domain. By leveraging the Assets API, developers can easily get all assets in a fleet as well as update specifications for an asset. This REST API also allows to manage assets across accounts by enabling the share, transfer, unshare and remove visibility actions. For more information, see the documentation of the endpoints.
+Discover the power of our Assets API, your key to managing your fleet. By leveraging the Assets API, developers can easily get all assets in a fleet as well as update specifications for an asset. For more information, see the documentation of the endpoints. If you are looking to manage assets across accounts via share, transfer, unshare and remove visibility actions, then visit the [Ownership & Visibility API](https://developers.trackunit.com/reference/ownership-visibility-api-intro).
 
 > 📘 IrisX customers can also access data connected to Asset(s) via the GraphQL API
 > 
@@ -11,7 +11,7 @@ Discover the power of our Assets API, your key to manage the asset domain. By le
 
 > 🚧 No onboarding / offboarding support of machine type assets
 > 
-> The Assets API currently does not support onboarding or offboarding assets with the MACHINE asset type. Furthermore, the telematics devices are currently limited to Bluetooth telematics devices. See the [Machine Onboarding API](https://app.swaggerhub.com/apis-docs/trackunit.com/machine-onboarding/1.0.46) for those operations for now.
+> The Assets API currently does not support onboarding or offboarding assets with the MACHINE asset type. Furthermore, the telematics devices are currently limited to Bluetooth telematics devices. See the [Machine APIs](https://developers.trackunit.com/reference/machine-apis-intro) for those operations for now.
 
 ## Concepts
 
