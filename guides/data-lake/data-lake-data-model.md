@@ -103,7 +103,7 @@ The dimensions schema includes information about the time intervals used for ins
 
 The events schema contains a number of views that holds different types of event data.
 
-![Events data can be found in this schema.](fgeu768.png)
+![Events data can be found in this schema.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/fgeu768.png)
 
 `canerror`:  Errors from the J1939 protocol
 
