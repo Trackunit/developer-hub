@@ -3,26 +3,23 @@ title: IrisX Analytics to Power BI
 category: 66c49b0049fa5200312dc835
 ---
 
-
-## How to connect IrisX Analytics to Power BI
 In this article, we will show you how to connect IrisX Analytics to Power BI to access data in your IrisX Data Lake.
 
-![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/analytics/IrisXAnalyticsToPowerBI.mov )
+## Getting started: Set up the connection
 
-
-
-## Connection (Getting started)
-Use the connection file from the catalog browser you can quickly connect data to you Power BI instance.
-
-
+In your IrisX Analytics instance, find the "Open in PowerBI" option:
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/analytics/Find+the+open+in+Power+BI+option.png)
 
+Download the connection file:
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/analytics/Download+connection+file.png)
 
+Open the connection file:
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/analytics/Open+the+connection+file.png)
 
+Authenticate your access with your username and password:
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/analytics/Type+in+username+and+password.png)
 
+Now you have quickly connected data to your Power BI instance, by using the PowerBI connection file from the catalog browser.
 
 ## Performance Considerations and Best Practices
 
