@@ -48,6 +48,8 @@ Change to:
     "executor": "@trackunit/iris-app-sdk-rspack:serve",
 ```
 
+Also change the `webpackConfig` option to point to the new `rspack.config.ts` file instead of the `webpack.config.ts` file, and rename it to `rspackConfig`.
+
 The end result should look something like the following.
 
 ```
