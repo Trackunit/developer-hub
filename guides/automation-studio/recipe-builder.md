@@ -12,8 +12,6 @@ The Workflow Automation Projects and their Recipe Builder is a core component of
 1. **Actions**: Tasks that the recipe performs once the trigger condition is met. Actions can include data transformations, API calls, or updates to connected systems.
 1. **Conditions**: Optional logic that determines whether certain actions should be executed based on specific criteria.
 
-![Recipe](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/recipe.png)
-
 <!-- ## Creating a Recipe
 1. Access the Recipe Builder: Navigate to the Automation Studio interface and select the Recipe Builder tool.
 Create a New Recipe:
