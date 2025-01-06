@@ -11,7 +11,8 @@ In this version of our Iris App SDK we have added support for Rspack as well as 
 ### Rename and update the webpack config file
 
 Rename the `webpack.config.ts` file to `rspack.config.ts` and update the file to use the rspack configuration.
-for the new `rspack.config.ts` file, you shold change the following import.
+
+For the new `rspack.config.ts` file, you shold change the following import:
 ```
 import { Configuration } from "webpack";
 ```
