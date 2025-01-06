@@ -31,7 +31,7 @@ export default (configuration: Configuration) => {
 
 ### Change the following entries in `targets` map in the `project.json` file of your iris app.
 
-for `build` target, change the following:
+For the `build` target, change the following:
 ```
     "executor": "@trackunit/iris-app:build",
 ```
