@@ -124,7 +124,7 @@ For more information on how to formulate queries using PromQL, refer to the offi
 Additionally, here are some tutorials and guides to help you get started with PromQL:
 
 - [PromQL Cheat Sheet](https://promlabs.com/promql-cheat-sheet/)
-- [PromQL Training Course by Promlabs](https://training.promlabs.com/training/understanding-promql)
+- [PromQL Training Course by Promlabs](https://training.promlabs.com/training/understanding-promql/)
 - [PromQL tutorial for beginners and humans](https://valyala.medium.com/promql-tutorial-for-beginners-9ab455142085)
 
 These resources should provide you with a solid foundation for utilizing PromQL to query the Time Series API.
