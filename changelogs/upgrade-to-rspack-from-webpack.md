@@ -20,7 +20,7 @@ Change to:
 ```
 import { Configuration } from "@rspack/core";
 ```
-The end result should look like the following.
+The end result should look like the following:
 ```
 import { Configuration } from "@rspack/core";
 
