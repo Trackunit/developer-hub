@@ -29,7 +29,7 @@ export default (configuration: Configuration) => {
 };
 ```
 
-### Change the following in `targets` list of the `project.json` file of your iris app.
+### Change the following entries in `targets` map in the `project.json` file of your iris app.
 
 for `build` target, change the following:
 ```
