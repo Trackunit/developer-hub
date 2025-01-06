@@ -40,7 +40,7 @@ Change to:
     "executor": "@trackunit/iris-app-sdk-rspack:build",
 ```
 
-for `serve` target, change the following:
+For the `serve` target, change the following:
 ```
     "executor": "@trackunit/iris-app:serve",
 ```
