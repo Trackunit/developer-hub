@@ -1,12 +1,12 @@
 ---
-title: trackunit/iris-app@v0.0.NEXT - upgrade to rspack from webpack
+title: trackunit/iris-app@v0.0.5 - upgrade to rspack from webpack
 type: improved
 ---
 
 In this version of our Iris App SDK we have added support for Rspack as well as the existing Webpack.
-> to read more on rspack, please visit the [rspack documentation](https://rspack.dev/).
+> To read more on rspack, please visit the [rspack documentation](https://rspack.dev/).
 
-> Iris apps created with `@trackunit/iris-app@0.0.NEXT` should already have the required rspack configuration.
+> Iris apps created with `@trackunit/iris-app@0.0.5` should already have the required rspack configuration.
 
 ### Rename and update the webpack config file
 
