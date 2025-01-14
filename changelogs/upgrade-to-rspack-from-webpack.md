@@ -1,5 +1,5 @@
 ---
-title: trackunit/iris-app@v0.0.5 - upgrade to rspack from webpack
+title: trackunit/iris-app v0.0.5 - upgrade to rspack from webpack
 type: improved
 ---
 
