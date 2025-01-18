@@ -39,7 +39,7 @@ npx nx run [name-of-your-app]:submitApp
 🚀 Uploaded the app package version 1.0.0.
 ```
 
-> 📘 Nice to know
+> 📘 Remember
 >
 > Remember to bump the version number inside `apps/[name-of-your-app]/package.json` before you build and submit!
 >
@@ -47,4 +47,7 @@ npx nx run [name-of-your-app]:submitApp
 
 > 📘 Nice to know
 >
-> You can also accept the developer terms and conditions by setting the environment variable `TU_DEV_TERMS_AND_CONDITIONS=accept`
+> If running this as part of a CI pipeline you can also accept the developer terms and conditions by setting the environment variable `TU_DEV_TERMS_AND_CONDITIONS=accept`.
+> 
+> The access token can be supplied using the `TU_TOKEN` environment variable.
+> 
