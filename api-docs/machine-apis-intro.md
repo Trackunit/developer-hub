@@ -13,27 +13,9 @@ Trackunit's underlying platforms have undergone a transformation evolving from o
 
 ![From Unit to Machine](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/unit-to-machine.png)
 
-In the latest evolution Iris now embraces an asset-centric perspective, where the system supports multiple telematics devices per asset and ISO feeds, enabling seamless integration and robust data management. Moreover, it facilitates support for Bluetooth tags and attachment / machine connections, streamlining operations and enhancing connectivity across the asset ecosystem. This shift marks a pivotal advancement, empowering Trackunit to better cater to the complex needs of modern asset management and telemetry.
+In the latest evolution Iris now embraces an asset-centric perspective, where the system is planned to support multiple telematics devices per asset and ISO feeds, enabling seamless integration and robust data management. Moreover, it facilitates support for Bluetooth tags and attachment / machine connections, streamlining operations and enhancing connectivity across the asset ecosystem. This shift marks a pivotal advancement, empowering Trackunit to better cater to the complex needs of modern asset management and telemetry.
 
 ![From Machine to Asset](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/machine-to-asset.png)
 
-
-## Concepts & Definitions for the Machine domain
-
-- Machine:
-- Service documents:
-- Onboarding event:
-
-## Interface
-
-(describe important things to know about the machine apis, incl. onboarding & events... see telematics device api intro as inspiration)
-e.g. mention how a machine is identified as it is not via assetId?!
-
-## Onboard and offboard Machines
-
-Step 1:
-- ...
-
 ## Constraints
-- Rate limiting:
-- Asset types other than machines should be accessed and managed via the [Assets API](https://developers.trackunit.com/reference/assets-api-introduction)
+Asset types other than machines should be accessed and managed via the [Assets API](https://developers.trackunit.com/reference/assets-api-introduction)
