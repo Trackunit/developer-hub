@@ -4,14 +4,13 @@ category: 61fcd8e1a448f5004215317c
 parentDocSlug: getting-started
 ---
 
-
 You need to be registered as a developer and have credentials to access Trackunit Manager. If you do not have that talk to your Trackunit representative. If you have an existing username for Trackunit Manager remember to include that in the request.
 Trackunit will then make sure to enable the developer console inside manager that allows you to manage your IrisX Apps.
 
 The App SDK needs certain tools to be on your machine:
 
 - Node LTS (version 20.17.0)
-- NX version 19.8.3
+- NX version 20.4.0
 - Git
 - WSL (Windows only)
 
