@@ -14,7 +14,7 @@ The rate limiting rules of our GraphQL API are connected to the calculated compl
 **Currently the Rate Limits for our GraphQL API are:**
 
 - A single query is limited to 50000 complexity points.
-- All queries within a 10 minute window are limited to 500000 complexity points per API user.
+- All queries within a 10 minute window are limited to a number of complexity points. The exact number depends on your subscription. The current limit can be obtained by querying the `rateLimit` field in the graph.
 
 If the single query limit is reached we will return a GraphQL error with the `extensions.code` field set to `QUERY_COMPLEXITY_REACHED`:
 
