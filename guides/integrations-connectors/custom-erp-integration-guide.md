@@ -20,7 +20,6 @@ Before you can start fetching data from or synching data to Trackunit Iris APIs,
 To obtain API credentials ask the Trackunit account owner to follow our Access Token guide to obtain OAuth 2.0 client credentials from the Manager application. Then your client application requests an access token from the IRIS Authorization Server, extracts a token from the response, and sends the token to the IRIS API that you want to access.
 
 
-
 ## Get telematics data from Trackunit into an ERP system
 
 The ISO Export API from Trackunit is a powerful tool that allows users to extract key telematics data from their fleet. It provides structured data export capabilities, enabling access to critical information such as:
@@ -70,19 +69,17 @@ In modern fleet management, integrating rental ERP systems with telematics solut
 > 
 > The Rental ERP API is only available for IrisX enabled customers. Learn more about the IrisX subscription
 
-
-
 ### Step 1: Understand and map concepts and data
 
-
+![Trackunit Rental Data Model](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/erp-rental-data-model.png)
 
 The Trackunit data model consists of the following concepts for rental ERP data:
 
 #### Data points connected to an asset:
 
-- Identifier Type: It is possible to match with asset in Trackunit Iris based on their asset id, serial number or external reference. This field combined with the identifier field is used when looking up an asset.
-- Identifier: The identifier used for matching the asset that the contract information should be assigned to.
-- Rental status: The rental status can be used to locate possible available assets accross all depots. Available types are : 
+- **Identifier Type:** It is possible to match with asset in Trackunit Iris based on their asset id, serial number or external reference. This field combined with the identifier field is used when looking up an asset.
+- **Identifier:** The identifier used for matching the asset that the contract information should be assigned to.
+- **Rental status:** The rental status can be used to locate possible available assets accross all depots. Available types are : 
     - ON_RENT, 
     - PICK_UP_READY, 
     - AVAILABLE, 
@@ -94,42 +91,40 @@ The Trackunit data model consists of the following concepts for rental ERP data:
     - NOT_ON_CONTRACT, 
     - RESERVED. 
     - New types may be added.
-- Owning depot: Depots created in Trackunit Iris can be linked to assets to have an overview of all assets on a depot level.
-- ExternalReference represents an identifier from the ERP system and has to be unique.
+- **Owning depot:** Depots created in Trackunit Iris can be linked to assets to have an overview of all assets on a depot level.
+- **ExternalReference** represents an identifier from the ERP system and has to be unique.
 
-
+![Rental ERP data on assets](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/erp-data-asset.png)
 
 #### Contracts
 The contracts can be used for assigning an unassigning assets to and from customers which also makes them available in the customer portal. Contracts can have relations to many contract items, which hold details about specific rental periods.
 
-- Associated customer
-- External Reference to the contract in an external system, i.e., an identifier of the item. Must be unique.
-- Contract status:
+- **Associated customer**
+- **External Reference** to the contract in an external system, i.e., an identifier of the item. Must be unique.
+- **Contract status:**
     - OPEN
     - RESERVED
     - CANCELLED
     - COMPLETED
     - New values may be added.
-- Start date and end date of the contract
+- **Start date** and **end date** of the contract
 
-
-
-
+![Rental ERP data on contracts](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/erp-data-contract.png)
 
 #### Data points connected to a contract item:
 
-- Rental period: Determines when an asset should be available for a customer.
+- **Rental period:** Determines when an asset should be available for a customer.
     - OnRent Date
     - OffRate Date
-- Rental Rate: Rental rates can contain information about price for renting assets.
-- Hiring depot: When sharing data about hiring depot as part of the rental contract your customers can get access to data about which depot has rented an asset to them.
-- Delivery / pickup address: By sharing information about delivery/pickup address it will be possible to see where and when assets are expected to be delivered and/or picked up.
+- **Rental Rate:** Rental rates can contain information about price for renting assets.
+- **Hiring depot:** When sharing data about hiring depot as part of the rental contract your customers can get access to data about which depot has rented an asset to them.
+- **Delivery / pickup address:** By sharing information about delivery/pickup address it will be possible to see where and when assets are expected to be delivered and/or picked up.
 
 #### Customers
 By providing data about customers you will be able to share data about the asset with customers through customer portals. The information about customers and the asset they have access to can also be used to filter assets and get an overview of what assets a customer has access to.
 
-- externalReference: External identifier of the customer in the Iris platform
-- Type of customer
+- **externalReference:** External identifier of the customer in the Iris platform
+- **Type of customer**
     - Contractor
     - Dealer
     - Distributor
@@ -142,8 +137,7 @@ By providing data about customers you will be able to share data about the asset
 > 
 > Once you create Customers through the ERP integration, the Customer feature in Manager will no longer allow for manual creation to preserve system integrity. 
 
-
-
+![Rental ERP data on customers](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/erp-data-customer.png)
 
 ### Step 2: Extending the data model for custom needs
 
@@ -156,8 +150,6 @@ Custom fields provide a way to define new fields in the Trackunit data model. Al
 > 💡 Custom Field Examples
 > 
 > Specifically for rental contracts, you can think of custom fields to store any additional data that is not accounted for in Trackunit’s rental data model - for example: “customer project code” or “service reference”.
-
-
 
 ### Step 3: Synchronizing ERP data via the Rental API
 
