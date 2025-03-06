@@ -17,12 +17,12 @@ By following this guide, you will:
 
 Before you can start fetching data from or synching data to Trackunit Iris APIs, you need to authenticate your requests. The API uses OAuth 2.0 for secure access, ensuring that only authorized users and applications can retrieve asset data.
 
-To obtain API credentials ask the Trackunit account owner to follow our Access Token guide to obtain OAuth 2.0 client credentials from the Manager application. Then your client application requests an access token from the IRIS Authorization Server, extracts a token from the response, and sends the token to the IRIS API that you want to access.
+To obtain API credentials ask the Trackunit account owner to follow our [Access Token guide](https://developers.trackunit.com/reference/access-token) to obtain OAuth 2.0 client credentials from the Manager application. Then your client application requests an access token from the IRIS Authorization Server, extracts a token from the response, and sends the token to the IRIS API that you want to access.
 
 
 ## Get telematics data from Trackunit into an ERP system
 
-The ISO Export API from Trackunit is a powerful tool that allows users to extract key telematics data from their fleet. It provides structured data export capabilities, enabling access to critical information such as:
+The [ISO Export API](https://developers.trackunit.com/reference/export-iso-15143-3-aemp-20-api-intro) from Trackunit is a powerful tool that allows users to extract key telematics data from their fleet. It provides structured data export capabilities, enabling access to critical information such as:
 
 - **Asset details** – Unique identifiers and metadata.
 - **Location data** – GPS coordinates.
@@ -37,15 +37,15 @@ Once authenticated, you can retrieve asset information, including asset metadata
 Across the ISO Export API endpoints all assets are identified via the so-called OEM ISO identifier (PIN or VIN). PIN is used for earth-moving machinery and may be used for other types of off-road machines. VIN is used for on-road vehicles. However both PIN and VIN are generally 17-character fields and either one is acceptable depending upon the classification of the specific machine. PIN is the name generally used to represent both. NOTE: Users are able to modify the field Serial Number (VIN) inside Trackunit, so the format and length might vary.
 
 #### Retrieve data for the whole fleet / all assets
-The fleet snapshot endpoint provides the snapshot of the latest available telematics data for all assets in the fleet:
+The [fleet snapshot endpoint](https://developers.trackunit.com/reference/getfleetsnapshot) provides the snapshot of the latest available telematics data for all assets in the fleet:
 
-- **Asset meta data via the EquipmentHeader:** Header information (EquipmentHeader) consists of Telematics Unit Installation Date (UnitInstallDateTime), Equipment Make (OEMName), Equipment Model (Model), Equipment ID (EquipmentID), Serial Number (SerialNumber) and OEM ISO Number (PIN). NOTE PIN and VIN are generally both 17-character fields, but can be edited by users inside Trackunit which can cause the format and length to vary. Either PIN or VIN is acceptable depending upon the classification of the specific machine. PIN is the name used in to represent both.
+- **Asset meta data via the EquipmentHeader:** Header information (EquipmentHeader) consists of Telematics Unit Installation Date (UnitInstallDateTime), Equipment Make (OEMName), Equipment Model (Model), Equipment ID (EquipmentID), Serial Number (SerialNumber) and OEM ISO Number (PIN). NOTE: PIN and VIN are generally both 17-character fields, but can be edited by users inside Trackunit which can cause the format and length to vary. Either PIN or VIN is acceptable depending upon the classification of the specific machine. PIN is the name used in to represent both.
 - **Location:** The last known equipment location is expressed by the following fields: Date and time (DateTime), Latitude of location (Latitude), Longitude of location (Longitude), Altitude of location (Altitude) and Units of Altitude (AltitudeUnits).
 - **Meter readings via CumulativeOperatingHours:** The current total lifetime operating hours of the machine is expressed as the cumulative quantity of time during which the machine’s engine has been running. This is generally the value of the hour meter on the machine.
 - **Other data points:** Based on the AEMP Telematics Standard, ISO 15143-3, this API provides a wide range of other data points that might be of interest and an overview of all data points can be found in the sample response for the endpoint - e.g. idle hours, fuel level and usage, distance travelled.
 
 #### Fetching data for a single asset
-The single-element snapshot endpoint provides the snapshot of the latest available telematics data for a single equipment identified by the OEM ISO identifier parameter. The response format is the same as for the fleet snapshot endpoint.
+The [single-element snapshot endpoint](https://developers.trackunit.com/reference/getsingleelement) provides the snapshot of the latest available telematics data for a single equipment identified by the OEM ISO identifier parameter. The response format is the same as for the fleet snapshot endpoint.
 
 
 
@@ -67,7 +67,7 @@ In modern fleet management, integrating rental ERP systems with telematics solut
 
 > 📘 IrisX Subscription needed
 > 
-> The Rental ERP API is only available for IrisX enabled customers. Learn more about the IrisX subscription
+> The Rental ERP API is only available for IrisX enabled customers. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview).
 
 ### Step 1: Understand and map concepts and data
 
@@ -143,8 +143,8 @@ By providing data about customers you will be able to share data about the asset
 
 Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields.
 
-- To define a custom field, you first need to add a definition using the Custom Fields Definitions API.
-- Use the Custom Fields Values API to set values on your defined custom fields:
+- To define a custom field, you first need to [add a definition using the Custom Fields Definitions API](https://developers.trackunit.com/reference/custom-field-definitions).
+- Use the [Custom Fields Values API](https://developers.trackunit.com/reference/custom-field-values)to set values on your defined custom fields:
     - Specify the `entityId` for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId, siteId, customerId or rentalContractId.
 
 > 💡 Custom Field Examples
@@ -155,14 +155,14 @@ Custom fields provide a way to define new fields in the Trackunit data model. Al
 
 #### Preparation of data
 
-- Get an overview of all available assets in Trackunit and their unique identifiers like assetID and serial numbers (PIN / VIN etc) via the Asset API - get assets endpoint
-- Prepare assets by setting ExternalReference via the Asset API - update asset endpoint
-- If you wish to use the “owning depot” and “hiring depot” features, then use the Sites API to get all sites created in Trackunit and add new sites by using the create site endpoint. Remember to choose the type “depot”.
+- Get an overview of all available assets in Trackunit and their unique identifiers like assetID and serial numbers (PIN / VIN etc) via the [Asset API - get assets endpoint](https://developers.trackunit.com/reference/getassets_v1)
+- Prepare assets by setting **ExternalReference** via the [Asset API - update asset endpoint](https://developers.trackunit.com/reference/patchasset_v1)
+- If you wish to use the “owning depot” and “hiring depot” features, then use the [Sites API to get all sites](https://developers.trackunit.com/reference/getsites) created in Trackunit and add new sites by using the [create site endpoint](https://developers.trackunit.com/reference/createsite). Remember to choose the type “depot”.
 
 
 #### Synchronize ERP data
-Use the Rental API - Synchronize rental data endpoint to start pushing rental ERP data to Trackunit.
+Use the [Rental API - Synchronize rental data endpoint](https://developers.trackunit.com/reference/synchronize) to start pushing rental ERP data to Trackunit.
 
-If customers are updated through the Rental API and customers are not already created in Trackunit Iris, then they will automatically be created. Customers can also be created through the Customer API which allows you to control which customers are available on Trackunit Iris independently of rental contracts.
+If customers are updated through the Rental API and customers are not already created in Trackunit Iris, then they will automatically be created. Customers can also be created through the [Customer API](https://developers.trackunit.com/reference/customers-api-intro) which allows you to control which customers are available on Trackunit Iris independently of rental contracts.
 
-To have up to date information in Trackunit updates can be pushed to Trackunit as soon as they are registered in the ERP system as long as it stays within the configured rate limits.
+To have up to date information in Trackunit updates can be pushed to Trackunit as soon as they are registered in the ERP system as long as it stays within the configured [rate limits](https://developers.trackunit.com/reference/rate-limit).
