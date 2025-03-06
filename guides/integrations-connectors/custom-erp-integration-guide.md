@@ -119,6 +119,7 @@ The contracts can be used for assigning an unassigning assets to and from custom
 - **Rental Rate:** Rental rates can contain information about price for renting assets.
 - **Hiring depot:** When sharing data about hiring depot as part of the rental contract your customers can get access to data about which depot has rented an asset to them.
 - **Delivery / pickup address:** By sharing information about delivery/pickup address it will be possible to see where and when assets are expected to be delivered and/or picked up.
+- **Delivery / pickup date:** share information about when the delivery and pickup of the asset can be expected.
 
 #### Customers
 By providing data about customers you will be able to share data about the asset with customers through customer portals. The information about customers and the asset they have access to can also be used to filter assets and get an overview of what assets a customer has access to.
