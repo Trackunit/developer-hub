@@ -136,7 +136,7 @@ By providing data about customers you will be able to share data about the asset
 
 > 💡 Note
 > 
-> Once you create Customers through the ERP integration, the Customer feature in Manager will no longer allow for manual creation to preserve system integrity. 
+> Once the Rental API is enabled the Customer feature in Manager will no longer allow for manual creation or editing to preserve system integrity. 
 
 ![Rental ERP data on customers](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/erp-data-customer.png)
 
