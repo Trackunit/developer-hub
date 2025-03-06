@@ -1,5 +1,5 @@
 ---
-title: Rental API / ERP integration - Introduction
+title: Rental API - Introduction
 category: 668640cd587364001eaccdc7
 ---
 
@@ -13,20 +13,22 @@ The Rental API is designed to facilitate seamless integration between the IrisX 
 
 The ERP integrations are built on the following concepts
 
-- An **asset** is a trackable piece of equipment e.g. a machine or an accessory.
+- **Asset** is a trackable piece of equipment e.g. a machine or an accessory.
 - **Contract item** is an entry in a **contract** that contains information about when an asset is rented out to a customer.
 - **Contract** is linked to a **customer** and therefore it connects an asset to a customer.
 - **Customer** is the customer of the business that can rent (and therefore get access to) an asset (see the [Customer API](https://developers.trackunit.com/reference/customers-api-intro)).
 
-![Trackunit Iris Rental Model](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/rental-model-diagram.png)
+> 💡 Learn more in our [ERP Integration Guide](https://developers.trackunit.com/docs/custom-erp-integration-guide)
+> 
+> Get a detailed overview of the Trackunit Rental Data Model in our guide and plan your implementation.
+
+![Trackunit Rental Data Model](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/erp-rental-data-model.png)
+
 
 ## Extending the Data Model
 
 Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**.
-
-1. To define a custom field, you first need to [add a definition using the Custom Fields Definitions API.](/reference/custom-field-definitions)
-2. Use the [Custom Fields Values API](/reference/custom-field-values) to set values on your defined custom fields.
-- Specify the `entityId` for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId, siteId, customerId or rentalContractId.
+Learn more in the [Custom Fields API -Introduction](https://developers.trackunit.com/reference/custom-field-intro#define-your-own-custom-fields).
 
 ## Constraints
 
