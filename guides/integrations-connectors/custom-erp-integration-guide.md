@@ -162,6 +162,7 @@ Custom fields provide a way to define new fields in the Trackunit data model. Al
 
 #### Synchronize ERP data
 Use the [Rental API - Synchronize rental data endpoint](https://developers.trackunit.com/reference/synchronize) to start pushing rental ERP data to Trackunit.
+Data can be pushed for one asset per request.
 
 If customers are updated through the Rental API and customers are not already created in Trackunit Iris, then they will automatically be created. Customers can also be created through the [Customer API](https://developers.trackunit.com/reference/customers-api-intro) which allows you to control which customers are available on Trackunit Iris independently of rental contracts.
 
