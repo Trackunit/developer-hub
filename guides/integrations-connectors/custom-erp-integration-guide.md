@@ -143,10 +143,7 @@ By providing data about customers you will be able to share data about the asset
 ### Step 2: Extending the data model for custom needs
 
 Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields.
-
-- To define a custom field, you first need to [add a definition using the Custom Fields Definitions API](https://developers.trackunit.com/reference/custom-field-definitions).
-- Use the [Custom Fields Values API](https://developers.trackunit.com/reference/custom-field-values)to set values on your defined custom fields:
-    - Specify the `entityId` for your query. Depending on which domain type you are interested in, this can be an assetId, accountId, groupId, siteId, customerId or rentalContractId.
+Learn more in the [Custom Fields API -Introduction](https://developers.trackunit.com/reference/custom-field-intro#define-your-own-custom-fields).
 
 > 💡 Custom Field Examples
 > 
