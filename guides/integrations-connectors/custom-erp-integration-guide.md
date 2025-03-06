@@ -155,7 +155,7 @@ Custom fields provide a way to define new fields in the Trackunit data model. Al
 
 #### Preparation of data
 
-- Get an overview of all available assets in Trackunit and their unique identifiers like assetID and serial numbers (PIN / VIN etc) via the [Asset API - get assets endpoint](https://developers.trackunit.com/reference/getassets_v1)
+- Get an overview of all available assets in Trackunit and their unique identifiers like asset ID and serial numbers (PIN / VIN etc) via the [Asset API - get assets endpoint](https://developers.trackunit.com/reference/getassets_v1)
 - Prepare assets by setting **ExternalReference** via the [Asset API - update asset endpoint](https://developers.trackunit.com/reference/patchasset_v1)
 - If you wish to use the “owning depot” and “hiring depot” features, then use the [Sites API to get all sites](https://developers.trackunit.com/reference/getsites) created in Trackunit and add new sites by using the [create site endpoint](https://developers.trackunit.com/reference/createsite). Remember to choose the type “depot”.
 
