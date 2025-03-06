@@ -78,7 +78,7 @@ The Trackunit data model consists of the following concepts for rental ERP data:
 #### Data points connected to an asset:
 
 - **Identifier Type:** It is possible to match with asset in Trackunit Iris based on their asset id, serial number or external reference. This field combined with the identifier field is used when looking up an asset.
-- **Identifier:** The identifier used for matching the asset that the contract information should be assigned to.
+- **Identifier:** The identifier used for matching the asset that the contract information and rental status should be assigned to.
 - **Rental status:** The rental status can be used to locate possible available assets accross all depots. Available types are : 
     - ON_RENT, 
     - PICK_UP_READY, 
