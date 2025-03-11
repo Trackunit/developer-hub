@@ -7,7 +7,7 @@ Released stable version v1 of CAN Faults API. For more information, see the docu
 
 # REST
 
-Below a list of all available REST endpoints:
+Below is a list of all available REST endpoints:
 
 ## Faults:
 

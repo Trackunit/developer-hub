@@ -9,7 +9,7 @@ The Can Faults API is a robust solution designed to simplify fault monitoring, d
 
 ### Fault Retrieval:
 
-Detailed fault records are returned by the /faults endpoint. Queries can be performed using machine IDs and date ranges, with optional filtering by parameters such as suspect parameter number, failure mode indicator, and source address. This granular approach facilitates rapid isolation of issues and comprehensive historical trend analysis.
+Detailed fault records are returned by the /faults endpoint. Queries can be performed using machine IDs and date ranges, with optional filtering by parameters such as suspect parameter number (SPN), failure mode indicator (FMI), and source address (SA). This granular approach facilitates rapid isolation of issues and comprehensive historical trend analysis.
 
 ### Fault Summaries:
 
@@ -41,8 +41,8 @@ curl -X POST "https://iris.trackunit.com/public/api/can-faults/faults" \
     "canFaultsRequest": {
       "machineIds": [0, 0],
       "interval": {
-        "from": "1970-01-01T00:00:000Z",
-        "to": "1970-01-01T00:00:000Z"
+        "from": "1970-01-01T00:00:00.000Z",
+        "to": "1970-01-01T00:00:00.000Z"
       }
     }
 }'
