@@ -3,21 +3,19 @@ title: CAN Faults API - Introduction
 category: 67c9a5624e7dbc00103d8836
 ---
 
-The Can Faults API is a robust solution designed to simplify fault monitoring, diagnostics, and simulation for connected assets. It provides a range of endpoints that cater to both historical analysis and real-time fault management, making it an essential tool for fleet operators, maintenance teams, and system integrators.
+The Can Faults API is a robust solution designed to simplify fault monitoring, diagnostics, and simulation for connected assets. It provides a range of endpoints that cater to both historical analysis and fault management, making it an essential tool for fleet operators, maintenance teams, and system integrators.
 
 ## Key Features
 
 ### Fault Retrieval:
 
-Detailed fault records are returned by the /faults endpoint. Queries can be performed using machine IDs and date ranges, with optional filtering by parameters such as suspect parameter number (SPN), failure mode indicator (FMI), and source address (SA). This granular approach facilitates rapid isolation of issues and comprehensive historical trend analysis.
+The /faults endpoint returns detailed fault records based on machine IDs and date ranges, with optional filtering by suspect parameter number (SPN), failure mode indicator (FMI), and source address (SA). This granular approach facilitates rapid isolation of issues and comprehensive historical trend analysis.
+
+The /get-unit-active-faults endpoints—available via both GET and POST methods—offer a legacy interface for retrieving fault records using a unit ID and date range. These endpoints return all faults (identical to /faults), supporting customers transitioning from classic Unit Active Faults API.
 
 ### Fault Summaries:
 
 The /faults-summary endpoint aggregates fault data to provide summarized insights grouped by fault codes and time periods. This enables identification of recurring issues and offers an overall view of fleet health at a glance.
-
-### Active Fault Monitoring:
-
-The /get-unit-active-faults endpoint supports real-time diagnostics through both GET and POST methods. It provides active fault monitoring for a specific unit based on unit ID and date range, facilitating prompt troubleshooting and proactive maintenance.
 
 ### Simulated Fault Operations:
 
@@ -25,7 +23,7 @@ Simulated fault operations are available through endpoints including /simulated-
 
 ## Base URL
 
-All API calls are made against the following base URL: 
+All API calls are made against the following base URL:
 
 `https://iris.trackunit.com/public/api/can-faults/`
 
@@ -52,4 +50,6 @@ This command retrieves fault records for the specified machine IDs over the give
 
 ### Summary
 
-The Can Faults API offers a comprehensive suite of tools for fault management—from detailed retrieval and summarization of fault data to real-time monitoring and simulation. Its robust security, flexible query options, and detailed responses streamline fault diagnostics for optimal machine performance.
+The Can Faults API offers a comprehensive suite of tools for fault management—from detailed fault retrieval and summarization to simulated fault operations. Its robust security, flexible query options, and detailed responses streamline fault diagnostics for optimal machine performance.
+
+It also supports a legacy interface through the /get-unit-active-faults endpoints, which return the same fault data as /faults, enabling a smooth transition for customers migrating from classis Unit Active Faults API.
