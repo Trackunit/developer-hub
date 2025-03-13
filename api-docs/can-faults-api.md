@@ -53,3 +53,5 @@ This command retrieves fault records for the specified machine IDs over the give
 The Can Faults API offers a comprehensive suite of tools for fault management—from detailed fault retrieval and summarization to simulated fault operations. Its robust security, flexible query options, and detailed responses streamline fault diagnostics for optimal machine performance.
 
 It also supports a legacy interface through the /get-unit-active-faults endpoints, which return the same fault data as /faults, enabling a smooth transition for customers migrating from classis Unit Active Faults API.
+
+This API utilizes the unit and machine concepts. Learn more about them in the [Machine APIs Introduction](https://developers.trackunit.com/reference/machine-apis-intro).
