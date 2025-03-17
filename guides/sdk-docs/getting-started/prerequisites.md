@@ -9,7 +9,7 @@ Trackunit will then make sure to enable the developer console inside manager tha
 
 The App SDK needs certain tools to be on your machine:
 
-- Node LTS (version 20.17.0)
+- Node LTS (version 22.14.0)
 - NX version 20.4.0
 - Git
 - WSL (Windows only)
