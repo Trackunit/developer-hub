@@ -3,7 +3,7 @@ title: Data Ingestion - Introduction
 category: 679c8bdc9f2a95005ecb5d1c
 ---
 
-The Data Ingestion API provides a streamlined method for integrating asset device data into the Trackunit Iris platform.
+The Data Ingestion API provides a streamlined method for ingesting asset data into the Trackunit Iris platform.
 This RESTful API is designed for efficient time-series data transmission, prioritizing accuracy for both historical and real-time asset information within the Iris ecosystem.
 
 Supports ingestion of multiple data types:
