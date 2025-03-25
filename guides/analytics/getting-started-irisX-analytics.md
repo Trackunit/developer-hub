@@ -14,15 +14,15 @@ To get started with IrisX Analytics, begin by exploring the data available in yo
 ## Dashboards
 Navigate to the "Dashboards" section in the left-side menu to build intuitive dashboards that track your data over time. After creating a new dashboard, select one or more source tables in the "Data" tab. To customize further (for example, to focus on a specific machine type), use the SQL editor to add custom tables to your dashboard. In the "Canvas" tab, you can create various visualizations from your data to provide your team with actionable insights.
 
-Learn more about [Databricks Dashboards](https://docs.databricks.com/aws/en/dashboards/)
+:arrow_right: Learn more about [Databricks Dashboards](https://docs.databricks.com/aws/en/dashboards/)
 
 ## SQL Editor
 The SQL editor is an effective way to familiarize yourself with your data in depth. This tool allows you to query all insights, join tables, and perform aggregations. It's an excellent starting point when exploring options and determining where you can gain the most value from your data for your specific use cases.
 
-Learn more about [Databricks SQL Editor](https://docs.databricks.com/aws/en/sql/user/sql-editor/)
+:arrow_right: Learn more about [Databricks SQL Editor](https://docs.databricks.com/aws/en/sql/user/sql-editor/)
 
 ## Workspace and Notebooks
-While the SQL editor is great for initial data exploration, notebooks allow you to perform more complex calculations on your data. Notebooks can be used to create new tables from existing data and can be written in SQL, Python, or PySpark. They can be found in your workspace. Learn more about [Databricks Notebooks](https://docs.databricks.com/aws/en/notebooks/)
+While the SQL editor is great for initial data exploration, notebooks allow you to perform more complex calculations on your data. Notebooks can be used to create new tables from existing data and can be written in SQL, Python, or PySpark. They can be found in your workspace.
 
 **Here are some example tasks you might tackle in your first notebook:**
 
@@ -30,3 +30,5 @@ While the SQL editor is great for initial data exploration, notebooks allow you 
 - Analyze fuel consumption patterns to detect potential maintenance issues or operator behavior affecting efficiency
 - Develop geographic heat maps showing equipment distribution and utilization across multiple projects
 - Compare actual equipment runtime against project schedules to improve resource allocation and planning
+
+:arrow_right: Learn more about [Databricks Notebooks](https://docs.databricks.com/aws/en/notebooks/)
