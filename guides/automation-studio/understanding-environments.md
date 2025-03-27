@@ -1,7 +1,6 @@
 ---
 title: Understanding Environments
 category: 66c49b7d61daf600186e12cb
-parentDocSlug: getting-started-automation-studio
 ---
 Automation Studio workspaces have an environments feature, which means that the users can switch between a Development, a Test and a Production environment.
 
