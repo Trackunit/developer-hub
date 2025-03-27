@@ -19,3 +19,7 @@ We recommend following these best practices to ensure smooth recipe execution an
 **Security best practices:** Protect your data and recipes by following security best practices. Avoid placing sensitive data directly in recipe steps, use encrypted storage options, and manage user permissions to safeguard your automations. Learn more about [security best practices.](https://docs.workato.com/recipes/recipe-security.html)
 
 **Performance and memory optimization:** Handle large data by designing recipes that use batch processing and file streaming. These methods reduce memory usage and improve performance. Learn more about [memory optimization best practices.](https://docs.workato.com/recipes/memory-utilization.html)
+
+> 💡 Learn more
+> 
+> Get an overview of the [common types of recipe errors](https://docs.workato.com/recipes/design-runtime-error.html#common-recipe-errors) you may encounter when using Automation Studio.
