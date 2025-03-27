@@ -25,26 +25,25 @@ A recipe typically uses the following components:
 
 1. Access the Recipe Builder by navigating to the Automation Studio interface in Trackunit Manager and select **Projects > Recipes > Create Recipe**
 
-// image
+![Create recipe in Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/create-recipe.png)
 
 2. Click on **"Create Recipe"** and provide a name and description for the recipe to ensure clarity for future reference.
  
 3. Select the appropriate **trigger type** from the available options and configure the trigger settings, including any necessary parameters.
 
-//image
+![Set up new recipe in Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/new-recipe.png)
 
-**Possible Recipe starting points**
-You have several options for the starting point of your recipe:
-- Trigger from an app: Choose an app and trigger event to start your recipe. If you have not set up an connection to the app yet, the flow will prompt you to connect.
-- Run on a schedule: Use the Scheduler trigger to run your recipe at specified intervals, such as once a week. You can also use cron expressions to create customized schedules.
-- Trigger from a webhook: Use the Webhooks trigger to activate your recipe in real-time when webhook events are sent to a generated webhook address.
+ You have several options for the starting point of your recipe:
+  - Trigger from an app: Choose an app and trigger event to start your recipe. If you have not set up an connection to the app yet, the flow will prompt you to connect.
+  - Run on a schedule: Use the Scheduler trigger to run your recipe at specified intervals, such as once a week. You can also use cron expressions to create customized schedules.
+  - Trigger from a webhook: Use the Webhooks trigger to activate your recipe in real-time when webhook events are sent to a generated webhook address.
 
 4. Add **Actions** to follow your trigger in the Recipe Builder
 - Choose the action type that should occur when the trigger is activated.
 - If you choose "Action in app" the system will prompt you to choose an existing app connection or connect a new app.
 - Configure the action settings, specifying the target systems and data mappings.
 
-// image
+![Recipe Builder steps in Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/recipe-steps.png)
 
 5. Set **Conditions** (if necessary):
 - Add conditional logic to control the flow of actions.
