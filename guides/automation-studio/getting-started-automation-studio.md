@@ -5,7 +5,7 @@ category: 66c49b7d61daf600186e12cb
 
 IrisX Automation Studio is a powerful, low-code platform designed to help developers and business users build, test, and deploy automated workflows with ease. With an intuitive drag-and-drop interface, built-in integrations, and support for custom scripts, Automation Studio enables rapid development of automation solutions across various systems and services.
 
-Whether you're orchestrating complex backend processes or streamlining repetitive tasks, Automation Studio provides the flexibility and control needed to scale automation efficiently. This documentation will guide you through key features, components, and best practices to get the most out of IrisX Automation Studio.
+Whether you're orchestrating complex backend processes or streamlining repetitive tasks, Automation Studio provides the flexibility and control needed to scale automation efficiently. This documentation will guide you through key features and components to get the most out of IrisX Automation Studio.
 
 ## Key Concepts
 
