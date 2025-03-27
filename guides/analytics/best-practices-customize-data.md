@@ -1,7 +1,6 @@
 ---
 title: Customizing Data in IrisX Analytics - Best Practices
 category: 66c49b0049fa5200312dc835
-parentDocSlug: getting-started-irisX-analytics
 ---
 
 The IrisX folder in your catalog contains all provided base data. While you can't modify this original data or add customized tables directly to the **IrisX catalog**, you can create new tables derived from this data for your specific use cases.
