@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting
 category: 66c49b7d61daf600186e12cb
-parentDocSlug: getting-started-automation-studio
 ---
 
 We recommend following these best practices to ensure smooth recipe execution and improve troubleshooting efficiency:
