@@ -1,7 +1,6 @@
 ---
 title: Understanding Catalog Environments
 category: 66c49b0049fa5200312dc835
-parentDocSlug: getting-started-irisX-analytics
 ---
 
 IrisX analytics provides separate catalogs denoted with "dev", "test" and "prod" to facilitate your workflow. Here's how to effectively use each environment:
