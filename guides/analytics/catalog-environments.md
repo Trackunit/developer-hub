@@ -1,5 +1,5 @@
 ---
-title: Understanding Catalog Environments
+title: Catalog Environments
 category: 66c49b0049fa5200312dc835
 ---
 
