@@ -37,7 +37,7 @@ For applications requiring real-time data interaction, that will be offered on t
 
 - An IrisX Analytics workspace with dashboard creation permissions
 - An Iris app development environment
-- Appropriate data access permissions for the dashboard content
+- Appropriate data access permissions for the dashboard content (users of the dashboard have to have IrisX Analytics/Databricks access)
 
 ## Step 1: Create Views for Dashboard Data
 
