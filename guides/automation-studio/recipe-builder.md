@@ -37,10 +37,14 @@ A recipe typically uses the following components:
   - Run on a schedule: Use the Scheduler trigger to run your recipe at specified intervals, such as once a week. You can also use cron expressions to create customized schedules.
   - Trigger from a webhook: Use the Webhooks trigger to activate your recipe in real-time when webhook events are sent to a generated webhook address.
 
+![Configure a trigger in Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/recipe-trigger-setup.png)
+
 4. Add **Actions** to follow your trigger in the Recipe Builder
 - Choose the action type that should occur when the trigger is activated.
 - If you choose "Action in app" the system will prompt you to choose an existing app connection or connect a new app.
 - Configure the action settings, specifying the target systems and data mappings.
+
+![Action choices in Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/recipe-actions-choices.png)
 
 ![Recipe Builder steps in Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/recipe-steps.png)
 
