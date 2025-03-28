@@ -1,11 +1,9 @@
 ---
 title: Connectors
 category: 652e408346c8860073a6bd12
-
-
 ---
 
-Connectors in Automation Studio are powerful integration tools that enable seamless data flow and workflow automation between various enterprise systems. With over 1,200 pre-built connectors, users can easily link their existing applications, enhancing operational efficiency and data accessibility.
+Connectors in [Automation Studio](https://developers.trackunit.com/docs/automation-studio-overview) are powerful integration tools that enable seamless data flow and workflow automation between various enterprise systems. With over 1,200 pre-built connectors, users can easily link their existing applications, enhancing operational efficiency and data accessibility.
 
 ## Key Features
 - **Pre-built Connectors**: A vast library of connectors for popular ERPs, CRMs, and other enterprise systems, allowing quick integration without extensive coding.
@@ -16,6 +14,8 @@ Connectors in Automation Studio are powerful integration tools that enable seaml
 Custom Connectors: Developed using APIs to integrate less common or proprietary systems.
 - **Trackunit Connector**: Integrates all Trackunit APIs into Automation Studio
 - **IrisX Analytics**: Leverage advanced analytics for workflow automation.
+
+![Connector Library in Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/connector-library.png)
 
 ## Enable workflow Automation
 Connectors enable automated workflows by passing events and data between systems. This allows users to create triggers that initiate actions across multiple platforms, streamlining business processes.
