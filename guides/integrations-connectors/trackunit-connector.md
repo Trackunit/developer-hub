@@ -17,10 +17,9 @@ The Trackunit Connector serves a dual purpose within Automation Studio, function
 
 ### Trigger
 
-1. **Event-Based Automation:** The Trackunit Connector can listen for specific events or conditions from Trackunit APIs and webhooks. For example, it can trigger workflows based on real-time data changes such as:
+1. **Event-Based Automation:** The Trackunit Connector can listen for specific events or conditions from Trackunit webhooks. For example, it can trigger workflows based on real-time data changes such as:
  - Equipment location updates (e.g. entering or leaving a site).
  - Alerts for maintenance requirements or fault notifications.
- - Usage thresholds being exceeded (e.g. hours of operation).
 
 2. **Real-Time Response:** This capability allows users to automate responses immediately when predefined conditions are met, ensuring timely actions without manual intervention.
 
