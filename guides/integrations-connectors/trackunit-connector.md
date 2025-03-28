@@ -4,7 +4,7 @@ category: 652e408346c8860073a6bd12
 parentDocSlug: connectors
 ---
 
-The Trackunit Connector is a powerful tool that integrates all Trackunit APIs within [Automation Studio](https://developers.trackunit.com/docs/automation-studio-overview), enabling users to automate workflows and set up alerts based on real-time data. This documentation provides detailed information on how to utilize the Trackunit Connector effectively.
+The Trackunit Connector is a powerful tool that integrates all Trackunit APIs and webhooks within [Automation Studio](https://developers.trackunit.com/docs/automation-studio-overview), enabling users to automate workflows and set up alerts based on real-time data. This documentation provides detailed information on how to utilize the Trackunit Connector effectively.
 
 ## Getting Started
 The Trackunit Connector comes pre-connected in Automation Studio and is immediately availabe to be used in workflow automation recipes.
