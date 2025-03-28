@@ -7,8 +7,8 @@ category: 66c49b0049fa5200312dc835
 
 If you want to share the dashboards you created on IrisX Analytics, you have several options:
 
-1. If the person has access to Databricks, you can easily share it with them using the IrisX interface. 
-2. If the person does not have access to Databricks, you can contact us and we can add them (this does not infer additional costs). We are also working on a self-service function so that you can give access to IrisX yourself in the future.
+1. If the person has access to IrisX Analytics, you can easily share it with them using the IrisX interface. 
+2. If the person does not have access to IrisX Analytics, you can contact us and we can add them (this does not infer additional costs). We are also working on a self-service function so that you can give access to IrisX yourself in the future.
 3. You can download the dashboard as html and share that to provide a one-time view. 
 
 ## How to share findings with people not having access to IrisX Analytics?
@@ -22,7 +22,7 @@ For analysts and business users who prefer visual data exploration, connecting p
 - Other tools such as **Tableau** or **Qlik** can also be connected using the partner connectors on the Databricks Marketplace.
 
 ### Excel Export
-For users who need to work directly with the data or conduct one-time analyses on smaller datasets you can export tables or query results as Excel or CSV files directly from the Databricks interface. 
+For users who need to work directly with the data or conduct one-time analyses on smaller datasets you can export tables or query results as Excel or CSV files directly from the IrisX Analytics interface. 
 
 ### REST API Access
 For programmatic access or integration with custom applications:
