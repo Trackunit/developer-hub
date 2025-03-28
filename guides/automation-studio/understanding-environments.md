@@ -31,3 +31,5 @@ Automation Studio workspaces have an environments feature, which means that the 
 Deployment is a process that pushes projects and assets from one environment in a workspace to another environment as part of the recipe development lifecycle (RDLC).
 
 Recipes are typically developed in Development and moved to Test when they're ready for review. Issues are reported as needed and addressed in the Development environment. Then finally the recipe is moved to Production after testing and approval. You can either deploy projects and assets from Development to Test, or from Development to Production.
+
+![Deployment of recipes](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/workflow-deployment.png)
