@@ -58,20 +58,32 @@ Here are two example views you might create:
 1. **Asset Count View**: Displays the number of assets the current user can access
    ```sql
    CREATE VIEW current_user_asset_count AS
+   WITH current_user_id as (
+      SELECT account_id
+      FROM irisx.user.user
+      WHERE email = current_user()
+   )
    SELECT COUNT(*) as asset_count
-   FROM assets
-   WHERE owner = current_user();
+   FROM irisx.account.account_asset a
+   INNER JOIN current_user_id b ON a.account_id = b.account_id
+   ;
    ```
 
 2. **Cumulative Operating Hours View**: Shows operating hours for accessible assets
    ```sql
    CREATE VIEW current_user_operating_hours AS
-   SELECT asset_id, timestamp, cumulative_hours
-   FROM asset_operating_hours
-   WHERE asset_id IN (
-     SELECT id FROM assets WHERE owner = current_user()
+   WITH current_user_id as (
+      SELECT account_id
+      FROM irisx.user.user
+      WHERE email = current_user()
+   ), asset_of_current_user as (
+      SELECT asset_id
+      FROM irisx.account.account_asset a
+      INNER JOIN current_user_id b ON a.account_id = b.account_id
    )
-   ORDER BY timestamp DESC;
+      SELECT a.*
+      FROM irisx.insight.cumulativeoperatinghors_latest a
+      INNER JOIN asset_of_current_user b ON a.asset_id = b.asset_id
    ```
 
 ## Step 2: Create and Configure Your Dashboard
@@ -110,20 +122,18 @@ Here are two example views you might create:
    ```
 
 3. Update your app's manifest to include IrisX Analytics in the Content Security Policy headers:
-   ```json
-   {
-     "manifest_version": 1,
-     "content_security_policy": {
-       "frame-src": ["https://your-irisx-instance.cloud.databricks.com"]
-     }
-   }
+   ```ts
+   cspHeader: {
+      'frame-src': ['https://dbc-da1952f3-99bf.cloud.databricks.com'],
+      'script-src': ['https://dbc-da1952f3-99bf.cloud.databricks.com'],
+   },
    ```
 
 ## Step 5: Serve and Test Your App
 
 1. Serve your app using the Iris CLI
    ```bash
-   iris serve
+   npx nx run [name-of-your-app]:serve
    ```
 2. Open the provided URL in your browser
 3. Verify that the dashboard displays correctly and shows data specific to the current user
