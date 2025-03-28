@@ -9,7 +9,9 @@ The Trackunit Connector is a powerful tool that integrates all Trackunit APIs wi
 ## Getting Started
 The Trackunit Connector comes pre-connected in Automation Studio and is immediately availabe to be used in workflow automation recipes.
 
-//images
+![Preinstalled Trackunit Connector](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/TU-connector-preinstalled.png)
+
+![Trackunit Connector inside workflow automation recipe](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/TU-connector-recipe.png)
 
 The Trackunit Connector serves a dual purpose within Automation Studio, functioning as **both a trigger and an action facilitator.** Here’s how each aspect works:
 
@@ -22,7 +24,7 @@ The Trackunit Connector serves a dual purpose within Automation Studio, function
 
 2. **Real-Time Response:** This capability allows users to automate responses immediately when predefined conditions are met, ensuring timely actions without manual intervention.
 
-// add image
+![Trackunit Connector triggers](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/TU-connector-triggers.png)
 
 3. **Technical foundation:** The full [Webhooks event catalog](https://developers.trackunit.com/docs/webhooks-event-catalog) is available as triggers in the Trackunit Connector.
 
@@ -34,7 +36,7 @@ The Trackunit Connector serves a dual purpose within Automation Studio, function
  - Updating records in a database or external system based on the information received from Trackunit APIs.
  - Initiating follow-up processes, such as scheduling maintenance or additional alerts when specific conditions arise.
 
-// images
+![Trackunit Connector actions](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/TU-connector-actions.png)
 
 2. **Workflow Integration**: Users can design comprehensive workflows that combine multiple actions in response to triggers, enhancing operational efficiency and enabling complex automation scenarios.
 
