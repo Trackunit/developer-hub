@@ -41,10 +41,10 @@ Create a site within your account. Once the site is created, you will gain the a
 **Status of a Site**
 
 Start and end date will affect the status of a site:
-- If the start date is set in the future, then the status shows as PLANNED
-- If the end date is in the part, then the status shows as FINISHED
-- Else the status is ACTIVE
-- Setting the status to ARCHIVED overwrites this logic
+- If the start date is set in the future, then the status shows as *PLANNED*
+- If the end date is in the part, then the status shows as *FINISHED*
+- Else the status is *ACTIVE*
+- Setting the status to *ARCHIVED* overwrites this logic
 
 ### Site Assets endpoint
 Exposes asset-on-site live data and is up to date seconds after the location data has been received. Be aware that location data could be delayed or out-of-order.
