@@ -5,6 +5,10 @@ category: 67e55097c5aa85004b6f011e
 
 The Can Faults API is a robust solution designed to simplify fault monitoring, diagnostics, and simulation for connected assets. It provides a range of endpoints that cater to both historical analysis and fault management, making it an essential tool for fleet operators, maintenance teams, and system integrators.
 
+> ➡️ [OpenAPI Specification for the CAN Faults API domain](https://developers.trackunit.com/openapi/67e55097c5aa85004b6f011c)
+> 
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/67e55097c5aa85004b6f011c).
+
 ## Key Features
 
 ### Fault Retrieval:
