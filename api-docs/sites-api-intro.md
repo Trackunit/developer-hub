@@ -16,7 +16,7 @@ The Sites API is designed to facilitate the seamless creation and management of 
 
 ## Concepts & Interface
 
-### [Create Site endpoint](https://developers.trackunit.com/reference/createsite)
+### Create/Update/Delete Site endpoints
 Create a site within your account. Once the site is created, you will gain the ability to see on-site assets and their historical data.
 
 **Define a Site:**
@@ -35,24 +35,32 @@ Create a site within your account. Once the site is created, you will gain the a
 - :construction: Note: The types 'Classic Point' and 'Classic Zone' are only used for migration away from Manager Classic and cannot be provided when creating new sites.
 
 **Status of a Site**
+
 Start and end date will affect the status of a site:
 - If the start date is set in the future, then the status shows as PLANNED
 - If the end date is in the part, then the status shows as FINISHED
 - Else the status is ACTIVE
 - Setting the status to ARCHIVED overwrites this logic
 
-### 
+### Site Assets endpoint
+Exposes asset-on-site live data and is up to date seconds after the location data has been received. Be aware that location data could be delayed or out-of-order.
+- Get a list of sites an asset is on, for one or multiple assets at a time.
+- Get a list of assets currently located on-site, for one or multiple sites at a time.
 
+### Site History endpoint
+Exposes asset-on-site historical data and is updated hourly. Since location data can be delayed, data may change back in time.
+Retrieve the comprehensive history of a site:
+- either asset intervals within a list of sites
+- or the sites visited by a list of assets
+
+### Site contact and Site user endpoints
+- Contact is a simple "tagging" of user information related to the site. This is meant for users who do not have access to Trackunit.
+- Users are given permission to see the assets of the site, as well as the site itself in Trackunit. Be aware that users with admin or fleet admin priviledges already have this permission.
 
 ## Extending the Data Model of Sites
 
 Missing any fields needed to define your sites perfectly? Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**. Learn more in the [Custom Fields API -Introduction](https://developers.trackunit.com/reference/custom-field-intro#define-your-own-custom-fields).
 
-the data model of assets, accounts, groups, sites, customers and rental contracts with new fields\*\*.
-
 > 📘 Subscription requirement
 > 
 > IrisX is required to create and change custom field definitions. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
-
-## Constraints
-- 
