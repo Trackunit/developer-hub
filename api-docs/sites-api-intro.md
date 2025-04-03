@@ -16,12 +16,16 @@ The Sites API is designed to facilitate the seamless creation and management of 
 
 ## Concepts & Interface
 
+> ➡️ [OpenAPI Specification for the Sites API domain](https://developers.trackunit.com/openapi/63fc7f4a12fbea0327599d64)
+> 
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this REST API in a JSON file [here](https://developers.trackunit.com/openapi/63fc7f4a12fbea0327599d64).
+
 ### Create/Update/Delete Site endpoints
 Create a site within your account. Once the site is created, you will gain the ability to see on-site assets and their historical data.
 
 **Define a Site:**
 - Address: define a site by providing the location via street, ZIP code, city and country (Note: if you omit address, it will be filled in based Google maps lookup on the center of the polygon)
-- Polygon: define a site by providing an array of GPS points, where each point consists of two or three coordinates (longitude, latitude, optionally altitude)
+- Polygon: define a site by providing an array of GPS points, where each point consists of two or three coordinates (longitude, latitude, optionally altitude) following the [GeoJson](https://geojson.org/) format
 
 > 💡 Advise
 > 
