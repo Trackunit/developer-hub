@@ -57,6 +57,19 @@ Retrieve the comprehensive history of a site:
 - Contact is a simple "tagging" of user information related to the site. This is meant for users who do not have access to Trackunit.
 - Users are given permission to see the assets of the site, as well as the site itself in Trackunit. Be aware that users with admin or fleet admin priviledges already have this permission.
 
+## Sites & Emissions
+
+Emissions data for assets and sites is available via multiple endpoints in the [Emissions API ](https://developers.trackunit.com/reference/emissions-api):
+- Get the monthly emissions data for assets on a site
+- Filter by asset ids to get the monthly emissions data for assets on a site
+- Get the monthly emissions data for all assets on a site summed up by month
+- Get the monthly emissions data for all assets on a site summed up by month
+- Get total emissions, kWh, usage hours, and fuel usage for a site grouped by month.
+
+> 📘 Available with the Emissions Reporting app
+> 
+> This API is available for customers that have acquired a license for the Emissions Reporting capability.
+
 ## Extending the Data Model of Sites
 
 Missing any fields needed to define your sites perfectly? Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**. Learn more in the [Custom Fields API -Introduction](https://developers.trackunit.com/reference/custom-field-intro#define-your-own-custom-fields).
