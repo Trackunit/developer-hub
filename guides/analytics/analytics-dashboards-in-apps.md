@@ -1,5 +1,5 @@
 ---
-title: Embedding IrisX Analytics Dashboards in Iris Apps
+title: Embedding IrisX Dashboards in Apps
 category: 66c49b0049fa5200312dc835
 ---
 
