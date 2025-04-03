@@ -56,7 +56,7 @@ A recipe typically uses the following components:
  - Utilize the testing feature to simulate the trigger and validate that the actions execute as expected.
  - Review logs and outputs to troubleshoot any issues.
 
-7. **Deploy** the Recipe: Once testing is complete, deploy the recipe to make it active. Monitor its performance and make adjustments as needed.
+7. **Deploy** the Recipe: Once testing is complete, deploy the recipe to make it active. Monitor its performance and make adjustments as needed. See [Environments & Deployments guide](https://developers.trackunit.com/docs/understanding-environments) for more information.
 
 
 > 💡 Guided Example
