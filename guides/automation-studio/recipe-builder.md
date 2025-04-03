@@ -7,7 +7,7 @@ The Workflow Automation Projects and their Recipe Builder is a core component of
 
 Recipes support both simple and complex workflows, with features like conditional logic for decision-making, loops to process datasets, and error handling to manage exceptions.
 
-## Key Components in Recipes
+# Key Components in Recipes
 
 A recipe follows a structured flow that defines when it runs, what actions it takes, how data moves, and how errors are managed. Each component is interconnected, and understanding these relationships helps you design recipes that are efficient, reliable, and maintainable.
 
@@ -20,13 +20,17 @@ A recipe typically uses the following components:
 - **Error handling:** Ensures the recipe can recover from failures.
 
 
-## Creating a new Recipe
+# Creating a new Recipe
+
+## Locate Recipe Builder
 
 1. Access the Recipe Builder by navigating to the Automation Studio interface in Trackunit Manager and select **Projects > Recipes > Create Recipe**
 
 ![Create recipe in Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/create-recipe.png)
 
 2. Click on **"Create Recipe"** and provide a name and description for the recipe to ensure clarity for future reference.
+
+## Choose Trigger
  
 3. Select the appropriate **trigger type** from the available options and configure the trigger settings, including any necessary parameters.
 
@@ -38,6 +42,8 @@ A recipe typically uses the following components:
   - Trigger from a webhook: Use the Webhooks trigger to activate your recipe in real-time when webhook events are sent to a generated webhook address.
 
 ![Configure a trigger in Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/recipe-trigger-setup.png)
+
+## Add Actions and Set Conditions
 
 4. Add **Actions** to follow your trigger in the Recipe Builder
 - Choose the action type that should occur when the trigger is activated.
@@ -52,6 +58,8 @@ A recipe typically uses the following components:
 - Add conditional logic to control the flow of actions.
 - Use boolean expressions to define the criteria that must be met for actions to execute.
 
+## Testing and Deployment
+
 6. **Testing** the Recipe:
  - Utilize the testing feature to simulate the trigger and validate that the actions execute as expected.
  - Review logs and outputs to troubleshoot any issues.
@@ -64,7 +72,7 @@ A recipe typically uses the following components:
 > Review a [step-by-step example including a video guide](https://docs.workato.com/getting-started/build-first-recipe.html#step-1-create-a-new-recipe) for how to create your first recipe or get more information on [Recipe Design](https://docs.workato.com/recipes/building-recipes.html#considerations-for-recipe-design) in general.
 
 
-## Best Practices
+# Best Practices
 - Modular Design: Break down complex workflows into smaller, reusable recipes to enhance maintainability and clarity.
 - Error Handling: Implement error handling mechanisms within recipes to manage potential failures gracefully.
 - Version Control: Maintain version control for recipes to track changes and revert to previous versions if necessary.
