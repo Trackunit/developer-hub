@@ -20,6 +20,10 @@ The customer API is built on the following concepts:
 - A **customer contact** is a registration of a way to get in contact with this entity. It is not necessarily a person, as it can also be a call center or a department.
 - A **customer asset** represents a relationship between the customer and the asset. Fx. an asset being rented to that customer or an asset assigned to undergo service by a service provider.
 
+> ➡️ [OpenAPI Specification for the Customers API domain](https://developers.trackunit.com/openapi/65c1ea0e0bf60400104f7c66)
+> 
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/65c1ea0e0bf60400104f7c66).
+
 ## Extending the Data Model
 
 Missing any fields needed to define your customers perfectly? Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**. Learn more in the [Custom Fields API -Introduction](https://developers.trackunit.com/reference/custom-field-intro#define-your-own-custom-fields).
