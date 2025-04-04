@@ -14,5 +14,5 @@ Explore relevant APIs in this category:
 - [Asset Onboarding](https://developers.trackunit.com/reference/onboardasset_v1) & [Offboarding APIs](https://developers.trackunit.com/reference/offboardasset_v1) (currently not supporting the asset type "machine")
 - [Machine APIs](https://developers.trackunit.com/reference/machine-apis-intro) for onboarding and cataloging machines
 - [Groups API](https://developers.trackunit.com/reference/getgroups)
-- [Sites API](https://developers.trackunit.com/reference/getsites)
+- [Sites API](https://developers.trackunit.com/reference/sites-api-intro)
 - [Custom Fields API](https://developers.trackunit.com/reference/custom-field-intro)
