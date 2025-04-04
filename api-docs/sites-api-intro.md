@@ -22,6 +22,7 @@ The Sites API is designed to facilitate the seamless creation and management of 
 
 ### Create/Update/Delete Site endpoints
 Create a site within your account. Once the site is created, you will gain the ability to see on-site assets and their historical data.
+Once the site is deleted, all linked information will be unavailable, including site history and metadata.
 
 **Define a Site:**
 - Address: define a site by providing the location via street, ZIP code, city and country (Note: if you omit address, it will be filled in based Google maps lookup on the center of the polygon)
