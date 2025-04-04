@@ -58,7 +58,7 @@ Retrieve the comprehensive history of a site:
 - or the sites visited by a list of assets
 
 ### Site contact and Site user endpoints
-- Contact is a simple "tagging" of user information related to the site. This is meant for users who do not have access to Trackunit.
+- Contact is a simple form of user information related to the site. This is meant for users who do not have access to Trackunit.
 - Users are given permission to see the assets of the site, as well as the site itself in Trackunit. Be aware that users with admin or fleet admin priviledges already have this permission.
 
 ## Sites & Emissions
