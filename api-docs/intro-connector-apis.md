@@ -1,6 +1,6 @@
 ---
-title: Intro to Ecosystem APIs
-category: 65cf5663f3354e0037801616
+title: Intro to Connector APIs
+category: 67ab45f573ac8f003da4f903
 ---
 
 ![Trackunit Iris Feature APIs](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/apis-feature.png)
@@ -13,3 +13,7 @@ Explore relevant APIs in this category:
 - Manage CRM views via the [Customer API](https://developers.trackunit.com/reference/customers)
 
 Also see the [ERP Integration guide](https://developers.trackunit.com/reference/data-model) to learn how to fetch telematics data from Trackunit and understand how to map and synchronize rental ERP data into Trackunit.
+
+> 💡 Learn more about IrisX Connectors
+> 
+> Explore the opportunities with pre-build [Connectors](https://developers.trackunit.com/docs/connectors) and Automation Studio.
