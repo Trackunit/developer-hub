@@ -10,4 +10,3 @@ category: 65cf55d91bffa7001890aaba
 Explore relevant APIs in this category:
 
 - [Users API](https://developers.trackunit.com/reference/getusers)
-- [Customer API](https://developers.trackunit.com/reference/customers)
