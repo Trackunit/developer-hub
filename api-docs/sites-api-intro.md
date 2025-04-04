@@ -25,7 +25,7 @@ Create a site within your account. Once the site is created, you will gain the a
 Once the site is deleted, all linked information will be unavailable, including site history and metadata.
 
 **Define a Site:**
-- Address: define a site by providing the location via street, ZIP code, city and country (Note: if you omit address, it will be filled in based Google maps lookup on the center of the polygon)
+- Address: define a site by providing the location via street, ZIP code, city and country (Note: if you omit address, it will be filled in based on a Google maps lookup on the center of the polygon)
 - Polygon: define a site by providing an array of GPS points, where each point consists of two or three coordinates (longitude, latitude, optionally altitude) following the [GeoJson](https://geojson.org/) format
 
 > 💡 Advise
