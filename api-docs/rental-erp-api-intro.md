@@ -24,6 +24,9 @@ The ERP integrations are built on the following concepts
 
 ![Trackunit Rental Data Model](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/erp-rental-data-model.png)
 
+> ➡️ [OpenAPI Specification for the Rental API domain](https://developers.trackunit.com/openapi/668640cd587364001eaccdc5)
+> 
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/668640cd587364001eaccdc5).
 
 ## Extending the Data Model
 

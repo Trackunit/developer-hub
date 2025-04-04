@@ -22,6 +22,10 @@ Assets have the following properties:
 - An **asset** is a trackable piece of equipment divided into several subtypes; machine, equipment, tool or attachment.
 - **Assets** can have zero to many **telematics devices** associated with them
 
+> ➡️ [OpenAPI Specification for the Assets API domain](https://developers.trackunit.com/openapi/63170aaed72d5f00a36a8afd)
+> 
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/63170aaed72d5f00a36a8afd).
+
 ## Asset Types
 
 | Type       | Description                                                                                                                |
