@@ -1,5 +1,5 @@
 ---
-title: Understanding Environments
+title: Environments & Deployment
 category: 66c49b7d61daf600186e12cb
 ---
 Automation Studio workspaces have an environments feature, which means that the users can switch between a Development, a Test and a Production environment.
@@ -8,7 +8,7 @@ Automation Studio workspaces have an environments feature, which means that the 
 
 ![Switching environments](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/switch-environments.png)
 
-**Development**
+### Development
 - Used for recipe development and serves as a sandbox for experimentation and iteration.
 - Used to deploy projects to other environments, including Production.
 - Used to maintain teams and the account, including collaborator roles, projects, folders, etc.
@@ -18,11 +18,11 @@ Automation Studio workspaces have an environments feature, which means that the 
 > 
 >Changes to automations should only be made in the Development environment to ensure modifications are captured and tracked accurately. Although you can change automations in the Test environment, we recommend changing automations in the Development environment only due to SDLC best practices.
 
-**Test**	
+### Test	
 - Used to test recipes in development to identify and fix issues.
 - Ideal for involving QA teams to review and test workflows.
 
-**Production**
+### Production
 - Used to run recipes that have been tested, reviewed, and approved in the development environment.
 - Designed for stability and reliability, ensuring that users can depend on the workflows in operation.
 

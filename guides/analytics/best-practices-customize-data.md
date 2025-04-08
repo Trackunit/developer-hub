@@ -1,5 +1,5 @@
 ---
-title: Customizing Data in IrisX Analytics - Best Practices
+title: Best Practices for Customizing Data
 category: 66c49b0049fa5200312dc835
 ---
 
