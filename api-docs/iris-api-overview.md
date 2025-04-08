@@ -12,7 +12,6 @@ Ensure your team has the appropriate permissions relevant to their role, maintai
 Explore relevant APIs in this category:
 
 - [Users API](https://developers.trackunit.com/reference/getusers)
-- [Customer API](https://developers.trackunit.com/reference/customers)
 
 ## Asset Administration
 
@@ -25,7 +24,7 @@ Explore relevant APIs in this category:
 - [Asset Onboarding](https://developers.trackunit.com/reference/onboardasset_v1) & [Offboarding APIs](https://developers.trackunit.com/reference/offboardasset_v1) (currently not supporting the asset type "machine")
 - [Machine APIs](https://developers.trackunit.com/reference/machine-apis-intro) for onboarding and cataloging machines
 - [Groups API](https://developers.trackunit.com/reference/getgroups)
-- [Sites API](https://developers.trackunit.com/reference/getsites)
+- [Sites API](https://developers.trackunit.com/reference/sites-api-intro)
 - [Custom Fields API](https://developers.trackunit.com/reference/custom-field-intro)
 
 ## Configuration
@@ -68,7 +67,7 @@ Explore relevant APIs in this category:
 - [Access Management](https://developers.trackunit.com/reference/access-management-intro) & [Operator APIs](https://developers.trackunit.com/reference/operator-intro)
 - [Emissions Reporting APIs](https://developers.trackunit.com/reference/emissions-api)
 
-## Ecosystem APIs
+## Connector APIs
 
 Unlock seamless collaboration by integrating your machines, partners, and digital tools into a connected construction ecosystem—effortlessly sharing data, automating workflows, and driving efficiency across your value chain.
 
