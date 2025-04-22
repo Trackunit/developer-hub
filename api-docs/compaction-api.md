@@ -27,4 +27,4 @@ https://www.wackerneuson.de/en/services/equipcare
 
 All API calls are made against the following base URL:
 
-`https://iris.trackunit.com/api/Compaction/v1/compactions/`
+`https://iris.trackunit.com/api/compaction/v1/compactions/`

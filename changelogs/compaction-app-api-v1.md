@@ -11,58 +11,58 @@ Below is a list of all available REST endpoints:
 
 ## Filter:
 
-> ➕ GET: /api/Compaction/v1/compactions/trips/{tripId}/filter
+> ➕ GET: /api/compaction/v1/compactions/trips/{tripId}/filter
 
 [Get Trip Filter](ref:gettripfilter)
 
-> ➕ PUT: /api/Compaction/v1/compactions/trips/{tripId}/filter
+> ➕ PUT: /api/compaction/v1/compactions/trips/{tripId}/filter
 
 [Update Trip Filter](ref:updatetripfilter)
 
-> ➕ DELETE: /api/Compaction/v1/compactions/trips/{tripId}/filter
+> ➕ DELETE: /api/compaction/v1/compactions/trips/{tripId}/filter
 
 [Delete Trip Filter](ref:deletetripfilter)
 
 ## Searches:
 
-> ➕ POST: /api/Compaction/v1/compactions/searches
+> ➕ POST: /api/compaction/v1/compactions/searches
 
 [Create Saved Search](ref:createsavedsearch)
 
-> ➕ GET: /api/Compaction/v1/compactions/searches
+> ➕ GET: /api/compaction/v1/compactions/searches
 
 [Get All Saved Searches](ref:getallsavedsearches)
 
-> ➕ GET: /api/Compaction/v1/compactions/searches/{searchUUID}
+> ➕ GET: /api/compaction/v1/compactions/searches/{searchUUID}
 
 [Get Saved Search](ref:getsavedsearch)
 
-> ➕ PUT: /api/Compaction/v1/compactions/searches/{searchUUID}
+> ➕ PUT: /api/compaction/v1/compactions/searches/{searchUUID}
 
 [Update Saved Search](ref:updatesavedsearch)
 
-> ➕ DELETE: /api/Compaction/v1/compactions/searches/{searchUUID}
+> ➕ DELETE: /api/compaction/v1/compactions/searches/{searchUUID}
 
 [Delete Saved Search](ref:deletesavedsearch)
 
 ## Trips:
 
-> ➕ GET: /api/Compaction/v1/compactions/trips/{tripId}
+> ➕ GET: /api/compaction/v1/compactions/trips/{tripId}
 
 [Get Compaction Trip](ref:getcompactiontrip)
 
-> ➕ DELETE: /api/Compaction/v1/compactions/trips/{tripId}
+> ➕ DELETE: /api/compaction/v1/compactions/trips/{tripId}
 
 [Delete Compaction Trip](ref:deletecompactiontrip)
 
-> ➕ GET: /api/Compaction/v1/compactions/trips/{tripId}/compactions
+> ➕ GET: /api/compaction/v1/compactions/trips/{tripId}/compactions
 
 [Get Compaction Datapoints](ref:getcompactiondatapoints)
 
-> ➕ GET: /api/Compaction/v1/compactions/trips/{tripId}/compactions/summarized
+> ➕ GET: /api/compaction/v1/compactions/trips/{tripId}/compactions/summarized
 
 [Get Summarized Compaction](ref:getsummarizedcompaction)
 
-> ➕ POST: /api/Compaction/v1/compactions/trips
+> ➕ POST: /api/compaction/v1/compactions/trips
 
 [Get Compaction Trips](ref:getcompactiontrips)
