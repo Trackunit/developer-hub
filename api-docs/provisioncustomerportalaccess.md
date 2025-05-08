@@ -24,7 +24,7 @@ After creating a customer and assigning assets to them, you can provision access
 5. The user will be authenticated using the preconfigured SSO connection
 6. Upon successful authentication, the user will see a branded version of Trackunit Manager with their assets
 
-![Provisioning process](provisioncustomerportalaccess.drawio.png)
+![Provisioning process](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/provisioncustomerportalaccess.drawio.png)
 
 The API endpoint is idempotent, so may be called each time a user logs in. This also ensures that any changes in user details will be synchronized.
 
