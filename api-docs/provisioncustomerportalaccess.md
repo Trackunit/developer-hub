@@ -26,7 +26,7 @@ After creating a customer and assigning assets to them, you can provision access
 
 ![Provisioning process](provisioncustomerportalaccess.drawio.png)
 
-The API endpoint is idempotent, so may be called each time a user logs in. This also ensure that any changes in user details will be synchronized.
+The API endpoint is idempotent, so may be called each time a user logs in. This also ensures that any changes in user details will be synchronized.
 
 > 📘 Subscription Requirement
 > 
