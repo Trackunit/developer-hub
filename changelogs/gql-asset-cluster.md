@@ -13,5 +13,5 @@ It accepts the same `AssetFiltersInput` as the `assets` search field, so they ca
 
 [See all relevant GQL documentation](https://developers.trackunit.com/reference/graphql-api-introduction)
 
-![map with some asset clusters](gql-asset-cluster.png)
+![map with some asset clusters](https://cdn.statically.io/gh/Trackunit/developer-hub/master/changelogs/gql-asset-cluster.png)
 
