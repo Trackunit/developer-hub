@@ -1,5 +1,5 @@
 ---
-title: GraphQL Asset Summary
+title: GraphQL Asset Clusters
 type: added
 ---
 
