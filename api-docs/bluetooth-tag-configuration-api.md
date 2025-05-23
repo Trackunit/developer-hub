@@ -19,8 +19,8 @@ Reading the challenge request and writing the challenge response needs to be don
 
 ### Utilization Profiles
 
-Utilization profiles are a functional feature which allows configuration of how low-level accelerometer data will be interpreted 
-on KIN T200 (KIN2) devices as the connected asset's utilization data, including: movement, operation, overload operation and extreme events. 
+Utilization profiles are a functional feature which allows configuration of how a KIN T200 (KIN2) device measures the connected 
+asset's utilization, including: movement, operation, overload operation and extreme events. 
 The API allows searching utilization profiles based on the filter criteria (asset metadata), getting the profile by its identifier 
 and acknowledging the profile being sent (desired) and accepted (reported) by the KIN2 device.
 Applying the utilization profiles and reading the status of that operation needs to be done using the KIN2 device's BLE services.
