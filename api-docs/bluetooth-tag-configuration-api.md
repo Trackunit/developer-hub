@@ -7,7 +7,6 @@ Bluetooth Tag Configuration API exposes features required for configuration of B
 Process of Bluetooth tag devices configuration requires clients of this API also physical access to the device via Bluetooth.
 
 > ➡️ [OpenAPI Specification for the Bluetooth Tag Configuration API domain](https://developers.trackunit.com/openapi/682f3ce5439e430039b25773)
-> 
 > Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/682f3ce5439e430039b25773).
 
 ### KIN Challenge
@@ -20,11 +19,11 @@ Reading the challenge request and writing the challenge response needs to be don
 
 ### Utilization Profiles
 
-Utilization profiles is a functional feature which allows configuration of how low level accelerometer data will be interpreted 
+Utilization profiles are a functional feature which allows configuration of how low-level accelerometer data will be interpreted 
 on KIN T200 (KIN2) devices as the connected asset's utilization data, including: movement, operation, overload operation and extreme events. 
 The API allows searching utilization profiles based on the filter criteria (asset metadata), getting the profile by its identifier 
 and acknowledging the profile being sent (desired) and accepted (reported) by the KIN2 device.
-Applying the utilization profiles and reding the status of that operation needs to be done using the KIN2 device's BLE services.
+Applying the utilization profiles and reading the status of that operation needs to be done using the KIN2 device's BLE services.
 
 ## Constraints
 
