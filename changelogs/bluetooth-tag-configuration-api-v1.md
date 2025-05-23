@@ -1,5 +1,5 @@
 ---
-title: Compaction App API v1
+title: Bluetooth tag configuration API v1
 type: added
 ---
 
