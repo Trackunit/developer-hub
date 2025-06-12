@@ -16,7 +16,7 @@ This is a Quickstart guide intended to help you set up a basic development envir
 
 ## Prerequisites
 
-- Node LTS (version 22.14.0 or higher)
+- Node LTS
 - NX version 21.1.3 or higher
 - Git
 - WSL (Windows only)
