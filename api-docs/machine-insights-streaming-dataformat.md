@@ -42,8 +42,9 @@ Metadata about the telematics device, and further links into the Trackunit APIs 
 | ExternalReferenceNumber | Customer-assigned                      | The external reference number assigned to this machine by the customer account. |
 
 In general the MachineId is used to navigate to the
-various [Iris APIs]([https://dev.trackunit.com/docs/introduction-1]), while the UnitId can be used to access
-the [Classic APIs](https://dev.trackunit.com/docs/trackunit-api).
+various [Iris APIs]([https://developers.trackunit.com/reference/iris-api-overview]), while the UnitId can be used to
+access
+the [Classic APIs](https://dev.trackunit.com/docs/introduction).
 
 ## Location and LocationAddress
 
@@ -144,7 +145,7 @@ The general format of the Hours fields is:
 
 ## Machine Insights
 
-The main fields (around 130 in total) all describe some aspect of semantic data about a machine: FuelRemaining,
+The main fields (around 150 in total) all describe some aspect of semantic data about a machine: FuelRemaining,
 EngineStatus, Distance travelled, etc. The availability of these data points will vary depending on the source of the
 telematic data (be it GPS, CAN-bus, ISO feed, etc.). The unit of measurement for each data point will always be the
 same, i.e., the unit for Distance will always be "km" for kilometres. The general format of the machine insights is,
@@ -304,7 +305,7 @@ While CanMessages remains available for low-level CAN data, AdvancedSensors shou
 non-Machine Insights data is required. By default, AdvancedSensors contains data from Modbus, API integrations and
 Bluetooth tags. In order to fully use AdvancedSensors for all sensor data there is a migration path where CanMessages
 are duplicated to AdvancedSensors until eventually only AdvancedSensors are available. Contact Trackunit to follow this
-path.The AdvancedSensors field is an array, where each element has the following format:
+path. The AdvancedSensors field is an array, where each element has the following format:
 
 [block:parameters]
 {
@@ -314,25 +315,25 @@ path.The AdvancedSensors field is an array, where each element has the following
 "h-2": "Description",
 "0-0": "datetime",
 "0-1": 1604042795000,
-"0-2": "Unix timestamp in milliseconds when this sensor reading was taken.",
+"0-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds when this sensor reading was taken.",
 "1-0": "UnitOfMeasurement",
-"1-1": "°C",
+"1-1": \""°C\"",
 "1-2": "Unit for NumericValue; normalized across messages.",
 "2-0": "SensorId",
 "2-1": 212,
 "2-2": "Numeric ID of the sensor (same as VariableId).",
 "3-0": "SensorName",
-"3-1": "Engine Temperature",
+"3-1": \""Engine Temperature\"",
 "3-2": "Human-readable name of the sensor (same as VariableName).",
 "4-0": "NumericValue",
 "4-1": 85.3,
 "4-2": "Parsed numeric reading, if available.",
 "5-0": "StringValue",
-"5-1": "ON",
+"5-1": "\"ON\" \n\"OFF\"",
 "5-2": "Parsed string reading (e.g., state sensors), if available.",
 "6-0": "Source",
-"6-1": "MODBUS",
-"6-2": "Origin of the reading (OTHER, CAN1, CAN2, MODBUS, ONEI3, BLUETOOTH_TAG, API_INTEGRATION)."
+"6-1": "\"MODBUS\" \n\"CAN1\"",
+"6-2": "Origin of the reading (MODBUS, CAN1, CAN2, ONEI3, BLUETOOTH_TAG, API_INTEGRATION, OTHER)."
 },
 "cols": 3,
 "rows": 7,
