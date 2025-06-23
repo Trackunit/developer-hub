@@ -33,7 +33,7 @@ Trackunit provides an extensive UI Component library. When using components from
       "image": [
         "https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/sdk-docs/ui-components.png",
         null,
-        "UI Components"
+        "Design System"
       ],
       "align": "center",
       "sizing": "50% "
@@ -42,7 +42,7 @@ Trackunit provides an extensive UI Component library. When using components from
 }
 [/block]
 
-For more information see: [UI Components](https://apps.iris.trackunit.com/storybook/)
+For more information see: [Design System](https://design.iris.trackunit.com/)
 
 # Interact with the manager
 
