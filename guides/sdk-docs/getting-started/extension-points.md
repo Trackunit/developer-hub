@@ -114,7 +114,7 @@ menuItem: {
 }
 ```
 
-The `icon` field allows you to select the icon used in the navigation bar. See the Icon component in our [UI Components](https://apps.iris.trackunit.com/storybook/) Library for an overview of supported icons.
+The `icon` field allows you to select the icon used in the navigation bar. See the Icon component in our [Design System](https://design.iris.trackunit.com/) for an overview of supported icons.
 
 ### Visibility
 
