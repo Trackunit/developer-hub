@@ -351,6 +351,11 @@ Unit of measurement: _boolean._
 Total amount of energy delivered by the battery.  
 Unit of measurement: _kilowatt-hours_.
 
+### BatteryChargerCumulativeInputEnergy
+
+Total amount of energy delivered to the battery.
+Unit of measurement: _kilowatt-hours_.
+
 ### BatteryCurrent
 
 The amount of charge going into (if positive) or out of (if negative) the battery.  
