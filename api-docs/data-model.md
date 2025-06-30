@@ -306,6 +306,11 @@ Unit of measurement: _kilopascal._
 The total number of charge cycles the battery has undergone.  
 Unit of measurement: _count_.
 
+### BatteryChargerCumulativeInputEnergy
+
+Total amount of energy delivered to the battery.
+Unit of measurement: _kilowatt-hours_.
+
 ### BatteryChargerInputCurrent
 
 The input current of the battery charger.  
@@ -345,11 +350,6 @@ Unit of measurement: _boolean._
 
 Whether the battery charger is charging the machine's battery or not.  
 Unit of measurement: _boolean._
-
-### BatteryChargerCumulativeInputEnergy
-
-Total amount of energy delivered to the battery.
-Unit of measurement: _kilowatt-hours_.
 
 ### BatteryCumulativeDischargedEnergy
 
