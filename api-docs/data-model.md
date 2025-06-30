@@ -346,14 +346,14 @@ Unit of measurement: _boolean._
 Whether the battery charger is charging the machine's battery or not.  
 Unit of measurement: _boolean._
 
-### BatteryCumulativeDischargedEnergy
-
-Total amount of energy delivered by the battery.  
-Unit of measurement: _kilowatt-hours_.
-
 ### BatteryChargerCumulativeInputEnergy
 
 Total amount of energy delivered to the battery.
+Unit of measurement: _kilowatt-hours_.
+
+### BatteryCumulativeDischargedEnergy
+
+Total amount of energy delivered by the battery.  
 Unit of measurement: _kilowatt-hours_.
 
 ### BatteryCurrent
