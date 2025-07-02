@@ -15,6 +15,10 @@ Supports ingestion of multiple data types:
 >
 > The Data Ingest API is only available to customers on IrisX. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
 
+> 🚧 Early access
+> 
+> Please be aware that Data Ingestion API is currently in an early access, available only upon request. 
+
 ## Use Cases
 
 The Data Ingest API is particularly valuable for:
