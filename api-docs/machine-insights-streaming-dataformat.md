@@ -296,16 +296,18 @@ subfields:
 
 > 📘 Higher-level custom sensor data
 >
+> Only available as early access and one must contact Trackunit to get this.
+>
 > AdvancedSensors provides a simple view of sensor readings from different sources. Some of this data has been
-> interpreted to Machine Insights by Trackunit and it is recommended to use those when available. When that is not the
+> interpreted to Machine Insights by Trackunit, and it is recommended to use those when available. When that is not the
 > case AdvancedSensors can be used to access data from sources such as; Modbus, CAN bus, Bluetooth and other. It is the
 > recommended approach to read this type of data as it provides richer state support than CanMessages.
 
 While CanMessages remains available for low-level CAN data, AdvancedSensors should be used in all other cases where
 non-Machine Insights data is required. By default, AdvancedSensors contains data from Modbus, API integrations and
 Bluetooth tags. In order to fully use AdvancedSensors for all sensor data there is a migration path where CanMessages
-are duplicated to AdvancedSensors until eventually only AdvancedSensors are available. Contact Trackunit to follow this
-path. The AdvancedSensors field is an array, where each element has the following format:
+are duplicated to AdvancedSensors until eventually only AdvancedSensors are available. The AdvancedSensors field is an
+array, where each element has the following format:
 
 [block:parameters]
 {
