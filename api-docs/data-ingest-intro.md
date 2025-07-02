@@ -17,7 +17,7 @@ Supports ingestion of multiple data types:
 
 > 🚧 Early access
 > 
-> Please be aware that Data Ingestion API is currently in an early access, available only upon request. 
+> Please be aware that Data Ingest API is currently in an early access, available only upon request. 
 
 ## Use Cases
 
