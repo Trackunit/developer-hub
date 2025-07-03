@@ -105,15 +105,13 @@ who initiated the operation, which key was used and if the operation was success
 "2-2": "The type of operation performed.",
 "3-0": "AccessType",
 "3-1": "\"DIGITAL_KEY\" \n\"ROLLING_PIN\"",
-"3-2": "The type of access used for the operation. This can be on of DIGITAL_KEY, ROLLING_PIN, STATIC_PIN, KEY_CARD,
-KEYPAD_USE",
+"3-2": "The type of access used for the operation. This can be on of DIGITAL_KEY, ROLLING_PIN, STATIC_PIN, KEY_CARD, KEYPAD_USE",
 "4-0": "Success",
 "4-1": "true",
 "4-2": "Boolean value for whether the operation was successful.",
 "5-0": "datetime",
 "5-1": "1604042795000",
-"5-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this operation was
-recorded."
+"5-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this operation was recorded."
 },
 "cols": 3,
 "rows": 6,
@@ -165,8 +163,7 @@ with varying field names:
 "1-2": "The unit of measurement for this data series. Will always stay the same for the same field.",
 "2-0": "datetime",
 "2-1": "1604042795000",
-"2-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this data point was
-recorded."
+"2-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this data point was recorded."
 },
 "cols": 3,
 "rows": 3,
@@ -201,8 +198,7 @@ each element has the following format:
 "h-2": "Description",
 "0-0": "datetime",
 "0-1": "1604042795000",
-"0-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this data point was
-recorded.",
+"0-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this data point was recorded.",
 "1-0": "UnitOfMeasurement",
 "1-1": "\"%\" \n\"rpm\"",
 "1-2": "The unit of measurement, as specified in the CAN profile; not normalized.",
@@ -360,29 +356,22 @@ but they could also be imported from an ISO feed or similar sources. Each elemen
 "h-2": "Description",
 "0-0": "CodeIdentifier",
 "0-1": "\"1234-56\" \n\"Free text\"",
-"0-2": "The identifier for the fault; for CAN errors this will normally be \"SPN-FMI\", but for other sources this is
-entirely free text.",
+"0-2": "The identifier for the fault; for CAN errors this will normally be \"SPN-FMI\", but for other sources this is entirely free text.",
 "1-0": "CodeDescription",
 "1-1": "\"Engine Fuel Delivery Pressure too low\"",
 "1-2": "The interpretation of the fault that Trackunit knows and shows in Manager.",
 "2-0": "CodeSeverity",
 "2-1": "\"67\" \n\"Low\", \"High\", \"Free text\"",
-"2-2": "The severity of the fault; if originating from a Trackunit device it will be between 0 and 100; from other
-sources this can be free text.",
+"2-2": "The severity of the fault; if originating from a Trackunit device it will be between 0 and 100; from other sources this can be free text.",
 "3-0": "CodeSource",
 "3-1": "\"0\" \n\"Engine\"",
-"3-2": "The source where the fault originates from; for CAN errors this will normally be the CAN source address; from
-other sources this can be free text.",
+"3-2": "The source where the fault originates from; for CAN errors this will normally be the CAN source address; from other sources this can be free text.",
 "4-0": "datetime",
 "4-1": "1604042795000",
-"4-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this fault started
-appearing.",
+"4-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this fault started appearing.",
 "5-0": "datetimeCleared",
 "5-1": "null \n1604046795000",
-"5-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this fault stopped
-appearing, or null if still present or unknown. \nFor CAN errors there will normally be one message with
-datetimeCleared = null, followed at a later time by a message with datetimeCleared != null. From other sources, this
-behaviour is not guaranteed."
+"5-2": "[Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds, for when this fault stopped appearing, or null if still present or unknown. \nFor CAN errors there will normally be one message with datetimeCleared = null, followed at a later time by a message with datetimeCleared != null. From other sources, this behaviour is not guaranteed."
 },
 "cols": 3,
 "rows": 6,
