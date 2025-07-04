@@ -13,7 +13,11 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
       type: 'STRING',
       entityType: 'ASSET',
       key: 'myKey',
-      title: 'String Field',
+      translations: [{
+        language: 'en',
+        title: 'String Field',
+        description: 'String Field Description',
+      }],
       uiEditable: true,
       uiVisible: true,
       scopeType: ScopeType.ACCOUNT
@@ -33,7 +37,7 @@ To define a custom field, you need to add a `customFieldDefinitions` array to yo
 
 3. `key` defines the programmatic name of the field and cannot be changed after it has been created.
 
-4. `title` defines the UI visible name of the field.
+4. `translations` defines the languages, and the UI visible name and description of the field in each of the languages.
 
 5. `uiEditable` / `uiVisible` controls how the field will be shown in the Manager UI. This does not limit how the field is used inside the IrisX App.
 
