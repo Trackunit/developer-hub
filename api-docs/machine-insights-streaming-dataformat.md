@@ -3,21 +3,14 @@ title: Data format for Machine Insights Streaming
 category: 62fbabf8d9095e057cc1cd2c
 ---
 
-The Machine Insights based streaming data format provides high-level semantic information about machines. This means
-that e.g. information about "Operating Hours", "Fuel Remaining in Tank", "DEF Level" and "Battery Voltage" are
-immediately present in a normalized format - no matter the input source. This is perfectly tailored towards usage in a
+The Machine Insights based streaming data format provides high-level semantic information about machines. This means that e.g. information about "Operating Hours", "Fuel Remaining in Tank", "DEF Level" and "Battery Voltage" are immediately present in a normalized format - no matter the input source. This is perfectly tailored towards usage in a
 data lake or in AI-based analytics.
 
 > 📘 All data fields are optional
 >
-> For the same machine, some fields might be filled out in one message while others are filled out in the next message;
-> which fields are filled out depends on the technical details of the data collection. The interpretation should always
-> be
-> that the individual data point was provided at its respective timestamp.
+> For the same machine, some fields might be filled out in one message while others are filled out in the next message; which fields are filled out depends on the technical details of the data collection. The interpretation should always be that the individual data point was provided at its respective timestamp.
 
-The data is generally ordered in sequence, with the most recent data point appearing last, although this order is not
-guaranteed. If the most recent data is needed the timestamps should be compared. Any processing of historic data should
-be prepared to receive and handle data out of order.
+The data is generally ordered in sequence, with the most recent data point appearing last, although this order is not guaranteed. If the most recent data is needed the timestamps should be compared. Any processing of historic data should be prepared to receive and handle data out of order.
 
 ## Header and Metadata information
 
@@ -41,15 +34,11 @@ Metadata about the telematics device, and further links into the Trackunit APIs 
 | UnitId                  | 87654321                               | The UnitID assigned to the telematics unit within Trackunit's systems.          |
 | ExternalReferenceNumber | Customer-assigned                      | The external reference number assigned to this machine by the customer account. |
 
-In general the MachineId is used to navigate to the
-various [Iris APIs]([https://developers.trackunit.com/reference/iris-api-overview]), while the UnitId can be used to
-access
-the [Classic APIs](https://dev.trackunit.com/docs/introduction).
+In general the MachineId is used to navigate to the various [Iris APIs]([https://developers.trackunit.com/reference/iris-api-overview]), while the UnitId can be used to access the [Classic APIs](https://dev.trackunit.com/docs/introduction).
 
 ## Location and LocationAddress
 
-The fields Location and LocationAddress contain the position, and the approximate street address of the machine at the
-given time.
+The fields Location and LocationAddress contain the position, and the approximate street address of the machine at the given time.
 
 ## Location
 
@@ -85,8 +74,7 @@ Contains the approximate street address of the given Location.
 
 ## AccessControlKeyUsage
 
-The field AccessControlKeyUsage contains information about an access operation for a machine. Relaying information about
-who initiated the operation, which key was used and if the operation was successful.
+The field AccessControlKeyUsage contains information about an access operation for a machine. Relaying information about who initiated the operation, which key was used and if the operation was successful.
 
 [block:parameters]
 {
@@ -125,8 +113,7 @@ who initiated the operation, which key was used and if the operation was success
 
 ## Hours: CumulativeOperatingHours, CumulativeIdleHours, ...
 
-The Cumulative Operating Hours field is a crucial parameter that represents the total number of hours the machine has
-been in operation. Depending on the machine type, the following fields may also be present:
+The Cumulative Operating Hours field is a crucial parameter that represents the total number of hours the machine has been in operation. Depending on the machine type, the following fields may also be present:
 
 * CumulativeIdleHours
 * CumulativeIdleNonOperatingHours
@@ -143,11 +130,7 @@ The general format of the Hours fields is:
 
 ## Machine Insights
 
-The main fields (around 150 in total) all describe some aspect of semantic data about a machine: FuelRemaining,
-EngineStatus, Distance travelled, etc. The availability of these data points will vary depending on the source of the
-telematic data (be it GPS, CAN-bus, ISO feed, etc.). The unit of measurement for each data point will always be the
-same, i.e., the unit for Distance will always be "km" for kilometres. The general format of the machine insights is,
-with varying field names:
+The main fields (around 150 in total) all describe some aspect of semantic data about a machine: FuelRemaining, EngineStatus, Distance travelled, etc. The availability of these data points will vary depending on the source of the telematic data (be it GPS, CAN-bus, ISO feed, etc.). The unit of measurement for each data point will always be the same, i.e., the unit for Distance will always be "km" for kilometres. The general format of the machine insights is, with varying field names:
 
 [block:parameters]
 {
@@ -175,20 +158,15 @@ with varying field names:
 }
 [/block]
 
-For the exact semantics and availability of these data points, please see
-the [data model description.](https://dev.trackunit.com/docs/trackunit-data-model)
+For the exact semantics and availability of these data points, please see the [data model description.](https://dev.trackunit.com/docs/trackunit-data-model)
 
 ## CANMessages
 
 > 📘 This is low-level data
 >
-> Most of the CAN data has been interpreted to Machine Insights by Trackunit. CANMessages are not normalized, and not
-> data cleansed to the same degree. CANMessages should only be necessary if something particular is needed.  
-> We recommend looking at the other fields first.
+> Most of the CAN data has been interpreted to Machine Insights by Trackunit. CANMessages are not normalized, and not data cleansed to the same degree. CANMessages should only be necessary if something particular is needed.We recommend looking at the other fields first.
 
-CAN messages is data directly from the CAN bus of the machine. In general a working knowledge of the CAN bus, and
-sometimes the specific CAN bus of a machine, is needed to interpret this data. The CANMessages field is an array, where
-each element has the following format:
+CAN messages is data directly from the CAN bus of the machine. In general a working knowledge of the CAN bus, and sometimes the specific CAN bus of a machine, is needed to interpret this data. The CANMessages field is an array, where each element has the following format:
 
 [block:parameters]
 {
@@ -250,8 +228,7 @@ More detail about the value collected is available in the "CanMessageValues" fie
 }
 [/block]
 
-More details about how the data was picked is available in the "CanMessageData" field, which has the following
-subfields:
+More details about how the data was picked is available in the "CanMessageData" field, which has the following subfields:
 
 [block:parameters]
 {
@@ -294,16 +271,9 @@ subfields:
 >
 > Only available as early access and one must contact Trackunit to get this.
 >
-> AdvancedSensors provides a simple view of sensor readings from different sources. Some of this data has been
-> interpreted to Machine Insights by Trackunit, and it is recommended to use those when available. When that is not the
-> case AdvancedSensors can be used to access data from sources such as; Modbus, CAN bus, Bluetooth and other. It is the
-> recommended approach to read this type of data as it provides richer state support than CanMessages.
+> AdvancedSensors provides a simple view of sensor readings from different sources. Some of this data has been interpreted to Machine Insights by Trackunit, and it is recommended to use those when available. When that is not the case AdvancedSensors can be used to access data from sources such as; Modbus, CAN bus, Bluetooth and other. It is the recommended approach to read this type of data as it provides richer state support than CanMessages.
 
-While CanMessages remains available for low-level CAN data, AdvancedSensors should be used in all other cases where
-non-Machine Insights data is required. By default, AdvancedSensors contains data from Modbus, API integrations and
-Bluetooth tags. In order to fully use AdvancedSensors for all sensor data there is a migration path where CanMessages
-are duplicated to AdvancedSensors until eventually only AdvancedSensors are available. The AdvancedSensors field is an
-array, where each element has the following format:
+While CanMessages remains available for low-level CAN data, AdvancedSensors should be used in all other cases where non-Machine Insights data is required. By default, AdvancedSensors contains data from Modbus, API integrations and Bluetooth tags. In order to fully use AdvancedSensors for all sensor data there is a migration path where CanMessages are duplicated to AdvancedSensors until eventually only AdvancedSensors are available. The AdvancedSensors field is an array, where each element has the following format:
 
 [block:parameters]
 {
@@ -339,14 +309,11 @@ array, where each element has the following format:
 }
 [/block]
 
-AdvancedSensors entries may include one or both of NumericValue and StringValue depending on the sensor. State sensors
-often populate both, whereas purely numeric sensors use only NumericValue. The Source enum indicates the data source of
-the data.
+AdvancedSensors entries may include one or both of NumericValue and StringValue depending on the sensor. State sensors often populate both, whereas purely numeric sensors use only NumericValue. The Source enum indicates the data source of the data.
 
 ## FaultCodes
 
-FaultCodes contain an array of faults that occurred on a machine, typically because they were present on the CAN bus,
-but they could also be imported from an ISO feed or similar sources. Each element in the array has the following fields:
+FaultCodes contain an array of faults that occurred on a machine, typically because they were present on the CAN bus, but they could also be imported from an ISO feed or similar sources. Each element in the array has the following fields:
 
 [block:parameters]
 {
@@ -385,5 +352,4 @@ but they could also be imported from an ISO feed or similar sources. Each elemen
 
 ## Trackunit Kin
 
-For messages related to Trackunit Kin tags, EquipmentHeader contains asset data on which the Kin tag is onboarded.
-Metadata consists of Kin serial number and asset ID (as MachineId field).
+For messages related to Trackunit Kin tags, EquipmentHeader contains asset data on which the Kin tag is onboarded. Metadata consists of Kin serial number and asset ID (as MachineId field).
