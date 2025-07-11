@@ -31,7 +31,3 @@ The API endpoint is idempotent, so may be called each time a user logs in. This 
 > 📘 Subscription Requirement
 > 
 > This API is exclusively available for IrisX customers. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview).
-
-> ⚠️ Beta API
-> 
-> This API is currently in beta testing and may be subject to changes.
