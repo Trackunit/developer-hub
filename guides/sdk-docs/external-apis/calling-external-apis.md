@@ -22,8 +22,7 @@ this:
 const irisAppManifest: IrisAppManifest = {
     // ommiting other config
     cspHeader: {
-        ...defaultCspConfig(),
-        "connect-src": [...defaultCspConfig()["connect-src"], "https://dbc-1234-567.cloud.databricks.com"],
+        "connect-src": ["https://dbc-1234-567.cloud.databricks.com"],
     },
     scopes: [
         {scope: "api.iris.app.proxy.fetch", optional: false},
