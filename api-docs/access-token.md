@@ -94,9 +94,6 @@ access token, it can obtain a new token from the IRIS Authorization Server by ca
 
 ### Refreshing an access token using a refresh token
 
-IRIS Authorization Server supports the use of refresh tokens for tokens created after January 1st 2025. If you have an
-older API user you will need to create a new one to get refresh token support.
-
 To enable this functionality, include the `offline_access` scope when requesting an access token. The IRIS
 Authorization Server will return a refresh token that can be used to obtain a new access token.
 
