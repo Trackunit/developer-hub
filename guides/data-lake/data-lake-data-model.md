@@ -219,7 +219,6 @@ The telematics_device_telemetry schema contains a large number of tables as ther
 
 For each telemetry type there are six tables. Below shows the structure available for each telemetry. There is a table containing all measurements (e.g. `signal_strength`) and one that only contains the latest measurement for each asset (e.g. `signal_strength_latest`).
 The next three tables have the measurements aligned for either 2 minute intervals, hourly intervals and daily intervals. When combining different telemetry types use these three tables as here the timestamps are aligned across all telemetry data.
-Finally, there is a stream table (e.g. `signal_strength_stream`) used for real-time data processing.
 
 ![Example of the six tables that are available for each telemetry type.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/Kx7mQ9pR.png)
 
@@ -230,19 +229,42 @@ Finally, there is a stream table (e.g. `signal_strength_stream`) used for real-t
 
 ### Signal Strength
 
-The signal strength telemetry provides cellular network signal quality measurements from telematics devices. The signal strength is measured in dBm (RSRP - Reference Signal Received Power) and categorized into quality levels to help assess network connectivity.
+The signal strength telemetry provides cellular network signal quality measurements from telematics devices. The signal strength is measured in different ways depending on the network technology and device type.
 
-**Signal Quality Model**
+**Signal Quality Models**
 
-The signal strength measurements are converted to quality categories based on the following dBm ranges:
+The signal strength measurements are converted to quality categories based on the following measurement types and dBm ranges:
 
-| Cell signal quality | dBm (RSRP) | Signal strength description | Remark |
-|---------------------|------------|----------------------------|---------|
-| 4 | > -80 dBm | Excellent | Strong signal with maximum data speeds and highly stable connection. |
-| 3 | -80 dBm to -90 dBm | Good | Strong signal with good data speeds and highly stable connection. |
-| 2 | -91 dBm to -100 dBm | Fair | Fair but useful, fast and reliable data speeds may be attained, but marginal data with drop-outs is possible. |
-| 1 | -101 dBm to -110 dBm | Poor (cell edge) | Network attachment is possible. Connection is unstable but communication is possible for small loads. Disconnect is likely. |
-| 0 | < -111 dBm | Extremely Poor | Network attachment is possible but unlikely. Connection is too unstable for the device to communicate. |
+**RSSI (2G or 3G Networks)**
+
+| ASU | RSSI (dBm) | Signal strength | Description |
+|-----|------------|-----------------|-------------|
+| 21< | > -70 dBm | Excellent | Strong signal with maximum data speeds |
+| 14 to 21 | -71 dBm to -85 dBm | Good | Strong signal with good data speeds |
+| 7 to 13 | -87 dBm to -100 dBm | Fair | Fair but useful, fast and reliable data speeds may be attained, but marginal data with drop-outs is possible |
+| 1 to 6 | -101 dBm to -111 dBm | Poor (cell edge) | Performance will drop drastically - disconnect possible |
+| 0 | < -111 dBm | No signal | Disconnection, when signal < -111dBm |
+
+**RSRP (LTE - TU600)**
+
+| ASU | RSRP (dBm) | Signal strength | Description |
+|-----|------------|-----------------|-------------|
+| 60< | > -80 dBm | Excellent | Strong signal with maximum data speeds |
+| 50 to 60 | -80 dBm to -90 dBm | Good | Strong signal with good data speeds |
+| 40 to 49 | -91 dBm to -100 dBm | Fair | Fair but useful, fast and reliable data speeds may be attained, but marginal data with drop-outs is possible |
+| 30 to 39 | -101 dBm to -110 dBm | Poor (cell edge) | Performance will drop drastically - disconnect possible |
+| 1 to 29 | -111 dBm to -139 dBm | Extremely Poor | Sending rather not possible |
+| 0 | ≤ -140 dBm | No signal | Disconnection, when signal ≤ -140dBm |
+
+**RSRP (LTE - TU700)**
+
+| ASU | RSRP (dBm) | Signal strength | Description |
+|-----|------------|-----------------|-------------|
+| 60< | > -80 dBm | Excellent | Strong signal with maximum data speeds |
+| 50 to 60 | -80 dBm to -90 dBm | Good | Strong signal with good data speeds |
+| 40 to 49 | -91 dBm to -100 dBm | Fair | Fair but useful, fast and reliable data speeds may be attained, but marginal data with drop-outs is possible |
+| 1 to 39 | -101 dBm to -139 dBm | Poor (cell edge) | Performance will drop drastically - disconnect possible |
+| 0 | ≤ -140 dBm | No signal | Disconnection, when signal ≤ -140dBm |
 
 ## Users
 
