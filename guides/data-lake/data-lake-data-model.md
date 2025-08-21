@@ -211,6 +211,39 @@ telematics_device_account_transfer:
 
     hardware_serial_number → irisx.telematics_device.telematics_device.hardware_serial_number
 
+## Telematics Device Telemetry
+
+Telematics device telemetry contains raw sensor and diagnostic data transmitted from the telematics devices installed in machines. This data includes various measurements such as signal strength, network connectivity metrics, and device health indicators that are collected directly from the hardware units.
+
+The telematics_device_telemetry schema contains a large number of tables as there is a set of tables for each telemetry type. This is done to make the data easy to use and analyze.
+
+For each telemetry type there are six tables. Below shows the structure available for each telemetry. There is a table containing all measurements (e.g. `signal_strength`) and one that only contains the latest measurement for each asset (e.g. `signal_strength_latest`).
+The next three tables have the measurements aligned for either 2 minute intervals, hourly intervals and daily intervals. When combining different telemetry types use these three tables as here the timestamps are aligned across all telemetry data.
+Finally, there is a stream table (e.g. `signal_strength_stream`) used for real-time data processing.
+
+![Example of the six tables that are available for each telemetry type.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/Kx7mQ9pR.png)
+
+**Links to other tables (for all telemetry tables)**
+
+    asset_id → irisx.asset.asset.asset_id
+    hardware_serial_number → irisx.telematics_device.telematics_device.hardware_serial_number
+
+### Signal Strength
+
+The signal strength telemetry provides cellular network signal quality measurements from telematics devices. The signal strength is measured in dBm (RSRP - Reference Signal Received Power) and categorized into quality levels to help assess network connectivity.
+
+**Signal Quality Model**
+
+The signal strength measurements are converted to quality categories based on the following dBm ranges:
+
+| Cell signal quality | dBm (RSRP) | Signal strength description | Remark |
+|---------------------|------------|----------------------------|---------|
+| 4 | > -80 dBm | Excellent | Strong signal with maximum data speeds and highly stable connection. |
+| 3 | -80 dBm to -90 dBm | Good | Strong signal with good data speeds and highly stable connection. |
+| 2 | -91 dBm to -100 dBm | Fair | Fair but useful, fast and reliable data speeds may be attained, but marginal data with drop-outs is possible. |
+| 1 | -101 dBm to -110 dBm | Poor (cell edge) | Network attachment is possible. Connection is unstable but communication is possible for small loads. Disconnect is likely. |
+| 0 | < -111 dBm | Extremely Poor | Network attachment is possible but unlikely. Connection is too unstable for the device to communicate. |
+
 ## Users
 
 The users schema contains a single table - the user table, which contains information about the users of Trackunit Manager.
