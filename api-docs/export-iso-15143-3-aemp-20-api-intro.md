@@ -22,7 +22,8 @@ The API exposes a simple REST interface serving XML or JSON as output formats. Y
 ## Rate Limiting
 
 Requests are rate limited to one request per url (for time series endpoints: per datapoint and equipment) every 15 minutes.
-To ease development and support general troubleshooting, a pool of 50 additional requests is available on top of the usual rate limit rules.
+
+To ease development and support general troubleshooting, a pool of 50 additional requests per url is available on top of the usual rate limit rules.
 Each request in the pool becomes available again 30 calendar days after use.
 
 There are also limits on allowed requests per second per customer (ie. includes all API accounts for the same customer):
