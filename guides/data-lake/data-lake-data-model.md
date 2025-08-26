@@ -211,6 +211,40 @@ telematics_device_account_transfer:
 
     hardware_serial_number → irisx.telematics_device.telematics_device.hardware_serial_number
 
+## Telematics Device Telemetry
+
+Telematics device telemetry contains raw sensor and diagnostic data transmitted from the telematics devices installed in machines. This data includes various measurements such as signal strength, network connectivity metrics, and device health indicators that are collected directly from the hardware units.
+
+The telematics_device_telemetry schema contains a large number of tables as there is a set of tables for each telemetry type. This is done to make the data easy to use and analyze.
+
+For each telemetry type there are six tables. Below shows the structure available for each telemetry. There is a table containing all measurements (e.g. `cellular`) and one that only contains the latest measurement for each asset (e.g. `cellular_latest`).
+The next three tables have the measurements aligned for either 2 minute intervals, hourly intervals and daily intervals. When combining different telemetry types use these three tables as here the timestamps are aligned across all telemetry data.
+
+The last type is the stream (e.g. `cellular_stream`) which contains data that can be out of order, duplicated, or have sizable differences between the timestamp (i.e. origination time), and the stream timestamp.  Useful when delay is the highest priority.
+
+![Example of the six tables that are available for each telemetry type.](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/Kx7mQ9pR.png)
+
+**Links to other tables**
+
+    asset_id → irisx.asset.asset.asset_id
+    hardware_serial_number → irisx.telematics_device.telematics_device.hardware_serial_number
+
+### Cellular
+
+Signal quality, network technology, and mobile operator used for cellular connectivity.
+
+**Signal Quality**
+
+The quality is a measurement category across technologies.
+
+| Value | Signal strength | Description |
+|------------|-----------------|-------------|
+| 4 | Excellent | Strong signal with maximum data speeds |
+| 3 | Good | Strong signal with good data speeds |
+| 2 | Fair | Fair but useful, fast and reliable data speeds may be attained, but marginal data with drop-outs is possible |
+| 1 | Poor (cell edge) | Performance will drop drastically - disconnect possible |
+| 0 | No signal | Disconnected |
+
 ## Users
 
 The users schema contains a single table - the user table, which contains information about the users of Trackunit Manager.
