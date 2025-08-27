@@ -1,5 +1,5 @@
 ---
-title: Scoped Token
+title: Scoped Tokens
 category: 652e70de24294117a69a20f0
 ---
 IRIS APIs also support **Scoped Tokens**, which are OAuth 2.0 access tokens issued to an **account** that has access to the **API Keys** application. Scoped Tokens are obtained via the OAuth 2.0 **Client Credentials** flow and are constrained to the scopes you configure on each API Key.
