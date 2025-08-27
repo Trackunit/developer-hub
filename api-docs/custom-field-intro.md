@@ -8,20 +8,30 @@ With our Custom Fields offering, Trackunit Iris can host all the data that you n
 # Additional standard fields for commom metadata
 Trackunit provides a number of standard fields for common metadata, that can be used by all customers to extend the available data model.
 
-| Field name | Description | Type (UoM) | Related domain |
-| -------- | ------- |-------- | ------- |
-| AC Input Voltage | The input voltage of an alternating current input, could either be to operate directly or to charge a battery. | text (V) | asset |
-| Engine manufaturer | The manufaturer of the engine. | dropdown, single-select | asset |
-| Engine model | The model of the engine. | text | asset |
-| Engine serial number | The serial number of the engine. | text | asset |
-| Engine fuel type | The fuel type the main combustion engine consumes. | dropdown, single-select (Diesel, Petrol, CNG, LPG, HVO100, Hydrogen, Bio-diesel) | asset |
-| Fuel tank capacity (total) | The total fuel capacity, summed over all tanks. | number (L / US Liquid Gallon) | asset |
-| Rated battery voltage | The rated voltage of the traction battery. | text (V) | asset |
-| Rated combustion engine power | Power output of engine in kilo-Watts | text (kW) | asset |
-| Rated electric motor power | Power output of the electric motor in kilo-Watts | text (kW) | asset |
-| Total rated battery capacity | Total rated capacity summed (only if batteries in parallel) over all traction batteries, in ampere-hours. | text (Ah) | asset |
-| Total rated battery power capacity | Total rated energy capacity summed over all traction batteries, in kilo-watt-hours  | text (kWh) | asset |
-| Warranty end date | The end date of the asset's warranty. | date | asset |
+| Field name | Description | Type (UoM) | Key | Applies to |
+| -------- | ------- |-------- | ------- | ------- |
+| Engine manufacturer | Manufacturer of the engine | dropdown, single-select | engineManufacturer | asset |
+| Engine model | Model of the engine | text | engineModel | asset |
+| Engine serial number | Serial number of the engine | text | engineSerialNumber | asset |
+| Engine Fuel Type | The fuel type the main combustion engine consumes. | dropdown, single-select (Diesel, Petrol, CNG, LPG, HVO100, Hydrogen, Bio-diesel) | engineFuelType | asset |
+| Fuel Tank Capacity (Total) | The total fuel capacity, summed over all tanks. | number (L / US Liquid Gallon) | fuelTankCapacityTotal | asset |
+| Input Voltage AC | The input voltage of an alternating current input, could either be to operate directly or to charge a battery. | number (V) | inputVoltageAC | asset |
+| Battery System Rated Capacity | Total rated capacity summed (only if batteries in parallel) over all traction batteries, in ampere-hours. | number (Ah) | batterySystemRatedCapacity | asset |
+| Battery System Rated Voltage | The rated voltage of the traction battery. | number (V) | batterySystemRatedVoltage | asset |
+| Battery System Rated Power Capacity | Total rated energy capacity summed over all traction batteries, in kilo-watt-hours | number (kWh) | batterySystemRatedPowerCapacity | asset |
+| Engine Power Electric | Power output of the electric motor in kilo-Watts | number (kW) | enginePowerElectric | asset |
+| Engine Power Combustion | Power output of the combustion motor in kilo-Watts | number (kW) | enginePowerCombustion | asset |
+| Pending telematics devices | Asset is marked for installment of telematics devices. | boolean | pendingTelematicsDevices | asset |
+| Warranty end date | Date the current warranty of the machine expires. | date | warrantyEndDate | asset |
+| OEM licensed | Is the machine OEM licensed? | boolean | oem-licensed | asset |
+| License Plate | Assigned by a governmental authority for identification and registration purposes. | text | licensePlate | asset |
+| OEM Subscription End Date | Date the asset owner's telematics subscription with the OEM expires. | date | oemSubscriptionEndDate | asset |
+| OEM Subscription Start Date | Start date of the asset owner's telematics subscription with the OEM. | date | oemSubscriptionStartDate | asset |
+| QR Codes | List of QR codes' data attached to the asset for identification purposes. | text | qrCodeIdentifiers | asset |
+| RFID tags | List of RFID tag IDs attached to the asset. | text | rfidTags | asset |
+| OEM Subscription Type | Used for internal purposes to identify the type of OEM subscription. Not visible in the UI. | text | oemSubscriptionType | asset |
+| Billing Reference | Used for Trackunit billing purposes to set the billing reference used for invoices. | text | billingReference | asset |
+| Purchase Date | Date the asset was purchased. | date | purchaseDate | asset |
 
 ## How to set values on standard fields
 
