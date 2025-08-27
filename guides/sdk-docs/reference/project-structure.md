@@ -74,7 +74,10 @@ It configures the following crucial settings for your app:
   - The CSP header also contains a `sandbox` property to also control the iframe sandbox around the app. This allows the developer to request extra sandbox features.
 - `permissionsPolicy`: Desired permissions policy for the app. This is useful if the app requires access to machine features or shared resources like the clipboard. The permissions policy spec is still experimental and browser support varies.  
   More information about Permissions policies can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy).
-- `validForAccountIds`: Put `ALL_ACCOUNTS` in if your app is available to all users. If you want to only make it available to certain users, provide a list of account ID's as strings.
+- `installation`: Configuration for the installation of the app. 
+  - `accountIds`: List of account IDs that can install this Iris App. Use `ALL_ACCOUNTS` to make the app available to all accounts or provide a list of specific account IDs as strings to restrict access.
+  - `excludeAccountIds`: List of account IDs that are not allowed to install this Iris App. This option is only applicable when `validForAccountIds` is set to `ALL_ACCOUNTS`
+  - `allowOrganizationIds`: List of organization IDs that can install this Iris App. This setting cannot be used together with `validForAccountIds`, only one of these options should be set.
 - `marketplace`: Holds all the settings associated with your apps listing on the marketplace.
   - `name`: Well..the name of your app.
   - `description`: Write a small summary of your app here that describes what it does. Only supports plain text.
