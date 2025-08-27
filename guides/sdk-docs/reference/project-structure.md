@@ -75,7 +75,7 @@ It configures the following crucial settings for your app:
 - `permissionsPolicy`: Desired permissions policy for the app. This is useful if the app requires access to machine features or shared resources like the clipboard. The permissions policy spec is still experimental and browser support varies.  
   More information about Permissions policies can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy).
 - `installation`: Configuration for the installation of the app. 
-  - `validForAccountIds`: List of account IDs that can install this Iris App. Use `ALL_ACCOUNTS` to make the app available to all accounts or provide a list of specific account IDs as strings to restrict access.
+  - `accountIds`: List of account IDs that can install this Iris App. Use `ALL_ACCOUNTS` to make the app available to all accounts or provide a list of specific account IDs as strings to restrict access.
   - `excludeAccountIds`: List of account IDs that are not allowed to install this Iris App. This option is only applicable when `validForAccountIds` is set to `ALL_ACCOUNTS`
   - `allowOrganizationIds`: List of organization IDs that can install this Iris App. This setting cannot be used together with `validForAccountIds`, only one of these options should be set.
 - `marketplace`: Holds all the settings associated with your apps listing on the marketplace.
