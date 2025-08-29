@@ -1,15 +1,26 @@
 ---
-title: Scoped Token
+title: API Tokens v2
 category: 652e70de24294117a69a20f0
 ---
-IRIS APIs also support **Scoped Tokens**, which are OAuth 2.0 access tokens issued to an **account** that has access to the **API Keys** application. Scoped Tokens are obtained via the OAuth 2.0 **Client Credentials** flow and are constrained to the scopes you configure on each API Key.
+IRIS APIs also support **API Tokens V2** (Scoped Tokens), which are OAuth 2.0 access tokens issued to an **account** that has access to the **API Keys** application. Scoped Tokens are obtained via the OAuth 2.0 **Client Credentials** flow and are constrained to the scopes you configure on each API Key.
+
+### Why Scoped Tokens?
+
+API Token v2 provide important security and flexibility improvements over previous access methods:
+
+- **Least privilege**: You can create tokens limited only to the scopes required for a specific integration, without leaking full administrator-level access across multiple systems.
+- **Separation of duties**: Each API Key can be tied to a specific purpose or service, reducing blast radius in case of compromise.
+- **Manageability**: You can create, rotate, and revoke up to 10 keys per account, each with a unique name and description for traceability.
+
+> 🚧 Availability
+> API Tokens V2 are being **gradually rolled out**. You may not have access yet, or the system you want to integrate with might not support API Tokens V2 at this time.
 
 This page explains how Scoped Tokens work and how to issue them.
 
 ## Overview
 
 - **Who can use it:** Any **account** with access to the **API Keys** app.
-- **API Keys per account:** Up to **5** active API Keys.
+- **API Keys per account:** Up to **10** active API Keys.
 - **Each API Key has:** a **name**, **description**, and a set of **allowed scopes**.
 - **Credentials you receive:** a **client_id** and **client_secret** for each API Key.
 - **Token endpoint:** `https://auth.trackunit.com/token/v2`
@@ -43,7 +54,7 @@ Open the **API Keys** application and create a new API Key. Provide:
 
 > 🚧 Limit
 >
-> Each account can create up to **5** API Keys.
+> Each account can create up to **10** API Keys.
 
 When you create the key, you’ll receive:
 
