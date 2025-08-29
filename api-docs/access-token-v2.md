@@ -180,4 +180,4 @@ curl --location 'https://auth.trackunit.com/token/v2' \
   --data-urlencode 'scope=scope1 scope2'
 ```
 
-That's it - your account can create up to five API Keys, each with clearly defined scopes, and use them to mint least-privileged Scoped Tokens for IRIS APIs. Since refresh tokens are **not available** for this flow, simply request a new token whenever one expires.
+That's it—your account can create up to five API Keys, each with clearly defined scopes, and use them to mint least-privileged Scoped Tokens for IRIS APIs. Since refresh tokens are **not available** for this flow, simply request a new token whenever one expires.
