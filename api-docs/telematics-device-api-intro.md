@@ -207,7 +207,8 @@ The Device telemetry endpoint delivers information about the internal state of t
 The following pieces of telemetry is currently supported:
 
 - Power (External, Internal)
-- Connectivity (GPS, GSM)
+- Connectivity (GPS, GSM, Bluetooth)
+  - Bluetooth available only for `KIN`, `KIN2`, and `BLUETOOTH_TAG` devices 
 - IO (Inputs, Output)
 - Sensors (External sensor information)
 
@@ -241,6 +242,10 @@ Below is an example response from the telemetry endpoint:
        },
        "transmissions": {
            "latestReceptionTime": "2023-08-02T19:08:50Z"
+       },
+       "bluetooth": {
+         "rssi": -65,
+         "latestBluetoothReceptionTime": "2023-08-02T19:09:20Z"
        }
     },
     "io": {
