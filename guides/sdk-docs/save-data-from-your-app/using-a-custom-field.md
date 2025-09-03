@@ -12,27 +12,7 @@ parentDocSlug: save-data-from-your-app
 npm install @trackunit/custom-field-api
 ```
 
-2. Use the `useCustomFieldsValueAndDefinition` hook to retrieve custom fields definitions and values saved to the specified `Asset ID`. Use the hook `useCustomFieldDefinitions` if you need to get all available definitions.
-
-> Note: In order to use custom fields your app needs the correct consent scopes.
-> `asset.view` to read, and `account.asset.manage` to be able to update values.
-
-```ts
-import {
-  CustomFieldValueAndDefinition,
-  useCustomFieldsValueAndDefinition,
-  useUpdateCustomFieldValues,
-} from "@trackunit/custom-field-api";
-
-// Get all custom field values and definitions for your asset ID.
-const { fields, loading } = useCustomFieldsValueAndDefinition({
-  entityType: "ASSET",
-  entityId: assetId,
-  systemOfMeasurement: systemOfMeasurement ?? "SI",
-});
-```
-
-3. Use the hook `useUpdateCustomFieldValues` to save the custom field value by entering a definition `key`, `entity ID`, and a new `value`.
+2. Use the hook `useUpdateCustomFieldValues` to save the custom field value by entering a definition `key`, `entity ID`, and a new `value`.
 
 ```ts
 // initialize the hook
@@ -49,6 +29,26 @@ updateCustomFields({
   value: {
     stringValue: "My new value",
   },
+});
+```
+
+3. Use the `useCustomFieldsValueAndDefinition` hook to retrieve custom fields definitions and values saved to the specified `Asset ID`. Use the hook `useCustomFieldDefinitions` if you need to get all available definitions. You cannot retrieve the definition of a custom field if it's value is not set. 
+
+> Note: In order to use custom fields your app needs the correct consent scopes.
+> `asset.view` to read, and `account.asset.manage` to be able to update values.
+
+```ts
+import {
+  CustomFieldValueAndDefinition,
+  useCustomFieldsValueAndDefinition,
+  useUpdateCustomFieldValues,
+} from "@trackunit/custom-field-api";
+
+// Get all custom field values and definitions for your asset ID.
+const { fields, loading } = useCustomFieldsValueAndDefinition({
+  entityType: "ASSET",
+  entityId: assetId,
+  systemOfMeasurement: systemOfMeasurement ?? "SI",
 });
 ```
 
