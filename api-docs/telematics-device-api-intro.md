@@ -243,7 +243,10 @@ Below is an example response from the telemetry endpoint:
        "transmissions": {
            "latestReceptionTime": "2023-08-02T19:08:50Z"
        },
-       "bluetooth": {}
+       "bluetooth": {
+         "rssi": -65,
+         "latestBluetoothReceptionTime": "2023-08-02T19:09:20Z"
+       }
     },
     "io": {
        "input1": {
