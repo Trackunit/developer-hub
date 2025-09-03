@@ -32,7 +32,7 @@ updateCustomFields({
 });
 ```
 
-3. Use the `useCustomFieldsValueAndDefinition` hook to retrieve custom fields definitions and values saved to the specified `Asset ID`. Use the hook `useCustomFieldDefinitions` if you need to get all available definitions. You cannot retrieve the definition of a custom field if it's value is not set. 
+3. Use the `useCustomFieldsValueAndDefinition` hook to retrieve custom fields definitions and values saved to the specified `Asset ID`. useCustomFieldsValueAndDefinition hook will not return the definition of a custom field if it's value is not set. Use the hook `useCustomFieldDefinitions` if you need to get all available definitions.
 
 > Note: In order to use custom fields your app needs the correct consent scopes.
 > `asset.view` to read, and `account.asset.manage` to be able to update values.
