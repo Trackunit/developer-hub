@@ -56,11 +56,13 @@ curl --location 'https://iris.trackunit.com/public/api/eventlog/v3/asset-event/a
 }'
 ```
 
+## Constraints
+
+- Visibility of asset event data is limited to asset visibility
+- API Rate Limiting: 2 requests per 30 minutes per api user
+
+
 ### Summary
 
 The API offers capabilities to query asset events and retrieve active events.
 This allows managing asset events e.g. fault, alerts, making it a powerful tool for monitoring and maintaining asset health.
-
-## Rate Limiting
- 
-Rate limiting on this API is currently specified as a maximum of 2 requests in 30 minutes per API user.
