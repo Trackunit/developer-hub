@@ -1,6 +1,6 @@
 ---
 title: Asset Event API - Introduction
-category: <fill in category id>
+category: 68baceeff77e4fa2820237d4
 ---
 The Trackunit Asset Event API is a REST API that enables customers to manage their asset events.
 
