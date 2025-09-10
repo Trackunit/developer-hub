@@ -2,7 +2,7 @@
 title: API Tokens v2
 category: 652e70de24294117a69a20f0
 ---
-IRIS APIs also support **API Tokens V2** (Scoped Tokens), which are OAuth 2.0 access tokens issued to an **account** that has access to the **API Keys** application. Scoped Tokens are obtained via the OAuth 2.0 **Client Credentials** flow and are constrained to the scopes you configure on each API Key.
+**API Tokens V2** (Scoped Tokens), are OAuth 2.0 access tokens issued to an **account**. Scoped Tokens are obtained via a standard OAuth 2.0 **Client Credentials** flow and are constrained to the scopes you configure on each API Key.
 
 ### Why Scoped Tokens?
 
