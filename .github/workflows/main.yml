@@ -19,7 +19,7 @@ jobs:
         # Docs: https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
         uses: readmeio/rdme@v10
         with:
-          rdme: docs upload ./api-docs --key=${{ secrets.README_API_KEY }} --branch=1.0
+          rdme: docs ./api-docs --key=${{ secrets.README_API_KEY }} --version=1.0
 
       # Run GitHub Action to sync docs in `documentation` directory
       - name: Sync Guides
@@ -27,7 +27,7 @@ jobs:
         # Docs: https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
         uses: readmeio/rdme@v10
         with:
-          rdme: docs upload ./guides --key=${{ secrets.README_API_KEY }} --branch=1.0
+          rdme: docs ./guides --key=${{ secrets.README_API_KEY }} --version=1.0
 
       # Run GitHub Action to sync docs in `documentation` directory
       - name: Sync custom pages docs
@@ -35,7 +35,7 @@ jobs:
         # Docs: https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
         uses: readmeio/rdme@v10
         with:
-          rdme: custompages upload ./custompages --key=${{ secrets.README_API_KEY }}
+          rdme: custompages ./custompages --key=${{ secrets.README_API_KEY }}
 
       # Run GitHub Action to sync changelogs in `changelog` directory
       - name: Sync changelog pages docs
@@ -43,4 +43,4 @@ jobs:
         # Docs: https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
         uses: readmeio/rdme@v10
         with:
-          rdme: changelog upload ./changelogs --key=${{ secrets.README_API_KEY }}
+          rdme: changelogs ./changelogs --key=${{ secrets.README_API_KEY }}
