@@ -1,8 +1,9 @@
 ---
 title: Calling Trackunit GraphQL API
 category:
-  uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: public-apis
+  uri: Apps & Extensions
+parent:
+  uri: public-apis
 ---
 
 Trackunit exposes a [GraphQL API](/reference/graphql-api-introduction) to create your query and we also expose an NX executor to make it easy to query our GraphQL API inside your IrisX App extension.

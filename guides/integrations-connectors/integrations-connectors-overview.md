@@ -1,7 +1,7 @@
 ---
 title: Integrations & Connectors Overview
 category:
-  uri: /branches/1.0/categories/guides/Integrations & Connectors
+  uri: Integrations & Connectors
 ---
 
 ![IrisX Connectors & Integrations](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/integrations-irisX.png)

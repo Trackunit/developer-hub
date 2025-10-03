@@ -1,8 +1,9 @@
 ---
 title: Loading Asset Information into an Asset Home Extension
 category:
-  uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: runtime-libs
+  uri: Apps & Extensions
+parent:
+  uri: runtime-libs
 ---
 
 In an asset home extension there is a special asset runtime that allows you to query what asset is currently selected.

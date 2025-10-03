@@ -1,7 +1,7 @@
 ---
 title: Blueprints
 category:
-  uri: /branches/1.0/categories/guides/Welcome to Trackunit IrisX
+  uri: Welcome to Trackunit IrisX
 ---
 
 ## Definition of Blueprint

@@ -1,7 +1,7 @@
 ---
 title: Custom ERP Integration Guide
 category:
-  uri: /branches/1.0/categories/guides/Integrations & Connectors
+  uri: Integrations & Connectors
 ---
 
 By following this guide, you will:

@@ -1,7 +1,7 @@
 ---
 title: IrisX Overview
 category:
-  uri: /branches/1.0/categories/guides/Welcome to Trackunit IrisX
+  uri: Welcome to Trackunit IrisX
 ---
 
 IrisX provides a comprehensive suite of capabilities, featuring a Data Lake for telematics data, advanced Analytics and AI for collaborative data science, app development and distribution to reach thousands of customers, and scalable Automations & Integrations to efficiently manage your business.

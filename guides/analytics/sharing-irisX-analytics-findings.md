@@ -1,7 +1,7 @@
 ---
 title: Sharing IrisX Analytics Findings
 category:
-  uri: /branches/1.0/categories/guides/Analytics & Insights
+  uri: Analytics & Insights
 ---
 
 ## How can I share my IrisX Analytics Dashboard with others?

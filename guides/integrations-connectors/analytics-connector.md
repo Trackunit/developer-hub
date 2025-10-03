@@ -1,9 +1,9 @@
 ---
 title: Analytics Connector
 category:
-  uri: /branches/1.0/categories/guides/Integrations & Connectors
-parentDocSlug: connectors
-
+  uri: Integrations & Connectors
+parent:
+  uri: connectors
 ---
 
 The IrisX Analytics Connector is designed to facilitate seamless integration with Analytics, allowing users to leverage advanced analytics capabilities directly within the IrisX platform. This connector enables users to access, analyze, and visualize data efficiently, enhancing decision-making processes and operational insights.

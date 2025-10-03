@@ -1,7 +1,7 @@
 ---
 title: Data Lake Overview
 category:
-  uri: /branches/1.0/categories/guides/Data Lake
+  uri: Data Lake
 ---
 
 ![IrisX Data Lake](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/data-lake-irisX.png)

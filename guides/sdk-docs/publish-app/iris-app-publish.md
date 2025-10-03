@@ -1,8 +1,9 @@
 ---
 title: How to submit an App SDK
 category:
-  uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: publish-app
+  uri: Apps & Extensions
+parent:
+  uri: publish-app
 ---
 
 Submitting an App SDK will allow you to offer the app to customers to download and use.

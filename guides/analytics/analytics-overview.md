@@ -1,7 +1,7 @@
 ---
 title: Analytics & Insights Overview
 category:
-  uri: /branches/1.0/categories/guides/Analytics & Insights
+  uri: Analytics & Insights
 ---
 
 ![IrisX Analytics](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/analytics/analytics-irisX.png)

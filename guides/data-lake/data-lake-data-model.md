@@ -1,7 +1,7 @@
 ---
 title: Data Lake Model
 category:
-  uri: /branches/1.0/categories/guides/Data Lake
+  uri: Data Lake
 ---
 
 ## Access, query, and store data in the IrisX Data Lake

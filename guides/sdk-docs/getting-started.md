@@ -1,7 +1,7 @@
 ---
 title: Getting Started with the SDK
 category:
-  uri: /branches/1.0/categories/guides/Apps & Extensions
+  uri: Apps & Extensions
 ---
 
 # Creating an App

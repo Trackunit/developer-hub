@@ -1,7 +1,7 @@
 ---
 title: Replaying Messages
 category:
-  uri: /branches/1.0/categories/guides/Integrations & Connectors
+  uri: Integrations & Connectors
 ---
 
 If you missed the delivery of a message, for example, due to your service being down or misconfigured, you have the option to resend the message.

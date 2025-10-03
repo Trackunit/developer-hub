@@ -1,8 +1,9 @@
 ---
 title: Calling the API on behalf of the User
 category:
-  uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: public-apis
+  uri: Apps & Extensions
+parent:
+  uri: public-apis
 ---
 
 

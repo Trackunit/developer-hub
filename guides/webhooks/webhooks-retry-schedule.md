@@ -1,7 +1,7 @@
 ---
 title: Retry Schedule
 category:
-  uri: /branches/1.0/categories/guides/Integrations & Connectors
+  uri: Integrations & Connectors
 ---
 
 A retry schedule for webhooks is a predefined strategy that governs how and when failed webhook delivery attempts are retried. When a webhook delivery fails due to factors such as network issues, server errors, or timeouts, the retry schedule determines the timing and frequency of subsequent retry attempts.
