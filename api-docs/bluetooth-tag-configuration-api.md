@@ -1,6 +1,7 @@
 ---
-title: Bluetooth Tag Configuration API - Introduction 
-category: 682f3ce5439e430039b25775
+title: Bluetooth Tag Configuration API - Introduction
+category:
+  uri: Bluetooth tag configuration
 ---
 
 Bluetooth Tag Configuration API exposes features required for configuration of Bluetooth tag telematics devices. 

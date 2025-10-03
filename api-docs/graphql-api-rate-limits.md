@@ -1,6 +1,7 @@
 ---
 title: GraphQL Rate Limits
-category: 652e3a8e279c3f001f9acdc3
+category:
+  uri: GRAPHQL API
 ---
 
 ## Query Complexity & Rate Limiting in our GraphQL API

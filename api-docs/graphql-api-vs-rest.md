@@ -1,6 +1,7 @@
 ---
 title: REST APIs vs. GraphQL API
-category: 652e3a8e279c3f001f9acdc3
+category:
+  uri: GRAPHQL API
 ---
 
 ## When to use REST APIs and when to use the GraphQL API?

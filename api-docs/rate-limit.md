@@ -1,6 +1,7 @@
 ---
 title: Rate & Size Limiting
-category: 6295ae369ba4b1001464c9e5
+category:
+  uri: REST APIs OVERVIEW
 ---
 ## Rate Limits
 

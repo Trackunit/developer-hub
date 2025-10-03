@@ -1,6 +1,7 @@
 ---
 title: Provision Customer Portal Access with SSO
-category: 65c1ea0e0bf60400104f7c68
+category:
+  uri: Customer API
 ---
 
 This guide explains how to provision customer portal access for your customers using Single Sign-On (SSO).

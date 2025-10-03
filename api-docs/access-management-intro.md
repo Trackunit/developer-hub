@@ -1,6 +1,7 @@
 ---
 title: Access Management - Introduction
-category: 62ea3a0fef042a063b8717c7
+category:
+  uri: Access Management
 ---
 Our Access Management API provides a list of APIs enabling machine owners to assign access to machines for operators.
 

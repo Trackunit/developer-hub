@@ -1,6 +1,7 @@
 ---
 title: Sites API - Introduction
-category: 63fc7f4a12fbea0327599d65
+category:
+  uri: Sites API
 ---
 
 The Sites API is designed to facilitate the seamless creation and management of sites at scale - construction sites, depots, workplaces or other areas. This REST API empowers developers to interact with site information, including users and contacts of a site, assets on or related to a site and a site's comprehensive history.

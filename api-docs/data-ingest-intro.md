@@ -1,6 +1,7 @@
 ---
 title: Data Ingest API - Introduction
-category: 679c8bdc9f2a95005ecb5d1c
+category:
+  uri: Data Ingestion
 ---
 
 The Data Ingest API provides a streamlined method for ingesting asset data into the Trackunit Iris platform.

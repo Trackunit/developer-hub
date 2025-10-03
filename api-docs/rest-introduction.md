@@ -1,6 +1,7 @@
 ---
 title: REST APIs - Introduction
-category: 6295ae369ba4b1001464c9e5
+category:
+  uri: REST APIs OVERVIEW
 ---
 
 Part of the Trackunit Iris APIs are based and organised around the [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) paradigm. These REST APIs have resource oriented URLs, that use the HTTP method conventions to expose our domain capabilities. We use standardised HTTP response codes to indicate errors, and JSON as our data-interchange format for both requests and responses.

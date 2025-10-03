@@ -1,6 +1,7 @@
 ---
 title: Custom Fields API - Introduction
-category: 628c96a84164f50225dd1f14
+category:
+  uri: Custom Fields API
 ---
 
 With our Custom Fields offering, Trackunit Iris can host all the data that you need. Custom Fields will enable you to capture and organize additional metadata that holds significant contextual value, thereby facilitating more robust data categorization and retrieval processes for you and your end-customers.

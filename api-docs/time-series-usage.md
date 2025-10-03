@@ -1,6 +1,7 @@
 ---
 title: Time Series API - Usage guide
-category: 65097f10ed04fd0047f22d48
+category:
+  uri: Time Series API
 ---
 
 > 📘 IrisX customers can also access 'Time Series' data for an Asset via the GraphQL API

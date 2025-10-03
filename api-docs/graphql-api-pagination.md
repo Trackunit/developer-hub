@@ -1,6 +1,7 @@
 ---
 title: Pagination in GraphQL
-category: 652e3a8e279c3f001f9acdc3
+category:
+  uri: GRAPHQL API
 ---
 
 Trackunit's GraphQL API supports [relay-style cursor-based pagination](https://relay.dev/graphql/connections.htm), which is a technique commonly used in GraphQL APIs to efficiently paginate through large datasets. This type of pagination offers improved performance and reliability for applications dealing with large datasets, making it a valuable choice for GraphQL implementations.

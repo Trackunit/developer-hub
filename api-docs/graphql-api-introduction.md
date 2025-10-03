@@ -1,6 +1,7 @@
 ---
 title: GraphQL API - Introduction
-category: 652e3a8e279c3f001f9acdc3
+category:
+  uri: GRAPHQL API
 ---
 
 > 📘 Subscription requirement

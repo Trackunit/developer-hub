@@ -1,6 +1,7 @@
 ---
 title: Errors in GraphQL
-category: 652e3a8e279c3f001f9acdc3
+category:
+  uri: GRAPHQL API
 ---
 
 **In GraphQL, even if part of a query encounters an error, the overall response is still valid JSON.** 

@@ -1,6 +1,7 @@
 ---
 title: Machine APIs - Introduction
-category: 675ac7f3f2aec2002c641eaf
+category:
+  uri: Machines
 ---
 
 > 🚧 Onboarding / offboarding of machines
