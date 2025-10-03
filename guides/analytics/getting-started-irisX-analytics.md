@@ -1,6 +1,7 @@
 ---
 title: Getting started with IrisX Analytics
-category: 66c49b0049fa5200312dc835
+category:
+  uri: Analytics & Insights
 ---
 
 If you are new to IrisX Analytics, this section provides guidance on a few areas to explore as you begin leveraging your fleet data. The main goal is to help you understand the data and introduce some basic tools for creating actionable insights from your telematics data. While this covers the basics, IrisX Analytics offers much more to tailor solutions to your specific use cases.

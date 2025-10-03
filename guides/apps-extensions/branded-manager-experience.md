@@ -1,6 +1,7 @@
 ---
 title: Branded Manager Experience
-category: 61fcd8e1a448f5004215317c
+category:
+  uri: Apps & Extensions
 ---
 
 Invite your customers to a personalized and Branded Manager Experience, where they can easily keep track of the assets they've rented or bought and get telematics insights.

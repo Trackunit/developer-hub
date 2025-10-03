@@ -1,6 +1,7 @@
 ---
 title: Definitions
-category: 628c96a84164f50225dd1f14
+category:
+  uri: Custom Fields API
 ---
 
 > 📘 Subscription requirement

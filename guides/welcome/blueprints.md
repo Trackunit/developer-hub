@@ -1,6 +1,7 @@
 ---
 title: Blueprints
-category: 652e405820342e0033e0d25f
+category:
+  uri: Welcome to Trackunit IrisX
 ---
 
 ## Definition of Blueprint

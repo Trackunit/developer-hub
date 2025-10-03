@@ -1,6 +1,7 @@
 ---
 title: Custom ERP Integration Guide
-category: 652e408346c8860073a6bd12
+category:
+  uri: Integrations & Connectors
 ---
 
 By following this guide, you will:

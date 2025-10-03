@@ -1,6 +1,7 @@
 ---
 title: Integrations & Connectors Overview
-category: 652e408346c8860073a6bd12
+category:
+  uri: Integrations & Connectors
 ---
 
 ![IrisX Connectors & Integrations](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/integrations-irisX.png)

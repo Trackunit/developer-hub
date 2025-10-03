@@ -1,6 +1,7 @@
 ---
 title: IrisX APIs
-category: 652e408346c8860073a6bd12
+category:
+  uri: Integrations & Connectors
 ---
 The IrisX APIs provide a robust set of interfaces that enable developers to integrate and interact with the IrisX platform programmatically. These APIs facilitate data access, automation, and the development of custom applications, empowering organizations to leverage the full potential of IrisX functionalities.
 

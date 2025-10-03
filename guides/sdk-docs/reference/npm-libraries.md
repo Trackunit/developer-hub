@@ -1,7 +1,9 @@
 ---
 title: npm libraries
-category: 61fcd8e1a448f5004215317c
-parentDocSlug: iris-app-sdk-reference
+category:
+  uri: Apps & Extensions
+parent:
+  uri: iris-app-sdk-reference
 ---
 
 # npm Libraries

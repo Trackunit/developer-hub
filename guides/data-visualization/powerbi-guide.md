@@ -1,6 +1,7 @@
 ---
 title: PowerBI Guide
-category: 6582ec6517bb6f0041230311
+category:
+  uri: Data Visualization
 ---
 
 ## Introduction

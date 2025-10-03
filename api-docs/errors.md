@@ -1,6 +1,7 @@
 ---
 title: Errors
-category: 6295ae369ba4b1001464c9e5
+category:
+  uri: REST APIs OVERVIEW
 ---
 Trackunit APIs use common HTTP codes to indicate a success or a failure of a request.
 

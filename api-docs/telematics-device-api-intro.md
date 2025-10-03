@@ -1,6 +1,7 @@
 ---
 title: Telematics Device API - Introduction
-category: 626a4207f8bbbd00135ab86c
+category:
+  uri: Telematics Device
 ---
 
 The Telematics Device API offers seamless access to a rich array of features meticulously crafted to facilitate device information retrieval and configuration management, enabling effortless maintenance and oversight of a fleet of telematic devices. By leveraging the Telematics Device API, developers gain the ability to programmatically manage their devices, effortlessly update configurations, and track the progress of desired configurations on each device. Moreover, the API provides developers with access to detailed device state documentation, empowering them to identify and explore untapped configuration opportunities

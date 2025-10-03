@@ -1,6 +1,7 @@
 ---
 title: Sharing IrisX Analytics Findings
-category: 66c49b0049fa5200312dc835
+category:
+  uri: Analytics & Insights
 ---
 
 ## How can I share my IrisX Analytics Dashboard with others?

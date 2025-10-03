@@ -1,7 +1,9 @@
 ---
 title: Quickstart
-category: 61fcd8e1a448f5004215317c
-parentDocSlug: getting-started
+category:
+  uri: Apps & Extensions
+parent:
+  uri: getting-started
 ---
 
 # Trackunit App SDK Quickstart Guide

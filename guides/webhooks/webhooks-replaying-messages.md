@@ -1,6 +1,7 @@
 ---
 title: Replaying Messages
-category: 652e408346c8860073a6bd12
+category:
+  uri: Integrations & Connectors
 ---
 
 If you missed the delivery of a message, for example, due to your service being down or misconfigured, you have the option to resend the message.

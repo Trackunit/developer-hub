@@ -1,6 +1,7 @@
 ---
 title: Data Lake Overview
-category: 66c49b88a564ee00518afd6d
+category:
+  uri: Data Lake
 ---
 
 ![IrisX Data Lake](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/data-lake/data-lake-irisX.png)
