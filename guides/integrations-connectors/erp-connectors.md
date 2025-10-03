@@ -1,7 +1,9 @@
 ---
 title: ERP Connectors
-category: 652e408346c8860073a6bd12
-parentDocSlug: connectors
+category:
+  uri: Integrations & Connectors
+parent:
+  uri: connectors
 ---
 
 The ERP Connectors are designed to facilitate seamless integration between the IrisX platform and various Enterprise Resource Planning (ERP) systems. These connectors enable organizations to streamline data flow, enhance operational efficiency, and ensure real-time access to critical business information.

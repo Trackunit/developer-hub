@@ -1,6 +1,7 @@
 ---
 title: Use Case Examples
-category: 652e408346c8860073a6bd12
+category:
+  uri: Integrations & Connectors
 ---
 
 Let's dive into practical examples of how webhooks can make a real difference to your workflows. From getting instant notifications about important events to keeping your data synced across different systems seamlessly, we have collected examples to show you how webhooks can simplify and advance the digital practices of your business.

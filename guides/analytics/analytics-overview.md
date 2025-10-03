@@ -1,6 +1,7 @@
 ---
 title: Analytics & Insights Overview
-category: 66c49b0049fa5200312dc835
+category:
+  uri: Analytics & Insights
 ---
 
 ![IrisX Analytics](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/analytics/analytics-irisX.png)

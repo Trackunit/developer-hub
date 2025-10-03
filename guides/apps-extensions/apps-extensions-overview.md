@@ -1,6 +1,7 @@
 ---
 title: Apps & Extensions Overview
-category: 61fcd8e1a448f5004215317c
+category:
+  uri: Apps & Extensions
 ---
 
 ![IrisX Apps & Extensions](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/apps-extensions/apps-irisX.png)

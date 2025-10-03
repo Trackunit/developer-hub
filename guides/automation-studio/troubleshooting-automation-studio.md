@@ -1,6 +1,7 @@
 ---
 title: Troubleshooting
-category: 66c49b7d61daf600186e12cb
+category:
+  uri: Automation Studio
 ---
 
 ## Best Practices
