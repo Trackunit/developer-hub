@@ -1,7 +1,7 @@
 ---
 title: Sites API - Introduction
 category:
-  uri: /branches/1.0/categories/reference/Sites API
+  uri: Sites API
 ---
 
 The Sites API is designed to facilitate the seamless creation and management of sites at scale - construction sites, depots, workplaces or other areas. This REST API empowers developers to interact with site information, including users and contacts of a site, assets on or related to a site and a site's comprehensive history.

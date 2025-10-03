@@ -1,7 +1,7 @@
 ---
 title: Rate & Size Limiting
 category:
-  uri: /branches/1.0/categories/reference/GETTING STARTED
+  uri: REST APIs OVERVIEW
 ---
 ## Rate Limits
 

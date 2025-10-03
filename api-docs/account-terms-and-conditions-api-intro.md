@@ -1,7 +1,7 @@
 ---
 title: Account Terms and Conditions API - Introduction
 category:
-  uri: /branches/1.0/categories/reference/Account Terms And Conditions
+  uri: Account Terms And Conditions
 ---
 The Account Terms and Conditions API is a REST API that enables organization administrators to verify approval of terms and conditions inside their Account Hierarchy.
 

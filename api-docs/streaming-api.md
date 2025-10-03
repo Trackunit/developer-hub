@@ -1,7 +1,7 @@
 ---
 title: Streaming API - Introduction
 category:
-  uri: /branches/1.0/categories/reference/Streaming API
+  uri: Streaming API
 ---
 The Trackunit Streaming API is a near-realtime, low latency API, that enables customers to create their own data lake and services, leveraging Trackunit as Telematics Data Service Provider. This document describes the overall design and how to connect to the Streaming API.
 

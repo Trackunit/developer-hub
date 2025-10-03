@@ -1,7 +1,7 @@
 ---
 title: Operator Registry - Introduction
 category:
-  uri: /branches/1.0/categories/reference/Operators
+  uri: Operators
 ---
 Our Operator API provides a list of APIs enabling management of operators.
 

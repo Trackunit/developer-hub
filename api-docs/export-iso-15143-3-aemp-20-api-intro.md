@@ -1,7 +1,7 @@
 ---
 title: Export ISO 15143-3 (AEMP 2.0) - Introduction
 category:
-  uri: /branches/1.0/categories/reference/AEMP ISO API
+  uri: AEMP ISO API
 ---
 
 Our ISO Export API follows the ISO 15143-3 standard. It provides fleet-wide equipment information.

@@ -1,7 +1,7 @@
 ---
 title: Location API - Introduction
 category:
-  uri: /branches/1.0/categories/reference/Locations
+  uri: Locations
 ---
 Discover the power of our Location API, your key to effortlessly accessing and tracking real-time GPS coordinates for your entire fleet of connected assets.
 With two convenient endpoints at your disposal, you can choose to retrieve precise location snapshots for a specific asset or access a paginated list containing all your assets.

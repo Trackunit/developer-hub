@@ -1,7 +1,7 @@
 ---
 title: Machine APIs - Introduction
 category:
-  uri: /branches/1.0/categories/reference/Machines
+  uri: Machines
 ---
 
 > 🚧 Onboarding / offboarding of machines
