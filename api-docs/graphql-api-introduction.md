@@ -1,10 +1,10 @@
 ---
 title: GraphQL API - Introduction
-category: 652e3a8e279c3f001f9acdc3
+category: /branches/1.0/categories/reference/GRAPHQL API
 ---
 
 > 📘 Subscription requirement
-> 
+>
 > The GraphQL API is only available IrisX customers. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
 
 [block:embed]
@@ -26,7 +26,7 @@ The GraphQL API offers more flexible queries than the Trackunit REST API and onl
 
 With GraphQL, you construct queries and mutations to fetch or modify data. Unlike REST APIs, which use multiple endpoints, GraphQL uses a single endpoint to handle all requests. If you haven't worked with GraphQL before, learn how to by following [the official GraphQL documentation](https://graphql.org/learn/).
 
-The next step is to go through our guide on how to interact with the GraphQL API using the SDK: 
+The next step is to go through our guide on how to interact with the GraphQL API using the SDK:
 - [Calling Trackunit GraphQL API using the App SDK](https://developers.trackunit.com/docs/graphql-api)
 
 If you want to query the API without using the SDK, you have to:
@@ -36,7 +36,7 @@ If you want to query the API without using the SDK, you have to:
 
 ## Overview of GraphQL data sources
 
-Behind the scenes of this powerful GraphQL interface lies a collection of diverse data sources that fuel the information you interact with. These sources form the backbone of our GraphQL architecture, encompassing a range of databases, APIs, services, and more. Our GraphQL API acts as a unified gateway, enabling you to effortlessly access data from these disparate sources through a single, flexible endpoint. 
+Behind the scenes of this powerful GraphQL interface lies a collection of diverse data sources that fuel the information you interact with. These sources form the backbone of our GraphQL architecture, encompassing a range of databases, APIs, services, and more. Our GraphQL API acts as a unified gateway, enabling you to effortlessly access data from these disparate sources through a single, flexible endpoint.
 
 Data sources include:
 
@@ -56,13 +56,13 @@ Additionally you can also download the [Public schema](https://apps.iris.trackun
 
 ## Advise for efficient querying with GraphQL
 
-When querying a GraphQL API, adopting certain practices can significantly enhance efficiency and responsiveness: 
+When querying a GraphQL API, adopting certain practices can significantly enhance efficiency and responsiveness:
 
-- Begin by precisely defining your data requirements using field selection, requesting only the information you genuinely need to reduce unnecessary data transfer. 
-- Leverage query fragments to reuse common selections across multiple queries, avoiding redundant code and promoting consistency. 
+- Begin by precisely defining your data requirements using field selection, requesting only the information you genuinely need to reduce unnecessary data transfer.
+- Leverage query fragments to reuse common selections across multiple queries, avoiding redundant code and promoting consistency.
 - Utilize pagination techniques for fetching large sets of data, such as utilizing the `first`, `last`, `before`, and `after` arguments to manage the amount of data returned in each query.
-- Implement client-side caching mechanisms to store frequently accessed data locally, decreasing the need for repeated requests. 
-- Experiment with persisted queries for often-used or complex queries to optimize performance by minimizing overhead. 
-- Lastly, employ batched requests to bundle multiple queries together in a single HTTP request, enhancing overall efficiency by reducing round-trip times. 
+- Implement client-side caching mechanisms to store frequently accessed data locally, decreasing the need for repeated requests.
+- Experiment with persisted queries for often-used or complex queries to optimize performance by minimizing overhead.
+- Lastly, employ batched requests to bundle multiple queries together in a single HTTP request, enhancing overall efficiency by reducing round-trip times.
 
 By following these guidelines, you can make the most of GraphQL's capabilities and ensure efficient and streamlined interactions with the API.

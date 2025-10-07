@@ -1,6 +1,6 @@
 ---
 title: Webhooks
-category: 652e408346c8860073a6bd12
+category: /branches/1.0/categories/guides/Integrations & Connectors
 ---
 Welcome to Trackunit's Webhooks guide!
 
@@ -16,7 +16,7 @@ Webhooks are user-defined HTTP callbacks. They allow our system to notify your a
 ![](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/webhooks/webhooks-approach.png)
 
 ## Why Use Webhooks?
-With the addition of webhooks, we are extending our Iris capabilities to make it easier to set up meaningful workflows by e.g. triggering actions and notifications in external systems that help you run your business. The Trackunit Iris platform collects and stores data about events that happened to an asset. Via our webhooks technology you can subscribe to relevant event types and get event data served in real-time. By subscribing to these events via webhooks, you can easily trigger actions across connected  programs to simplify operations or generate user notifications in your preferred interfaces. 
+With the addition of webhooks, we are extending our Iris capabilities to make it easier to set up meaningful workflows by e.g. triggering actions and notifications in external systems that help you run your business. The Trackunit Iris platform collects and stores data about events that happened to an asset. Via our webhooks technology you can subscribe to relevant event types and get event data served in real-time. By subscribing to these events via webhooks, you can easily trigger actions across connected  programs to simplify operations or generate user notifications in your preferred interfaces.
 
 ### Example Use Cases
 - Gain valuable synergies by bringing alert or fault events into your ERP system in real-time, so critical machine issues can get addressed in a timely manner.

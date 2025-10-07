@@ -1,6 +1,6 @@
 ---
 title: Fleet Data Health API - Introduction
-category: 689dcb8d14b0513380e3d761
+category: /branches/1.0/categories/reference/Fleet Data Health Issues (Beta)
 ---
 
 _Fleet Data Health Issues REST API_ is your foundation for insight into telematics data integrity, enabling proactive health tracking and resolution planning.

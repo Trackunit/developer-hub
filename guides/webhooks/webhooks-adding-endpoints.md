@@ -1,6 +1,6 @@
 ---
 title: Adding Endpoints
-category: 652e408346c8860073a6bd12
+category: /branches/1.0/categories/guides/Integrations & Connectors
 ---
 When setting up a webhook to listen to events, you need to specify an endpoint because the endpoint is the specific URL where the webhook will send its HTTP POST requests containing event data.
 

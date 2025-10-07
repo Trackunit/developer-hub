@@ -1,6 +1,6 @@
 ---
 title: Streaming API - Introduction
-category: 62fbabf8d9095e057cc1cd2c
+category: /branches/1.0/categories/reference/Streaming API
 ---
 The Trackunit Streaming API is a near-realtime, low latency API, that enables customers to create their own data lake and services, leveraging Trackunit as Telematics Data Service Provider. This document describes the overall design and how to connect to the Streaming API.
 
@@ -10,7 +10,7 @@ The Trackunit Streaming API is a near-realtime, low latency API, that enables cu
 
 ## Design
 
-The Trackunit Streaming API is not a REST API, but instead implemented as a [Kafka](https://kafka.apache.org/)-based solution, backed by [Confluent Cloud](https://confluent.cloud/) and AWS infrastructure, in order to be highly available and performant. When a customer signs up for access to the Streaming API, a Kafka topic is created and a [Flink](https://flink.apache.org/) job starts forwarding data, related to the customer's machines, to that topic. Data is then available for the customer to consume. The data is kept on the topic for 14 days.  
+The Trackunit Streaming API is not a REST API, but instead implemented as a [Kafka](https://kafka.apache.org/)-based solution, backed by [Confluent Cloud](https://confluent.cloud/) and AWS infrastructure, in order to be highly available and performant. When a customer signs up for access to the Streaming API, a Kafka topic is created and a [Flink](https://flink.apache.org/) job starts forwarding data, related to the customer's machines, to that topic. Data is then available for the customer to consume. The data is kept on the topic for 14 days.
 Only the data related to the customer's machines will be made available for the customer.
 
 Data is available in the Streaming API with low latency after it enters the Trackunit Iris platform. There can be delays between the telematic devices (or 3rd party integrations such as ISO feeds) and the Iris platform due to network connectivity or similar. The common case is however that data is available with near-realtime delays.

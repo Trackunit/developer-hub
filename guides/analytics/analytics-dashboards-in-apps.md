@@ -1,16 +1,16 @@
 ---
 title: Embedding IrisX Dashboards in Apps
-category: 66c49b0049fa5200312dc835
+category: /branches/1.0/categories/guides/Analytics & Insights
 ---
 
 ## Overview
 
-When creating actionable insights in IrisX analytics, you maybe want to make it accessible to all your Trackunit Manager users. Let’s say you for instance want to show your users a custom dashboard that you built in IrisX analytics, this is how you can proceed: 
+When creating actionable insights in IrisX analytics, you maybe want to make it accessible to all your Trackunit Manager users. Let’s say you for instance want to show your users a custom dashboard that you built in IrisX analytics, this is how you can proceed:
 
 **1. Develop Your Analytics Solution:** Create a notebook to explore and transform IrisX catalog data which contains telematics data prepared for you by Trackunit. This way, you can build custom tables tailored to your specific business requirements. You can experiment with your code and refine your calculations until they deliver the insights you need.
-    
+
 **2. Automate Data Updates:** Once your code is final, you probably want your new table to remain updated with fresh data. You can set up a workflow to run your notebook on a regular schedule. You can adapt the frequency of the job to your needs.
-    
+
 **3. Create a Trackunit Manager App:** Now that you have real-time insights, you can design an app to your custom analytics to Trackunit manager. This approach allows you to transform specialized analytics into accessible dashboards for all Trackunit Manager users, regardless of their technical expertise.
 
 This guide walks through the process of embedding IrisX Analytics dashboards into your IrisX applications, allowing you to provide data visualization capabilities while maintaining proper security context.

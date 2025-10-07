@@ -1,11 +1,11 @@
 ---
-title: Emissions API - Introduction 
-category: 64c280b4cab95c006f9359e3
+title: Emissions API - Introduction
+category: /branches/1.0/categories/reference/Emissions
 ---
 
 The Trackunit Emissions API is a REST API that enables customers to access emissions data for their assets.
 
-> 📘 Available with the Emissions Reporting app 
+> 📘 Available with the Emissions Reporting app
 >
 > This API is available for customers that have acquired a license for the Emissions Reporting capability.
 
@@ -66,7 +66,7 @@ Data Source Score is a field that provides a score for the data source of the em
 
 ## Constraints
 
-- Visibility of emissions data is limited to asset visibility 
+- Visibility of emissions data is limited to asset visibility
 - Emissions Data is updated daily at 04:00 UTC
 - API Rate Limiting: 1000 requests per 10 minutes per user
 - Sites asset emissions history can only be retrieved by admin users for deleted or removed assets

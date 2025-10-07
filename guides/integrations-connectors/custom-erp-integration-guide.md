@@ -1,14 +1,14 @@
 ---
 title: Custom ERP Integration Guide
-category: 652e408346c8860073a6bd12
+category: /branches/1.0/categories/guides/Integrations & Connectors
 ---
 
 By following this guide, you will:
 
     ✔️ Understand how to authenticate and make requests to Iris Trackunit APIs.
-    
+
     ✔️ Learn how to fetch asset details, locations, and operating hours from Trackunit.
-    
+
     ✔️ Learn how to map and synchronize rental ERP data into Trackunit.
 
 
@@ -51,7 +51,7 @@ The [single-element snapshot endpoint](https://developers.trackunit.com/referenc
 
 ## Step 2: Optimizing API requests to avoid rate limit errors
 
-Trackunit recommends fetching data from the ISO Export API once per day for ERP integrations to ensure efficient synchronization while minimizing unnecessary API requests. 
+Trackunit recommends fetching data from the ISO Export API once per day for ERP integrations to ensure efficient synchronization while minimizing unnecessary API requests.
 
 The API is rate-limited to prevent excessive usage and ensure system stability. Specifically, requests to the API are limited to one request per URL every 15 minutes. Additionally, there are per-customer limits on request frequency across all API accounts associated with the same customer:
 
@@ -66,7 +66,7 @@ To avoid hitting rate limits, it is important to schedule data retrieval efficie
 In modern fleet management, integrating rental ERP systems with telematics solutions like Trackunit is crucial for enhancing operational efficiency and data consistency. Trackunit’s Rental API enables rental companies to seamlessly transfer key data—such as customers and contracts—from their Rental ERP system into Trackunit Manager, where users can monitor and manage their assets in real-time.
 
 > 📘 IrisX Subscription needed
-> 
+>
 > The Rental ERP API is only available for IrisX enabled customers. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview).
 
 ## Step 1: Understand and map concepts and data
@@ -79,17 +79,17 @@ The Trackunit data model consists of the following concepts for rental ERP data:
 
 - **Identifier Type:** It is possible to match with asset in Trackunit Iris based on their asset id, serial number or external reference. This field combined with the identifier field is used when looking up an asset.
 - **Identifier:** The identifier used for matching the asset that the contract information and rental status should be assigned to.
-- **Rental status:** The rental status can be used to locate possible available assets accross all depots. Available types are : 
-    - ON_RENT, 
-    - PICK_UP_READY, 
-    - AVAILABLE, 
-    - RETURNED, 
-    - IN_REPAIR, 
-    - TRANSFER, 
-    - OTHER, 
-    - OFF_RENT, 
-    - NOT_ON_CONTRACT, 
-    - RESERVED. 
+- **Rental status:** The rental status can be used to locate possible available assets accross all depots. Available types are :
+    - ON_RENT,
+    - PICK_UP_READY,
+    - AVAILABLE,
+    - RETURNED,
+    - IN_REPAIR,
+    - TRANSFER,
+    - OTHER,
+    - OFF_RENT,
+    - NOT_ON_CONTRACT,
+    - RESERVED.
     - New types may be added.
 - **Owning depot:** Depots created in Trackunit Iris can be linked to assets to have an overview of all assets on a depot level.
 - **ExternalReference** represents an identifier from the ERP system and has to be unique.
@@ -135,8 +135,8 @@ By providing data about customers you will be able to share data about the asset
     - Other
 
 > 💡 Note
-> 
-> Once the Rental API is enabled the Customer feature in Manager will no longer allow for manual creation or editing to preserve system integrity. 
+>
+> Once the Rental API is enabled the Customer feature in Manager will no longer allow for manual creation or editing to preserve system integrity.
 
 ![Rental ERP data on customers](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/integrations-connectors/erp-data-customer.png)
 
@@ -146,7 +146,7 @@ Custom fields provide a way to define new fields in the Trackunit data model. Al
 Learn more in the [Custom Fields API -Introduction](https://developers.trackunit.com/reference/custom-field-intro#define-your-own-custom-fields).
 
 > 💡 Custom Field Examples
-> 
+>
 > Specifically for rental contracts, you can think of custom fields to store any additional data that is not accounted for in Trackunit’s rental data model - for example: “customer project code” or “service reference”.
 
 ## Step 3: Synchronizing ERP data via the Rental API

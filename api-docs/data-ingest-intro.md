@@ -1,6 +1,6 @@
 ---
 title: Data Ingest API - Introduction
-category: 679c8bdc9f2a95005ecb5d1c
+category: /branches/1.0/categories/reference/Data Ingestion
 ---
 
 The Data Ingest API provides a streamlined method for ingesting asset data into the Trackunit Iris platform.
@@ -16,8 +16,8 @@ Supports ingestion of multiple data types:
 > The Data Ingest API is only available to customers on IrisX. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
 
 > 🚧 Early access
-> 
-> Please be aware that Data Ingest API is currently in an early access, available only upon request. 
+>
+> Please be aware that Data Ingest API is currently in an early access, available only upon request.
 
 ## Use Cases
 
@@ -38,7 +38,7 @@ Assets are the core entities in the Trackunit ecosystem, representing various ma
  - Assets can have zero to many telematics devices associated with them
  - Learn more [about assets](https://developers.trackunit.com/reference/intro-asset-administration-apis)
 
-### Machine Insights 
+### Machine Insights
 
 Machine Insights are standardized metrics that provide comprehensive operational data about assets:
 

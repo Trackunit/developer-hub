@@ -1,6 +1,6 @@
 ---
 title: Provision Customer Portal Access with SSO
-category: 65c1ea0e0bf60400104f7c68
+category: /branches/1.0/categories/reference/Customer API
 ---
 
 This guide explains how to provision customer portal access for your customers using Single Sign-On (SSO).
@@ -29,5 +29,5 @@ After creating a customer and assigning assets to them, you can provision access
 The API endpoint is idempotent, so may be called each time a user logs in. This also ensures that any changes in user details will be synchronized.
 
 > 📘 Subscription Requirement
-> 
+>
 > This API is exclusively available for IrisX customers. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview).

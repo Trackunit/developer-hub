@@ -1,6 +1,6 @@
 ---
 title: Asset Event API - Introduction
-category: 68baceeff77e4fa2820237d9
+category: /branches/1.0/categories/reference/Asset Event API
 ---
 The Trackunit Asset Event API is a REST API that enables customers to manage their asset events.
 
@@ -62,5 +62,5 @@ The API offers capabilities to query asset events and retrieve active events.
 This allows managing asset events e.g. fault, alerts, making it a powerful tool for monitoring and maintaining asset health.
 
 ## Rate Limiting
- 
+
 Rate limiting on this API is currently specified as a maximum of 2 requests in 30 minutes per API user.

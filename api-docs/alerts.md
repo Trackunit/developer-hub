@@ -1,6 +1,6 @@
 ---
 title: Alert API - Introduction
-category: 6569a2143ad2da00291b5951
+category: /branches/1.0/categories/reference/Alerts
 ---
 The Trackunit Alert API is a REST API that enables customers to create & manage alert configurations for their assets.
 

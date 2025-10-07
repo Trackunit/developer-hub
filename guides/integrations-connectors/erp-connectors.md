@@ -1,6 +1,6 @@
 ---
 title: ERP Connectors
-category: 652e408346c8860073a6bd12
+category: /branches/1.0/categories/guides/Integrations & Connectors
 parentDocSlug: connectors
 ---
 
@@ -21,5 +21,5 @@ See the list of ERP Connectors on the [Trackunit Marketplace](https://new.manage
 The [IrisX Rental ERP API](https://developers.trackunit.com/reference/rental-erp-api-intro) can be used to facilitate two-way integrations between IrisX and various Rental Management Systems, enabling seamless data synchronization for a custom integration to any ERP system.
 
 > 💡 Learn more in our [ERP Integration Guide](https://developers.trackunit.com/docs/custom-erp-integration-guide)
-> 
+>
 > Get a detailed overview of the Trackunit Rental Data Model in our guide and plan your implementation.

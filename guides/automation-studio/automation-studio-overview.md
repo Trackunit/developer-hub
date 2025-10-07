@@ -1,11 +1,11 @@
 ---
 title: Automation Studio Overview
-category: 66c49b7d61daf600186e12cb
+category: /branches/1.0/categories/guides/Automation Studio
 ---
 
 ![IrisX Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/automation-studio-irisX.png)
 
-Automation Studio provides extensive connectivity and delivers automation throughout your entire tech stack. The Workflow Automation Projects are a central spot to design, automate, and optimize workflows without having to write code. 
+Automation Studio provides extensive connectivity and delivers automation throughout your entire tech stack. The Workflow Automation Projects are a central spot to design, automate, and optimize workflows without having to write code.
 
 - **Customizable Alerts and Notifications**: Set up critical alerts based on specific triggers, ensuring timely responses to important events through any channel.
 - **Scheduled Automations:** Set up workflows to run at predetermined times or intervals, ensuring consistent and timely execution of repetitive tasks without manual intervention.

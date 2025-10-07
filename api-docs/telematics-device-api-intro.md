@@ -1,6 +1,6 @@
 ---
 title: Telematics Device API - Introduction
-category: 626a4207f8bbbd00135ab86c
+category: /branches/1.0/categories/reference/Telematics Device
 ---
 
 The Telematics Device API offers seamless access to a rich array of features meticulously crafted to facilitate device information retrieval and configuration management, enabling effortless maintenance and oversight of a fleet of telematic devices. By leveraging the Telematics Device API, developers gain the ability to programmatically manage their devices, effortlessly update configurations, and track the progress of desired configurations on each device. Moreover, the API provides developers with access to detailed device state documentation, empowering them to identify and explore untapped configuration opportunities
@@ -19,7 +19,7 @@ The document is intended for developers, who wants to integrate systems, write c
 
 The Device identity endpoints deliver all data related to identity, type, capabilities, and birth certificate of a device. It is typically data that only changes in the start and end of a device lifecycle. It does not include states, configurations or any other device data insights that frequently change (see [Device state](https://developers.trackunit.com/reference/devices-state) endpoints for that).
 
-The Device Identity is a natural starting point for entering the Telematics Device domain.  
+The Device Identity is a natural starting point for entering the Telematics Device domain.
 It currently includes:
 
 - ID
@@ -33,7 +33,7 @@ The Device state endpoints provide insights about the current state and the desi
 
 The following configuration elements are currently included:
 
-- Bluetooth advertising 
+- Bluetooth advertising
 - CAN profile
 - Input filtering
 - Output1 mode
@@ -44,7 +44,7 @@ The telematics device state data includes both **a reported and a desired state*
 
 - The reported state represents how the device is actually configured.
 - Latest configuration attempts of a telematics device will be visible in the desired state. Currently it includes configuration states for the following:
-  - Bluetooth advertising 
+  - Bluetooth advertising
   - CAN profile
   - Input filtering
   - Output1 mode
@@ -182,7 +182,7 @@ It also includes preconditions and available parameters. Below is an example of 
 }
 ```
 
-The required minimum firmware version is 62.14. The configuration has only one property “enabled” that can be set to either “false” or “true”. 
+The required minimum firmware version is 62.14. The configuration has only one property “enabled” that can be set to either “false” or “true”.
 
 Enabling inputFiltering using the template will be to update the desired state with the following:
 
@@ -208,7 +208,7 @@ The following pieces of telemetry is currently supported:
 
 - Power (External, Internal)
 - Connectivity (GPS, GSM, Bluetooth)
-  - Bluetooth available only for `KIN`, `KIN2`, and `BLUETOOTH_TAG` devices 
+  - Bluetooth available only for `KIN`, `KIN2`, and `BLUETOOTH_TAG` devices
 - IO (Inputs, Output)
 - Sensors (External sensor information)
 

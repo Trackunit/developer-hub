@@ -1,6 +1,6 @@
 ---
 title: Definitions
-category: 628c96a84164f50225dd1f14
+category: /branches/1.0/categories/reference/Custom Fields API
 ---
 
 > 📘 Subscription requirement

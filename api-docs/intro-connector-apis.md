@@ -1,6 +1,6 @@
 ---
 title: Intro to Connector APIs
-category: 67ab45f573ac8f003da4f903
+category: /branches/1.0/categories/reference/CONNECTOR APIs
 ---
 
 ![Trackunit Iris Feature APIs](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/apis-feature.png)
@@ -15,5 +15,5 @@ Explore relevant APIs in this category:
 Also see the [ERP Integration guide](https://developers.trackunit.com/reference/data-model) to learn how to fetch telematics data from Trackunit and understand how to map and synchronize rental ERP data into Trackunit.
 
 > 💡 Learn more about IrisX Connectors
-> 
+>
 > Explore the opportunities with pre-build [Connectors](https://developers.trackunit.com/docs/connectors) and Automation Studio.

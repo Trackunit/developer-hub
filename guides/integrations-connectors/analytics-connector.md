@@ -1,6 +1,6 @@
 ---
 title: Analytics Connector
-category: 652e408346c8860073a6bd12
+category: /branches/1.0/categories/guides/Integrations & Connectors
 parentDocSlug: connectors
 
 ---

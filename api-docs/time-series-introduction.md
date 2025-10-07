@@ -1,6 +1,6 @@
 ---
 title: Time Series API - Introduction
-category: 65097f10ed04fd0047f22d48
+category: /branches/1.0/categories/reference/Time Series API
 ---
 Welcome to the Time Series API documentation. This REST API enables you to retrieve time series metrics for specific assets, categorized as machine insights and advanced sensors.
 
@@ -14,11 +14,11 @@ Welcome to the Time Series API documentation. This REST API enables you to retri
 **Advanced sensors** capture metrics originating from various sources, often derived from CAN. Advanced sensors are not conformed and allow for capturing metrics that are uniquely defined for specific equipment. The metrics are prefixed with `advanced_sensor_`. When querying advanced sensor data, you can specify a unique sensor ID to retrieve metrics for a particular sensor mapping.
 
 > 📘 IrisX customers can also access 'Time Series' data for an Asset via the GraphQL API
-> 
+>
 > Via the Public GraphQL API, you can utilize query capabilities to fetch 'Time Series' data connected to an asset. Explore the GraphQL schema through our [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/). Follow the 'asset' entry point and select 'timeSeries' to perform instant queries and range queries. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview).
 
 The Time Series API follows the standards of [Prometheus](https://prometheus.io/), an open-source monitoring and time series database system. By adhering to Prometheus specifications, our API ensures compatibility with Prometheus clients and tooling, facilitating integration with existing Prometheus ecosystems. E.g. [Grafana](https://prometheus.io/docs/visualization/grafana/) supports querying Prometheus, which enables you to create dashboards to visualize, alert on and understand your metrics.
- 
+
 With our query endpoints, you can leverage PromQL, the powerful and expressive Prometheus query language, to retrieve and analyze time series data. PromQL offers a range of functions and operators for complex queries and calculations. The query responses adhere to Prometheus result formats for easy consumption and compatibility.
 
 In addition to Prometheus endpoints, we provide a metrics endpoint for retrieving metrics in their original ingested form. This gives you access to the raw time series data without aggregation or modifications. Retrieve precise values and timestamps for detailed analysis or integration with external systems.
@@ -29,18 +29,18 @@ Explore the available endpoints and interact with the Time Series API to retriev
 
 
 > 🚧 Alignment between the asset and telematics device counters
-> 
+>
 > In certain situations, such as retrofitting a telematics device, compensating values are applied to synchronize the readings between the asset and the telematics device's odometer and run counters.
-> 
+>
 > The implementation of these value adjustments is pending and therefore NOT applied. Compensating values for the affected metrics can be obtained from **Time Series API -> Metrics -> Get metric offsets**, and applied manually.
-> 
+>
 > The following metrics may be affected:
 > * machine_insight_cumulative_operating_hours
 > * machine_insight_engine_total_idle_hours
 > * machine_insight_total_vehicle_distance
 > * advanced_sensor_run_1
 > * advanced_sensor_run_2
-> 
+>
 > Implementation updates will be communicated through this developer hub.
 
 ## Rate Limiting
@@ -53,12 +53,12 @@ Explore the available endpoints and interact with the Time Series API to retriev
 To retrieve or analyze any time series data, you specify the name of the series or label.
 
 There are 3 main sources of series:
-1. **Machine insights** - for example: `machine_insight_cumulative_operating_hours`.  
+1. **Machine insights** - for example: `machine_insight_cumulative_operating_hours`.
    Their names consist of the `machine_insight_` prefix followed by lowercase insight name separated with underscores (`_`). See [Data Model](data-model) for a list of all possible machine insights.
-2. **Standard CAN inputs and outputs** - for example `advanced_sensor_input_1` or `advanced_sensor_run_1`.  
+2. **Standard CAN inputs and outputs** - for example `advanced_sensor_input_1` or `advanced_sensor_run_1`.
    Their names start with the `advanced_sensor_` prefix followed by an input number (1-10) or a run number (1-6).
-3. **Other sensors** can originate from various sources and capture metrics that are uniquely defined for specific equipment. For example: `advanced_sensor_work_light_switch_front_left_status`.  
-   If applicable, the unit of measurement can be read from the `unit_of_measurement` label.  
+3. **Other sensors** can originate from various sources and capture metrics that are uniquely defined for specific equipment. For example: `advanced_sensor_work_light_switch_front_left_status`.
+   If applicable, the unit of measurement can be read from the `unit_of_measurement` label.
    Some of these sensors might generate multiple series with minimum, maximum and average values. In such cases the series name will contain the suffix `_min`, `_max` or `_avg`.
 
 When querying advanced sensor data, you can specify a unique sensor ID to retrieve metrics for a particular sensor mapping. For example: `{sensor_id="run_1"}` or `{sensor_id="variable_11231"}`.

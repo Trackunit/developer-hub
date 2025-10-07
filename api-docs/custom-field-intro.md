@@ -1,6 +1,6 @@
 ---
 title: Custom Fields API - Introduction
-category: 628c96a84164f50225dd1f14
+category: /branches/1.0/categories/reference/Custom Fields API
 ---
 
 With our Custom Fields offering, Trackunit Iris can host all the data that you need. Custom Fields will enable you to capture and organize additional metadata that holds significant contextual value, thereby facilitating more robust data categorization and retrieval processes for you and your end-customers.
@@ -43,7 +43,7 @@ Trackunit provides a number of standard fields for common metadata, that can be 
 Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**.
 
 > 📘 Subscription requirement
-> 
+>
 > IrisX is required to create and change custom field definitions. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
 
 
@@ -64,27 +64,27 @@ When changing custom field definitions, you need to follow the following general
 Each field type has special rules:
 
 -   **Drop-down:**
-    
+
 	-   If an option is removed from a drop-down list, you must provide a valid replacement value.
-	    
+
 	-   Any existing value that contains the deleted value will be changed to the replacement value.
-	    
+
 	-   If the replacement value is already selected, a duplicate value will not be created.
-	    
+
 	-   When changing a multi-select field to a single-select field, any value with more than one option will be cleared.
-	    
+
 	-   The existing value will be saved for retrieval in the API in the `lastIncompatibleValue` field.
-    
+
 -   **Number**
-    
+
 	-   Any existing value outside the new min/max range will be set to null.
-	    
+
 	-   The existing value will be saved for retrieval in the API in the `lastIncompatibleValue` field.
-    
+
 -   **String**
-    
+
 	-   If an existing value is longer than the new maximum length, the value will be truncated.
-	    
+
 	-   The existing value will be saved for retrieval in the API in the `lastIncompatibleValue` field.
 
 	- Regex patterns can be changed, but be warned that existing data can become uncompliant with the new pattern.

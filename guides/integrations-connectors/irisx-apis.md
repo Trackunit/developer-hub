@@ -1,6 +1,6 @@
 ---
 title: IrisX APIs
-category: 652e408346c8860073a6bd12
+category: /branches/1.0/categories/guides/Integrations & Connectors
 ---
 The IrisX APIs provide a robust set of interfaces that enable developers to integrate and interact with the IrisX platform programmatically. These APIs facilitate data access, automation, and the development of custom applications, empowering organizations to leverage the full potential of IrisX functionalities.
 
@@ -13,7 +13,7 @@ IrisX APIs build upon the foundational capabilities of the existing Iris APIs, e
 
 - **GraphQL APIs**: Benefit from tailored data access into the IrisX data lake. GraphQL APIs enable clients to query specific data needs efficiently, reducing the amount of data transferred and improving performance. [Read more](https://developers.trackunit.com/reference/graphql-api-introduction)
 
-- **Time Series API**: Employ IrisX most powerful REST API and get advanced querying capabilities out of the box. The Time Series API utilizes PromQL for enhanced data exploration, particularly useful for analyzing time-series data. [Read more](https://developers.trackunit.com/reference/time-series-introduction) 
+- **Time Series API**: Employ IrisX most powerful REST API and get advanced querying capabilities out of the box. The Time Series API utilizes PromQL for enhanced data exploration, particularly useful for analyzing time-series data. [Read more](https://developers.trackunit.com/reference/time-series-introduction)
 
 - **Rental ERP API**: This REST API facilitates two-way integrations between IrisX and various Rental Management Systems, enabling seamless data synchronization and custom integrations. [Read more](https://developers.trackunit.com/reference/rental-erp-api-intro)
 

@@ -1,6 +1,6 @@
 ---
 title: Data Lake Model
-category: 66c49b88a564ee00518afd6d
+category: /branches/1.0/categories/guides/Data Lake
 ---
 
 ## Access, query, and store data in the IrisX Data Lake

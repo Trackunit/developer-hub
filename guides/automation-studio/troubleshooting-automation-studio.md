@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-category: 66c49b7d61daf600186e12cb
+category: /branches/1.0/categories/guides/Automation Studio
 ---
 
 ## Best Practices
@@ -24,5 +24,5 @@ We recommend following these best practices to ensure smooth recipe execution an
 ## Further reading
 
 > 💡 Learn more
-> 
+>
 > Get an overview of the [common types of recipe errors](https://docs.workato.com/recipes/design-runtime-error.html#common-recipe-errors) you may encounter when using Automation Studio.
