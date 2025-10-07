@@ -6,11 +6,11 @@ category: 63170aaed72d5f00a36a8afe
 Discover the power of our Assets API, your key to managing your fleet. By leveraging the Assets API, developers can easily get all assets in a fleet as well as update specifications for an asset. For more information, see the documentation of the endpoints. If you are looking to manage assets across accounts via share, transfer, unshare and remove visibility actions, then visit the [Ownership & Visibility API](https://developers.trackunit.com/reference/ownership-visibility-api-intro).
 
 > 📘 IrisX customers can also access data connected to Asset(s) via the GraphQL API
-> 
+>
 > Via the Public GraphQL API, you can utilize query capabilities to fetch data connected to asset(s) and other domains which would be multiple separate calls in the REST APIs. Additionally you can perform mutations to modify data associated with asset(s). Explore the GraphQL schema through our [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/). Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview).
 
 > 🚧 No onboarding / offboarding support of machine type assets
-> 
+>
 > The Assets API currently does not support onboarding or offboarding assets with the MACHINE asset type. Furthermore, the telematics devices are currently limited to Bluetooth telematics devices. See the [Machine APIs](https://developers.trackunit.com/reference/machine-apis-intro) for those operations for now.
 
 ## Concepts
@@ -22,9 +22,9 @@ Assets have the following properties:
 - An **asset** is a trackable piece of equipment divided into several subtypes; machine, equipment, tool or attachment.
 - **Assets** can have zero to many **telematics devices** associated with them
 
-> ➡️ [OpenAPI Specification for the Assets API domain](https://developers.trackunit.com/openapi/63170aaed72d5f00a36a8afd)
-> 
-> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/63170aaed72d5f00a36a8afd).
+> ➡️ [OpenAPI Specification for the Assets API domain](https://developers.trackunit.com/openapi/assets.json)
+>
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/assets.json).
 
 ## Asset Types
 
@@ -51,7 +51,7 @@ Trackunit provides a number of standard fields for common metadata, that can be 
 Missing any specific fields needed to define assets in your business context? Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**.
 
 > 📘 Subscription requirement
-> 
+>
 > IrisX is required to create and change custom field definitions. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
 
 1. To define a custom field, you first need to [add a definition using the Custom Fields Definitions API.](/reference/custom-field-definitions)

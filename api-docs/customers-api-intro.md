@@ -5,7 +5,7 @@ category: 65c1ea0e0bf60400104f7c68
 The Trackunit Customer API is a REST API that enables customers of Trackunit to create & manage information about their own customers inside the Trackunit system.
 
 > 📘 IrisX subscription needed
-> 
+>
 > Both the Customer REST API and GraphQL API are only available on IrisX. Via the Public GraphQL API, IrisX customers can utilize query capabilities to fetch data connected to customer(s) and other domains which would be multiple separate calls in the REST APIs. Additionally they can perform mutations to modify data associated with customer(s). Explore the GraphQL schema through our [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/). Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview).
 
 The Customer API is designed to facilitate the seamless management of customer data within the Trackunit ecosystem. This API empowers developers to interact with customer information, including details about customers, their associated contacts and asset assignments.
@@ -20,9 +20,9 @@ The customer API is built on the following concepts:
 - A **customer contact** is a registration of a way to get in contact with this entity. It is not necessarily a person, as it can also be a call center or a department.
 - A **customer asset** represents a relationship between the customer and the asset. Fx. an asset being rented to that customer or an asset assigned to undergo service by a service provider.
 
-> ➡️ [OpenAPI Specification for the Customers API domain](https://developers.trackunit.com/openapi/65c1ea0e0bf60400104f7c66)
-> 
-> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/65c1ea0e0bf60400104f7c66).
+> ➡️ [OpenAPI Specification for the Customers API domain](https://developers.trackunit.com/openapi/customer-api.json)
+>
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/customer-api.json).
 
 ## Extending the Data Model
 
