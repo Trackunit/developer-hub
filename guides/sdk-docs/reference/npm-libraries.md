@@ -2,7 +2,8 @@
 title: npm libraries
 category:
   uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: iris-app-sdk-reference
+parent:
+  uri: iris-app-sdk-reference
 ---
 
 # npm Libraries

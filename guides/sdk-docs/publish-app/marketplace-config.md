@@ -2,7 +2,8 @@
 title: Controlling marketplace behavior
 category:
   uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: publish-app
+parent:
+  uri: publish-app
 ---
 
 The app is presented in the Iris Marketplace – from where apps can be deployed as extensions to the Manager.

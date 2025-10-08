@@ -2,7 +2,8 @@
 title: Mocking out runtime hooks
 category:
   uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: test-iris-apps
+parent:
+  uri: test-iris-apps
 ---
 
 If you need to mock out runtimes you can do it like this, lets say you are using our hook `useAssetRuntime()` in your IrisX App extension.

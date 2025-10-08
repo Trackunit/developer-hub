@@ -2,7 +2,8 @@
 title: Mocking out graphql calls
 category:
   uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: test-iris-apps
+parent:
+  uri: test-iris-apps
 ---
 
 Consider the following query that retrieves the details of an asset with a given ID:

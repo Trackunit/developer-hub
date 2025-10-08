@@ -2,7 +2,8 @@
 title: Using Iris App SDK Proxy
 category:
   uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: external-apis
+parent:
+  uri: external-apis
 ---
 
 In most cases to call an external API you can just use http client in your app's code and do the requests. But there are

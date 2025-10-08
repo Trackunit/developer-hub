@@ -2,7 +2,8 @@
 title: Creating a new IrisX App
 category:
   uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: getting-started
+parent:
+  uri: getting-started
 ---
 
 In this step, we will create a new app in the workspace. An app is the deployable unit that will contain all the extensions and configurations.

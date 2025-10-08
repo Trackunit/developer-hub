@@ -2,7 +2,8 @@
 title: Defining a Custom Field
 category:
   uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: save-data-from-your-app
+parent:
+  uri: save-data-from-your-app
 ---
 
 

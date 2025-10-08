@@ -2,7 +2,8 @@
 title: Creating a workspace
 category:
   uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: getting-started
+parent:
+  uri: getting-started
 ---
 
 

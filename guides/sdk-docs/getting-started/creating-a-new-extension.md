@@ -2,7 +2,8 @@
 title: Creating a new extension
 category:
   uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: getting-started
+parent:
+  uri: getting-started
 ---
 
 Once you have created the IrisX App, you will need to create an extension and connect it to the app. An extension is either a hook in to a certain place in the Manager UI or a report.

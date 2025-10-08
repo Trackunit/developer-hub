@@ -2,7 +2,8 @@
 title: Working with Custom Fields
 category:
   uri: /branches/1.0/categories/guides/Apps & Extensions
-parentDocSlug: save-data-from-your-app
+parent:
+  uri: save-data-from-your-app
 ---
 
 # Trackunit App SDK: Working with Custom Fields

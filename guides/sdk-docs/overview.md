@@ -2,7 +2,6 @@
 title: App SDK
 category:
   uri: /branches/1.0/categories/guides/Apps & Extensions
-
 ---
 
 > 📘 IrisX Subscription needed
