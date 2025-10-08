@@ -19,7 +19,7 @@ jobs:
         # Docs: https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
         uses: readmeio/rdme@v10
         with:
-          rdme: docs upload ./api-docs --key=${{ secrets.README_API_KEY }} --branch=1.0
+          rdme: reference upload ./api-docs --key=${{ secrets.README_API_KEY }} --branch=1.0
 
       # Run GitHub Action to sync docs in `documentation` directory
       - name: Sync Guides
