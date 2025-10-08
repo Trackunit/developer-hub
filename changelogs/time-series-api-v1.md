@@ -9,22 +9,22 @@ Discover the power of our new Time Series REST API, your gateway to a wealth of 
 
 Below a list of all available endpoints:
 
-> ➕ GET: /time-series/v1/assets/{assetId}/prometheus/api/v1/query
+> ➕ GET: `/time-series/v1/assets/{assetId}/prometheus/api/v1/query`
 
 [Get for instant queries](ref:getquery)
 
-> ➕ POST: /time-series/v1/assets/{assetId}/prometheus/api/v1/query
+> ➕ POST: `/time-series/v1/assets/{assetId}/prometheus/api/v1/query`
 
 [Post for instant queries](ref:getqueryusingpost)
 
-> ➕ GET: /time-series/v1/assets/{assetId}/prometheus/api/v1/query_range
+> ➕ GET: `/time-series/v1/assets/{assetId}/prometheus/api/v1/query_range`
 
 [Get for range queries](ref:getqueryrange)
 
-> ➕ POST: /time-series/v1/assets/{assetId}/prometheus/api/v1/query_range
+> ➕ POST: `/time-series/v1/assets/{assetId}/prometheus/api/v1/query_range`
 
 [Post for range queries](ref:getqueryrangeusingpost)
 
-> ➕ GET: /time-series/v1/assets/{assetId}/metrics
+> ➕ GET: `/time-series/v1/assets/{assetId}/metrics`
 
 [Get metrics](ref:getmetrics)

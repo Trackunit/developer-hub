@@ -10,10 +10,10 @@ With two convenient endpoints at your disposal, you can choose to retrieve preci
 
 Below a list of all available endpoints:
 
-> ➕ GET: /location/v1/locations/{assetId}
+> ➕ GET: `/location/v1/locations/{assetId}`
 
 [Get location](ref:getlocation)
 
-> ➕ GET: /location/v1/locations
+> ➕ GET: `/location/v1/locations`
 
 [Get locations](ref:getlocations)
