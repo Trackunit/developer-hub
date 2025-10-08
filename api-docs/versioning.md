@@ -1,13 +1,14 @@
 ---
 title: Versioning
-category: 6295ae369ba4b1001464c9e5
+category:
+  uri: /branches/1.0/categories/reference/GETTING STARTED
 ---
 All Trackunit APIs are versioned using a URL versioning scheme
 
 `<https://iris.trackunit.com/api/asset/v1/assets`>
 
-When backwards-incompatible changes are made a new version of the API is released.  
-For backwards compatible changes we do not update the API version.  
+When backwards-incompatible changes are made a new version of the API is released.
+For backwards compatible changes we do not update the API version.
 Breaking changes includes:
 
 - Change in format of the response data
@@ -45,7 +46,7 @@ APIs that are release in a beta version can be identified either by the versioni
 /api/v1beta2 -> a new version is released with every breaking change
 
 # Release
-/api/v1 -> released first version of API 
+/api/v1 -> released first version of API
 
 # Post-release changes
 /api/v1 -> all non breaking changes
@@ -55,8 +56,8 @@ APIs that are release in a beta version can be identified either by the versioni
 
 
 > 🚧 Beta APIs lifecycle
-> 
+>
 > Trackunit will only have up to two beta versions running at the same time, for the same API. When new beta versions are released, the oldest version will be deprecated after **30 days**.
-> 
-> When APIs are released in a final version, beta versions are deleted from our cloud platform.  
+>
+> When APIs are released in a final version, beta versions are deleted from our cloud platform.
 > Consumers will have **30 days** to migrate from the beta version to the release version of the API.

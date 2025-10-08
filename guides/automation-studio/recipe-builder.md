@@ -1,6 +1,7 @@
 ---
 title: Create a Workflow Recipe
-category: 66c49b7d61daf600186e12cb
+category:
+  uri: /branches/1.0/categories/guides/Automation Studio
 ---
 
 The Workflow Automation Projects and their Recipe Builder is a core component of Automation Studio that allows users to create automated workflows, referred to as "recipes." Every recipe has a **trigger**, which defines the event that starts the workflow. When triggered, the recipe performs one or more **actions**, such as creating a corresponding contact in Salesforce or sending a welcome email. Recipes use **connectors** to interact with different apps, ensuring seamless data flow across systems.
@@ -31,7 +32,7 @@ A recipe typically uses the following components:
 2. Click on **"Create Recipe"** and provide a name and description for the recipe to ensure clarity for future reference.
 
 ## Choose Trigger
- 
+
 3. Select the appropriate **trigger type** from the available options and configure the trigger settings, including any necessary parameters.
 
 ![Set up new recipe in Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/new-recipe.png)
@@ -68,7 +69,7 @@ A recipe typically uses the following components:
 
 
 > 💡 Guided Example
-> 
+>
 > Review a [step-by-step example including a video guide](https://docs.workato.com/getting-started/build-first-recipe.html#step-1-create-a-new-recipe) for how to create your first recipe or get more information on [Recipe Design](https://docs.workato.com/recipes/building-recipes.html#considerations-for-recipe-design) in general.
 
 

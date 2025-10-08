@@ -1,6 +1,7 @@
 ---
 title: Service Management - Introduction
-category: 624ebf4c9f55f70565968067
+category:
+  uri: /branches/1.0/categories/reference/Service Management
 ---
 Our Service Management API provides a list of APIs enabling service providers and machine owners in maintaining the service cycle of assets.
 
@@ -281,7 +282,7 @@ You have now successfully completed a service cycle. If your service plan has fu
 
 The Service Management app has the capability of predicting when services are due based on historical usage data. Predicted due dates are calculated using linear extrapolation on the usage of the machine (cumulative running hours/distance) over the last 30 days.
 They are calculated for all assets configured with service plans and are recalculated daily. If the planned service on an asset has multiple service criteria the prediction will be the first coming date of the calculations. The API response will include the criteria type that is basis for the calculation.
-If the asset usage drops for an extended period of time and causes the prediction to be too far in the future, the system will clear out the predicted date.  
+If the asset usage drops for an extended period of time and causes the prediction to be too far in the future, the system will clear out the predicted date.
 To get the predictions call the endpoints for service status, e.g.
 
 ```curl

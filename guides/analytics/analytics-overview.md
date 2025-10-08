@@ -1,15 +1,16 @@
 ---
 title: Analytics & Insights Overview
-category: 66c49b0049fa5200312dc835
+category:
+  uri: /branches/1.0/categories/guides/Analytics & Insights
 ---
 
 ![IrisX Analytics](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/analytics/analytics-irisX.png)
 
-IrisX Analytics & Insights supports collaborative data science with interactive, web-based notebooks and robust visualization tools. This capability features customizable reports to analyze trends and performance metrics, facilitates scalable data workflows, and provides real-time analysis. 
+IrisX Analytics & Insights supports collaborative data science with interactive, web-based notebooks and robust visualization tools. This capability features customizable reports to analyze trends and performance metrics, facilitates scalable data workflows, and provides real-time analysis.
 
 - Streamline the workflow from data preparation to actionable insights.
 - Large-scale data processing with infinite parallelism across unlimited clusters.
-- Share dashboards or connect to BI tools to disseminate insights to your organization. 
+- Share dashboards or connect to BI tools to disseminate insights to your organization.
 - Real-time analytics for immediate decision-making.
 
 ## Features

@@ -1,16 +1,17 @@
 ---
 title: Definitions
-category: 628c96a84164f50225dd1f14
+category:
+  uri: /branches/1.0/categories/reference/Custom Fields API
 ---
 
 > 📘 Subscription requirement
-> 
+>
 > IrisX is required to create and change custom field definitions. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
 
 
-> ➡️ [OpenAPI Specification for the Custom Fields API domain](https://developers.trackunit.com/openapi/628c96a84164f50225dd1f13)
-> 
-> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/628c96a84164f50225dd1f13).
+> ➡️ [OpenAPI Specification for the Custom Fields API domain](https://developers.trackunit.com/openapi/custom-fields-api.json)
+>
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/custom-fields-api.json).
 
 # Create a field definition
 
@@ -46,7 +47,7 @@ When creating a definition using this API it will always be owned by your custom
 
 Regardless of who owns the definition of a field the values in a field may be shared between accounts.
 
-| Scope type                | Description | 
+| Scope type                | Description |
 |---------------------------|-------------------------------|
 | ACCOUNT                   | Values with account scope will be shared within a single account |
 | ACCOUNT_WRITE_GLOBAL_READ | Updating values will be possible within a single account and visible to all accounts (read) with access to the entity. |

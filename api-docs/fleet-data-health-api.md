@@ -1,17 +1,18 @@
 ---
-title: Fleet Data Health API - Introduction 
-category: 689dcb8d14b0513380e3d761
+title: Fleet Data Health API - Introduction
+category:
+  uri: /branches/1.0/categories/reference/Fleet Data Health Issues (Beta)
 ---
 
 _Fleet Data Health Issues REST API_ is your foundation for insight into telematics data integrity, enabling proactive health tracking and resolution planning.
 
-Monitor the health of your fleet’s telematics data via a RESTful API that surfaces analytic-driven issues. 
+Monitor the health of your fleet’s telematics data via a RESTful API that surfaces analytic-driven issues.
 
-This Beta release gives you programmatic access to real-time and historical asset-level data health concerns, 
+This Beta release gives you programmatic access to real-time and historical asset-level data health concerns,
 such as installation misconfigurations, battery anomalies, or connectivity issues.
 
-> ➡️ [OpenAPI Specification for the Fleet Data Health API domain](https://developers.trackunit.com/openapi/689dcb8d14b0513380e3d75a)
-> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/689dcb8d14b0513380e3d75a).
+> ➡️ [OpenAPI Specification for the Fleet Data Health API domain](https://developers.trackunit.com/openapi/fleet-data-health-issues-beta.json)
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/fleet-data-health-issues-beta.json).
 
 
 ## Beta Limitations & Scope
@@ -21,13 +22,13 @@ such as installation misconfigurations, battery anomalies, or connectivity issue
 
 ## Use Cases
 
-- **Health Monitoring**  
+- **Health Monitoring**
   Query all active (`OPEN`) issues to identify assets needing attention.
 
-- **Issue Investigation**  
+- **Issue Investigation**
   Drill into a specific issue by its `issueId` to understand its type, timing, and resolution status.
 
-- **Bulk Analysis**  
+- **Bulk Analysis**
   List issues across multiple assets and aggregate by category, type, or state to gain fleet-wide visibility.
 
 
@@ -46,25 +47,25 @@ Issues are organized into categories, each with specific types that describe the
 - `COVERAGE_ISSUES` - problems with GPS or cellular network connectivity.
   - `LOW_CELLULAR_COVERAGE` - Poor or missing cellular coverage.
   - `LOW_GPS_COVERAGE` - Poor or missing GPS signal.
-      
+
 - `DEVICE_BATTERY_ISSUES` - issues related to device power supply or battery health.
   - `LOW_DEVICE_BATTERY_VOLTAGE` - Low internal device battery voltage.
   - `LOW_DEVICE_INPUT_VOLTAGE` - Low external power supply/input voltage.
-    
+
 - `NON_REPORTING_UNIT` - units that fail to send any data.
   - `DATA_NOT_RECEIVED` - No data received from the device; asset not reporting.
 
 *(Categories and types will expand over time as more analytics are introduced.)*
 
-### Lifecycle States  
+### Lifecycle States
 Each issue is assigned a state:
 - `OPEN` - Active or unresolved issue.
 - `RESOLVED` - Previously flagged issue, now addressed.
 
-### Asset Association  
+### Asset Association
   Every issue is tied to a specific asset via its unique identifier.
 
-### Fields Returned  
+### Fields Returned
 A typical issue object includes:
 - `id` (string) - Unique issue identifier.
 - `assetId` (string) - Asset identifier the issue is associated with.

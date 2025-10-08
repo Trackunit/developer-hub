@@ -1,6 +1,7 @@
 ---
 title: Rate & Size Limiting
-category: 6295ae369ba4b1001464c9e5
+category:
+  uri: /branches/1.0/categories/reference/GETTING STARTED
 ---
 ## Rate Limits
 
@@ -8,7 +9,7 @@ To ensure a consistant experience for all consumers of the Trackunit REST APIs, 
 Individual rate limits may be specified for certain APIs and their endpoints. Those can be viewed in the specific API related documentation.
 
 > 🚧 Rate Limits may change
-> 
+>
 > Trackunit might adjust the rate limits to balance our demand and reliability.
 
 Requests that are rate limited will get an error with a HTTP response code `429` back.

@@ -1,11 +1,12 @@
 ---
 title: GraphQL Rate Limits
-category: 652e3a8e279c3f001f9acdc3
+category:
+  uri: /branches/1.0/categories/reference/GRAPHQL API
 ---
 
 ## Query Complexity & Rate Limiting in our GraphQL API
 
-Query complexity in GraphQL refers to the measure of computational resources required to execute a specific GraphQL query. It takes into account factors such as the depth of the query, the number of requested fields, and any potential nested or recursive structures. Query complexity is a crucial aspect for optimizing GraphQL performance and preventing resource-intensive or potentially malicious queries from overloading a server. 
+Query complexity in GraphQL refers to the measure of computational resources required to execute a specific GraphQL query. It takes into account factors such as the depth of the query, the number of requested fields, and any potential nested or recursive structures. Query complexity is a crucial aspect for optimizing GraphQL performance and preventing resource-intensive or potentially malicious queries from overloading a server.
 
 By setting query complexity thresholds, Trackunit aims to establish limits on the computational load a single query can impose, helping to maintain the stability and efficiency of our GraphQL API. This concept enables us to strike a balance between offering powerful and flexible queries to clients while ensuring the server's responsiveness and resource consumption remain manageable.
 
@@ -55,7 +56,7 @@ If doing multiple calls we recommend clients to proactive query the `rateLimit` 
 Assuming we have a query that retrieves some assets after a certain cursor:
 
 ```graphql
-query MyQuery($afterCursor: Cursor!) { 
+query MyQuery($afterCursor: Cursor!) {
     assets(first: 50, after: $afterCursor) {
         ...
     }

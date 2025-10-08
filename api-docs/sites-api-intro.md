@@ -1,12 +1,13 @@
 ---
 title: Sites API - Introduction
-category: 63fc7f4a12fbea0327599d65
+category:
+  uri: /branches/1.0/categories/reference/Sites API
 ---
 
 The Sites API is designed to facilitate the seamless creation and management of sites at scale - construction sites, depots, workplaces or other areas. This REST API empowers developers to interact with site information, including users and contacts of a site, assets on or related to a site and a site's comprehensive history.
 
 > 📘 IrisX customers can also access data connected to Sites via the GraphQL API
-> 
+>
 > Via the Public GraphQL API, you can utilize query capabilities to fetch data connected to sites. Explore the GraphQL schema through our [GraphQL Explorer](https://apps.iris.trackunit.com/graphql-public-viewer/) following the 'sites' subgraph. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview).
 
 ## Use Cases
@@ -16,9 +17,9 @@ The Sites API is designed to facilitate the seamless creation and management of 
 
 ## Concepts & Interface
 
-> ➡️ [OpenAPI Specification for the Sites API domain](https://developers.trackunit.com/openapi/63fc7f4a12fbea0327599d64)
-> 
-> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this REST API in a JSON file [here](https://developers.trackunit.com/openapi/63fc7f4a12fbea0327599d64).
+> ➡️ [OpenAPI Specification for the Sites API domain](https://developers.trackunit.com/openapi/sites-api.json)
+>
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this REST API in a JSON file [here](https://developers.trackunit.com/openapi/sites-api.json).
 
 ### Create/Update/Delete Site endpoints
 Create a site within your account. Once the site is created, you will gain the ability to see on-site assets and their historical data.
@@ -29,11 +30,11 @@ Once the site is deleted, all linked information will be unavailable, including 
 - Polygon: define a site by providing an array of GPS points, where each point consists of two or three coordinates (longitude, latitude, optionally altitude) following the [GeoJson](https://geojson.org/) format
 
 > 💡 Advise
-> 
+>
 > Having difficulties defining polygons? Use the [Site suggestion endpoint](https://developers.trackunit.com/reference/getsitesuggestion) to get automatically detected sites based on your assets' locations. The suggested sites reflect locations where your assets are or have been previously. Use the 'suggestionId' to copy a polygon from a suggestion when creating a new site.
 
 **Types of Sites**
-- *Construction site:* A temporary site where structures, buildings, or roads are constructed, as well as where existing structures may be demolished, renovated, or expanded 
+- *Construction site:* A temporary site where structures, buildings, or roads are constructed, as well as where existing structures may be demolished, renovated, or expanded
 - *Depot:* A storage facility for assets while they are not in use. Use this type of site for asset depots, rental yards, and rental branches
 - *Workplace:* A permanent site where assets are used daily, such as warehouses or factories
 - *Area:* Covers any other type of sites and should be used only for creating basic alerts
@@ -72,7 +73,7 @@ Emissions data for assets and sites is available via multiple endpoints in the [
 - Get total emissions, kWh, usage hours, and fuel usage for a site grouped by month.
 
 > 📘 Available with the Emissions Reporting app
-> 
+>
 > This API is available for customers that have acquired a license for the Emissions Reporting capability.
 
 ## Extending the Data Model of Sites
@@ -80,5 +81,5 @@ Emissions data for assets and sites is available via multiple endpoints in the [
 Missing any fields needed to define your sites perfectly? Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**. Learn more in the [Custom Fields API -Introduction](https://developers.trackunit.com/reference/custom-field-intro#define-your-own-custom-fields).
 
 > 📘 Subscription requirement
-> 
+>
 > IrisX is required to create and change custom field definitions. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)

@@ -1,6 +1,7 @@
 ---
 title: Quickstart
-category: 61fcd8e1a448f5004215317c
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
 parentDocSlug: getting-started
 ---
 

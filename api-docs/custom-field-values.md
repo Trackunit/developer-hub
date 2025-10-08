@@ -1,11 +1,12 @@
 ---
 title: Values
-category: 628c96a84164f50225dd1f14
+category:
+  uri: /branches/1.0/categories/reference/Custom Fields API
 ---
 
-> ➡️ [OpenAPI Specification for the Custom Fields API domain](https://developers.trackunit.com/openapi/628c96a84164f50225dd1f13)
-> 
-> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/628c96a84164f50225dd1f13).
+> ➡️ [OpenAPI Specification for the Custom Fields API domain](https://developers.trackunit.com/openapi/custom-fields-api.json)
+>
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/custom-fields-api.json).
 
 # Use Cases
 
@@ -22,7 +23,7 @@ Trackunit provides a number a number of standard fields for common metadata, tha
 Custom fields provide a way to define new fields in the Trackunit data model. Allowing to extend and customize Trackunit Manager. Currently we support **extending the data model of assets, accounts, groups, sites, customers and rental contracts with new fields**.
 
 > 📘 Subscription requirement
-> 
+>
 > IrisX is required to create and change custom field definitions. Learn more about the [IrisX subscription](https://developers.trackunit.com/docs/irisx-overview)
 
 Use the custom field values API to set values on fields defined using the [custom fields definitions API](/reference/custom-field-definitions).

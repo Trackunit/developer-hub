@@ -1,6 +1,7 @@
 ---
 title: Pagination
-category: 6295ae369ba4b1001464c9e5
+category:
+  uri: /branches/1.0/categories/reference/GETTING STARTED
 ---
 All endpoints that return lists of objects use pagination. Pagination allows consumers to request a part of the list using a page or cursor-based pagination mechanism.
 
@@ -31,11 +32,11 @@ Please find a sample of a page-based paginated JSON response below. Each paginat
 }
 ```
 
- ① Total number of pages  
- ② Total number of elements across all pages  
- ③ 0-based number of the page  
- ④ Maximum number of elements in the page  
- ⑤ Number of elements in the current page  
+ ① Total number of pages
+ ② Total number of elements across all pages
+ ③ 0-based number of the page
+ ④ Maximum number of elements in the page
+ ⑤ Number of elements in the current page
  ⑥ A list of resources in the page, each one represented as a JSON object
 
 ## Requesting Page-based Paginated Results
@@ -84,9 +85,9 @@ Find a sample cursor-paginated JSON response below. Each paginated response will
 }
 ```
 
-① Cursor pointing to the first element in the content  
+① Cursor pointing to the first element in the content
 ② Cursor pointing to the last element in the content
-③ Maximum number of content elements returned  
+③ Maximum number of content elements returned
 ④ A list of resources returned, each one represented as a JSON object
 
 ## Requesting cursor-based paginated result

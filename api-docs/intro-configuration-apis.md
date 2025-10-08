@@ -1,6 +1,7 @@
 ---
 title: Intro to Configuration
-category: 65cf562976cea3005a0181ea
+category:
+  uri: /branches/1.0/categories/reference/CONFIGURATION
 ---
 
 ![Trackunit Iris APIs for Configuration](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/apis-configuration.png)

@@ -1,6 +1,7 @@
 ---
 title: Export ISO 15143-3 (AEMP 2.0) - Introduction
-category: 641d87d1d3450c003ab14238
+category:
+  uri: /branches/1.0/categories/reference/AEMP ISO API
 ---
 
 Our ISO Export API follows the ISO 15143-3 standard. It provides fleet-wide equipment information.
@@ -8,16 +9,16 @@ Our ISO Export API follows the ISO 15143-3 standard. It provides fleet-wide equi
 To ease system integration, additional equipment metadata is available as an optional addition to the ISO standard.
 
 > 📘 Subscription requirement
-> 
+>
 > The snapshot endpoints of the Export ISO 15143-3 API are available to all customers, while the time series endpoints are only available to customers on the **Evolve & Expand** or the **Link, Lift & Leap** subscription packages. Data retention limits follow the chosen subscription package.
 
 ## Interface
 
 The API exposes a simple REST interface serving XML or JSON as output formats. You can choose the format by sending your accept header with either application/xml or application/json. XML is the default format.
 
-> ➡️ [OpenAPI Specification for the Export ISO 15143-3 (AEMP 2.0) domain](https://developers.trackunit.com/openapi/641d87d1d3450c003ab14237)
-> 
-> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/641d87d1d3450c003ab14237).
+> ➡️ [OpenAPI Specification for the Export ISO 15143-3 (AEMP 2.0) domain](https://developers.trackunit.com/openapi/aemp-iso-api.json)
+>
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/aemp-iso-api.json).
 
 ## Rate Limiting
 
@@ -74,7 +75,7 @@ As an extension to the ISO standard the client can, by adding addMetadata=true a
 
 ## Additional Machine Insights
 
-As an extension to the ISO standard Trackunit offers a collection of elements that represent Machine Insights that do not fit in the standard schema. The client can request it by adding addExtendedData=true URL param. _Value_ is deprecated and may be removed in future releases. Specific values like _BatteryPotential_ should instead be used.  
+As an extension to the ISO standard Trackunit offers a collection of elements that represent Machine Insights that do not fit in the standard schema. The client can request it by adding addExtendedData=true URL param. _Value_ is deprecated and may be removed in future releases. Specific values like _BatteryPotential_ should instead be used.
 
 ```xml XML - Example Elements
 <BatteryPotential datetime="2021-01-02T12:22:00Z">
@@ -1019,7 +1020,7 @@ As an extension to the ISO standard Trackunit offers a collection of elements th
 ## Constraints
 
 > 🚧 Serial Number
-> 
-> If the equipment's serial number is unavailable then the telematic device's serial number will be inserted into the equipment serial number field. This is subject to change in the future as we apply to the standard. 
-> 
+>
+> If the equipment's serial number is unavailable then the telematic device's serial number will be inserted into the equipment serial number field. This is subject to change in the future as we apply to the standard.
+>
 > Please obtain telematic device's serial number from additional metadata to avoid being impacted by future changes.
