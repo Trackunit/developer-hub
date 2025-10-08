@@ -1,7 +1,7 @@
 ---
 title: Using Iris App SDK Proxy
 category:
-  uri: Apps & Extensions
+  uri: "/branches/1.0/categories/guides/Apps & Extensions"
 parent:
   uri: external-apis
 ---

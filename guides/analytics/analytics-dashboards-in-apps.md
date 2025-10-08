@@ -1,7 +1,7 @@
 ---
 title: Embedding IrisX Dashboards in Apps
 category:
-  uri: Analytics & Insights
+  uri: "/branches/1.0/categories/guides/Analytics & Insights"
 ---
 
 ## Overview

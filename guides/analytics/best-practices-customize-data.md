@@ -1,7 +1,7 @@
 ---
 title: Best Practices for Customizing Data
 category:
-  uri: Analytics & Insights
+  uri: "/branches/1.0/categories/guides/Analytics & Insights"
 ---
 
 The IrisX folder in your catalog contains all provided base data. While you can't modify this original data or add customized tables directly to the **IrisX catalog**, you can create new tables derived from this data for your specific use cases.

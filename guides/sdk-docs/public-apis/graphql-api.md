@@ -1,7 +1,7 @@
 ---
 title: Calling Trackunit GraphQL API
 category:
-  uri: Apps & Extensions
+  uri: "/branches/1.0/categories/guides/Apps & Extensions"
 parent:
   uri: public-apis
 ---

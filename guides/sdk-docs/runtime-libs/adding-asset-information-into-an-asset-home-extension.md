@@ -1,7 +1,7 @@
 ---
 title: Loading Asset Information into an Asset Home Extension
 category:
-  uri: Apps & Extensions
+  uri: "/branches/1.0/categories/guides/Apps & Extensions"
 parent:
   uri: runtime-libs
 ---

@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 category:
-  uri: Automation Studio
+  uri: "/branches/1.0/categories/guides/Automation Studio"
 ---
 
 ## Best Practices

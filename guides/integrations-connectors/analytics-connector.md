@@ -1,7 +1,7 @@
 ---
 title: Analytics Connector
 category:
-  uri: Integrations & Connectors
+  uri: "/branches/1.0/categories/guides/Integrations & Connectors"
 parent:
   uri: connectors
 ---

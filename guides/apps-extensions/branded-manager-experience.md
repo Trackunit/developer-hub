@@ -1,7 +1,7 @@
 ---
 title: Branded Manager Experience
 category:
-  uri: Apps & Extensions
+  uri: "/branches/1.0/categories/guides/Apps & Extensions"
 ---
 
 Invite your customers to a personalized and Branded Manager Experience, where they can easily keep track of the assets they've rented or bought and get telematics insights.

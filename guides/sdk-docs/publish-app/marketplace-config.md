@@ -1,7 +1,7 @@
 ---
 title: Controlling marketplace behavior
 category:
-  uri: Apps & Extensions
+  uri: "/branches/1.0/categories/guides/Apps & Extensions"
 parent:
   uri: publish-app
 ---

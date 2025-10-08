@@ -1,7 +1,7 @@
 ---
 title: Apps & Extensions Overview
 category:
-  uri: Apps & Extensions
+  uri: "/branches/1.0/categories/guides/Apps & Extensions"
 ---
 
 ![IrisX Apps & Extensions](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/apps-extensions/apps-irisX.png)

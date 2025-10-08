@@ -1,7 +1,7 @@
 ---
 title: Create a Workflow Recipe
 category:
-  uri: Automation Studio
+  uri: "/branches/1.0/categories/guides/Automation Studio"
 ---
 
 The Workflow Automation Projects and their Recipe Builder is a core component of Automation Studio that allows users to create automated workflows, referred to as "recipes." Every recipe has a **trigger**, which defines the event that starts the workflow. When triggered, the recipe performs one or more **actions**, such as creating a corresponding contact in Salesforce or sending a welcome email. Recipes use **connectors** to interact with different apps, ensuring seamless data flow across systems.
