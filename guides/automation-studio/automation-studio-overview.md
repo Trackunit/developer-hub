@@ -1,6 +1,7 @@
 ---
 title: Automation Studio Overview
-category: /branches/1.0/categories/guides/Automation Studio
+category:
+  uri: /branches/1.0/categories/guides/Automation Studio
 ---
 
 ![IrisX Automation Studio](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/automation-studio/automation-studio-irisX.png)

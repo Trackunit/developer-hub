@@ -1,6 +1,7 @@
 ---
 title: ERP Connectors
-category: /branches/1.0/categories/guides/Integrations & Connectors
+category:
+  uri: /branches/1.0/categories/guides/Integrations & Connectors
 parentDocSlug: connectors
 ---
 

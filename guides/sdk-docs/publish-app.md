@@ -1,6 +1,7 @@
 ---
 title: Put your app on the marketplace
-category: /branches/1.0/categories/guides/Apps & Extensions
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
 ---
 
 When you are done developing your app it is time to take the app to the Marketplace to expose it to users.

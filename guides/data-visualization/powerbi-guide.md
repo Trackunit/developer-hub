@@ -1,6 +1,7 @@
 ---
 title: PowerBI Guide
-category: /branches/1.0/categories/guides/Data Visualization
+category:
+  uri: /branches/1.0/categories/guides/Data Visualization
 ---
 
 ## Introduction

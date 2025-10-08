@@ -1,6 +1,7 @@
 ---
 title: Loading Asset Information into an Asset Home Extension
-category: /branches/1.0/categories/guides/Apps & Extensions
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
 parentDocSlug: runtime-libs
 ---
 

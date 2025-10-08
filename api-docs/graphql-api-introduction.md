@@ -1,6 +1,7 @@
 ---
 title: GraphQL API - Introduction
-category: /branches/1.0/categories/reference/GRAPHQL API
+category:
+  uri: /branches/1.0/categories/reference/GRAPHQL API
 ---
 
 > 📘 Subscription requirement

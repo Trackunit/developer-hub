@@ -1,6 +1,7 @@
 ---
 title: Assets API - Introduction
-category: /branches/1.0/categories/reference/Assets
+category:
+  uri: /branches/1.0/categories/reference/Assets
 ---
 
 Discover the power of our Assets API, your key to managing your fleet. By leveraging the Assets API, developers can easily get all assets in a fleet as well as update specifications for an asset. For more information, see the documentation of the endpoints. If you are looking to manage assets across accounts via share, transfer, unshare and remove visibility actions, then visit the [Ownership & Visibility API](https://developers.trackunit.com/reference/ownership-visibility-api-intro).

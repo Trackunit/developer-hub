@@ -1,6 +1,7 @@
 ---
 title: Rate Limiting Endpoints
-category: /branches/1.0/categories/guides/Integrations & Connectors
+category:
+  uri: /branches/1.0/categories/guides/Integrations & Connectors
 ---
 
 When setting up a webhook endpoint to listen to events you might be concerned about the management of incoming requests on your system's end. Therefore we offer a rate limiting mechanism for your webhook endpoints. Rate limiting involves controlling the number of requests received within a specified timeframe from a particular source, preventing excessive traffic that could overwhelm the receiving server or degrade system performance.

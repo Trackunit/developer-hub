@@ -1,6 +1,7 @@
 ---
 title: Access Management - Introduction
-category: /branches/1.0/categories/reference/Access Management
+category:
+  uri: /branches/1.0/categories/reference/Access Management
 ---
 Our Access Management API provides a list of APIs enabling machine owners to assign access to machines for operators.
 

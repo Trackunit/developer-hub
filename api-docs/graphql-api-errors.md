@@ -1,6 +1,7 @@
 ---
 title: Errors in GraphQL
-category: /branches/1.0/categories/reference/GRAPHQL API
+category:
+  uri: /branches/1.0/categories/reference/GRAPHQL API
 ---
 
 **In GraphQL, even if part of a query encounters an error, the overall response is still valid JSON.**

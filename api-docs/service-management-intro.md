@@ -1,6 +1,7 @@
 ---
 title: Service Management - Introduction
-category: /branches/1.0/categories/reference/Service Management
+category:
+  uri: /branches/1.0/categories/reference/Service Management
 ---
 Our Service Management API provides a list of APIs enabling service providers and machine owners in maintaining the service cycle of assets.
 

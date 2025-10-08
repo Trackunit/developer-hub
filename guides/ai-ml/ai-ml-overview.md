@@ -1,6 +1,7 @@
 ---
 title: AI & Machine Learning Overview
-category: /branches/1.0/categories/guides/AI & Machine Learning
+category:
+  uri: /branches/1.0/categories/guides/AI & Machine Learning
 ---
 
 ![AI & ML with IrisX](https://cdn.statically.io/gh/trackunit/developer-hub/master/guides/ai-ml/ai-irisX.png)

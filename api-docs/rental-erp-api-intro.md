@@ -1,6 +1,7 @@
 ---
 title: Rental API - Introduction
-category: /branches/1.0/categories/reference/Rental API
+category:
+  uri: /branches/1.0/categories/reference/Rental API
 ---
 
 The Rental API is designed to facilitate seamless integration between the IrisX platform and any Enterprise Resource Planning (ERP) system. Building an ERP integration enables your organizations to streamline data flow, enhance operational efficiency, and ensure real-time access to critical business information. Specifically use this API for data synchronization, so that data between IrisX and ERP systems gets automatically synchronized to maintain up-to-date information across platforms.

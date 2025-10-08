@@ -1,6 +1,7 @@
 ---
 title: Rate & Size Limiting
-category: /branches/1.0/categories/reference/GETTING STARTED
+category:
+  uri: /branches/1.0/categories/reference/GETTING STARTED
 ---
 ## Rate Limits
 

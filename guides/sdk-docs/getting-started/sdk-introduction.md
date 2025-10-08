@@ -1,6 +1,7 @@
 ---
 title: Introduction
-category: /branches/1.0/categories/guides/Apps & Extensions
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
 parentDocSlug: getting-started
 ---
 

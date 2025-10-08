@@ -1,6 +1,7 @@
 ---
 title: Deploying a New Custom Field
-category: /branches/1.0/categories/guides/Apps & Extensions
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
 parentDocSlug: save-data-from-your-app
 ---
 

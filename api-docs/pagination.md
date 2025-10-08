@@ -1,6 +1,7 @@
 ---
 title: Pagination
-category: /branches/1.0/categories/reference/GETTING STARTED
+category:
+  uri: /branches/1.0/categories/reference/GETTING STARTED
 ---
 All endpoints that return lists of objects use pagination. Pagination allows consumers to request a part of the list using a page or cursor-based pagination mechanism.
 

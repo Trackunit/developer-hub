@@ -1,6 +1,7 @@
 ---
 title: Testing IrisX App
-category: /branches/1.0/categories/guides/Apps & Extensions
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
 ---
 
 

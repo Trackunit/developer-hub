@@ -1,6 +1,7 @@
 ---
 title: Available events
-category: /branches/1.0/categories/guides/Integrations & Connectors
+category:
+  uri: /branches/1.0/categories/guides/Integrations & Connectors
 ---
 The Event Catalog offers a list of events to which developers can subscribe using webhooks. It encompasses comprehensive documentation for each event, providing both a detailed schema definition and examples.
 

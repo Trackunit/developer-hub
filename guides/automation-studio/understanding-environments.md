@@ -1,6 +1,7 @@
 ---
 title: Environments & Deployment
-category: /branches/1.0/categories/guides/Automation Studio
+category:
+  uri: /branches/1.0/categories/guides/Automation Studio
 ---
 Automation Studio workspaces have an environments feature, which means that the users can switch between a Development, a Test and a Production environment.
 

@@ -1,6 +1,7 @@
 ---
 title: IrisX App Tokens and API access
-category: /branches/1.0/categories/guides/Apps & Extensions
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
 parentDocSlug: public-apis
 ---
 

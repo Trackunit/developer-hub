@@ -1,6 +1,7 @@
 ---
 title: Intro to Organizational Management
-category: /branches/1.0/categories/reference/ORGANISATIONAL MANAGEMENT
+category:
+  uri: /branches/1.0/categories/reference/ORGANISATIONAL MANAGEMENT
 ---
 
 ![Trackunit Iris APIs for Organizational Management](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/apis-organisational-management.png)

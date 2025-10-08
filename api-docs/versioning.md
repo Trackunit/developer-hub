@@ -1,6 +1,7 @@
 ---
 title: Versioning
-category: /branches/1.0/categories/reference/GETTING STARTED
+category:
+  uri: /branches/1.0/categories/reference/GETTING STARTED
 ---
 All Trackunit APIs are versioned using a URL versioning scheme
 

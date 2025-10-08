@@ -1,6 +1,7 @@
 ---
 title: Values
-category: /branches/1.0/categories/reference/Custom Fields API
+category:
+  uri: /branches/1.0/categories/reference/Custom Fields API
 ---
 
 > ➡️ [OpenAPI Specification for the Custom Fields API domain](https://developers.trackunit.com/openapi/custom-fields-api.json)

@@ -1,6 +1,7 @@
 ---
 title: IrisX Analytics to Power BI
-category: /branches/1.0/categories/guides/Analytics & Insights
+category:
+  uri: /branches/1.0/categories/guides/Analytics & Insights
 ---
 
 In this article, we will show you how to connect IrisX Analytics to Power BI to access data in your IrisX Data Lake.

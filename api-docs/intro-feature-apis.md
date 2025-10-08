@@ -1,6 +1,7 @@
 ---
 title: Intro to Feature APIs
-category: /branches/1.0/categories/reference/FEATURE APIs
+category:
+  uri: /branches/1.0/categories/reference/FEATURE APIs
 ---
 
 ![Trackunit Iris Feature APIs](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/apis-feature.png)

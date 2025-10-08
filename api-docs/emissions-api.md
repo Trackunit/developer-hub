@@ -1,6 +1,7 @@
 ---
 title: Emissions API - Introduction
-category: /branches/1.0/categories/reference/Emissions
+category:
+  uri: /branches/1.0/categories/reference/Emissions
 ---
 
 The Trackunit Emissions API is a REST API that enables customers to access emissions data for their assets.

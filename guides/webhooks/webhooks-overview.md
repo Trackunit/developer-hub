@@ -1,6 +1,7 @@
 ---
 title: Webhooks
-category: /branches/1.0/categories/guides/Integrations & Connectors
+category:
+  uri: /branches/1.0/categories/guides/Integrations & Connectors
 ---
 Welcome to Trackunit's Webhooks guide!
 

@@ -1,6 +1,7 @@
 ---
 title: Controlling marketplace behavior
-category: /branches/1.0/categories/guides/Apps & Extensions
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
 parentDocSlug: publish-app
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Testing Events
-category: /branches/1.0/categories/guides/Integrations & Connectors
+category:
+  uri: /branches/1.0/categories/guides/Integrations & Connectors
 ---
 The easiest way to gain confidence in your endpoint configuration is to start receiving events as quickly as possible.
 

@@ -1,6 +1,7 @@
 ---
 title: Intro to Connector APIs
-category: /branches/1.0/categories/reference/CONNECTOR APIs
+category:
+  uri: /branches/1.0/categories/reference/CONNECTOR APIs
 ---
 
 ![Trackunit Iris Feature APIs](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/apis-feature.png)

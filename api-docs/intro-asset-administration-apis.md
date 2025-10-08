@@ -1,6 +1,7 @@
 ---
 title: Intro to Asset Administration
-category: /branches/1.0/categories/reference/ASSET ADMINISTRATION
+category:
+  uri: /branches/1.0/categories/reference/ASSET ADMINISTRATION
 ---
 
 ![Trackunit Iris APIs for Asset Administration](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/apis-asset-administration.png)

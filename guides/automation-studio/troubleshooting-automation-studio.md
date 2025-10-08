@@ -1,6 +1,7 @@
 ---
 title: Troubleshooting
-category: /branches/1.0/categories/guides/Automation Studio
+category:
+  uri: /branches/1.0/categories/guides/Automation Studio
 ---
 
 ## Best Practices
