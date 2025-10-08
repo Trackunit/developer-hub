@@ -1,7 +1,7 @@
 ---
 title: Testing Events
 category:
-  uri: "/branches/1.0/categories/guides/Integrations & Connectors"
+  uri: /branches/1.0/categories/guides/Integrations & Connectors
 ---
 The easiest way to gain confidence in your endpoint configuration is to start receiving events as quickly as possible.
 

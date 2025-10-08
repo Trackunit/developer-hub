@@ -1,7 +1,7 @@
 ---
 title: Adding Endpoints
 category:
-  uri: "/branches/1.0/categories/guides/Integrations & Connectors"
+  uri: /branches/1.0/categories/guides/Integrations & Connectors
 ---
 When setting up a webhook to listen to events, you need to specify an endpoint because the endpoint is the specific URL where the webhook will send its HTTP POST requests containing event data.
 

@@ -1,7 +1,7 @@
 ---
 title: Iris APIs Overview
 category:
-  uri: "/branches/1.0/categories/reference/GETTING STARTED"
+  uri: /branches/1.0/categories/reference/GETTING STARTED
 ---
 
 ![Trackunit Iris APIs Overview](https://cdn.statically.io/gh/trackunit/developer-hub/master/api-docs/iris-api-overview.png)

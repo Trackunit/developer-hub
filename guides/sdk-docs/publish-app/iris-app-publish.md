@@ -1,7 +1,7 @@
 ---
 title: How to submit an App SDK
 category:
-  uri: "/branches/1.0/categories/guides/Apps & Extensions"
+  uri: /branches/1.0/categories/guides/Apps & Extensions
 parent:
   uri: publish-app
 ---

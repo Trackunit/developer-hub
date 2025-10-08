@@ -1,7 +1,7 @@
 ---
 title: Data format for Machine Insights Streaming
 category:
-  uri: "/branches/1.0/categories/reference/Streaming API"
+  uri: /branches/1.0/categories/reference/Streaming API
 ---
 
 The Machine Insights based streaming data format provides high-level semantic information about machines. This means that e.g. information about "Operating Hours", "Fuel Remaining in Tank", "DEF Level" and "Battery Voltage" are immediately present in a normalized format - no matter the input source. This is perfectly tailored towards usage in a

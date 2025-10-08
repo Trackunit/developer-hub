@@ -1,7 +1,7 @@
 ---
 title: Installing IrisX App Runtime in an IrisX App Extension
 category:
-  uri: "/branches/1.0/categories/guides/Apps & Extensions"
+  uri: /branches/1.0/categories/guides/Apps & Extensions
 parent:
   uri: runtime-libs
 ---

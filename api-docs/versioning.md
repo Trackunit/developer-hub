@@ -1,7 +1,7 @@
 ---
 title: Versioning
 category:
-  uri: "/branches/1.0/categories/reference/REST APIs OVERVIEW"
+  uri: /branches/1.0/categories/reference/REST APIs OVERVIEW
 ---
 All Trackunit APIs are versioned using a URL versioning scheme
 

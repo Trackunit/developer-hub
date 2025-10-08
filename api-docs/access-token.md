@@ -1,7 +1,7 @@
 ---
 title: Access Token
 category:
-  uri: "/branches/1.0/categories/reference/GETTING STARTED"
+  uri: /branches/1.0/categories/reference/GETTING STARTED
 ---
 
 IRIS APIs use the [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749) for authentication and authorization. IRIS

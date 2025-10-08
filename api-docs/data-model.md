@@ -1,7 +1,7 @@
 ---
 title: Data Model
 category:
-  uri: "/branches/1.0/categories/reference/DATA ARCHIVE"
+  uri: /branches/1.0/categories/reference/DATA ARCHIVE
 ---
 Trackunit's data model is semantically defined data points called machine insights, each of them capturing some insight into a machine or asset. This means that no matter the connectivity of the machine (be it directly through Trackunit or e.g. an ISO feed) the data model is the same, whereas the data points available for each machine may vary.
 

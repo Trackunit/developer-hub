@@ -1,7 +1,7 @@
 ---
 title: GraphQL Rate Limits
 category:
-  uri: "/branches/1.0/categories/reference/GRAPHQL API"
+  uri: /branches/1.0/categories/reference/GRAPHQL API
 ---
 
 ## Query Complexity & Rate Limiting in our GraphQL API

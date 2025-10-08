@@ -1,7 +1,7 @@
 ---
 title: Connectors
 category:
-  uri: "/branches/1.0/categories/guides/Integrations & Connectors"
+  uri: /branches/1.0/categories/guides/Integrations & Connectors
 ---
 
 Connectors in [Automation Studio](https://developers.trackunit.com/docs/automation-studio-overview) are powerful integration tools that enable seamless data flow and workflow automation between various enterprise systems. With over 1,200 pre-built connectors, users can easily link their existing applications, enhancing operational efficiency and data accessibility.
