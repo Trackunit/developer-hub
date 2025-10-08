@@ -1,7 +1,7 @@
 ---
 title: Definitions
 category:
-  uri: Custom Fields API
+  uri: "/branches/1.0/categories/reference/Custom Fields API"
 ---
 
 > 📘 Subscription requirement

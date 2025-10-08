@@ -1,7 +1,7 @@
 ---
 title: Customer API - Introduction
 category:
-  uri: Customer API
+  uri: "/branches/1.0/categories/reference/Customer API"
 ---
 The Trackunit Customer API is a REST API that enables customers of Trackunit to create & manage information about their own customers inside the Trackunit system.
 

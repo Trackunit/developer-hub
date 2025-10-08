@@ -1,7 +1,7 @@
 ---
 title: Provision Customer Portal Access with SSO
 category:
-  uri: Customer API
+  uri: "/branches/1.0/categories/reference/Customer API"
 ---
 
 This guide explains how to provision customer portal access for your customers using Single Sign-On (SSO).

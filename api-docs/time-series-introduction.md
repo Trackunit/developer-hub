@@ -1,7 +1,7 @@
 ---
 title: Time Series API - Introduction
 category:
-  uri: Time Series API
+  uri: "/branches/1.0/categories/reference/Time Series API"
 ---
 Welcome to the Time Series API documentation. This REST API enables you to retrieve time series metrics for specific assets, categorized as machine insights and advanced sensors.
 

@@ -1,7 +1,7 @@
 ---
 title: Errors
 category:
-  uri: REST APIs OVERVIEW
+  uri: "/branches/1.0/categories/reference/REST APIs OVERVIEW"
 ---
 Trackunit APIs use common HTTP codes to indicate a success or a failure of a request.
 

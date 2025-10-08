@@ -1,7 +1,7 @@
 ---
 title: Compaction API - Introduction
 category:
-  uri: Compaction API
+  uri: "/branches/1.0/categories/reference/Compaction API"
 ---
 
 Trace Compaction for your Equipment: Compaction APIs helps you to monitor performance, improve efficiency, and stay in control of your projects.
