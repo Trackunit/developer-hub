@@ -14,66 +14,66 @@ The Data Source Score documentation can be found [here](https://help.trackunit.c
 
 ## New Endpoints
 
-> ➕ GET: /v2/emissions/period
+> ➕ GET: `/v2/emissions/period`
 
 [Get period](ref:getemissionsperiodv2)
 
-> ➕ POST: /v2/emissions/period
+> ➕ POST: `/v2/emissions/period`
 
 [Filter period](ref:filteremissionsperiodv2)
 
-> ➕ GET: /v2/emissions/period/kpis
+> ➕ GET: `/v2/emissions/period/kpis`
 
 [Get period KPIs](ref:getemissionsperiodkpisv2)
 
-> ➕ POST: /v2/emissions/period/kpis
+> ➕ POST: `/v2/emissions/period/kpis`
 
 [Filter period KPIs](ref:filteremissionsperiodkpisv2)
 
-> ➕ POST: /v2/emissions/monthly
+> ➕ POST: `/v2/emissions/monthly`
 
 [Filter monthly](ref:filtermonthlyemissionsv2)
 
-> ➕ GET: /v2/emissions/monthly/summary
+> ➕ GET: `/v2/emissions/monthly/summary`
 
 [Get monthly summary](ref:getmonthlyemissionssummaryv2)
 
-> ➕ POST: /v2/emissions/monthly/summary
+> ➕ POST: `/v2/emissions/monthly/summary`
 
 [Filter monthly summary](ref:filtermonthlyemissionssummaryv2)
 
-> ➕ POST: /v2/emissions/lifetime
+> ➕ POST: `/v2/emissions/lifetime`
 
 [Filter lifetime](ref:filterlifetimeemissionsv2)
 
-> ➕ GET: /v2/emissions/lifetime/kpis
+> ➕ GET: `/v2/emissions/lifetime/kpis`
 
 [Get Lifetime KPIs](ref:getlifetimeemissionskpisv2)
 
-> ➕ POST: /v2/emissions/lifetime/kpis
+> ➕ POST: `/v2/emissions/lifetime/kpis`
 
 [Filter Lifetime KPIs](ref:filterlifetimeemissionskpisv2)
 
-> ➕ POST: /v2/emissions/daily
+> ➕ POST: `/v2/emissions/daily`
 
 [Filter daily](ref:filterdailyemissionsv2)
 
-> ➕ GET: /v2/emissions/daily/summary
+> ➕ GET: `/v2/emissions/daily/summary`
 
 [Get daily summary](ref:getdailyemissionssummaryv2)
 
-> ➕ POST: /v2/emissions/daily/summary
+> ➕ POST: `/v2/emissions/daily/summary`
 
 [Filter daily summary](ref:filterdailyemissionssummaryv2)
 
-> ➕ GET: /v2/emissions/daily/kpis
+> ➕ GET: `/v2/emissions/daily/kpis`
 
 [Get daily KPIs](ref:getdailyemissionskpisv2)
 
-> ➕ POST: /v2/emissions/daily/kpis
+> ➕ POST: `/v2/emissions/daily/kpis`
 
 [Filter daily KPIs](ref:filterdailyemissionskpisv2)
 
-> ➕ GET: /v2/sites/{siteId}/emissions
+> ➕ GET: `/v2/sites/{siteId}/emissions`
 
 [Get site](ref:getsiteemissionsbysiteidv2)

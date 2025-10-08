@@ -8,42 +8,42 @@ Discover the power of our Assets API, your key to manage asset domain. By levera
 
 Below all available endpoints.
 
-> ➕ GET: /asset/v1/asset
+> ➕ GET: `/asset/v1/asset`
 
 [Get asset](ref:getasset_v1)
 
-> ➕ GET: /asset/v1/assets
+> ➕ GET: `/asset/v1/assets`
 
 [Get assets](ref:getassets_v1)
 
-> ➕ POST: /asset/v1/assets/onboard
+> ➕ POST: `/asset/v1/assets/onboard`
 
 [Onboard asset](ref:onboardasset_v1)
 
-> ➕ POST: /asset/v1/assets/{assetId}/offboard
+> ➕ POST: `/asset/v1/assets/{assetId}/offboard`
 
 [Offboard asset](ref:offboardasset_v1)
 
-> ➕ GET: /asset/v1/assets/{assetId}/shares
+> ➕ GET: `/asset/v1/assets/{assetId}/shares`
 
 [List asset shares](ref:getassetshares_v1)
 
-> ➕ PATCH: /asset/v1/assets/{assetId}
+> ➕ PATCH: `/asset/v1/assets/{assetId}`
 
 [Update asset](ref:patchasset_v1)
 
-> ➕ POST: /asset/v1/assets/remove-visibility
+> ➕ POST: `/asset/v1/assets/remove-visibility`
 
 [Remove visibility](ref:removevisibilityforassets_v1)
 
-> ➕ POST: /asset/v1/assets/share
+> ➕ POST: `/asset/v1/assets/share`
 
 [Share assets](ref:shareassets_v1)
 
-> ➕ POST: /asset/v1/assets/transfer
+> ➕ POST: `/asset/v1/assets/transfer`
 
 [Transfer assets](ref:transferassets_v1)
 
-> ➕ POST: /asset/v1/assets/unshare
+> ➕ POST: `/asset/v1/assets/unshare`
 
 [Unshare assets](ref:unshareassets_v1)

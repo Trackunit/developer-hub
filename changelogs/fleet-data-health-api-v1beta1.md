@@ -11,14 +11,14 @@ Below is a list of all available REST endpoints:
 
 ## Issue API
 
-> ➕ GET: /v1beta1/assets/{assetId}/issues
+> ➕ GET: `/v1beta1/assets/{assetId}/issues`
 
 [Get issues by asset](ref:getissuesbyasset)
 
-> ➕ GET: /v1beta1/issues
+> ➕ GET: `/v1beta1/issues`
 
 [Get issues](ref:getpaginatedissues)
 
-> ➕ GET: /v1beta1/issues/{issueId}
+> ➕ GET: `/v1beta1/issues/{issueId}`
 
 [Get issues](ref:getissuebyid)
