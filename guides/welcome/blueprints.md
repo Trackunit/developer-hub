@@ -1,6 +1,7 @@
 ---
 title: Blueprints
-category: 652e405820342e0033e0d25f
+category:
+  uri: /branches/1.0/categories/guides/Welcome to Trackunit IrisX
 ---
 
 ## Definition of Blueprint
@@ -12,7 +13,7 @@ A blueprint is a reproduction of a technical drawing or engineering drawing usin
 
 
 ## How to use a Blueprint
-Blueprints are code examples and data science notebooks to typical IrisX use cases. By using a blueprint as a starting point, users can move quickly towards value creation. Blueprints ensures low risk and faster value creation for IrisX customers. 
+Blueprints are code examples and data science notebooks to typical IrisX use cases. By using a blueprint as a starting point, users can move quickly towards value creation. Blueprints ensures low risk and faster value creation for IrisX customers.
 
 
 

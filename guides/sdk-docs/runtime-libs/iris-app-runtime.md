@@ -1,7 +1,9 @@
 ---
-title: Installing IrisX App Runtime in an IrisX App Extension 
-category: 61fcd8e1a448f5004215317c
-parentDocSlug: runtime-libs
+title: Installing IrisX App Runtime in an IrisX App Extension
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
+parent:
+  uri: runtime-libs
 ---
 
 To use Trackunit APIs and integrating with the manager to get information on current asset, site, custom fields or navigate - you need to install the IrisX App core hooks. The IrisX App core hooks is the interface to the manager from your react IrisX App extension.

@@ -1,6 +1,7 @@
 ---
 title: PowerBI Guide
-category: 6582ec6517bb6f0041230311
+category:
+  uri: /branches/1.0/categories/guides/Data Visualization
 ---
 
 ## Introduction
@@ -12,7 +13,7 @@ This guide assumes you are experienced in connecting to custom data sources thro
 For this guide, we will build a PowerBI visualization showing the average operating hours by asset type. For simplicity, we will limit our query to 100 assets.
 
 > 📘 Extended GraphQL information:
-> 
+>
 > - [Rate & complexity limits](https://developers.trackunit.com/reference/graphql-api-rate-limits)
 > - [How to use pagination with GraphQL](https://developers.trackunit.com/reference/graphql-api-pagination)
 
@@ -106,17 +107,17 @@ let
   url_data = "https://iris.trackunit.com/api/graphql/",
   query = "{""query"": ""query MyQuery { assets(first: 100) { edges { node { insights {totalRunningHours} id type} } } }""}",
   Source_data = Web.Contents(
-    url_data, 
+    url_data,
     [
       Headers = [
-        #"Method"       = "POST", 
+        #"Method"       = "POST",
         #"Content-Type" = "application/json",
         #"Authorization" = "Bearer " & access_token,
         #"TU-PREVIEW" = "TIME-EXCAVATORS"
-      ], 
+      ],
       Content = Text.ToBinary(query)
     ]
-  ), 
+  ),
   //
   // Convert the query response to the correct PowerBI data format
   //
@@ -135,7 +136,7 @@ in
 
 ## Creating the desired visualization
 
-From here you can use your GraphQL powered data source in the same way as any other data source in PowerBI to create visualizations, reports and dashboards. 
+From here you can use your GraphQL powered data source in the same way as any other data source in PowerBI to create visualizations, reports and dashboards.
 
 Here you can see the final visualization for this example:
 

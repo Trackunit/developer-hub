@@ -1,7 +1,9 @@
 ---
 title: Unpublish your app
-category: 61fcd8e1a448f5004215317c
-parentDocSlug: iris-app-sdk-functions
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
+parent:
+  uri: iris-app-sdk-functions
 ---
 
 

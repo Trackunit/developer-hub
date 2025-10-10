@@ -46,54 +46,54 @@ Below a list of all available REST endpoints:
 
 ## Customer:
 
-> ➕ GET: /customer/v1/customers/{customerId}
+> ➕ GET: `/customer/v1/customers/{customerId}`
 
 [Get customer](ref:getcustomer)
 
-> ➕ GET: /customer/v1/customers
+> ➕ GET: `/customer/v1/customers`
 
 [Get customers](ref:getcustomers)
 
-> ➕ POST: /customer/v1/customers
+> ➕ POST: `/customer/v1/customers`
 
 [Create customer](ref:createcustomer)
 
-> ➕ PATCH: /customer/v1/customers/{customerId}
+> ➕ PATCH: `/customer/v1/customers/{customerId}`
 
 [Update customer](ref:updatecustomer)
 
-> ➕ DELETE: /customer/v1/customers/{customerId}
+> ➕ DELETE: `/customer/v1/customers/{customerId}`
 
 [Delete customer](ref:deletecustomer)
 
 ## Customer Contact:
 
-> ➕ GET: customer/v1/customers/{customerId}/contacts/{contactId}
+> ➕ GET: `customer/v1/customers/{customerId}/contacts/{contactId}`
 
 [Get contact](ref:getcontact)
 
-> ➕ GET: customer/v1/customers/{customerid}/contacts
+> ➕ GET: `customer/v1/customers/{customerid}/contacts`
 
 [Get contacts](ref:getcontactsbyids)
 
-> ➕ POST: customer/v1/customers/{customerid}/contacts
+> ➕ POST: `customer/v1/customers/{customerid}/contacts`
 
 [Create contact](ref:createcontact-1)
 
-> ➕ PATCH: customer/v1/customers/{customerid}/contacts/{contactId}
+> ➕ PATCH: `customer/v1/customers/{customerid}/contacts/{contactId}`
 
 [Update contact](ref:updatecontact-1)
 
-> ➕ DELETE: customer/v1/customers/{customerid}/contacts/{contactId}
+> ➕ DELETE: `customer/v1/customers/{customerid}/contacts/{contactId}`
 
 [Delete contact](ref:deletecontact-1)
 
 ## Customer Asset assignments:
 
-> ➕ GET: customer/v1/customers/{customerid}/assets
+> ➕ GET: `customer/v1/customers/{customerid}/assets`
 
 [Get assets](ref:getassets-1)
 
-> ➕ POST: customer/v1/customers/{customerid}/assets
+> ➕ POST: `customer/v1/customers/{customerid}/assets`
 
 [Update assets](ref:updateasset)

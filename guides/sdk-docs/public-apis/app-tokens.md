@@ -1,7 +1,9 @@
 ---
 title: IrisX App Tokens and API access
-category: 61fcd8e1a448f5004215317c
-parentDocSlug: public-apis
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
+parent:
+  uri: public-apis
 ---
 
 When launching your app the Trackunit Manager will provide a token for your app. For security purposes this token will

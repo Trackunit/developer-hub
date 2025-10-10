@@ -1,8 +1,9 @@
 ---
 title: Next steps
-category: 61fcd8e1a448f5004215317c
-parentDocSlug: getting-started
-
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
+parent:
+  uri: getting-started
 ---
 
 **Congratulations 🎉** You have now running IrisX App 👏

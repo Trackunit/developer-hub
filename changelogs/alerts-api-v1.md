@@ -10,17 +10,22 @@ Here alert configurations can be created, read, updated and deleted. For more in
 
 Below all available endpoints:
 
-> ➕ GET: /alerts/v1/configurations
+> ➕ GET: `/alerts/v1/configurations`
+
 [Get all alert configurations](ref:getallalertconfigurations)
 
-> ➕ GET: /alerts/v1/configurations/{alertConfigurationId}
+> ➕ GET: `/alerts/v1/configurations/{alertConfigurationId}`
+
 [Get specific alert configuration](ref:getalertconfigurationbyid)
 
-> ➕ POST: /alerts/v1/configurations
+> ➕ POST: `/alerts/v1/configurations`
+
 [Create alert configuration](ref:createalertconfiguration)
 
-> ➕ PATCH: /alerts/v1/configurations/{alertConfigurationId}
+> ➕ PATCH: `/alerts/v1/configurations/{alertConfigurationId}`
+
 [Update alert configuration](ref:updatealertconfigurationbyid)
 
-> ➕ DELETE: /alerts/v1/configurations/{alertConfigurationId}
+> ➕ DELETE: `/alerts/v1/configurations/{alertConfigurationId}`
+
 [Delete alert configuration](ref:deletealertconfigurationbyid)

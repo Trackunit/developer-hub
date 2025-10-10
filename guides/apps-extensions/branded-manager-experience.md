@@ -1,11 +1,12 @@
 ---
 title: Branded Manager Experience
-category: 61fcd8e1a448f5004215317c
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
 ---
 
 Invite your customers to a personalized and Branded Manager Experience, where they can easily keep track of the assets they've rented or bought and get telematics insights.
 
-Branded Manager Experience is a digital experience designed exclusively for rental companies and their customers. This solution enhances operational efficiency while simplifying the rental process, improving asset management, and delivering a superior customer experience. 
+Branded Manager Experience is a digital experience designed exclusively for rental companies and their customers. This solution enhances operational efficiency while simplifying the rental process, improving asset management, and delivering a superior customer experience.
 
 By integrating advanced technology with user-friendly features, Branded Manager Experience enables rentee businesses to manage their operations more efficiently and provides customers with unprecedented access to equipment data and services.
 
@@ -30,7 +31,7 @@ By integrating advanced technology with user-friendly features, Branded Manager 
 
 ### Customer & Asset Mapping
 - Option 1: Manual mapping
-    - It is possible to create the Customer & Asset Mapping manually. 
+    - It is possible to create the Customer & Asset Mapping manually.
     - This requires the rental company to manually select the customer for each asset in the Trackunit Manager UI.
 - Option 2: Automated mapping via ERP Connectors
     - By using ERP Integrations, the Customer & Asset Mapping is initiated and maintained automatically.

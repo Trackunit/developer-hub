@@ -1,13 +1,14 @@
 ---
 title: Ownership & Visibility - Introduction
-category: 6720e7ed8b7c9f0064a50f04
+category:
+  uri: /branches/1.0/categories/reference/Ownership & Visibility
 ---
 
 Ownership & Visibility API requests are used to manage assets' visibility and ownership on the Trackunit platform.
 
-> ➡️ [OpenAPI Specification for the Ownership & Visibility API domain](https://developers.trackunit.com/openapi/6720e7ed8b7c9f0064a50f02)
-> 
-> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/6720e7ed8b7c9f0064a50f02).
+> ➡️ [OpenAPI Specification for the Ownership & Visibility API domain](https://developers.trackunit.com/openapi/ownership-visibility.json)
+>
+> Get the OpenAPI Specification (formerly Swagger), which is a standardized format that describes the functionalities, endpoints, parameters, and data models of this API in a JSON file [here](https://developers.trackunit.com/openapi/ownership-visibility.json).
 
 ## Concepts & Definitions
 

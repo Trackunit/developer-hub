@@ -1,6 +1,7 @@
 ---
 title: Errors
-category: 6295ae369ba4b1001464c9e5
+category:
+  uri: /branches/1.0/categories/reference/REST APIs OVERVIEW
 ---
 Trackunit APIs use common HTTP codes to indicate a success or a failure of a request.
 
@@ -43,8 +44,8 @@ Apart from the standard HTTP code, error responses also contain a JSON object wi
 
 
 
-① HTTP status code of the response  
-② Error code (snake case) that can be used by the consumer code to distinguish between different errors  
+① HTTP status code of the response
+② Error code (snake case) that can be used by the consumer code to distinguish between different errors
 ③ Error message providing an explanation of the error
 
 Constraint violation errors contain additional `violations` attribute  (see ④ below) that enlists all the fields, in which some constraint was violated.

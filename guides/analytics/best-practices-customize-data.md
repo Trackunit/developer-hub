@@ -1,6 +1,7 @@
 ---
 title: Best Practices for Customizing Data
-category: 66c49b0049fa5200312dc835
+category:
+  uri: /branches/1.0/categories/guides/Analytics & Insights
 ---
 
 The IrisX folder in your catalog contains all provided base data. While you can't modify this original data or add customized tables directly to the **IrisX catalog**, you can create new tables derived from this data for your specific use cases.
@@ -13,7 +14,7 @@ Store your custom tables in catalogs labeled with your name, following the dev/t
 3. Choose the appropriate storage format.
 4. For regular updates to your custom tables, create a workflow to run your notebooks automatically on a schedule.
 
-## Different storage formats: 
+## Different storage formats:
 
 A **table** is a structured dataset that physically stores data. Choose this when:
 

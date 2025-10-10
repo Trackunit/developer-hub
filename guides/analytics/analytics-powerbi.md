@@ -1,6 +1,7 @@
 ---
 title: IrisX Analytics to Power BI
-category: 66c49b0049fa5200312dc835
+category:
+  uri: /branches/1.0/categories/guides/Analytics & Insights
 ---
 
 In this article, we will show you how to connect IrisX Analytics to Power BI to access data in your IrisX Data Lake.
@@ -32,7 +33,7 @@ There are two basic ways of accessing IrisX data with Power BI:
 
 
 When choosing between these methods, you should consider the following aspects. Unless you know you will need the flexibility of a direct integration, we recommend using IrisX Analytics to create precalculated data sets for consumption in Power BI.
- 
+
 
 - Performance: Direct integration offers real-time insights but can be resource-intensive, while custom BI tables can offer better performance through pre-calculated summaries.
 - Complexity of Reports: Direct integration allows for more flexible and detailed reports, while custom BI tables are better for simpler, high-level overviews.

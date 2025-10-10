@@ -1,7 +1,9 @@
 ---
 title: Introduction
-category: 61fcd8e1a448f5004215317c
-parentDocSlug: getting-started
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
+parent:
+  uri: getting-started
 ---
 
 The App SDK uses [NX](https://nx.dev) to manage code structure and allow easily sharing code between apps if you are developing multiple apps and extensions.

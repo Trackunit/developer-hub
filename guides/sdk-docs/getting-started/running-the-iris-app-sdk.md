@@ -1,7 +1,9 @@
 ---
 title: Run your IrisX App
-category: 61fcd8e1a448f5004215317c
-parentDocSlug: getting-started
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
+parent:
+  uri: getting-started
 ---
 
 > 📘 This is intended for local testing on the developer machine.

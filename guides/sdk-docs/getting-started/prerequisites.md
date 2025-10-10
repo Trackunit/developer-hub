@@ -1,7 +1,9 @@
 ---
 title: Prerequisites
-category: 61fcd8e1a448f5004215317c
-parentDocSlug: getting-started
+category:
+  uri: /branches/1.0/categories/guides/Apps & Extensions
+parent:
+  uri: getting-started
 ---
 
 You need to be registered as a developer and have credentials to access Trackunit Manager. If you do not have that talk to your Trackunit representative. If you have an existing username for Trackunit Manager remember to include that in the request.

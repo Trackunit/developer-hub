@@ -9,22 +9,22 @@ Discover the power of our Assets API, your key to manage the asset domain. By le
 
 Below a list of all available endpoints:
 
-> ➕ GET: /asset/v1/assets
+> ➕ GET: `/asset/v1/assets`
 
 [Get asset](ref:getasset_v1)
 
-> ➕ GET: /asset/v1/assets
+> ➕ GET: `/asset/v1/assets`
 
 [Get assets](ref:getassets_v1)
 
-> ➕ POST: /asset/v1/assets/onboard
+> ➕ POST: `/asset/v1/assets/onboard`
 
 [Onboard asset](ref:onboardasset_v1)
 
-> ➕ POST: /asset/v1/assets/{assetId}/offboard
+> ➕ POST: `/asset/v1/assets/{assetId}/offboard`
 
 [Offboard asset](ref:offboardasset_v1)
 
-> ➕ PATCH: /asset/v1/assets/{assetId}
+> ➕ PATCH: `/asset/v1/assets/{assetId}`
 
 [Update asset](ref:patchasset_v1)

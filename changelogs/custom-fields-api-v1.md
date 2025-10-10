@@ -11,28 +11,36 @@ Below all available endpoints:
 
 To define a custom field, you first need to [add a definition using the API.](/reference/custom-field-definitions)
 
-> ➕ GET: /custom-fields/v1/definitions
+> ➕ GET: `/custom-fields/v1/definitions`
+
 [Get definitions](ref:custom-fields-get-definitions)
 
-> ➕ POST: /custom-fields/v1/definitions
+> ➕ POST: `/custom-fields/v1/definitions`
+
 [Create definition](ref:custom-fields-create-definition)
 
-> ➕ PATCH: /custom-fields/v1/definitions/{definitionId}
+> ➕ PATCH: `/custom-fields/v1/definitions/{definitionId}`
+
 [Update definition](ref:custom-fields-patch-definition)
 
-> ➕ DELETE: /custom-fields/v1/definitions/{definitionId}
+> ➕ DELETE: `/custom-fields/v1/definitions/{definitionId}`
+
 [Delete definition](ref:custom-fields-delete-definition)
 
 Use the [Custom Fields Values API](/reference/custom-field-values) to set values on your defined custom fields
 
-> ➕ GET: /custom-fields/v1/values
+> ➕ GET: `/custom-fields/v1/values`
+
 [Get values](ref:custom-fields-get-values)
 
-> ➕ POST: /custom-fields/v1/values
+> ➕ POST: `/custom-fields/v1/values`
+
 [Create value](ref:custom-fields-create-value)
 
-> ➕ PATCH: /custom-fields/v1/values/{valueId}
+> ➕ PATCH: `/custom-fields/v1/values/{valueId}`
+
 [Update value](ref:custom-fields-patch-value)
 
-> ➕ DELETE: /custom-fields/v1/values/{valueId}
+> ➕ DELETE: `/custom-fields/v1/values/{valueId}`
+
 [Delete value](ref:custom-fields-delete-value)
