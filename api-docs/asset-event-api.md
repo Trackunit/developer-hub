@@ -9,18 +9,18 @@ The Trackunit Asset Event API is a REST API that enables customers to manage the
 
 ### Asset Events Query:
 
-The /asset-event endpoint returns all events given a set of filtering criteria. It supports filtering by:
+The `/asset-event/log` endpoint returns all events given a set of filtering criteria. It supports filtering by:
+- **Required parameters**: `fromTime` and `toTime` indicate the time range for querying asset events.
 - Filtering for assets based on asset IDs, group IDs, site IDs, or customer IDs.
-- Filtering for event types including ALERT, CAN_ERROR, MACHINE_FAULT, CLASSIC_SERVICE, SERVICE_MANAGEMENT, INSPECTION, DAMAGE_REPORT, PRE_CHECK
+- Filtering for event types including ALERT, MACHINE_FAULT, CLASSIC_SERVICE, SERVICE_MANAGEMENT, INSPECTION, DAMAGE_REPORT, PRE_CHECK
 - Filtering for criticality levels including CRITICAL, LOW and NONE
 - Filtering for event status including OPEN, RESOLVED, DISMISSED and CLOSED
-- Filtering on date ranges
 
 ### Active Asset Events Query:
 
-The /asset-event/active endpoint returns active asset events. It supports filtering by:
+The `/asset-event/active endpoint returns active asset events. Active events are those that are currently ongoing or unresolved. It supports filtering by:
 - Filtering for assets based on asset IDs, group IDs, site IDs, or customer IDs.
-- Filtering for event types including ALERT, CAN_ERROR, MACHINE_FAULT, CLASSIC_SERVICE, SERVICE_MANAGEMENT, INSPECTION, DAMAGE_REPORT, PRE_CHECK
+- Filtering for event types including ALERT, MACHINE_FAULT, CLASSIC_SERVICE, SERVICE_MANAGEMENT, INSPECTION, DAMAGE_REPORT, PRE_CHECK
 - Filtering for criticality levels including CRITICAL, LOW
 
 ## Base URL
@@ -29,39 +29,57 @@ All API calls are made against the following base URL:
 
 `https://iris.trackunit.com/public/api/eventlog/v3/`
 
-## Example Usage
+## Example Use Cases
 
-An example cURL command to get critical MACHINE_FAULT events:
+### Monitoring on which ALERT events were triggered on a Site last week 
 
 ```curl
-curl --location 'https://iris.trackunit.com/public/api/eventlog/v3/asset-event' \
+curl --location 'https://iris.trackunit.com/public/api/eventlog/v3/asset-event/log' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <your-token>' \
 --data '{
     "fromTime": "2025-01-01T00:00:000Z",
-    "toTime": "2025-01-01T00:00:000Z",
-    "eventTypes": ["MACHINE_FAULT"],
-    "criticality": ["CRITICAL"]
+    "toTime": "2025-01-07T00:00:000Z",
+    "siteIds": ["00000000-0000-0000-0000-000000123456"],
+    "type": ["ALERT"],
+    "status": ["OPEN"]
 }'
 ```
 
-An example cURL command to get active ALERT events for an asset:
+### Monitoring all Critical Machine Fault events happened on the Fleet:
+
+```curl
+curl --location 'https://iris.trackunit.com/public/api/eventlog/v3/asset-event/log' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <your-token>' \
+--data '{
+    "fromTime": "2025-01-01T00:00:000Z",
+    "toTime": "2025-01-07T00:00:000Z",
+    "type": ["MACHINE_FAULT"],
+    "criticality": ["CRITICAL"],
+    "status": ["OPEN"],
+}'
+```
+
+### Monitoring all open SERVICE MANAGEMENT events for a specific group:
 
 ```curl
 curl --location 'https://iris.trackunit.com/public/api/eventlog/v3/asset-event/active' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer <your-token>' \
 --data '{
-    "assetIds": ["00000000-0000-0000-0000-000000123456"],
-    "eventTypes": ["ALERT"]
+    "groupIds": ["00000000-0000-0000-0000-000000123456"],
+    "type": ["SERVICE_MANAGEMENT"]
 }'
 ```
 
-### Summary
+## Constraints
 
-The API offers capabilities to query asset events and retrieve active events.
+- Visibility of asset event data is limited to asset visibility
+- API Rate Limiting: 2 requests per 30 minutes per api user
+
+
+## Summary
+
+The API offers capabilities to query historical asset events and retrieve active events.
 This allows managing asset events e.g. fault, alerts, making it a powerful tool for monitoring and maintaining asset health.
-
-## Rate Limiting
-
-Rate limiting on this API is currently specified as a maximum of 2 requests in 30 minutes per API user.
